@@ -1,0 +1,500 @@
+/* ============================================================================
+   Atlas del Conocimiento — sistema de diseño (Capa 3)
+   Todos los colores viven aquí como custom properties. Ningún hex en datos
+   ni en componentes. La paleta traduce los `color_token` de las regiones.
+   ============================================================================ */
+
+:root {
+  /* — Lienzo — */
+  --fondo: #0e1116;
+  --fondo-elevado: #161b22;
+  --fondo-panel: #1b2130;
+  --borde: #2a3242;
+  --borde-suave: #222835;
+
+  /* — Texto — */
+  --texto: #e8ecf3;
+  --texto-tenue: #9aa6b8;
+  --texto-debil: #64708a;
+
+  /* — Acento / interacción — */
+  --acento: #6ea8fe;
+  --acento-tenue: #2b3a5c;
+
+  /* — Regiones (traducción de color_token) — */
+  --region-a: #6fb1c9; /* conteo · Conteo y cardinalidad */
+  --region-b: #c9a86f; /* operaciones */
+  --region-c: #b58fd6; /* fraccion */
+  --region-fallback: #7f8ca3;
+
+  /* — Selección tipo árbol tecnológico — */
+  --sel-nodo: #ffd166; /* el nodo elegido */
+  --sel-pre: #7ee0b8; /* prerrequisitos (ancestros) */
+  --sel-post: #6ea8fe; /* conocimientos posteriores (descendientes) */
+  --atenuado: #3a4051; /* el resto, apagado */
+
+  /* — Aristas — */
+  --arista: #39415260;
+  --arista-viva: #8b97ad;
+
+  /* — Completitud (códex) — */
+  --esbozo: #64708a;
+  --basica: #6fb1c9;
+  --completa: #7ee0b8;
+
+  /* — Métrica — */
+  --radio: 12px;
+  --radio-sm: 8px;
+  --sombra: 0 8px 30px rgba(0, 0, 0, 0.35);
+  --transicion: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --fuente: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --fondo: #f6f8fb;
+    --fondo-elevado: #ffffff;
+    --fondo-panel: #ffffff;
+    --borde: #dde3ec;
+    --borde-suave: #e8edf4;
+    --texto: #1b2130;
+    --texto-tenue: #56617a;
+    --texto-debil: #8b96ac;
+    --acento: #2f6fe0;
+    --acento-tenue: #d8e4fb;
+    --region-a: #3e91b0;
+    --region-b: #b7863a;
+    --region-c: #8f5fc0;
+    --sel-nodo: #e0a020;
+    --sel-pre: #2fa579;
+    --sel-post: #2f6fe0;
+    --atenuado: #c3ccda;
+    --arista: #b7c0cf80;
+    --arista-viva: #6b7688;
+    --sombra: 0 8px 30px rgba(20, 30, 50, 0.12);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: var(--fuente);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* — Shell de la app — */
+.app {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mapa {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 50% 40%,
+    color-mix(in srgb, var(--fondo-elevado) 55%, transparent),
+    var(--fondo) 70%
+  );
+}
+
+/* — Cabecera flotante — */
+.cabecera {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  pointer-events: none;
+}
+.cabecera > * {
+  pointer-events: auto;
+}
+.marca {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+.marca b {
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+.marca span {
+  font-size: 11px;
+  color: var(--texto-debil);
+}
+
+/* — Selector de vista (Fase 7) — */
+.selector-vista {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  background: color-mix(in srgb, var(--fondo-elevado) 85%, transparent);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  backdrop-filter: blur(10px);
+}
+.selector-vista button {
+  border: 0;
+  background: transparent;
+  color: var(--texto-tenue);
+  font-size: 12.5px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: var(--transicion);
+  font-family: inherit;
+}
+.selector-vista button:hover {
+  color: var(--texto);
+}
+.selector-vista button[aria-pressed='true'] {
+  background: var(--acento);
+  color: #06101f;
+  font-weight: 600;
+}
+
+/* — Leyenda / pista de zoom — */
+.pista {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  z-index: 5;
+  font-size: 11.5px;
+  color: var(--texto-debil);
+  background: color-mix(in srgb, var(--fondo-elevado) 80%, transparent);
+  border: 1px solid var(--borde-suave);
+  border-radius: var(--radio-sm);
+  padding: 8px 12px;
+  backdrop-filter: blur(8px);
+  max-width: 260px;
+}
+.pista b {
+  color: var(--texto-tenue);
+  font-weight: 600;
+}
+
+.leyenda {
+  position: absolute;
+  bottom: 16px;
+  right: 20px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 11.5px;
+  color: var(--texto-tenue);
+  background: color-mix(in srgb, var(--fondo-elevado) 80%, transparent);
+  border: 1px solid var(--borde-suave);
+  border-radius: var(--radio-sm);
+  padding: 10px 12px;
+  backdrop-filter: blur(8px);
+}
+.leyenda .fila {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.leyenda .punto {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex: none;
+}
+
+/* ============================================================================
+   Vista de nodo (Fase 4) — el nodo deja de ser nodo y se vuelve objeto
+   ============================================================================ */
+.vista-nodo-fondo {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--fondo) 55%, transparent);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: flex-end;
+  animation: aparecer var(--transicion);
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.vista-nodo {
+  width: min(560px, 92vw);
+  height: 100%;
+  background: var(--fondo-panel);
+  border-left: 1px solid var(--borde);
+  box-shadow: var(--sombra);
+  display: flex;
+  flex-direction: column;
+  animation: entrar var(--transicion);
+}
+@keyframes entrar {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.vn-cabecera {
+  padding: 22px 24px 16px;
+  border-bottom: 1px solid var(--borde-suave);
+  position: relative;
+}
+.vn-cerrar {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  border: 1px solid var(--borde);
+  background: var(--fondo-elevado);
+  color: var(--texto-tenue);
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  transition: var(--transicion);
+}
+.vn-cerrar:hover {
+  color: var(--texto);
+  border-color: var(--acento);
+}
+.vn-region {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--texto-debil);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.vn-region .punto {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+.vn-titulo {
+  font-size: 24px;
+  margin: 8px 0 6px;
+  letter-spacing: -0.2px;
+}
+.vn-def {
+  color: var(--texto-tenue);
+  font-size: 13.5px;
+  line-height: 1.55;
+  margin: 0;
+}
+.insignia-completitud {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--borde);
+  color: var(--texto-tenue);
+  margin-top: 10px;
+}
+.insignia-completitud .punto {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+/* — Pestañas — */
+.vn-tabs {
+  display: flex;
+  gap: 2px;
+  padding: 10px 16px 0;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--borde-suave);
+  scrollbar-width: thin;
+}
+.vn-tabs button {
+  flex: none;
+  border: 0;
+  background: transparent;
+  color: var(--texto-debil);
+  font-size: 12.5px;
+  padding: 9px 12px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: var(--transicion);
+  font-family: inherit;
+  white-space: nowrap;
+}
+.vn-tabs button:hover {
+  color: var(--texto-tenue);
+}
+.vn-tabs button[aria-selected='true'] {
+  color: var(--texto);
+  border-bottom-color: var(--acento);
+}
+.vn-tabs button .cuenta {
+  font-size: 10px;
+  color: var(--texto-debil);
+  margin-left: 4px;
+}
+
+.vn-cuerpo {
+  padding: 20px 24px 40px;
+  overflow-y: auto;
+  flex: 1;
+  scrollbar-width: thin;
+}
+
+/* — Estado vacío honesto (A7) — */
+.vacio {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--texto-debil);
+}
+.vacio .icono {
+  font-size: 26px;
+  opacity: 0.5;
+}
+.vacio p {
+  font-size: 13px;
+  margin: 10px 0 2px;
+}
+.vacio small {
+  font-size: 11.5px;
+  opacity: 0.8;
+}
+
+/* — Bloques de contenido del códex — */
+.bloque + .bloque {
+  margin-top: 22px;
+}
+.tarjeta {
+  background: var(--fondo-elevado);
+  border: 1px solid var(--borde-suave);
+  border-radius: var(--radio-sm);
+  padding: 14px 16px;
+}
+.tarjeta + .tarjeta {
+  margin-top: 10px;
+}
+.tarjeta h4 {
+  margin: 0 0 6px;
+  font-size: 13.5px;
+}
+.tarjeta p {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--texto-tenue);
+  line-height: 1.55;
+}
+.etiqueta {
+  display: inline-block;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--texto-debil);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  padding: 2px 8px;
+  margin: 0 6px 6px 0;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.chip {
+  font-size: 12px;
+  background: var(--fondo-elevado);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  padding: 5px 12px;
+  color: var(--texto-tenue);
+}
+.lista-limpia {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.lista-limpia li {
+  font-size: 12.5px;
+  color: var(--texto-tenue);
+  line-height: 1.55;
+  padding: 7px 0 7px 18px;
+  position: relative;
+  border-bottom: 1px solid var(--borde-suave);
+}
+.lista-limpia li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 14px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--acento);
+}
+.enlace-puente {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--acento);
+  background: var(--acento-tenue);
+  border: 0;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: var(--transicion);
+}
+.enlace-puente:hover {
+  filter: brightness(1.12);
+}
+.oa-codigo {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 11.5px;
+  color: var(--acento);
+}
+
+.cobertura {
+  font-size: 10.5px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  border: 1px solid var(--borde);
+  color: var(--texto-debil);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
