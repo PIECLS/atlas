@@ -11,13 +11,26 @@
     "descripcion": "Rebanada vertical del eje Número, 1º a 6º básico. Primer territorio cartografiado del Atlas.",
     "asignatura": "Matemática"
   },
-
   "regiones": [
-    { "id": "conteo",       "nombre": "Conteo y cardinalidad", "orden_x": 0, "color_token": "region-a" },
-    { "id": "operaciones",  "nombre": "Operaciones",           "orden_x": 1, "color_token": "region-b" },
-    { "id": "fraccion",     "nombre": "Fracción",              "orden_x": 2, "color_token": "region-c" }
+    {
+      "id": "conteo",
+      "nombre": "Conteo y cardinalidad",
+      "orden_x": 0,
+      "color_token": "region-a"
+    },
+    {
+      "id": "operaciones",
+      "nombre": "Operaciones",
+      "orden_x": 1,
+      "color_token": "region-b"
+    },
+    {
+      "id": "fraccion",
+      "nombre": "Fracción",
+      "orden_x": 2,
+      "color_token": "region-c"
+    }
   ],
-
   "nodos": [
     {
       "id": "numero",
@@ -26,7 +39,10 @@
       "padre": null,
       "region": "conteo",
       "completitud": "esbozo",
-      "coordenada": { "x": 0, "y": 0 }
+      "coordenada": {
+        "x": 140,
+        "y": 0
+      }
     },
     {
       "id": "conteo_c",
@@ -35,7 +51,10 @@
       "padre": "numero",
       "region": "conteo",
       "completitud": "esbozo",
-      "coordenada": { "x": -200, "y": 100 }
+      "coordenada": {
+        "x": 0,
+        "y": 110
+      }
     },
     {
       "id": "operaciones_c",
@@ -44,9 +63,11 @@
       "padre": "numero",
       "region": "operaciones",
       "completitud": "esbozo",
-      "coordenada": { "x": 0, "y": 100 }
+      "coordenada": {
+        "x": 280,
+        "y": 110
+      }
     },
-
     {
       "id": "secuencia_verbal",
       "nombre": "Secuencia verbal de conteo",
@@ -54,11 +75,19 @@
       "padre": "conteo_c",
       "region": "conteo",
       "completitud": "basica",
-      "coordenada": { "x": -240, "y": 200 },
+      "coordenada": {
+        "x": 48,
+        "y": 240
+      },
       "metadatos": {
         "definicion": "Recitar la lista numérica en orden estable, como cadena verbal, sin necesidad de que refiera a objetos.",
         "oa_relacionados": [
-          { "codigo": "MA01 OA 01", "curso": "1B", "eje": "Números y operaciones", "cobertura": "parcial" }
+          {
+            "codigo": "MA01 OA 01",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
         ]
       }
     },
@@ -69,11 +98,19 @@
       "padre": "conteo_c",
       "region": "conteo",
       "completitud": "basica",
-      "coordenada": { "x": -160, "y": 200 },
+      "coordenada": {
+        "x": -48,
+        "y": 240
+      },
       "metadatos": {
         "definicion": "Asignar exactamente una etiqueta numérica a cada objeto de una colección, sin omitir ni repetir.",
         "oa_relacionados": [
-          { "codigo": "MA01 OA 01", "curso": "1B", "eje": "Números y operaciones", "cobertura": "parcial" }
+          {
+            "codigo": "MA01 OA 01",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
         ]
       }
     },
@@ -84,13 +121,27 @@
       "padre": "conteo_c",
       "region": "conteo",
       "completitud": "completa",
-      "coordenada": { "x": -200, "y": 300 },
+      "coordenada": {
+        "x": 0,
+        "y": 370
+      },
       "metadatos": {
         "definicion": "Comprender que la última etiqueta pronunciada al contar una colección representa la cantidad total de la colección, y no el último objeto contado.",
         "descripcion": "Es el salto entre contar como acto verbal-motor y contar como medición de cantidad. Sin cardinalidad, el conteo es un ritual sin referente.",
         "oa_relacionados": [
-          { "codigo": "MA01 OA 01", "curso": "1B", "eje": "Números y operaciones", "texto": "Contar números del 0 al 100 de 1 en 1, de 2 en 2, de 5 en 5 y de 10 en 10, hacia adelante y hacia atrás, empezando por cualquier número menor que 100.", "cobertura": "parcial" },
-          { "codigo": "MA01 OA 03", "curso": "1B", "eje": "Números y operaciones", "cobertura": "parcial" }
+          {
+            "codigo": "MA01 OA 01",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "texto": "Contar números del 0 al 100 de 1 en 1, de 2 en 2, de 5 en 5 y de 10 en 10, hacia adelante y hacia atrás, empezando por cualquier número menor que 100.",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA01 OA 03",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
         ],
         "representaciones": [
           {
@@ -105,10 +156,20 @@
             "descripcion": "Colección de puntos con la etiqueta numérica encerrando el conjunto completo, no el último punto.",
             "ancla_visual": "conjunto_encerrado"
           },
-          { "tipo": "simbolico", "nombre": "Numeral", "descripcion": "El numeral como nombre de la cantidad." }
+          {
+            "tipo": "simbolico",
+            "nombre": "Numeral",
+            "descripcion": "El numeral como nombre de la cantidad."
+          }
         ],
-        "habilidades": ["representar", "argumentar_comunicar"],
-        "actitudes": ["persistencia", "curiosidad"],
+        "habilidades": [
+          "representar",
+          "argumentar_comunicar"
+        ],
+        "actitudes": [
+          "persistencia",
+          "curiosidad"
+        ],
         "errores_frecuentes": [
           {
             "id": "recuenta_al_preguntar",
@@ -163,11 +224,19 @@
       "padre": "operaciones_c",
       "region": "operaciones",
       "completitud": "basica",
-      "coordenada": { "x": 0, "y": 400 },
+      "coordenada": {
+        "x": 280,
+        "y": 500
+      },
       "metadatos": {
         "definicion": "Operación que determina la cardinalidad de la unión de dos colecciones disjuntas.",
         "oa_relacionados": [
-          { "codigo": "MA01 OA 09", "curso": "1B", "eje": "Números y operaciones", "cobertura": "parcial" }
+          {
+            "codigo": "MA01 OA 09",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
         ],
         "errores_frecuentes": [
           {
@@ -188,7 +257,6 @@
       }
     }
   ],
-
   "aristas": [
     {
       "de": "secuencia_verbal",
