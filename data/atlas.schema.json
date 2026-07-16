@@ -1,0 +1,381 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas-conocimiento.org/schema/v1/atlas.schema.json",
+  "title": "Atlas del Conocimiento — Esquema del dataset",
+  "description": "Contrato de datos del Atlas. La Capa 1 (estructura) es un espacio cuasi-ordinal: nodos + aristas de prerrequisito. La Capa 2 (metadatos/códex) cuelga de cada nodo y NUNCA modifica la estructura. Las apps subordinadas (p.ej. Eslabones) consumen este JSON.",
+  "type": "object",
+  "required": ["atlas_version", "schema_version", "dominio", "nodos", "aristas"],
+  "additionalProperties": false,
+
+  "properties": {
+    "atlas_version": {
+      "description": "Versión semántica del CONTENIDO del atlas (no del esquema). MAJOR: se elimina/reinterpreta un nodo o arista. MINOR: se agregan nodos/aristas. PATCH: metadatos o coordenadas.",
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "generado": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Sellado por el pipeline de certificación. No editar a mano."
+    },
+    "certificacion": {
+      "$ref": "#/$defs/certificacion"
+    },
+    "dominio": {
+      "description": "Alcance de este dataset. El MVP es una rebanada vertical: Número, 1º a 6º básico.",
+      "type": "object",
+      "required": ["id", "nombre"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "nombre": { "type": "string" },
+        "descripcion": { "type": "string" },
+        "asignatura": { "type": "string" }
+      }
+    },
+
+    "regiones": {
+      "description": "Territorios fijos del mapa (Capa 3). Agrupación visual por eje/dominio. NO son nodos ni tienen semántica KST.",
+      "type": "array",
+      "items": { "$ref": "#/$defs/region" }
+    },
+
+    "nodos": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/nodo" }
+    },
+
+    "aristas": {
+      "description": "Relación de precedencia. AXIOMA: una arista A->B significa 'no es posible dominar B sin dominar A'. Justificación epistémica, NUNCA curricular ni de secuencia de enseñanza. Solo se almacena la reducción transitiva (diagrama de Hasse).",
+      "type": "array",
+      "items": { "$ref": "#/$defs/arista" }
+    }
+  },
+
+  "$defs": {
+
+    "certificacion": {
+      "description": "Escrito por el verificador en R (CbKST + kst). Si falta o falla, el dataset no se publica.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "verificado": { "type": "boolean" },
+        "fecha": { "type": "string", "format": "date-time" },
+        "herramienta": { "type": "string", "examples": ["R 4.4.1 / kst 0.5-4 / CbKST 0.1-0"] },
+        "aciclico": { "type": "boolean" },
+        "reduccion_transitiva": {
+          "type": "boolean",
+          "description": "true si no hay aristas redundantes (implicadas por transitividad)."
+        },
+        "huerfanos": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Nodos sin aristas entrantes ni salientes. Permitidos solo si son raíces declaradas."
+        },
+        "n_estados": {
+          "type": "integer",
+          "description": "Cardinalidad del espacio cuasi-ordinal (conjuntos descendentes del orden parcial). Reportado, no validado."
+        },
+        "notas": { "type": "string" }
+      }
+    },
+
+    "region": {
+      "type": "object",
+      "required": ["id", "nombre"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "nombre": { "type": "string" },
+        "color_token": {
+          "type": "string",
+          "description": "Referencia a un token del sistema de diseño, NO un hex. La paleta vive en la Capa 3."
+        },
+        "orden_x": {
+          "type": "integer",
+          "description": "Orden horizontal del territorio en el mapa. Estable entre versiones."
+        }
+      }
+    },
+
+    "nodo": {
+      "type": "object",
+      "required": ["id", "nombre", "nivel_zoom", "completitud"],
+      "additionalProperties": false,
+      "properties": {
+
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$",
+          "description": "Identificador estable y permanente. NUNCA se reutiliza ni se renombra: es la clave que las apps subordinadas referencian. Si un nodo se elimina, su id queda quemado."
+        },
+        "nombre": { "type": "string", "maxLength": 60 },
+
+        "region": {
+          "type": "string",
+          "description": "id de la región (territorio) a la que pertenece."
+        },
+
+        "nivel_zoom": {
+          "description": "Nivel de zoom semántico en que aparece. 1=dominio, 2=concepto, 3=microconocimiento. El zoom profundo (nodo-como-objeto) no es un nivel: es una vista.",
+          "type": "integer",
+          "enum": [1, 2, 3]
+        },
+
+        "padre": {
+          "type": ["string", "null"],
+          "description": "id del nodo de zoom superior que lo contiene. Relación de AGREGACIÓN VISUAL, no de prerrequisito. No participa en la estructura KST."
+        },
+
+        "completitud": {
+          "description": "Estado del códex. Se muestra en la interfaz: el mapa se publica incompleto, como un códex de videojuego. esbozo=solo nombre y aristas; basica=+definicion y OA; completa=las ocho pestañas.",
+          "type": "string",
+          "enum": ["esbozo", "basica", "completa"]
+        },
+
+        "coordenada": { "$ref": "#/$defs/coordenada" },
+
+        "metadatos": { "$ref": "#/$defs/metadatos" }
+      }
+    },
+
+    "coordenada": {
+      "description": "GEOGRAFÍA ESTABLE. Coordenadas fijas, curadas, versionadas como contenido editorial. Computadas offline una vez (capas tipo Sugiyama) y ajustadas a mano. El explorador NUNCA recalcula layout en tiempo real: agregar un nodo no mueve las cordilleras.",
+      "type": "object",
+      "required": ["x", "y"],
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "type": "number",
+          "description": "Horizontal: determinada por la región/territorio."
+        },
+        "y": {
+          "type": "number",
+          "description": "Vertical: profundidad en el orden parcial (longest-path desde las raíces). DERIVADA DE LA ESTRUCTURA, no del nivel escolar. Que correlacione con el curso es consecuencia, no causa."
+        },
+        "fijada_a_mano": {
+          "type": "boolean",
+          "default": false,
+          "description": "true si un humano la ajustó. El recomputador de layout debe respetarla."
+        }
+      }
+    },
+
+    "arista": {
+      "description": "Objeto, no par simple: el campo 'clausula' queda reservado para soportar surmise systems (caminos alternativos AND/OR) en v3 sin romper el esquema.",
+      "type": "object",
+      "required": ["de", "a"],
+      "additionalProperties": false,
+      "properties": {
+        "de": { "type": "string", "description": "id del nodo prerrequisito (A)." },
+        "a": { "type": "string", "description": "id del nodo dependiente (B)." },
+
+        "justificacion": {
+          "type": "string",
+          "description": "REGLA DE AUTORÍA INVIOLABLE: debe poder redactarse como 'no es posible dominar B sin dominar A', SIN mencionar cursos, OA ni orden de enseñanza. Si la justificación necesita nombrar el currículo, no es una arista: es metadato de códex.",
+          "maxLength": 300
+        },
+
+        "clausula": {
+          "type": ["string", "null"],
+          "default": null,
+          "description": "RESERVADO v3. En un espacio cuasi-ordinal (Atlas v1) siempre es null: todas las aristas entrantes de un nodo son conjuntivas (AND). Un valor no-null agruparía aristas en fundamentos alternativos (OR), saliendo del caso cuasi-ordinal hacia surmise systems. El verificador RECHAZA valores no-null mientras schema_version sea 1.x."
+        },
+
+        "confianza": {
+          "type": "string",
+          "enum": ["hipotesis", "consenso_experto", "validada_empiricamente"],
+          "default": "hipotesis",
+          "description": "hipotesis: juicio del autor. consenso_experto: QUERY con especialistas. validada_empiricamente: derivada/confirmada con datos de respuesta (IITA/DAKS). El Atlas v1 nace enteramente en 'hipotesis' y eso se declara."
+        }
+      }
+    },
+
+    "metadatos": {
+      "description": "CAPA 2 — el códex. Información asociada al nodo que NO modifica el grafo. Los OA viven aquí: son una agrupación curricular de conocimientos, no el esqueleto.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+
+        "definicion": {
+          "type": "string",
+          "description": "Qué es este conocimiento, en términos epistémicos."
+        },
+        "descripcion": { "type": "string" },
+
+        "oa_relacionados": {
+          "description": "CÓDEX CURRICULAR. Referencia bidireccional a los Objetivos de Aprendizaje. Documenta el mundo, no lo gobierna. Un nodo puede tener cero OA (existe igual) o varios (de distintos cursos).",
+          "type": "array",
+          "items": { "$ref": "#/$defs/oa" }
+        },
+
+        "representaciones": {
+          "description": "Formas de enseñar el conocimiento (COPISI). NO son conocimientos ni nodos.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/representacion" }
+        },
+
+        "habilidades": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["resolver_problemas", "representar", "modelar", "argumentar_comunicar"]
+          }
+        },
+
+        "actitudes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+
+        "errores_frecuentes": {
+          "description": "Errores conceptuales típicos. Capa crítica: es lo que permite que una app subordinada dé retroalimentación como modelo concreto renderizado con los datos del error, en vez de 'incorrecto'.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/error_frecuente" }
+        },
+
+        "items": {
+          "description": "MAPEO COMPETENCIA→DESEMPEÑO (CbKST). El grafo del Atlas es la estructura de competencias; estos son los ítems observables. RESERVADO: en v1 se declara el tipo pero no se construyen ítems. Cuando existan, la estructura de desempeño se deriva mecánicamente con el paquete R.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        },
+
+        "evidencias": {
+          "description": "Formas de comprobar el conocimiento. NO notas, NO calificaciones: evidencias.",
+          "type": "array",
+          "items": { "type": "string" }
+        },
+
+        "adaptaciones_pie": {
+          "description": "Apoyos didácticos, NO diagnósticos. Nunca se indexa por categoría diagnóstica.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/adaptacion" }
+        },
+
+        "recursos": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/recurso" }
+        },
+
+        "bibliografia": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+
+    "oa": {
+      "type": "object",
+      "required": ["codigo"],
+      "additionalProperties": false,
+      "properties": {
+        "codigo": {
+          "type": "string",
+          "description": "Código oficial MINEDUC.",
+          "examples": ["MA01 OA 09", "MA04 OA 06"]
+        },
+        "curso": { "type": "string", "examples": ["1B", "4B", "1M"] },
+        "eje": { "type": "string", "examples": ["Números y operaciones"] },
+        "texto": { "type": "string", "description": "Redacción oficial del OA." },
+        "cobertura": {
+          "description": "Qué relación tiene el OA con este nodo. Un OA típicamente cubre VARIOS nodos: por eso el OA no puede ser la unidad.",
+          "type": "string",
+          "enum": ["total", "parcial", "tangencial"]
+        }
+      }
+    },
+
+    "representacion": {
+      "type": "object",
+      "required": ["tipo"],
+      "additionalProperties": false,
+      "properties": {
+        "tipo": { "type": "string", "enum": ["concreto", "pictorico", "simbolico"] },
+        "nombre": { "type": "string", "examples": ["Balanza", "Rectángulo de área"] },
+        "descripcion": { "type": "string" },
+        "ancla_visual": {
+          "type": "string",
+          "description": "Modelo concreto que una app subordinada puede renderizar. Contrato con Eslabones."
+        }
+      }
+    },
+
+    "error_frecuente": {
+      "type": "object",
+      "required": ["descripcion"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "descripcion": { "type": "string", "examples": ["Cuenta dos veces el elemento de partida."] },
+        "naturaleza": {
+          "type": "string",
+          "enum": ["conceptual", "procedimental", "representacional", "atencional"]
+        },
+        "nodo_implicado": {
+          "type": ["string", "null"],
+          "description": "id de un nodo prerrequisito cuyo no-dominio explicaría el error. PUENTE DIAGNÓSTICO: conecta el error con la estructura. No crea arista."
+        },
+        "retroalimentacion_sugerida": {
+          "type": "string",
+          "description": "Cómo mostrar el error con el modelo concreto, sin decir 'incorrecto'."
+        }
+      }
+    },
+
+    "item": {
+      "type": "object",
+      "required": ["id"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "enunciado": { "type": "string" },
+        "formato": {
+          "type": "string",
+          "enum": ["respuesta_construida", "seleccion_multiple", "manipulativo", "observacional"]
+        },
+        "competencias_requeridas": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "ids de nodos. Esto ES el skill map de CbKST."
+        }
+      }
+    },
+
+    "adaptacion": {
+      "type": "object",
+      "required": ["descripcion"],
+      "additionalProperties": false,
+      "properties": {
+        "descripcion": { "type": "string" },
+        "barrera": {
+          "type": "string",
+          "description": "Qué barrera de acceso al conocimiento remueve. Se indexa por BARRERA, nunca por diagnóstico.",
+          "examples": ["Carga en memoria de trabajo", "Procesamiento visoespacial", "Demanda de lenguaje"]
+        },
+        "tipo": {
+          "type": "string",
+          "enum": ["acceso", "presentacion", "respuesta", "tiempo", "entorno"]
+        }
+      }
+    },
+
+    "recurso": {
+      "type": "object",
+      "required": ["titulo"],
+      "additionalProperties": false,
+      "properties": {
+        "titulo": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "tipo": { "type": "string", "enum": ["actividad", "video", "lectura", "manipulativo", "app"] },
+        "audiencia": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["profesor", "estudiante", "pie", "investigador"] }
+        }
+      }
+    }
+  }
+}

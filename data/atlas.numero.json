@@ -1,0 +1,215 @@
+{
+  "atlas_version": "0.1.0",
+  "schema_version": "1.0.0",
+  "certificacion": {
+    "verificado": false,
+    "notas": "Semilla escrita a mano. Pendiente primera pasada del verificador R."
+  },
+  "dominio": {
+    "id": "numero_basica",
+    "nombre": "Número",
+    "descripcion": "Rebanada vertical del eje Número, 1º a 6º básico. Primer territorio cartografiado del Atlas.",
+    "asignatura": "Matemática"
+  },
+
+  "regiones": [
+    { "id": "conteo",       "nombre": "Conteo y cardinalidad", "orden_x": 0, "color_token": "region-a" },
+    { "id": "operaciones",  "nombre": "Operaciones",           "orden_x": 1, "color_token": "region-b" },
+    { "id": "fraccion",     "nombre": "Fracción",              "orden_x": 2, "color_token": "region-c" }
+  ],
+
+  "nodos": [
+    {
+      "id": "numero",
+      "nombre": "Número",
+      "nivel_zoom": 1,
+      "padre": null,
+      "region": "conteo",
+      "completitud": "esbozo",
+      "coordenada": { "x": 0, "y": 0 }
+    },
+    {
+      "id": "conteo_c",
+      "nombre": "Conteo",
+      "nivel_zoom": 2,
+      "padre": "numero",
+      "region": "conteo",
+      "completitud": "esbozo",
+      "coordenada": { "x": -200, "y": 100 }
+    },
+    {
+      "id": "operaciones_c",
+      "nombre": "Operaciones",
+      "nivel_zoom": 2,
+      "padre": "numero",
+      "region": "operaciones",
+      "completitud": "esbozo",
+      "coordenada": { "x": 0, "y": 100 }
+    },
+
+    {
+      "id": "secuencia_verbal",
+      "nombre": "Secuencia verbal de conteo",
+      "nivel_zoom": 3,
+      "padre": "conteo_c",
+      "region": "conteo",
+      "completitud": "basica",
+      "coordenada": { "x": -240, "y": 200 },
+      "metadatos": {
+        "definicion": "Recitar la lista numérica en orden estable, como cadena verbal, sin necesidad de que refiera a objetos.",
+        "oa_relacionados": [
+          { "codigo": "MA01 OA 01", "curso": "1B", "eje": "Números y operaciones", "cobertura": "parcial" }
+        ]
+      }
+    },
+    {
+      "id": "correspondencia_uno_a_uno",
+      "nombre": "Correspondencia uno a uno",
+      "nivel_zoom": 3,
+      "padre": "conteo_c",
+      "region": "conteo",
+      "completitud": "basica",
+      "coordenada": { "x": -160, "y": 200 },
+      "metadatos": {
+        "definicion": "Asignar exactamente una etiqueta numérica a cada objeto de una colección, sin omitir ni repetir.",
+        "oa_relacionados": [
+          { "codigo": "MA01 OA 01", "curso": "1B", "eje": "Números y operaciones", "cobertura": "parcial" }
+        ]
+      }
+    },
+    {
+      "id": "cardinalidad",
+      "nombre": "Cardinalidad",
+      "nivel_zoom": 3,
+      "padre": "conteo_c",
+      "region": "conteo",
+      "completitud": "completa",
+      "coordenada": { "x": -200, "y": 300 },
+      "metadatos": {
+        "definicion": "Comprender que la última etiqueta pronunciada al contar una colección representa la cantidad total de la colección, y no el último objeto contado.",
+        "descripcion": "Es el salto entre contar como acto verbal-motor y contar como medición de cantidad. Sin cardinalidad, el conteo es un ritual sin referente.",
+        "oa_relacionados": [
+          { "codigo": "MA01 OA 01", "curso": "1B", "eje": "Números y operaciones", "texto": "Contar números del 0 al 100 de 1 en 1, de 2 en 2, de 5 en 5 y de 10 en 10, hacia adelante y hacia atrás, empezando por cualquier número menor que 100.", "cobertura": "parcial" },
+          { "codigo": "MA01 OA 03", "curso": "1B", "eje": "Números y operaciones", "cobertura": "parcial" }
+        ],
+        "representaciones": [
+          {
+            "tipo": "concreto",
+            "nombre": "Colección tapada",
+            "descripcion": "Se cuenta una colección, se tapa, y se pregunta cuántos hay. Si el niño necesita destapar y recontar, no hay cardinalidad.",
+            "ancla_visual": "coleccion_tapada"
+          },
+          {
+            "tipo": "pictorico",
+            "nombre": "Puntos y etiqueta",
+            "descripcion": "Colección de puntos con la etiqueta numérica encerrando el conjunto completo, no el último punto.",
+            "ancla_visual": "conjunto_encerrado"
+          },
+          { "tipo": "simbolico", "nombre": "Numeral", "descripcion": "El numeral como nombre de la cantidad." }
+        ],
+        "habilidades": ["representar", "argumentar_comunicar"],
+        "actitudes": ["persistencia", "curiosidad"],
+        "errores_frecuentes": [
+          {
+            "id": "recuenta_al_preguntar",
+            "descripcion": "Al preguntarle cuántos hay tras haber contado, vuelve a contar desde el uno: la última etiqueta no quedó como respuesta.",
+            "naturaleza": "conceptual",
+            "nodo_implicado": null,
+            "retroalimentacion_sugerida": "Tapar la colección después de contar y preguntar de nuevo. Mostrar que el número dicho ya guardaba la respuesta."
+          },
+          {
+            "id": "ultima_etiqueta_es_objeto",
+            "descripcion": "Cree que 'cinco' es el nombre del quinto objeto, no de la colección entera.",
+            "naturaleza": "conceptual",
+            "nodo_implicado": null,
+            "retroalimentacion_sugerida": "Contar la misma colección empezando por otro objeto: el total no cambia, pero el objeto llamado 'cinco' sí."
+          },
+          {
+            "id": "salta_u_omite",
+            "descripcion": "Cuenta objetos dos veces o se salta alguno, obteniendo totales distintos.",
+            "naturaleza": "procedimental",
+            "nodo_implicado": "correspondencia_uno_a_uno",
+            "retroalimentacion_sugerida": "Mover cada objeto contado a un lado. El error no está en la cardinalidad sino en el emparejamiento."
+          }
+        ],
+        "items": [],
+        "evidencias": [
+          "Ante la pregunta '¿cuántos hay?' tras contar, responde sin recontar.",
+          "Cuenta la misma colección ordenada de distinta forma y afirma que el total no cambió.",
+          "Produce una colección de tamaño dado (dame 6 fichas) deteniéndose en el número pedido."
+        ],
+        "adaptaciones_pie": [
+          {
+            "descripcion": "Usar objetos que se puedan desplazar físicamente a una zona 'ya contado', para descargar el seguimiento del conteo.",
+            "barrera": "Carga en memoria de trabajo",
+            "tipo": "presentacion"
+          },
+          {
+            "descripcion": "Permitir respuesta señalando una tarjeta con el numeral en vez de respuesta verbal.",
+            "barrera": "Demanda de lenguaje expresivo",
+            "tipo": "respuesta"
+          }
+        ],
+        "recursos": [],
+        "bibliografia": [
+          "Gelman, R. & Gallistel, C. R. (1978). The Child's Understanding of Number. Harvard University Press."
+        ]
+      }
+    },
+    {
+      "id": "suma",
+      "nombre": "Suma",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "coordenada": { "x": 0, "y": 400 },
+      "metadatos": {
+        "definicion": "Operación que determina la cardinalidad de la unión de dos colecciones disjuntas.",
+        "oa_relacionados": [
+          { "codigo": "MA01 OA 09", "curso": "1B", "eje": "Números y operaciones", "cobertura": "parcial" }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "cuenta_dos_veces",
+            "descripcion": "Al contar todo, incluye el primer sumando en el reconteo y obtiene uno de más.",
+            "naturaleza": "procedimental",
+            "nodo_implicado": "cardinalidad",
+            "retroalimentacion_sugerida": "Renderizar ambas colecciones separadas y luego unidas, resaltando el objeto contado dos veces."
+          },
+          {
+            "id": "signo_como_hacer",
+            "descripcion": "Lee el signo + como orden de 'hacer algo' y no como relación entre cantidades; no acepta 5 = 3 + 2.",
+            "naturaleza": "conceptual",
+            "nodo_implicado": null,
+            "retroalimentacion_sugerida": "Balanza: ambos lados existen simultáneamente, no hay un 'antes' y un 'después'."
+          }
+        ]
+      }
+    }
+  ],
+
+  "aristas": [
+    {
+      "de": "secuencia_verbal",
+      "a": "cardinalidad",
+      "justificacion": "No es posible determinar el total de una colección mediante conteo sin poder producir la lista numérica en orden estable.",
+      "confianza": "consenso_experto",
+      "clausula": null
+    },
+    {
+      "de": "correspondencia_uno_a_uno",
+      "a": "cardinalidad",
+      "justificacion": "No es posible que la última etiqueta represente el total si las etiquetas no se asignaron exactamente una vez a cada objeto.",
+      "confianza": "consenso_experto",
+      "clausula": null
+    },
+    {
+      "de": "cardinalidad",
+      "a": "suma",
+      "justificacion": "No es posible componer las cardinalidades de dos colecciones sin comprender que una colección tiene una cardinalidad.",
+      "confianza": "consenso_experto",
+      "clausula": null
+    }
+  ]
+}
