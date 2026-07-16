@@ -1,0 +1,51 @@
+# Notario del Atlas (Fase 6). Certifica el dataset en cada push a /data.
+# Si la certificación falla, el job falla y el dataset no se publica.
+name: Certificar dataset
+
+on:
+  push:
+    paths:
+      - 'data/**'
+      - 'tools/certify.R'
+      - '.github/workflows/certify.yml'
+  pull_request:
+    paths:
+      - 'data/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  certificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Preparar R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+
+      - name: Instalar paquetes R
+        run: |
+          Rscript -e 'install.packages("jsonlite", repos="https://cloud.r-project.org")'
+          # kst + deps son la credencial CbKST; best-effort (certify.R los trata como opcionales)
+          Rscript -e 'try(install.packages(c("sets","relations","kst"), repos="https://cloud.r-project.org"), silent=TRUE)'
+
+      - name: Certificar (el notario R sella la estructura)
+        run: Rscript tools/certify.R
+
+      # Solo en main y solo si la certificación pasó: commitea el JSON sellado.
+      - name: Publicar dataset certificado
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          git config user.name "atlas-notario[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [[ -n "$(git status --porcelain data/atlas.numero.json)" ]]; then
+            git add data/atlas.numero.json
+            git commit -m "chore(data): certificación R [skip ci]"
+            git push
+          else
+            echo "Sin cambios en el dataset certificado."
+          fi
