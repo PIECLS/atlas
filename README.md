@@ -8,9 +8,9 @@ consume el dataset, nunca lo define.
 > Estado: **hipótesis estructural** verificada mecánicamente y versionada.
 > Nunca se afirma validación empírica (A8). MVP: eje Número, 1º–6º básico.
 
-![Certificación dataset](https://github.com/OWNER/atlas/actions/workflows/certify.yml/badge.svg)
+![Certificación dataset](https://github.com/PIECLS/atlas/actions/workflows/certify.yml/badge.svg)
 
-*(Reemplazá `OWNER` por el usuario/organización de GitHub una vez creado el repo.)*
+Explorador: **https://piecls.github.io/atlas/**
 
 ## Arquitectura de tres capas
 
