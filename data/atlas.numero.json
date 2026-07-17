@@ -2,8 +2,14 @@
   "atlas_version": "0.2.0",
   "schema_version": "1.0.0",
   "certificacion": {
-    "verificado": false,
-    "notas": "Extraccion Bases Curriculares 1B-6B eje Numeros y Operaciones. Reduccion transitiva aplicada. Layout computado offline (A5). Pendiente verificador R."
+    "verificado": true,
+    "fecha": "2026-07-17T04:57:33Z",
+    "herramienta": "R 4.6.1 / kst 0.5.5",
+    "aciclico": true,
+    "reduccion_transitiva": true,
+    "huerfanos": [],
+    "n_estados": null,
+    "notas": "Hipótesis estructural consistente con los axiomas, verificada mecánicamente y versionada. Sin validación empírica (A8)."
   },
   "dominio": {
     "id": "numero_basica",
@@ -58,7 +64,7 @@
       "region": "conteo",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 2250.0,
+        "x": 2250,
         "y": -520,
         "fijada_a_mano": false
       }
@@ -71,7 +77,7 @@
       "region": "conteo",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 0.0,
+        "x": 0,
         "y": -260,
         "fijada_a_mano": false
       }
@@ -84,7 +90,7 @@
       "region": "operaciones",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 1800.0,
+        "x": 1800,
         "y": -260,
         "fijada_a_mano": false
       }
@@ -97,7 +103,7 @@
       "region": "conteo",
       "completitud": "basica",
       "coordenada": {
-        "x": 0.0,
+        "x": 0,
         "y": 0,
         "fijada_a_mano": false
       },
@@ -121,7 +127,7 @@
       "region": "conteo",
       "completitud": "basica",
       "coordenada": {
-        "x": -150.0,
+        "x": -150,
         "y": 0,
         "fijada_a_mano": false
       },
@@ -145,7 +151,7 @@
       "region": "conteo",
       "completitud": "completa",
       "coordenada": {
-        "x": -150.0,
+        "x": -150,
         "y": 120,
         "fijada_a_mano": false
       },
@@ -249,7 +255,7 @@
       "region": "operaciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 1875.0,
+        "x": 1875,
         "y": 360,
         "fijada_a_mano": false
       },
@@ -289,7 +295,7 @@
       "region": "numeracion",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 900.0,
+        "x": 900,
         "y": -260,
         "fijada_a_mano": false
       }
@@ -302,7 +308,7 @@
       "region": "fraccion",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 2700.0,
+        "x": 2700,
         "y": -260,
         "fijada_a_mano": false
       }
@@ -315,7 +321,7 @@
       "region": "decimales",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 3600.0,
+        "x": 3600,
         "y": -260,
         "fijada_a_mano": false
       }
@@ -328,7 +334,7 @@
       "region": "proporcion",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 4500.0,
+        "x": 4500,
         "y": -260,
         "fijada_a_mano": false
       }
@@ -352,7 +358,7 @@
         ]
       },
       "coordenada": {
-        "x": 225.0,
+        "x": 225,
         "y": 240,
         "fijada_a_mano": false
       }
@@ -389,7 +395,7 @@
         ]
       },
       "coordenada": {
-        "x": 0.0,
+        "x": 0,
         "y": 120,
         "fijada_a_mano": false
       }
@@ -425,7 +431,7 @@
         ]
       },
       "coordenada": {
-        "x": -75.0,
+        "x": -75,
         "y": 240,
         "fijada_a_mano": false
       }
@@ -470,7 +476,7 @@
         ]
       },
       "coordenada": {
-        "x": 0.0,
+        "x": 0,
         "y": 360,
         "fijada_a_mano": false
       }
@@ -495,7 +501,7 @@
         ]
       },
       "coordenada": {
-        "x": 150.0,
+        "x": 150,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -519,7 +525,7 @@
         ]
       },
       "coordenada": {
-        "x": -225.0,
+        "x": -225,
         "y": 240,
         "fijada_a_mano": false
       }
@@ -552,7 +558,7 @@
         ]
       },
       "coordenada": {
-        "x": 150.0,
+        "x": 150,
         "y": 120,
         "fijada_a_mano": false
       }
@@ -583,7 +589,7 @@
         ]
       },
       "coordenada": {
-        "x": 75.0,
+        "x": 75,
         "y": 240,
         "fijada_a_mano": false
       }
@@ -632,7 +638,7 @@
         ]
       },
       "coordenada": {
-        "x": 975.0,
+        "x": 975,
         "y": 240,
         "fijada_a_mano": false
       }
@@ -663,7 +669,7 @@
         ]
       },
       "coordenada": {
-        "x": 825.0,
+        "x": 825,
         "y": 240,
         "fijada_a_mano": false
       }
@@ -696,7 +702,7 @@
         ]
       },
       "coordenada": {
-        "x": 900.0,
+        "x": 900,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -767,7 +773,7 @@
         ]
       },
       "coordenada": {
-        "x": 900.0,
+        "x": 900,
         "y": 600,
         "fijada_a_mano": false
       }
@@ -798,7 +804,7 @@
         ]
       },
       "coordenada": {
-        "x": 975.0,
+        "x": 975,
         "y": 720,
         "fijada_a_mano": false
       }
@@ -855,7 +861,7 @@
         ]
       },
       "coordenada": {
-        "x": 825.0,
+        "x": 825,
         "y": 720,
         "fijada_a_mano": false
       }
@@ -881,7 +887,7 @@
         ]
       },
       "coordenada": {
-        "x": 825.0,
+        "x": 825,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -905,7 +911,7 @@
         ]
       },
       "coordenada": {
-        "x": 975.0,
+        "x": 975,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -956,7 +962,7 @@
         ]
       },
       "coordenada": {
-        "x": 1725.0,
+        "x": 1725,
         "y": 360,
         "fijada_a_mano": false
       }
@@ -994,7 +1000,7 @@
         ]
       },
       "coordenada": {
-        "x": 2325.0,
+        "x": 2325,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -1030,7 +1036,7 @@
         ]
       },
       "coordenada": {
-        "x": 1800.0,
+        "x": 1800,
         "y": 600,
         "fijada_a_mano": false
       }
@@ -1055,7 +1061,7 @@
         ]
       },
       "coordenada": {
-        "x": 1425.0,
+        "x": 1425,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -1092,7 +1098,7 @@
         ]
       },
       "coordenada": {
-        "x": 1500.0,
+        "x": 1500,
         "y": 600,
         "fijada_a_mano": false
       }
@@ -1128,7 +1134,7 @@
         ]
       },
       "coordenada": {
-        "x": 1725.0,
+        "x": 1725,
         "y": 720,
         "fijada_a_mano": false
       }
@@ -1161,7 +1167,7 @@
         ]
       },
       "coordenada": {
-        "x": 2025.0,
+        "x": 2025,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -1191,7 +1197,7 @@
         ]
       },
       "coordenada": {
-        "x": 1425.0,
+        "x": 1425,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -1215,7 +1221,7 @@
         ]
       },
       "coordenada": {
-        "x": 1650.0,
+        "x": 1650,
         "y": 600,
         "fijada_a_mano": false
       }
@@ -1245,7 +1251,7 @@
         ]
       },
       "coordenada": {
-        "x": 1725.0,
+        "x": 1725,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -1269,7 +1275,7 @@
         ]
       },
       "coordenada": {
-        "x": 1275.0,
+        "x": 1275,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -1294,7 +1300,7 @@
         ]
       },
       "coordenada": {
-        "x": 1575.0,
+        "x": 1575,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -1330,7 +1336,7 @@
         ]
       },
       "coordenada": {
-        "x": 1425.0,
+        "x": 1425,
         "y": 720,
         "fijada_a_mano": false
       }
@@ -1369,7 +1375,7 @@
         ]
       },
       "coordenada": {
-        "x": 1275.0,
+        "x": 1275,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -1405,7 +1411,7 @@
         ]
       },
       "coordenada": {
-        "x": 1575.0,
+        "x": 1575,
         "y": 720,
         "fijada_a_mano": false
       }
@@ -1444,7 +1450,7 @@
         ]
       },
       "coordenada": {
-        "x": 2325.0,
+        "x": 2325,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -1480,7 +1486,7 @@
         ]
       },
       "coordenada": {
-        "x": 1950.0,
+        "x": 1950,
         "y": 960,
         "fijada_a_mano": false
       }
@@ -1537,7 +1543,7 @@
         ]
       },
       "coordenada": {
-        "x": 2175.0,
+        "x": 2175,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -1574,7 +1580,7 @@
         ]
       },
       "coordenada": {
-        "x": 2025.0,
+        "x": 2025,
         "y": 720,
         "fijada_a_mano": false
       }
@@ -1616,7 +1622,7 @@
         ]
       },
       "coordenada": {
-        "x": 1950.0,
+        "x": 1950,
         "y": 600,
         "fijada_a_mano": false
       }
@@ -1667,7 +1673,7 @@
         ]
       },
       "coordenada": {
-        "x": 1875.0,
+        "x": 1875,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -1697,7 +1703,7 @@
         ]
       },
       "coordenada": {
-        "x": 2250.0,
+        "x": 2250,
         "y": 600,
         "fijada_a_mano": false
       }
@@ -1730,7 +1736,7 @@
         ]
       },
       "coordenada": {
-        "x": 1350.0,
+        "x": 1350,
         "y": 600,
         "fijada_a_mano": false
       }
@@ -1755,7 +1761,7 @@
         ]
       },
       "coordenada": {
-        "x": 2100.0,
+        "x": 2100,
         "y": 600,
         "fijada_a_mano": false
       }
@@ -1794,7 +1800,7 @@
         ]
       },
       "coordenada": {
-        "x": 1800.0,
+        "x": 1800,
         "y": 960,
         "fijada_a_mano": false
       }
@@ -1825,7 +1831,7 @@
         ]
       },
       "coordenada": {
-        "x": 1650.0,
+        "x": 1650,
         "y": 960,
         "fijada_a_mano": false
       }
@@ -1856,7 +1862,7 @@
         ]
       },
       "coordenada": {
-        "x": 1575.0,
+        "x": 1575,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -1889,7 +1895,7 @@
         ]
       },
       "coordenada": {
-        "x": 1875.0,
+        "x": 1875,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -1913,7 +1919,7 @@
         ]
       },
       "coordenada": {
-        "x": 1725.0,
+        "x": 1725,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -1956,7 +1962,7 @@
         ]
       },
       "coordenada": {
-        "x": 2175.0,
+        "x": 2175,
         "y": 720,
         "fijada_a_mano": false
       }
@@ -1981,7 +1987,7 @@
         ]
       },
       "coordenada": {
-        "x": 2025.0,
+        "x": 2025,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -2005,7 +2011,7 @@
         ]
       },
       "coordenada": {
-        "x": 1875.0,
+        "x": 1875,
         "y": 720,
         "fijada_a_mano": false
       }
@@ -2029,7 +2035,7 @@
         ]
       },
       "coordenada": {
-        "x": 2175.0,
+        "x": 2175,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -2061,7 +2067,7 @@
         ]
       },
       "coordenada": {
-        "x": 2700.0,
+        "x": 2700,
         "y": 240,
         "fijada_a_mano": false
       }
@@ -2121,7 +2127,7 @@
         ]
       },
       "coordenada": {
-        "x": 2700.0,
+        "x": 2700,
         "y": 360,
         "fijada_a_mano": false
       }
@@ -2145,7 +2151,7 @@
         ]
       },
       "coordenada": {
-        "x": 2925.0,
+        "x": 2925,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -2181,7 +2187,7 @@
         ]
       },
       "coordenada": {
-        "x": 2625.0,
+        "x": 2625,
         "y": 960,
         "fijada_a_mano": false
       }
@@ -2211,7 +2217,7 @@
         ]
       },
       "coordenada": {
-        "x": 2700.0,
+        "x": 2700,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -2244,7 +2250,7 @@
         ]
       },
       "coordenada": {
-        "x": 2625.0,
+        "x": 2625,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -2275,7 +2281,7 @@
         ]
       },
       "coordenada": {
-        "x": 2775.0,
+        "x": 2775,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -2305,7 +2311,7 @@
         ]
       },
       "coordenada": {
-        "x": 2700.0,
+        "x": 2700,
         "y": 600,
         "fijada_a_mano": false
       }
@@ -2336,7 +2342,7 @@
         ]
       },
       "coordenada": {
-        "x": 2775.0,
+        "x": 2775,
         "y": 960,
         "fijada_a_mano": false
       }
@@ -2373,7 +2379,7 @@
         ]
       },
       "coordenada": {
-        "x": 2700.0,
+        "x": 2700,
         "y": 1080,
         "fijada_a_mano": false
       }
@@ -2412,7 +2418,7 @@
         ]
       },
       "coordenada": {
-        "x": 2475.0,
+        "x": 2475,
         "y": 480,
         "fijada_a_mano": false
       }
@@ -2449,7 +2455,7 @@
         ]
       },
       "coordenada": {
-        "x": 2700.0,
+        "x": 2700,
         "y": 720,
         "fijada_a_mano": false
       }
@@ -2483,7 +2489,7 @@
         ]
       },
       "coordenada": {
-        "x": 3600.0,
+        "x": 3600,
         "y": 720,
         "fijada_a_mano": false
       }
@@ -2522,7 +2528,7 @@
         ]
       },
       "coordenada": {
-        "x": 3600.0,
+        "x": 3600,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -2547,7 +2553,7 @@
         ]
       },
       "coordenada": {
-        "x": 3750.0,
+        "x": 3750,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -2598,7 +2604,7 @@
         ]
       },
       "coordenada": {
-        "x": 3450.0,
+        "x": 3450,
         "y": 840,
         "fijada_a_mano": false
       }
@@ -2623,7 +2629,7 @@
         ]
       },
       "coordenada": {
-        "x": 3600.0,
+        "x": 3600,
         "y": 1080,
         "fijada_a_mano": false
       }
@@ -2656,7 +2662,7 @@
         ]
       },
       "coordenada": {
-        "x": 4500.0,
+        "x": 4500,
         "y": 600,
         "fijada_a_mano": false
       }
@@ -2681,7 +2687,7 @@
         ]
       },
       "coordenada": {
-        "x": 4500.0,
+        "x": 4500,
         "y": 960,
         "fijada_a_mano": false
       }
@@ -3430,5 +3436,6 @@
       "clausula": null,
       "confianza": "hipotesis"
     }
-  ]
+  ],
+  "generado": "2026-07-17T04:57:33Z"
 }
