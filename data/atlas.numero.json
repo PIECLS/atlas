@@ -1,14 +1,14 @@
 {
-  "atlas_version": "0.1.0",
+  "atlas_version": "0.2.0",
   "schema_version": "1.0.0",
   "certificacion": {
     "verificado": false,
-    "notas": "Semilla escrita a mano. Pendiente primera pasada del verificador R."
+    "notas": "Extraccion Bases Curriculares 1B-6B eje Numeros y Operaciones. Reduccion transitiva aplicada. Layout computado offline (A5). Pendiente verificador R."
   },
   "dominio": {
     "id": "numero_basica",
     "nombre": "Número",
-    "descripcion": "Rebanada vertical del eje Número, 1º a 6º básico. Primer territorio cartografiado del Atlas.",
+    "descripcion": "Eje Numeros y Operaciones, 1º a 6º basico. Primer territorio cartografiado del Atlas.",
     "asignatura": "Matemática"
   },
   "regiones": [
@@ -19,16 +19,34 @@
       "color_token": "region-a"
     },
     {
+      "id": "numeracion",
+      "nombre": "Numeración y valor posicional",
+      "orden_x": 1,
+      "color_token": "region-d"
+    },
+    {
       "id": "operaciones",
       "nombre": "Operaciones",
-      "orden_x": 1,
+      "orden_x": 2,
       "color_token": "region-b"
     },
     {
       "id": "fraccion",
-      "nombre": "Fracción",
-      "orden_x": 2,
+      "nombre": "Fracciones",
+      "orden_x": 3,
       "color_token": "region-c"
+    },
+    {
+      "id": "decimales",
+      "nombre": "Decimales",
+      "orden_x": 4,
+      "color_token": "region-e"
+    },
+    {
+      "id": "proporcion",
+      "nombre": "Razones y porcentajes",
+      "orden_x": 5,
+      "color_token": "region-f"
     }
   ],
   "nodos": [
@@ -40,8 +58,9 @@
       "region": "conteo",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 140,
-        "y": 0
+        "x": 2250.0,
+        "y": -520,
+        "fijada_a_mano": false
       }
     },
     {
@@ -52,8 +71,9 @@
       "region": "conteo",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 0,
-        "y": 110
+        "x": 0.0,
+        "y": -260,
+        "fijada_a_mano": false
       }
     },
     {
@@ -64,8 +84,9 @@
       "region": "operaciones",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 280,
-        "y": 110
+        "x": 1800.0,
+        "y": -260,
+        "fijada_a_mano": false
       }
     },
     {
@@ -76,8 +97,9 @@
       "region": "conteo",
       "completitud": "basica",
       "coordenada": {
-        "x": 48,
-        "y": 240
+        "x": 0.0,
+        "y": 0,
+        "fijada_a_mano": false
       },
       "metadatos": {
         "definicion": "Recitar la lista numérica en orden estable, como cadena verbal, sin necesidad de que refiera a objetos.",
@@ -99,8 +121,9 @@
       "region": "conteo",
       "completitud": "basica",
       "coordenada": {
-        "x": -48,
-        "y": 240
+        "x": -150.0,
+        "y": 0,
+        "fijada_a_mano": false
       },
       "metadatos": {
         "definicion": "Asignar exactamente una etiqueta numérica a cada objeto de una colección, sin omitir ni repetir.",
@@ -122,8 +145,9 @@
       "region": "conteo",
       "completitud": "completa",
       "coordenada": {
-        "x": 0,
-        "y": 370
+        "x": -150.0,
+        "y": 120,
+        "fijada_a_mano": false
       },
       "metadatos": {
         "definicion": "Comprender que la última etiqueta pronunciada al contar una colección representa la cantidad total de la colección, y no el último objeto contado.",
@@ -225,8 +249,9 @@
       "region": "operaciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 280,
-        "y": 500
+        "x": 1875.0,
+        "y": 360,
+        "fijada_a_mano": false
       },
       "metadatos": {
         "definicion": "Operación que determina la cardinalidad de la unión de dos colecciones disjuntas.",
@@ -255,6 +280,2411 @@
           }
         ]
       }
+    },
+    {
+      "id": "numeracion_c",
+      "nombre": "Numeración",
+      "nivel_zoom": 2,
+      "padre": "numero",
+      "region": "numeracion",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 900.0,
+        "y": -260,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "fracciones_c",
+      "nombre": "Fracciones",
+      "nivel_zoom": 2,
+      "padre": "numero",
+      "region": "fraccion",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 2700.0,
+        "y": -260,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "decimales_c",
+      "nombre": "Decimales",
+      "nivel_zoom": 2,
+      "padre": "numero",
+      "region": "decimales",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 3600.0,
+        "y": -260,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "proporcion_c",
+      "nombre": "Razones y porcentajes",
+      "nivel_zoom": 2,
+      "padre": "numero",
+      "region": "proporcion",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 4500.0,
+        "y": -260,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "irrelevancia_orden",
+      "nombre": "Irrelevancia del orden",
+      "nivel_zoom": 3,
+      "padre": "conteo_c",
+      "region": "conteo",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que el orden en que se cuentan los elementos de una colección no altera su cardinal.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 01",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 225.0,
+        "y": 240,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "conteo_hacia_atras",
+      "nombre": "Conteo descendente",
+      "nivel_zoom": 3,
+      "padre": "conteo_c",
+      "region": "conteo",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Producir la secuencia numérica en orden inverso desde un número dado.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 01",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Contar números del 0 al 100 de 1 en 1, de 2 en 2, de 5 en 5 y de 10 en 10, hacia adelante y hacia atrás, empezando por cualquier número menor que 100."
+          },
+          {
+            "codigo": "MA02 OA 01",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 01",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 0.0,
+        "y": 120,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "conteo_desde_cualquier_numero",
+      "nombre": "Conteo desde cualquier número",
+      "nivel_zoom": 3,
+      "padre": "conteo_c",
+      "region": "conteo",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Iniciar la secuencia de conteo desde un punto arbitrario de la lista numérica, sin regresar al uno.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 01",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA02 OA 01",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 01",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": -75.0,
+        "y": 240,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "conteo_a_saltos",
+      "nombre": "Conteo a saltos",
+      "nivel_zoom": 3,
+      "padre": "conteo_c",
+      "region": "conteo",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Recitar y usar secuencias de conteo por agrupaciones regulares (de 2 en 2, de 5 en 5, de 10 en 10, de 100 en 100).",
+        "descripcion": "El conteo con monedas nacionales (agrupaciones de 5, 10, 100) es una aplicación directa de este conocimiento.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 01",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA02 OA 01",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Contar números del 0 al 1 000 de 2 en 2, de 5 en 5, de 10 en 10 y de 100 en 100, hacia adelante y hacia atrás, empezando por cualquier número menor que 1 000."
+          },
+          {
+            "codigo": "MA03 OA 01",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Contar números del 0 al 1 000 de 5 en 5, de 10 en 10, de 100 en 100, de 3 en 3, de 4 en 4, empezando por cualquier múltiplo del número correspondiente."
+          },
+          {
+            "codigo": "MA02 OA 03",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 0.0,
+        "y": 360,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "subitizacion",
+      "nombre": "Subitización",
+      "nivel_zoom": 3,
+      "padre": "conteo_c",
+      "region": "conteo",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Reconocer de manera inmediata la cantidad de una colección pequeña, sin contar.",
+        "descripcion": "Sin OA que lo nombre directamente: conocimiento estructural. El reconocimiento directo de cantidades pequeñas sirve de referente perceptivo para la estimación.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 05",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 150.0,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "comparacion_colecciones",
+      "nombre": "Comparación de colecciones",
+      "nivel_zoom": 3,
+      "padre": "conteo_c",
+      "region": "conteo",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Determinar cuál de dos colecciones tiene más, menos o igual cantidad de elementos, mediante emparejamiento o conteo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 04",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": -225.0,
+        "y": 240,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "numero_ordinal",
+      "nombre": "Número ordinal",
+      "nivel_zoom": 3,
+      "padre": "conteo_c",
+      "region": "conteo",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Usar los números para indicar la posición de un elemento dentro de una serie ordenada, distinguiendo posición de cantidad.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 02",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Identificar el orden de los elementos de una serie, utilizando números ordinales del primero (1º) al décimo (10º)."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "ordinal_como_cardinal",
+            "descripcion": "Responde con la posición cuando se le pregunta por la cantidad, o viceversa: 'el cuarto' y 'cuatro' se confunden.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Mostrar una fila de objetos y pedir 'el tercero' y luego 'tres': la respuesta señala uno versus toma un grupo."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 150.0,
+        "y": 120,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estimacion_cantidades",
+      "nombre": "Estimación de cantidades",
+      "nivel_zoom": 3,
+      "padre": "conteo_c",
+      "region": "conteo",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Aproximar el tamaño de una colección sin contarla exhaustivamente, apoyándose en un referente conocido.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 05",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Estimar cantidades hasta 20 en situaciones concretas, usando un referente."
+          },
+          {
+            "codigo": "MA02 OA 04",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "total"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 75.0,
+        "y": 240,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "numeral_escrito",
+      "nombre": "Numeral escrito",
+      "nivel_zoom": 3,
+      "padre": "numeracion_c",
+      "region": "numeracion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Asociar cantidad, nombre hablado y símbolo escrito de un número: leer y escribir numerales como nombres de cantidades.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 03",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Leer números del 0 al 20 y representarlos en forma concreta, pictórica y simbólica."
+          },
+          {
+            "codigo": "MA02 OA 02",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 02",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA04 OA 01",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA05 OA 01",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 975.0,
+        "y": 240,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "composicion_aditiva",
+      "nombre": "Composición y descomposición aditiva",
+      "nivel_zoom": 3,
+      "padre": "numeracion_c",
+      "region": "numeracion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender la relación parte-todo numérica: toda cantidad puede descomponerse en partes y recomponerse a partir de ellas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 06",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Componer y descomponer números del 0 a 20 de manera aditiva, en forma concreta, pictórica y simbólica."
+          },
+          {
+            "codigo": "MA02 OA 05",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "total"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 825.0,
+        "y": 240,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "agrupacion_decenas",
+      "nombre": "La decena como unidad",
+      "nivel_zoom": 3,
+      "padre": "numeracion_c",
+      "region": "numeracion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Agrupar de a diez y tratar el grupo como una unidad nueva que se cuenta y opera como un objeto.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 08",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Determinar las unidades y decenas en números del 0 al 20, agrupando de a 10, de manera concreta, pictórica y simbólica."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "grupo_no_unitizado",
+            "descripcion": "Cuenta correctamente grupos y sueltos pero no puede decir el total sin recontar de a uno: el grupo de diez no funciona aún como unidad.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Con material agrupable, preguntar el total tapando los grupos ya contados: si necesita destapar, la decena no es todavía una unidad."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 900.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "valor_posicional",
+      "nombre": "Valor posicional",
+      "nivel_zoom": 3,
+      "padre": "numeracion_c",
+      "region": "numeracion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que el valor de un dígito depende de la posición que ocupa en el numeral, según agrupaciones sucesivas de diez.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 07",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Identificar las unidades y decenas en números del 0 al 100, representando las cantidades de acuerdo a su valor posicional, con material concreto, pictórico y simbólico."
+          },
+          {
+            "codigo": "MA03 OA 05",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA04 OA 01",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA05 OA 01",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "escritura_literal",
+            "descripcion": "Escribe los números como los oye: 'doscientos tres' se convierte en 2003.",
+            "naturaleza": "conceptual",
+            "nodo_implicado": "agrupacion_decenas"
+          },
+          {
+            "id": "digito_sin_posicion",
+            "descripcion": "Afirma que en 47 'hay un 4', sin reconocer que ese 4 vale cuarenta.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Representar 47 con material agrupado y pedir que muestre qué parte del material es el 4."
+          }
+        ],
+        "representaciones": [
+          {
+            "tipo": "concreto",
+            "nombre": "Material multibase",
+            "descripcion": "Cubos sueltos, barras de diez y placas de cien: la posición se corresponde con el tipo de pieza.",
+            "ancla_visual": "multibase"
+          },
+          {
+            "tipo": "pictorico",
+            "nombre": "Tabla posicional",
+            "descripcion": "Columnas U/D/C donde el mismo dígito cambia de valor al cambiar de columna.",
+            "ancla_visual": "tabla_posicional"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 900.0,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "descomposicion_posicional",
+      "nombre": "Forma estándar y expandida",
+      "nivel_zoom": 3,
+      "padre": "numeracion_c",
+      "region": "numeracion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Descomponer un número según el valor de sus posiciones (4 325 = 4 000 + 300 + 20 + 5) y recomponerlo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 01",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA05 OA 01",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Representar y describir números naturales, componiendo y descomponiendo en forma estándar y expandida, aproximando cantidades."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 975.0,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "comparacion_orden_numeros",
+      "nombre": "Comparación y orden de números",
+      "nivel_zoom": 3,
+      "padre": "numeracion_c",
+      "region": "numeracion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Determinar cuál de dos números representa mayor cantidad y ordenar conjuntos de números según su magnitud.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 04",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Comparar y ordenar números del 0 al 20 de menor a mayor y/o viceversa."
+          },
+          {
+            "codigo": "MA02 OA 03",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 03",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA04 OA 01",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA05 OA 01",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "compara_por_digitos",
+            "descripcion": "Compara dígito a dígito sin atender la posición: concluye 29 > 41 porque 9 > 1.",
+            "naturaleza": "procedimental",
+            "nodo_implicado": "valor_posicional"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 825.0,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "recta_numerica",
+      "nombre": "El número en la recta numérica",
+      "nivel_zoom": 3,
+      "padre": "numeracion_c",
+      "region": "numeracion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Concebir los números como posiciones ordenadas sobre una línea, donde la distancia representa diferencia de magnitud.",
+        "descripcion": "Metáfora estructurante ('los números son posiciones') que luego sostiene fracciones, decimales y medición.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 03",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Comparar y ordenar números naturales hasta 1.000, utilizando la recta numérica o la tabla posicional."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 825.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "redondeo",
+      "nombre": "Redondeo y aproximación",
+      "nivel_zoom": 3,
+      "padre": "numeracion_c",
+      "region": "numeracion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Sustituir un número por el múltiplo más cercano de una posición dada, conservando el orden de magnitud.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 01",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 975.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "resta",
+      "nombre": "Resta",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Operación que determina la parte desconocida de un todo (quitar, comparar, completar) dadas la otra parte y el total.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 09",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprenden la adición y la sustracción de números del 0 al 20."
+          },
+          {
+            "codigo": "MA02 OA 09",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 06",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ],
+        "representaciones": [
+          {
+            "tipo": "concreto",
+            "nombre": "Quitar de una colección",
+            "descripcion": "Separar físicamente una parte del todo y cuantificar lo que queda.",
+            "ancla_visual": "quitar"
+          },
+          {
+            "tipo": "pictorico",
+            "nombre": "Comparación de barras",
+            "descripcion": "Dos barras alineadas: la diferencia es el tramo no compartido.",
+            "ancla_visual": "comparacion_barras"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1725.0,
+        "y": 360,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "reversibilidad_aditiva",
+      "nombre": "Reversibilidad aditiva",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que adición y sustracción son operaciones inversas: los mismos tres números forman una familia de operaciones.",
+        "descripcion": "Glosario: los números 7, 8 y 15 se relacionan en 7+8=15, 8+7=15, 15-8=7, 15-7=8.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 10",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Demostrar que la adición y la sustracción son operaciones inversas, de manera concreta, pictórica y simbólica."
+          },
+          {
+            "codigo": "MA02 OA 10",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "total"
+          },
+          {
+            "codigo": "MA03 OA 07",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "total"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2325.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "hechos_aditivos_basicos",
+      "nombre": "Combinaciones aditivas básicas",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Disponer con fluidez de las sumas y restas elementales, recuperándolas sin calcular.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 07",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA02 OA 09",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA02 OA 06",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1800.0,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "calculo_por_conteo",
+      "nombre": "Cálculo por conteo",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Resolver adiciones y sustracciones avanzando o retrocediendo en la secuencia numérica desde uno de los términos.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 07",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Describir y aplicar estrategias de cálculo mental para las adiciones y las sustracciones hasta 20: conteo hacia adelante y atrás, completar 10, dobles."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1425.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estrategia_completar_10",
+      "nombre": "Estrategia: completar 10",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Sumar o restar lo necesario para alcanzar la decena más cercana y luego operar el resto.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 07",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA02 OA 06",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 04",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Describir y aplicar estrategias de cálculo mental para las adiciones y las sustracciones hasta 100: por descomposición, completar hasta la decena más cercana, usar dobles, sumar en vez de restar, aplicar la asociatividad."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1500.0,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estrategia_dobles",
+      "nombre": "Estrategia: dobles y mitades",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Derivar resultados desde los dobles conocidos (7+8 como 7+7+1) y sus mitades.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 07",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA02 OA 06",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 04",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1725.0,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estrategia_compensacion",
+      "nombre": "Estrategia: compensación",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Ajustar los términos de una operación y compensar el ajuste conservando el resultado ('uno más uno menos', 'dos más dos menos', redondear y corregir).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 06",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Describir y aplicar estrategias de cálculo mental para adiciones y sustracciones hasta 20: completar 10, usar dobles y mitades, uno más uno menos, dos más dos menos, usar la reversibilidad de las operaciones."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "compensa_direccion_erronea",
+            "descripcion": "En la sustracción compensa en la dirección equivocada: para 33-16 vía 33-20 corrige restando 4 en vez de sumarlo.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Mostrar en la recta que al quitar de más hay que devolver: el salto largo se corrige regresando."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2025.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estrategia_descomposicion_calculo",
+      "nombre": "Estrategia: cálculo por descomposición",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Descomponer los términos según posiciones para operar por partes (48 - 27 como 48 - 20 - 7).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 04",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA04 OA 03",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1425.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estrategia_sumar_en_vez_de_restar",
+      "nombre": "Estrategia: sumar en vez de restar",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Resolver una sustracción buscando el sumando que falta (47 - 29 como 29 + □ = 47).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 04",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1650.0,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "conmutatividad_adicion",
+      "nombre": "Conmutatividad de la adición",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que el orden de los sumandos no altera la suma.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 10",
+            "curso": "1B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          },
+          {
+            "codigo": "MA02 OA 10",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1725.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "asociatividad_adicion",
+      "nombre": "Asociatividad de la adición",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que la agrupación de los sumandos no altera la suma, y usarla para operar según conveniencia.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 04",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1275.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "cero_en_adicion_sustraccion",
+      "nombre": "El cero en la adición y sustracción",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender y explicar el efecto de sumar y restar cero a un número.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 08",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Demostrar y explicar de manera concreta, pictórica y simbólica el efecto de sumar y restar 0 a un número."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1575.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "algoritmo_adicion",
+      "nombre": "Algoritmo de la adición",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Sumar numerales de varias cifras operando columna a columna según el valor posicional, sin reagrupación.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 09",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 06",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA04 OA 03",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1425.0,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "adicion_con_reserva",
+      "nombre": "Adición con reserva",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Reagrupar al sumar: cuando una columna excede nueve, componer una unidad del orden superior y trasladarla.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 06",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprenden la adición y la sustracción de números del 0 al 1.000, aplicando los algoritmos con y sin reserva."
+          },
+          {
+            "codigo": "MA04 OA 03",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "reserva_perdida",
+            "descripcion": "Suma la columna y anota el número completo sin trasladar la reserva: 47+38 produce 715.",
+            "naturaleza": "procedimental",
+            "nodo_implicado": "agrupacion_decenas"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1275.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "algoritmo_sustraccion",
+      "nombre": "Algoritmo de la sustracción",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Restar numerales de varias cifras operando columna a columna según el valor posicional, sin canje.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 09",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 06",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA04 OA 03",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1575.0,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "sustraccion_con_canje",
+      "nombre": "Sustracción con canje",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Reagrupar al restar: descomponer una unidad del orden superior cuando la columna del minuendo es insuficiente.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 06",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA04 OA 03",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "resta_menor_al_mayor",
+            "descripcion": "En cada columna resta el dígito menor al mayor sin importar su lugar: 52-38 produce 26.",
+            "naturaleza": "conceptual",
+            "nodo_implicado": "agrupacion_decenas",
+            "retroalimentacion_sugerida": "Representar 52 con material multibase e intentar quitar 8 unidades: la necesidad del canje se vuelve física."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2325.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estimacion_calculo",
+      "nombre": "Estimación de resultados",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Anticipar el orden de magnitud del resultado de una operación redondeando sus términos antes de calcular.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 03",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA04 OA 05",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA05 OA 03",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1950.0,
+        "y": 960,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "multiplicacion",
+      "nombre": "Multiplicación",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Operación que cuantifica una cantidad repetida: tantos grupos iguales de tanto, expresable como adición de sumandos iguales.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 11",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprende la multiplicación: usando representaciones concretas y pictóricas, expresando una multiplicación como una adición de sumandos iguales."
+          },
+          {
+            "codigo": "MA03 OA 08",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 10",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          },
+          {
+            "codigo": "MA04 OA 07",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          }
+        ],
+        "representaciones": [
+          {
+            "tipo": "concreto",
+            "nombre": "Grupos iguales",
+            "descripcion": "Colecciones repetidas del mismo tamaño (3 bolsas de 4).",
+            "ancla_visual": "grupos_iguales"
+          },
+          {
+            "tipo": "pictorico",
+            "nombre": "Arreglo rectangular",
+            "descripcion": "Filas y columnas: el producto es el área de la disposición.",
+            "ancla_visual": "arreglo_rectangular"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2175.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "hechos_multiplicativos",
+      "nombre": "Tablas de multiplicar",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Disponer con fluidez de los productos básicos hasta 10 x 10, recuperándolos sin calcular.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 11",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 08",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprenden las tablas de multiplicar hasta el 10 de manera progresiva."
+          },
+          {
+            "codigo": "MA04 OA 02",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2025.0,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "propiedad_distributiva",
+      "nombre": "Propiedad distributiva",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que multiplicar una suma equivale a sumar los productos parciales: a(b+c) = ab + ac.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 11",
+            "curso": "2B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA03 OA 08",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA04 OA 05",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA05 OA 02",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1950.0,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "division",
+      "nombre": "División",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Operación que reparte un todo en partes iguales (repartición) o determina cuántos grupos de un tamaño dado caben en él (agrupación).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 09",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprenden la división en el contexto de las tablas de hasta 10x10: representando y explicando la división como repartición y agrupación en partes iguales, expresando la división como una sustracción repetida."
+          },
+          {
+            "codigo": "MA03 OA 10",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          },
+          {
+            "codigo": "MA04 OA 07",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          }
+        ],
+        "representaciones": [
+          {
+            "tipo": "concreto",
+            "nombre": "Reparto uno a uno",
+            "descripcion": "Distribuir elementos de a uno entre los receptores hasta agotar el todo.",
+            "ancla_visual": "reparto"
+          },
+          {
+            "tipo": "concreto",
+            "nombre": "Sustracción repetida",
+            "descripcion": "Quitar grupos del mismo tamaño y contar cuántas veces se pudo.",
+            "ancla_visual": "sustraccion_repetida"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1875.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "reversibilidad_multiplicativa",
+      "nombre": "Reversibilidad multiplicativa",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que multiplicación y división son operaciones inversas: 7 x 5 = 35 y 35 : 5 = 7 relacionan los mismos números.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 09",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA04 OA 06",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2250.0,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "division_con_resto",
+      "nombre": "División con resto",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender la división inexacta: el resto como lo que no alcanza a formar otro grupo, y su interpretación según el contexto.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 04",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprenden la división con dividendos de tres dígitos y divisores de un dígito: interpretando el resto."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "resto_ignorado",
+            "descripcion": "Descarta el resto o lo anexa a la respuesta sin interpretarlo: para 25 personas en autos de 4 responde '6 autos' o '6,1 autos'.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Renderizar el reparto: los que quedan fuera del último grupo exigen decisión, no desaparecen."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1350.0,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "propiedades_cero_uno",
+      "nombre": "El cero y el uno en la multiplicación y división",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Fundamentar el efecto del 0 y del 1 como factores y del 1 como divisor.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 04",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Fundamentar y aplicar las propiedades del 0 y del 1 para la multiplicación y la propiedad del 1 para la división."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2100.0,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "algoritmo_multiplicacion",
+      "nombre": "Algoritmo de la multiplicación",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Multiplicar numerales de varias cifras mediante productos parciales posicionales (distributiva aplicada por columnas).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 05",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprenden la multiplicación de números de tres dígitos por números de un dígito."
+          },
+          {
+            "codigo": "MA05 OA 03",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "olvida_corrimiento",
+            "descripcion": "Alinea todos los productos parciales a la derecha sin el corrimiento posicional del segundo factor.",
+            "naturaleza": "procedimental",
+            "nodo_implicado": "valor_posicional"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1800.0,
+        "y": 960,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "algoritmo_division",
+      "nombre": "Algoritmo de la división",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Dividir numerales de varias cifras estimando cocientes parciales por posición, multiplicando de vuelta y restando.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 06",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprenden la división con dividendos de dos dígitos y divisores de un dígito."
+          },
+          {
+            "codigo": "MA05 OA 04",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1650.0,
+        "y": 960,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estrategia_doblar_mitad",
+      "nombre": "Estrategia: doblar y dividir por 2",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Transformar un producto doblando un factor y reduciendo el otro a la mitad, incluso repetidamente (25 x 8 = 50 x 4 = 100 x 2).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 02",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Describir y aplicar estrategias de cálculo mental para determinar las multiplicaciones hasta 10x10 y sus divisiones correspondientes: conteo hacia delante y atrás, doblar y dividir por 2, por descomposición, usar el doble del doble."
+          },
+          {
+            "codigo": "MA05 OA 02",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1575.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estrategia_multiplos_10",
+      "nombre": "Estrategia: multiplicar por múltiplos de 10",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Multiplicar por potencias y múltiplos de diez desplazando posiciones (70 x 90 = 63 seguido de los ceros).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 02",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Aplicar estrategias de cálculo mental para la multiplicación: anexar ceros cuando se multiplica por un múltiplo de 10, doblar y dividir por 2 en forma repetida, usando las propiedades conmutativa, asociativa y distributiva."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "ceros_como_magia",
+            "descripcion": "Aplica 'agregar ceros' como regla sin base posicional y la extiende mal a decimales (4,5 x 10 = 4,50).",
+            "naturaleza": "conceptual",
+            "nodo_implicado": "valor_posicional"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1875.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estrategia_factorizar",
+      "nombre": "Estrategia: descomponer en factores",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Reordenar un producto descomponiendo los factores (8 x 75 = 2 x 4 x 25 x 3 = 600).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 02",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1725.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "jerarquia_operaciones",
+      "nombre": "Jerarquía de las operaciones",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Aplicar la prevalencia de la multiplicación y la división sobre la adición y la sustracción, y el rol de los paréntesis.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 05",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Realizar cálculos que involucren las cuatro operaciones, aplicando las reglas relativas a paréntesis y la prevalencia de la multiplicación y la división por sobre la adición y la sustracción."
+          },
+          {
+            "codigo": "MA05 OA 06",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          },
+          {
+            "codigo": "MA06 OA 02",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA06 OA 08",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2175.0,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "multiplo",
+      "nombre": "Múltiplo",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender los múltiplos de un número como los productos que ese número genera.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 01",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprenden los factores y los múltiplos: determinando los múltiplos y los factores de números naturales menores de 100, identificando números primos y compuestos, resolviendo problemas que involucran múltiplos."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2025.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "factor_divisor",
+      "nombre": "Factor y divisor",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender los factores de un número como aquellos que lo dividen exactamente.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 01",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 1875.0,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "numero_primo",
+      "nombre": "Número primo y compuesto",
+      "nivel_zoom": 3,
+      "padre": "operaciones_c",
+      "region": "operaciones",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Distinguir los números que solo admiten dos divisores de aquellos que admiten más.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 01",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2175.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "particion_equitativa",
+      "nombre": "Partición equitativa",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Dividir un todo en partes de igual tamaño, condición sin la cual las partes no son comparables entre sí.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 11",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "partes_desiguales",
+            "descripcion": "Acepta como 'un cuarto' cualquiera de cuatro partes, aunque sean de tamaños distintos.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Ofrecer dos repartos de la misma torta —uno equitativo y otro no— y preguntar cuál permite decir 'me tocó un cuarto'."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2700.0,
+        "y": 240,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "fraccion_parte_todo",
+      "nombre": "La fracción como parte de un todo",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que una fracción expresa un valor relativo a un todo tomado como unidad: 3/4 son 3 partes de un total de 4 partes iguales.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 11",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprenden las fracciones de uso común: explicando que una fracción representa la parte de un todo."
+          },
+          {
+            "codigo": "MA04 OA 08",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprende las fracciones con denominadores 100, 12, 10, 8, 6, 5, 4, 3, 2: explicando que una fracción representa la parte de un todo o de un grupo de elementos y un lugar en la recta numérica."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "numerador_denominador_independientes",
+            "descripcion": "Lee 3/4 como dos números separados y no como una sola cantidad relativa al todo.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Renderizar el todo dividido y sombreado: el denominador dice en cuántas partes, el numerador cuántas se toman."
+          },
+          {
+            "id": "todo_variable",
+            "descripcion": "Compara fracciones de todos distintos como si fueran del mismo: 1/2 de una hoja pequeña versus 1/4 de una grande.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Mostrar ambos todos superpuestos: la comparación exige la misma unidad de referencia."
+          }
+        ],
+        "representaciones": [
+          {
+            "tipo": "concreto",
+            "nombre": "Todo partido",
+            "descripcion": "Objeto físico dividido en partes iguales de las cuales se toman algunas.",
+            "ancla_visual": "todo_partido"
+          },
+          {
+            "tipo": "pictorico",
+            "nombre": "Barra fraccionaria",
+            "descripcion": "Rectángulo segmentado en partes iguales con parte sombreada.",
+            "ancla_visual": "barra_fraccionaria"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2700.0,
+        "y": 360,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "fraccion_parte_grupo",
+      "nombre": "La fracción como parte de un grupo",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que el todo puede ser una colección de elementos discretos y no solo un objeto continuo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 08",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2925.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "fraccion_en_recta",
+      "nombre": "La fracción como punto en la recta",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Ubicar una fracción como un número con posición propia en la recta numérica, entre los enteros.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 08",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA05 OA 08",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA06 OA 05",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2625.0,
+        "y": 960,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "comparacion_fracciones_igual_denominador",
+      "nombre": "Comparación con igual denominador",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comparar fracciones de un mismo todo que comparten denominador atendiendo solo al numerador.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 11",
+            "curso": "3B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA04 OA 08",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2700.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "comparacion_fracciones_igual_numerador",
+      "nombre": "Comparación con igual numerador",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comparar fracciones unitarias y de igual numerador: a mayor denominador, partes más pequeñas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 08",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Comparando y ordenando fracciones (por ejemplo: 1/100, 1/8, 1/5, 1/4, 1/2) con material concreto y pictórico."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "denominador_mayor_es_mayor",
+            "descripcion": "Aplica el orden de los naturales al denominador: afirma que 1/8 > 1/4 porque 8 > 4.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Partir el mismo todo en 4 y en 8: a más partes, cada parte es menor."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2625.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "fraccion_equivalente",
+      "nombre": "Fracciones equivalentes",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que una misma cantidad admite infinitas escrituras fraccionarias distintas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 08",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA05 OA 07",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprenden las fracciones propias: creando grupos de fracciones equivalentes -simplificando y amplificando-."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2775.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "amplificacion_simplificacion",
+      "nombre": "Amplificación y simplificación",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Transformar una fracción en otra equivalente multiplicando o dividiendo numerador y denominador por un mismo número.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 07",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA05 OA 09",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2700.0,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "fraccion_propia_impropia",
+      "nombre": "Fracción propia e impropia",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Distinguir las fracciones menores que la unidad de aquellas que la igualan o superan.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 07",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA05 OA 08",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Demostrar que comprenden las fracciones impropias de uso común de denominadores 2, 3, 4, 5, 6, 8, 10, 12 y los números mixtos asociados."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2775.0,
+        "y": 960,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "numero_mixto",
+      "nombre": "Número mixto",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Expresar una cantidad mayor que la unidad como enteros más una fracción, y convertir entre esa forma y la fracción impropia.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 10",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Identificar, escribir y representar fracciones propias y los números mixtos hasta el 5."
+          },
+          {
+            "codigo": "MA05 OA 08",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA06 OA 05",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2700.0,
+        "y": 1080,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "adicion_fracciones_igual_denominador",
+      "nombre": "Adición y sustracción con igual denominador",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Sumar y restar fracciones que comparten denominador operando los numeradores, porque las partes son del mismo tamaño.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 09",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Resolver adiciones y sustracciones de fracciones con igual denominador."
+          },
+          {
+            "codigo": "MA05 OA 09",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "suma_denominadores",
+            "descripcion": "Suma numeradores y denominadores por separado: 1/4 + 1/4 = 2/8.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Sombrear ambas partes sobre el mismo todo partido en cuartos: el tamaño de la parte no cambia al juntar."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2475.0,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "adicion_fracciones_distinto_denominador",
+      "nombre": "Adición y sustracción con distinto denominador",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Sumar y restar fracciones de distinto denominador reexpresándolas en partes del mismo tamaño.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 09",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Resolver adiciones y sustracciones con fracciones propias con denominadores menores o iguales a 12: amplificando o simplificando."
+          },
+          {
+            "codigo": "MA06 OA 06",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA06 OA 08",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 2700.0,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "decimal_notacion",
+      "nombre": "Notación decimal",
+      "nivel_zoom": 3,
+      "padre": "decimales_c",
+      "region": "decimales",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender el decimal como extensión del valor posicional hacia partes de la unidad: décimos, centésimos, milésimos.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 11",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial",
+            "texto": "Describir y representar decimales (décimos y centésimos): representándolos en forma concreta, pictórica y simbólica."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "decimal_como_dos_enteros",
+            "descripcion": "Lee 3,45 como 'tres coma cuarenta y cinco' tratando la parte decimal como entero independiente: concluye 3,45 > 3,7.",
+            "naturaleza": "conceptual",
+            "nodo_implicado": "valor_posicional",
+            "retroalimentacion_sugerida": "Alinear ambos en la tabla posicional: la comparación se decide en los décimos, no en la cantidad de dígitos."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 3600.0,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "comparacion_orden_decimales",
+      "nombre": "Comparación y orden de decimales",
+      "nivel_zoom": 3,
+      "padre": "decimales_c",
+      "region": "decimales",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comparar y ordenar decimales atendiendo al valor posicional de cada cifra.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 11",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA05 OA 11",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Comparar y ordenar decimales hasta la milésima."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "mas_digitos_mas_grande",
+            "descripcion": "Afirma que 0,125 > 0,4 porque tiene más cifras.",
+            "naturaleza": "procedimental",
+            "nodo_implicado": "decimal_notacion"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 3600.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "equivalencia_fraccion_decimal",
+      "nombre": "Equivalencia entre fracción y decimal",
+      "nivel_zoom": 3,
+      "padre": "decimales_c",
+      "region": "decimales",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que fracción y decimal son escrituras distintas de una misma cantidad, y convertir entre ellas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 10",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Determinar el decimal que corresponde a fracciones con denominador 2, 4, 5 y 10."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 3750.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "adicion_decimales",
+      "nombre": "Adición y sustracción de decimales",
+      "nivel_zoom": 3,
+      "padre": "decimales_c",
+      "region": "decimales",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Sumar y restar decimales alineando las posiciones equivalentes.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 12",
+            "curso": "4B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Resolver adiciones y sustracciones de decimales, empleando el valor posicional hasta la centésima."
+          },
+          {
+            "codigo": "MA05 OA 12",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "total"
+          },
+          {
+            "codigo": "MA05 OA 13",
+            "curso": "5B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          },
+          {
+            "codigo": "MA06 OA 08",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "tangencial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "alinea_a_la_derecha",
+            "descripcion": "Alinea los decimales por el último dígito en vez de por la coma: 3,5 + 0,25 produce 3,75 mal formado.",
+            "naturaleza": "procedimental",
+            "nodo_implicado": "decimal_notacion"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 3450.0,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "multiplicacion_division_decimales",
+      "nombre": "Multiplicación y división de decimales",
+      "nivel_zoom": 3,
+      "padre": "decimales_c",
+      "region": "decimales",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Multiplicar y dividir decimales por naturales, por múltiplos de diez y por otros decimales.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 07",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Demostrar que comprenden la multiplicación y la división de decimales por números naturales de un dígito, múltiplos de 10 y decimales hasta la milésima."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 3600.0,
+        "y": 1080,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "razon",
+      "nombre": "Razón",
+      "nivel_zoom": 3,
+      "padre": "proporcion_c",
+      "region": "proporcion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender la razón como comparación multiplicativa entre dos cantidades.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 03",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Demostrar que comprenden el concepto de razón de manera concreta, pictórica y simbólica."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "razon_como_diferencia",
+            "descripcion": "Compara las cantidades restando en vez de multiplicando: ante 'por cada 2 rojas hay 3 azules' razona '1 más'.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Escalar el grupo: al duplicar, la diferencia cambia pero la razón se conserva."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 4500.0,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "porcentaje",
+      "nombre": "Porcentaje",
+      "nivel_zoom": 3,
+      "padre": "proporcion_c",
+      "region": "proporcion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender el porcentaje como una razón cuyo todo es cien.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 04",
+            "curso": "6B",
+            "eje": "Números y operaciones",
+            "cobertura": "total",
+            "texto": "Demostrar que comprenden el concepto de porcentaje de manera concreta, pictórica y simbólica."
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 4500.0,
+        "y": 960,
+        "fijada_a_mano": false
+      }
     }
   ],
   "aristas": [
@@ -273,11 +2703,732 @@
       "clausula": null
     },
     {
+      "de": "secuencia_verbal",
+      "a": "conteo_hacia_atras",
+      "justificacion": "No es posible producir la secuencia numérica en orden inverso sin disponer de la secuencia en orden directo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
       "de": "cardinalidad",
+      "a": "conteo_desde_cualquier_numero",
+      "justificacion": "No es posible tratar un número de partida como 'lo ya contado' sin comprender que ese número representa una cantidad acumulada.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "conteo_desde_cualquier_numero",
+      "a": "conteo_a_saltos",
+      "justificacion": "No es posible avanzar por agrupaciones desde cualquier punto de la secuencia sin poder iniciar el conteo en un número arbitrario.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "cardinalidad",
+      "a": "irrelevancia_orden",
+      "justificacion": "No es posible reconocer que el total no cambia al reordenar la colección sin comprender que la última etiqueta designa el total.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "cardinalidad",
+      "a": "comparacion_colecciones",
+      "justificacion": "No es posible comparar dos colecciones por su cantidad sin comprender que cada colección tiene una cantidad.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "secuencia_verbal",
+      "a": "numero_ordinal",
+      "justificacion": "No es posible asignar posiciones sucesivas a los elementos de una serie sin disponer de la lista numérica en orden estable.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "subitizacion",
+      "a": "estimacion_cantidades",
+      "justificacion": "No es posible estimar una cantidad apoyándose en un referente sin poder reconocer de inmediato el tamaño del referente.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "cardinalidad",
+      "a": "estimacion_cantidades",
+      "justificacion": "No es posible aproximar el total de una colección sin comprender qué es el total de una colección.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "cardinalidad",
+      "a": "numeral_escrito",
+      "justificacion": "No es posible que un símbolo escrito nombre una cantidad sin comprender que las colecciones tienen una cantidad que puede nombrarse.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "cardinalidad",
+      "a": "composicion_aditiva",
+      "justificacion": "No es posible concebir un total que se descompone en partes sin comprender que la colección tiene un total.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_colecciones",
+      "a": "comparacion_orden_numeros",
+      "justificacion": "No es posible decidir qué número representa más sin poder decidir qué colección tiene más.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "conteo_a_saltos",
+      "a": "agrupacion_decenas",
+      "justificacion": "No es posible tratar el grupo de diez como una unidad contable sin poder recorrer la secuencia avanzando de diez en diez.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "composicion_aditiva",
+      "a": "agrupacion_decenas",
+      "justificacion": "No es posible ver una cantidad como grupos de diez más sueltos sin comprender que un total se descompone en partes.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "agrupacion_decenas",
+      "a": "valor_posicional",
+      "justificacion": "No es posible que la posición de un dígito codifique agrupaciones sucesivas de diez sin comprender que diez unidades forman una unidad de orden superior.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "numeral_escrito",
+      "a": "valor_posicional",
+      "justificacion": "No es posible atribuir valor a la posición de un dígito dentro del numeral sin poder leer y escribir numerales.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "valor_posicional",
+      "a": "descomposicion_posicional",
+      "justificacion": "No es posible descomponer un número según el valor de cada posición sin comprender que la posición determina el valor.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "valor_posicional",
+      "a": "comparacion_orden_numeros",
+      "justificacion": "No es posible comparar numerales de varias cifras sin comprender que el valor de cada dígito depende de su posición.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_orden_numeros",
+      "a": "recta_numerica",
+      "justificacion": "No es posible situar los números como posiciones ordenadas sobre una línea sin poder determinar cuál número precede a cuál.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_orden_numeros",
+      "a": "redondeo",
+      "justificacion": "No es posible decidir cuál es el múltiplo más cercano sin poder comparar magnitudes.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "composicion_aditiva",
       "a": "suma",
-      "justificacion": "No es posible componer las cardinalidades de dos colecciones sin comprender que una colección tiene una cardinalidad.",
-      "confianza": "consenso_experto",
-      "clausula": null
+      "justificacion": "No es posible componer dos cantidades en un total sin comprender la relación entre las partes y el todo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "composicion_aditiva",
+      "a": "resta",
+      "justificacion": "No es posible determinar una parte desconocida a partir del todo y la otra parte sin comprender la relación parte-todo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "suma",
+      "a": "reversibilidad_aditiva",
+      "justificacion": "No es posible reconocer que una operación deshace a la otra sin comprender la operación que compone las partes.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "resta",
+      "a": "reversibilidad_aditiva",
+      "justificacion": "No es posible reconocer que una operación deshace a la otra sin comprender la operación que recupera una parte.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "suma",
+      "a": "conmutatividad_adicion",
+      "justificacion": "No es posible advertir que el orden de los sumandos es indiferente sin comprender qué hace la adición.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "irrelevancia_orden",
+      "a": "conmutatividad_adicion",
+      "justificacion": "No es posible aceptar que juntar en otro orden da el mismo total sin comprender que reordenar una colección no altera su cantidad.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "suma",
+      "a": "asociatividad_adicion",
+      "justificacion": "No es posible reagrupar sumandos conservando el resultado sin comprender qué hace la adición.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "suma",
+      "a": "cero_en_adicion_sustraccion",
+      "justificacion": "No es posible explicar el efecto de sumar una cantidad nula sin comprender qué hace la adición.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "resta",
+      "a": "cero_en_adicion_sustraccion",
+      "justificacion": "No es posible explicar el efecto de restar una cantidad nula sin comprender qué hace la sustracción.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "conteo_desde_cualquier_numero",
+      "a": "calculo_por_conteo",
+      "justificacion": "No es posible resolver una suma avanzando desde uno de los términos sin poder iniciar la secuencia en un número arbitrario.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "conteo_hacia_atras",
+      "a": "calculo_por_conteo",
+      "justificacion": "No es posible resolver una resta retrocediendo en la secuencia sin poder recorrerla en orden inverso.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "suma",
+      "a": "calculo_por_conteo",
+      "justificacion": "No es posible interpretar el avance en la secuencia como una adición sin comprender qué hace la adición.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "calculo_por_conteo",
+      "a": "hechos_aditivos_basicos",
+      "justificacion": "No es posible recuperar de memoria un resultado aditivo sin haber podido antes producirlo por algún procedimiento.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "agrupacion_decenas",
+      "a": "estrategia_completar_10",
+      "justificacion": "No es posible usar la decena como meta intermedia del cálculo sin comprender que diez tiene estatuto de unidad.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "hechos_aditivos_basicos",
+      "a": "estrategia_dobles",
+      "justificacion": "No es posible derivar un resultado desde un doble conocido sin disponer del doble como hecho recuperable.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "suma",
+      "a": "estrategia_compensacion",
+      "justificacion": "No es posible compensar un ajuste conservando el resultado sin comprender qué hace la operación que se altera.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "descomposicion_posicional",
+      "a": "estrategia_descomposicion_calculo",
+      "justificacion": "No es posible calcular descomponiendo los términos sin poder descomponer un número según sus posiciones.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "reversibilidad_aditiva",
+      "a": "estrategia_sumar_en_vez_de_restar",
+      "justificacion": "No es posible resolver una resta buscando el sumando que falta sin comprender que ambas operaciones se deshacen mutuamente.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "valor_posicional",
+      "a": "algoritmo_adicion",
+      "justificacion": "No es posible sumar columna a columna sin comprender que cada columna representa un orden distinto de agrupación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "hechos_aditivos_basicos",
+      "a": "algoritmo_adicion",
+      "justificacion": "No es posible ejecutar con fluidez las sumas de cada columna sin disponer de los resultados básicos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "algoritmo_adicion",
+      "a": "adicion_con_reserva",
+      "justificacion": "No es posible trasladar una unidad de orden superior entre columnas sin dominar el procedimiento de sumar por columnas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "valor_posicional",
+      "a": "algoritmo_sustraccion",
+      "justificacion": "No es posible restar columna a columna sin comprender que cada columna representa un orden distinto de agrupación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "hechos_aditivos_basicos",
+      "a": "algoritmo_sustraccion",
+      "justificacion": "No es posible ejecutar con fluidez las restas de cada columna sin disponer de los resultados básicos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "algoritmo_sustraccion",
+      "a": "sustraccion_con_canje",
+      "justificacion": "No es posible descomponer una unidad de orden superior durante la resta sin dominar el procedimiento de restar por columnas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "redondeo",
+      "a": "estimacion_calculo",
+      "justificacion": "No es posible anticipar el orden de magnitud de un resultado sin poder aproximar los números que intervienen.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "suma",
+      "a": "multiplicacion",
+      "justificacion": "No es posible concebir la cantidad repetida como una operación sin comprender la operación que compone cantidades.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "conteo_a_saltos",
+      "a": "multiplicacion",
+      "justificacion": "No es posible cuantificar grupos iguales acumulándolos sin poder recorrer la secuencia por agrupaciones regulares.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "propiedad_distributiva",
+      "justificacion": "No es posible repartir un factor sobre una suma conservando el producto sin comprender qué hace la multiplicación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "propiedad_distributiva",
+      "a": "hechos_multiplicativos",
+      "justificacion": "No es posible construir un producto desconocido a partir de productos conocidos sin comprender que el factor se reparte sobre una suma.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "particion_equitativa",
+      "a": "division",
+      "justificacion": "No es posible repartir un todo en partes iguales sin comprender qué hace equitativo un reparto.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "resta",
+      "a": "division",
+      "justificacion": "No es posible interpretar la división como sustracción repetida sin comprender qué hace la sustracción.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "reversibilidad_multiplicativa",
+      "justificacion": "No es posible reconocer que una operación deshace a la otra sin comprender la operación que repite grupos iguales.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division",
+      "a": "reversibilidad_multiplicativa",
+      "justificacion": "No es posible reconocer que una operación deshace a la otra sin comprender la operación que reparte en grupos iguales.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "reversibilidad_multiplicativa",
+      "a": "hechos_multiplicativos",
+      "justificacion": "No es posible recuperar el cociente correspondiente a un producto conocido sin comprender que ambas operaciones se deshacen mutuamente.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division",
+      "a": "division_con_resto",
+      "justificacion": "No es posible interpretar lo que sobra de un reparto sin comprender qué hace el reparto en partes iguales.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "propiedades_cero_uno",
+      "justificacion": "No es posible fundamentar el efecto de un factor nulo o unitario sin comprender qué hace la multiplicación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division",
+      "a": "propiedades_cero_uno",
+      "justificacion": "No es posible fundamentar el efecto de dividir por uno sin comprender qué hace la división.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "hechos_multiplicativos",
+      "a": "algoritmo_multiplicacion",
+      "justificacion": "No es posible ejecutar los productos parciales del procedimiento sin disponer de los productos básicos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "adicion_con_reserva",
+      "a": "algoritmo_multiplicacion",
+      "justificacion": "No es posible acumular los productos parciales sin dominar la suma con traslado entre columnas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "hechos_multiplicativos",
+      "a": "algoritmo_division",
+      "justificacion": "No es posible estimar cada cociente parcial sin disponer de los productos básicos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "sustraccion_con_canje",
+      "a": "algoritmo_division",
+      "justificacion": "No es posible obtener los restos parciales del procedimiento sin dominar la resta con canje.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "estrategia_dobles",
+      "a": "estrategia_doblar_mitad",
+      "justificacion": "No es posible doblar un factor y reducir el otro a la mitad sin disponer del doble y la mitad como recursos de cálculo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "estrategia_doblar_mitad",
+      "justificacion": "No es posible conservar el producto al alterar ambos factores sin comprender qué hace la multiplicación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "valor_posicional",
+      "a": "estrategia_multiplos_10",
+      "justificacion": "No es posible comprender que multiplicar por diez desplaza las posiciones sin comprender que la posición determina el valor.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "hechos_multiplicativos",
+      "a": "estrategia_multiplos_10",
+      "justificacion": "No es posible calcular el producto significativo antes de anexar los ceros sin disponer de los productos básicos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "factor_divisor",
+      "a": "estrategia_factorizar",
+      "justificacion": "No es posible reordenar un producto descomponiendo sus factores sin comprender qué es un factor.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "propiedad_distributiva",
+      "a": "jerarquia_operaciones",
+      "justificacion": "No es posible justificar por qué el producto se resuelve antes que la suma que lo acompaña sin comprender cómo se relacionan ambas operaciones.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division",
+      "a": "jerarquia_operaciones",
+      "justificacion": "No es posible establecer la prevalencia de la división sin comprender qué hace la división.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "hechos_multiplicativos",
+      "a": "multiplo",
+      "justificacion": "No es posible reconocer los múltiplos que un número genera sin disponer de los productos que ese número forma.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "reversibilidad_multiplicativa",
+      "a": "factor_divisor",
+      "justificacion": "No es posible reconocer que los factores de un producto lo dividen exactamente sin comprender que ambas operaciones se deshacen mutuamente.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "factor_divisor",
+      "a": "numero_primo",
+      "justificacion": "No es posible clasificar un número según cuántos divisores admite sin comprender qué es un divisor.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "particion_equitativa",
+      "a": "fraccion_parte_todo",
+      "justificacion": "No es posible que las partes tomadas sean comparables entre sí sin que el todo esté dividido en partes de igual tamaño.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "cardinalidad",
+      "a": "particion_equitativa",
+      "justificacion": "No es posible verificar que las partes de un reparto son iguales sin poder cuantificar cada parte.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "fraccion_parte_todo",
+      "a": "fraccion_parte_grupo",
+      "justificacion": "No es posible tomar una fracción de una colección sin comprender que la fracción expresa un valor relativo a un todo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "recta_numerica",
+      "a": "fraccion_en_recta",
+      "justificacion": "No es posible ubicar una fracción como posición entre los enteros sin concebir los números como posiciones sobre una línea.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "fraccion_parte_todo",
+      "a": "fraccion_en_recta",
+      "justificacion": "No es posible situar una fracción en la recta sin comprender qué cantidad designa esa fracción.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "fraccion_parte_todo",
+      "a": "comparacion_fracciones_igual_denominador",
+      "justificacion": "No es posible comparar dos fracciones del mismo todo sin comprender qué cantidad designa cada una.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_orden_numeros",
+      "a": "comparacion_fracciones_igual_denominador",
+      "justificacion": "No es posible decidir cuál fracción es mayor atendiendo al numerador sin poder comparar magnitudes numéricas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "fraccion_parte_todo",
+      "a": "comparacion_fracciones_igual_numerador",
+      "justificacion": "No es posible comprender que a más partes cada parte es menor sin comprender la relación entre las partes y el todo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "fraccion_parte_todo",
+      "a": "fraccion_equivalente",
+      "justificacion": "No es posible reconocer que dos escrituras designan la misma cantidad sin comprender qué cantidad designa una fracción.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "fraccion_equivalente",
+      "a": "amplificacion_simplificacion",
+      "justificacion": "No es posible transformar una fracción en otra que designe lo mismo sin comprender que una cantidad admite varias escrituras.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "amplificacion_simplificacion",
+      "justificacion": "No es posible multiplicar numerador y denominador por un mismo número sin comprender qué hace la multiplicación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division",
+      "a": "amplificacion_simplificacion",
+      "justificacion": "No es posible dividir numerador y denominador por un mismo número sin comprender qué hace la división.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_fracciones_igual_denominador",
+      "a": "fraccion_propia_impropia",
+      "justificacion": "No es posible advertir que el numerador iguala o supera al denominador sin poder comparar fracciones del mismo denominador.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "fraccion_propia_impropia",
+      "a": "numero_mixto",
+      "justificacion": "No es posible expresar enteros más una parte sin distinguir las fracciones que superan la unidad.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division_con_resto",
+      "a": "numero_mixto",
+      "justificacion": "No es posible convertir una fracción impropia en enteros más un sobrante sin comprender qué representa el resto de un reparto.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "fraccion_parte_todo",
+      "a": "adicion_fracciones_igual_denominador",
+      "justificacion": "No es posible juntar partes del mismo todo sin comprender qué cantidad designa cada parte.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "suma",
+      "a": "adicion_fracciones_igual_denominador",
+      "justificacion": "No es posible componer dos cantidades fraccionarias sin comprender qué hace la adición.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "adicion_fracciones_igual_denominador",
+      "a": "adicion_fracciones_distinto_denominador",
+      "justificacion": "No es posible operar fracciones reexpresadas en partes del mismo tamaño sin poder operar fracciones que ya comparten el tamaño de parte.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "amplificacion_simplificacion",
+      "a": "adicion_fracciones_distinto_denominador",
+      "justificacion": "No es posible reexpresar dos fracciones en partes del mismo tamaño sin poder transformar una fracción en otra equivalente.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "valor_posicional",
+      "a": "decimal_notacion",
+      "justificacion": "No es posible extender las posiciones hacia partes de la unidad sin comprender que la posición determina el valor.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "fraccion_parte_todo",
+      "a": "decimal_notacion",
+      "justificacion": "No es posible concebir los décimos y centésimos como partes de la unidad sin comprender la relación entre las partes y el todo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "decimal_notacion",
+      "a": "comparacion_orden_decimales",
+      "justificacion": "No es posible comparar decimales atendiendo a cada posición sin comprender qué valor aporta cada posición decimal.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_orden_numeros",
+      "a": "comparacion_orden_decimales",
+      "justificacion": "No es posible ordenar decimales por magnitud sin poder ordenar números por magnitud.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "decimal_notacion",
+      "a": "equivalencia_fraccion_decimal",
+      "justificacion": "No es posible reconocer un decimal como otra escritura de una fracción sin comprender qué cantidad designa el decimal.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "fraccion_equivalente",
+      "a": "equivalencia_fraccion_decimal",
+      "justificacion": "No es posible reexpresar una fracción como décimos o centésimos sin comprender que una cantidad admite varias escrituras fraccionarias.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "decimal_notacion",
+      "a": "adicion_decimales",
+      "justificacion": "No es posible alinear las posiciones equivalentes al operar sin comprender qué valor aporta cada posición decimal.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "algoritmo_adicion",
+      "a": "adicion_decimales",
+      "justificacion": "No es posible sumar decimales columna a columna sin dominar el procedimiento de sumar por columnas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "decimal_notacion",
+      "a": "multiplicacion_division_decimales",
+      "justificacion": "No es posible determinar la posición de la coma en el resultado sin comprender qué valor aporta cada posición decimal.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "algoritmo_multiplicacion",
+      "a": "multiplicacion_division_decimales",
+      "justificacion": "No es posible multiplicar decimales de varias cifras sin dominar el procedimiento de multiplicar numerales de varias cifras.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "estrategia_multiplos_10",
+      "a": "multiplicacion_division_decimales",
+      "justificacion": "No es posible operar decimales con múltiplos de diez sin comprender cómo el desplazamiento de posiciones afecta el resultado.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "razon",
+      "justificacion": "No es posible comparar dos cantidades multiplicativamente sin comprender qué hace la multiplicación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division",
+      "a": "razon",
+      "justificacion": "No es posible expresar cuántas veces una cantidad contiene a otra sin comprender qué hace la división.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "razon",
+      "a": "porcentaje",
+      "justificacion": "No es posible concebir el porcentaje como una comparación referida a cien sin comprender qué es una comparación multiplicativa.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "equivalencia_fraccion_decimal",
+      "a": "porcentaje",
+      "justificacion": "No es posible transitar entre las escrituras porcentual, fraccionaria y decimal sin comprender que designan la misma cantidad.",
+      "clausula": null,
+      "confianza": "hipotesis"
     }
   ]
 }

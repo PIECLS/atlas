@@ -24,7 +24,10 @@
   /* — Regiones (traducción de color_token) — */
   --region-a: #6fb1c9; /* conteo · Conteo y cardinalidad */
   --region-b: #c9a86f; /* operaciones */
-  --region-c: #b58fd6; /* fraccion */
+  --region-c: #b58fd6; /* fraccion · Fracciones */
+  --region-d: #d69289; /* numeracion · Numeración y valor posicional */
+  --region-e: #9fc58a; /* decimales */
+  --region-f: #8fa9d6; /* proporcion · Razones y porcentajes */
   --region-fallback: #7f8ca3;
 
   /* — Selección tipo árbol tecnológico — */
@@ -66,6 +69,9 @@
     --region-a: #3e91b0;
     --region-b: #b7863a;
     --region-c: #8f5fc0;
+    --region-d: #c56b5f;
+    --region-e: #6ba54e;
+    --region-f: #5a78c0;
     --sel-nodo: #e0a020;
     --sel-pre: #2fa579;
     --sel-post: #2f6fe0;

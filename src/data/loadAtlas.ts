@@ -96,7 +96,8 @@ export function construirGrafo(): Graph {
       x: n.coordenada?.x ?? 0,
       y: -(n.coordenada?.y ?? 0), // y del dataset crece hacia abajo; Sigma crece hacia arriba
       size: TAMANO_POR_ZOOM[n.nivel_zoom] ?? 7,
-      region: n.region ?? null,
+      // Guardamos el color_token (no el id de región): es lo que resuelve la paleta.
+      region: regiones.get(n.region ?? '')?.color_token ?? null,
       nivelZoom: n.nivel_zoom,
       completitud: n.completitud,
       padre: n.padre ?? null,

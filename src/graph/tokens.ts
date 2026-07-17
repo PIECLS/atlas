@@ -24,14 +24,8 @@ export function rgba({ r, g, b }: RGB, a: number): string {
   return `rgba(${r}, ${g}, ${b}, ${a.toFixed(3)})`
 }
 
-// Traducción color_token -> variable CSS. La región trae el token; aquí se resuelve.
-const TOKEN_A_VAR: Record<string, string> = {
-  'region-a': '--region-a',
-  'region-b': '--region-b',
-  'region-c': '--region-c',
-}
-
 export interface Paleta {
+  /** Resuelve un `color_token` de región (p. ej. "region-d") a su color CSS. */
   region(token: string | null | undefined): RGB
   selNodo: RGB
   selPre: RGB
@@ -41,15 +35,23 @@ export interface Paleta {
   aristaViva: RGB
 }
 
+// Solo se aceptan tokens con forma region-*, para no leer variables arbitrarias.
+const TOKEN_VALIDO = /^region-[a-z0-9]+$/
+
 // Se reconstruye al leer (y cuando cambia el esquema claro/oscuro).
 export function leerPaleta(): Paleta {
-  const regiones: Record<string, RGB> = {}
-  for (const [token, cssvar] of Object.entries(TOKEN_A_VAR)) {
-    regiones[token] = hexARgb(leerVar(cssvar))
-  }
   const fallback = hexARgb(leerVar('--region-fallback'))
+  const cache = new Map<string, RGB>()
+  const region = (token: string | null | undefined): RGB => {
+    if (!token || !TOKEN_VALIDO.test(token)) return fallback
+    if (!cache.has(token)) {
+      const valor = leerVar(`--${token}`)
+      cache.set(token, valor ? hexARgb(valor) : fallback)
+    }
+    return cache.get(token)!
+  }
   return {
-    region: (token) => (token && regiones[token]) || fallback,
+    region,
     selNodo: hexARgb(leerVar('--sel-nodo')),
     selPre: hexARgb(leerVar('--sel-pre')),
     selPost: hexARgb(leerVar('--sel-post')),

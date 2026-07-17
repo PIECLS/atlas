@@ -160,14 +160,10 @@ function PropiedadesEstructurales({ id }: { id: string }) {
 
 // Color de región resuelto desde CSS (para el punto). Sin hex en el componente.
 function colorRegion(regionId: string | null | undefined): string {
-  const reg = getRegion(regionId)
-  const token = reg?.color_token
-  const mapa: Record<string, string> = {
-    'region-a': 'var(--region-a)',
-    'region-b': 'var(--region-b)',
-    'region-c': 'var(--region-c)',
-  }
-  return (token && mapa[token]) || 'var(--region-fallback)'
+  const token = getRegion(regionId)?.color_token
+  return token && /^region-[a-z0-9]+$/.test(token)
+    ? `var(--${token})`
+    : 'var(--region-fallback)'
 }
 
 function construirPestanas(

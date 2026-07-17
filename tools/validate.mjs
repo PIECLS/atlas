@@ -181,7 +181,10 @@ export function chequeosEstructurales(atlas) {
   }
 
   // A2 (heurística ligera): la justificación no debe mencionar currículo/secuencia.
-  const prohibidas = /\b(curso|OA|primero|segundo|tercero|cuarto|unidad|clase|nivel escolar|básico)\b/i
+  // Ojo: se evitan términos matemáticos ambiguos ("unidad", ordinales de fracción)
+  // que no son curriculares; solo se marcan señales claramente escolares.
+  const prohibidas =
+    /\b(curso|OA\s*\d|MA\d|clase|nivel escolar|año escolar|de enseñanza|currículo|curricular)\b/i
   for (const e of atlas.aristas) {
     if (e.justificacion && prohibidas.test(e.justificacion))
       advertencias.push(
