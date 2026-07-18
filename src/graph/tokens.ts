@@ -30,6 +30,7 @@ export interface Paleta {
   selNodo: RGB
   selPre: RGB
   selPost: RGB
+  oa: RGB
   atenuado: RGB
   arista: RGB
   aristaViva: RGB
@@ -55,6 +56,7 @@ export function leerPaleta(): Paleta {
     selNodo: hexARgb(leerVar('--sel-nodo')),
     selPre: hexARgb(leerVar('--sel-pre')),
     selPost: hexARgb(leerVar('--sel-post')),
+    oa: hexARgb(leerVar('--oa')),
     atenuado: hexARgb(leerVar('--atenuado')),
     arista: hexARgb(leerVar('--arista')),
     aristaViva: hexARgb(leerVar('--arista-viva')),

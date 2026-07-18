@@ -1,20 +1,34 @@
 // Orquestador de la Capa 3. El mapa vive detrás; la cabecera y la vista de nodo
 // flotan encima. Navegación por estado (+ hash manual, sin router).
 
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import MapaAtlas from './graph/MapaAtlas'
 import VistaNodo from './components/VistaNodo'
 import SelectorVista from './components/SelectorVista'
-import { atlas, getNodo } from './data/loadAtlas'
+import BuscadorOA, { OARotulo } from './components/BuscadorOA'
+import { atlas, getNodo, getOA } from './data/loadAtlas'
 import { nivelCamara, PISTA_NIVEL } from './graph/zoom'
-import type { Vista } from './vistas'
+import { defVista, type Vista } from './vistas'
 
 export default function App() {
   const [vista, setVista] = useState<Vista>('profesor')
   const [seleccion, setSeleccion] = useState<string | null>(null)
   const [abierto, setAbierto] = useState<string | null>(null)
   const [foco, setFoco] = useState<{ id: string; nonce: number } | null>(null)
+  const [oaActivo, setOaActivo] = useState<string | null>(null)
   const [ratio, setRatio] = useState(1)
+
+  // Resaltado por OA y selección de nodo son estados mutuamente excluyentes.
+  const seleccionar = useCallback((id: string | null) => {
+    setSeleccion(id)
+    if (id) setOaActivo(null)
+  }, [])
+
+  const activarOA = useCallback((codigo: string) => {
+    setOaActivo(codigo)
+    setSeleccion(null)
+    setAbierto(null)
+  }, [])
 
   // Hash manual: #nodo/<id> abre la vista de nodo (deep-linkable, sin router).
   useEffect(() => {
@@ -23,6 +37,7 @@ export default function App() {
       if (m && getNodo(m[1])) {
         setAbierto(m[1])
         setSeleccion(m[1])
+        setOaActivo(null)
       } else if (!location.hash) {
         setAbierto(null)
       }
@@ -35,6 +50,7 @@ export default function App() {
   const abrir = useCallback((id: string) => {
     setAbierto(id)
     setSeleccion(id)
+    setOaActivo(null)
     history.replaceState(null, '', `#nodo/${id}`)
   }, [])
 
@@ -47,19 +63,29 @@ export default function App() {
   const irANodo = useCallback((id: string) => {
     setAbierto(null)
     setSeleccion(id)
+    setOaActivo(null)
     setFoco({ id, nonce: Date.now() })
     history.replaceState(null, '', location.pathname + location.search)
   }, [])
 
+  const oa = useMemo(() => {
+    if (!oaActivo) return null
+    const e = getOA(oaActivo)
+    return e ? { codigo: e.codigo, nodos: e.nodos } : null
+  }, [oaActivo])
+
   const nivel = nivelCamara(ratio)
+  const def = defVista(vista)
+  const mostrarBuscador = vista !== 'estudiante'
 
   return (
     <div className="app">
       <MapaAtlas
         seleccion={seleccion}
-        onSeleccion={setSeleccion}
+        onSeleccion={seleccionar}
         onAbrir={abrir}
         foco={foco}
+        oa={oa}
         onRatio={setRatio}
       />
 
@@ -70,8 +96,19 @@ export default function App() {
             {atlas.dominio.nombre} · hipótesis estructural v{atlas.atlas_version}
           </span>
         </div>
+        {mostrarBuscador && (
+          <BuscadorOA
+            oaActivo={oaActivo}
+            onSelect={activarOA}
+            onClear={() => setOaActivo(null)}
+          />
+        )}
         <SelectorVista vista={vista} onCambio={setVista} />
       </header>
+
+      {mostrarBuscador && oaActivo && (
+        <OARotulo codigo={oaActivo} mostrarDistribucion={def.muestraPropiedades} />
+      )}
 
       <div className="pista">
         <b>Nivel: {nivel}</b>

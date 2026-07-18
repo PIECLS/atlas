@@ -33,6 +33,16 @@ export function alphaNivel(nivel: number, ratio: number): number {
   }
 }
 
+// Opacidad de una arista INDUCIDA (Fase 3.5) según su nivel de agregación.
+// Aparece en su banda y se apaga cuando el nivel de abajo toma el relevo:
+//   nivel 2 (entre conceptos) vive en "medio"; se apaga en "cercano" (mandan las
+//   aristas reales) y en "lejano". nivel 1 vive en "lejano".
+export function alphaAristaInducida(nivel: number, ratio: number): number {
+  if (nivel === 2) return Math.max(0, alphaNivel(2, ratio) - alphaNivel(3, ratio))
+  if (nivel === 1) return Math.max(0, alphaNivel(1, ratio) - alphaNivel(2, ratio))
+  return 0
+}
+
 export function nivelCamara(ratio: number): NivelCamara {
   if (ratio >= T_LEJANO_MEDIO) return 'lejano'
   if (ratio >= T_MEDIO_CERCANO) return 'medio'
