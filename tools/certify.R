@@ -185,16 +185,19 @@ herramienta <- sprintf("R %s / kst %s",
   paste(R.version$major, R.version$minor, sep = "."),
   tryCatch(as.character(packageVersion("kst")), error = function(e) "n/d"))
 
-atlas$certificacion <- list(
+cert <- list(
   verificado = TRUE,
   fecha = format(as.POSIXct(Sys.time(), tz = "UTC"), "%Y-%m-%dT%H:%M:%SZ"),
   herramienta = herramienta,
   aciclico = TRUE,
   reduccion_transitiva = TRUE,
   huerfanos = as.list(huerfanos),
-  n_estados = if (is.na(n_estados)) NULL else n_estados,
   notas = "Hipótesis estructural consistente con los axiomas, verificada mecánicamente y versionada. Sin validación empírica (A8)."
 )
+# El esquema exige n_estados entero. En dominios grandes no se enumera: se OMITE
+# el campo (no se escribe null, que violaría el contrato).
+if (!is.na(n_estados)) cert$n_estados <- as.integer(n_estados)
+atlas$certificacion <- cert
 atlas$generado <- format(as.POSIXct(Sys.time(), tz = "UTC"), "%Y-%m-%dT%H:%M:%SZ")
 
 writeLines(toJSON(atlas, auto_unbox = TRUE, pretty = TRUE, null = "null"), ruta)

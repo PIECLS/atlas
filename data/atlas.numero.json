@@ -8,7 +8,6 @@
     "aciclico": true,
     "reduccion_transitiva": true,
     "huerfanos": [],
-    "n_estados": null,
     "notas": "Hipótesis estructural consistente con los axiomas, verificada mecánicamente y versionada. Sin validación empírica (A8)."
   },
   "dominio": {
