@@ -17,8 +17,8 @@
 import Graph from 'graphology'
 import betweennessCentrality from 'graphology-metrics/centrality/betweenness.js'
 
-export const R_MIN = 18
-export const R_MAX = 34
+export const R_MIN = 8
+export const R_MAX = 20
 
 /**
  * @param {{id: string, nivel_zoom: number}[]} nodos

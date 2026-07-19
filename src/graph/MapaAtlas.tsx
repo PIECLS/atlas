@@ -135,6 +135,12 @@ export default function MapaAtlas({
       labelSize: 12,
       labelWeight: '500',
       labelDensity: 1.2,
+      // Etiquetas ambiente: solo nodos grandes en pantalla (el tamaño ya viene
+      // del ICA), sin encaballarse. Los resaltados (selección/OA) se fuerzan
+      // aparte, sin pasar por este filtro. El resto queda disponible al hover
+      // (Sigma lo dibuja aparte, siempre que no se vacíe el texto del label).
+      labelRenderedSizeThreshold: 12,
+      labelGridCellSize: 60,
       defaultEdgeType: 'curve',
       edgeProgramClasses: { curve: EdgeCurveProgram },
       minCameraRatio: 0.15,
@@ -152,9 +158,21 @@ export default function MapaAtlas({
         if (grupo === 'sel') res.size = (data.size as number) * 1.3
         else if (grupo === 'oa') res.size = (data.size as number) * 1.15
         const resaltado = grupo !== 'atenuado' && grupo !== 'normal'
-        const mostrarEtiqueta = resaltado || (grupo === 'normal' && alpha > 0.5)
-        res.forceLabel = mostrarEtiqueta
-        if (!mostrarEtiqueta) res.label = ''
+        if (resaltado) {
+          // Selección/OA: la etiqueta se fuerza, sin importar el tamaño en pantalla.
+          res.forceLabel = true
+        } else if (grupo === 'atenuado') {
+          // Dimidos a propósito: nunca compiten por espacio de etiqueta ambiente.
+          // El texto se vacía (no solo forceLabel:false) porque de lo contrario
+          // seguirían siendo candidatos válidos para el sistema automático si
+          // su tamaño (ICA) superara el umbral.
+          res.forceLabel = false
+          res.label = ''
+        } else {
+          // Ambiente: decide Sigma (labelRenderedSizeThreshold + labelGridCellSize).
+          // data.label se conserva para que el hover siga funcionando siempre.
+          res.forceLabel = false
+        }
         return res
       },
 
