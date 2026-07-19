@@ -2,8 +2,15 @@
   "atlas_version": "0.3.0",
   "schema_version": "1.0.0",
   "certificacion": {
-    "verificado": false,
-    "notas": "Fusion de otros ejes (Geometria, Medicion, Datos y Probabilidades, Patrones y Algebra): +67 nodos, +72 aristas, +4 regiones. Checks estructurales JS en verde (validate.mjs); pendiente primera pasada del verificador R sobre este contenido."
+    "verificado": true,
+    "fecha": "2026-07-19T00:49:12Z",
+    "herramienta": "R 4.6.1 / kst 0.5.5",
+    "aciclico": true,
+    "reduccion_transitiva": true,
+    "huerfanos": [
+      "lectura_interpretacion_graficos"
+    ],
+    "notas": "Hipótesis estructural consistente con los axiomas, verificada mecánicamente y versionada. Sin validación empírica (A8)."
   },
   "dominio": {
     "id": "numero_basica",
@@ -5906,5 +5913,6 @@
       "clausula": null,
       "confianza": "hipotesis"
     }
-  ]
+  ],
+  "generado": "2026-07-19T00:49:12Z"
 }
