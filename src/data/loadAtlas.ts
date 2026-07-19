@@ -5,6 +5,8 @@
 import Graph from 'graphology'
 import datasetJson from '../../data/atlas.numero.json'
 import type { Atlas, Nodo, Region, Arista } from '../types/atlas'
+// @ts-expect-error — módulo .mjs sin tipos; se consume por su contrato de runtime.
+import { calcularICA } from '../../tools/ica.mjs'
 
 const atlas = datasetJson as unknown as Atlas
 
@@ -285,18 +287,39 @@ export function totalOA(): number {
   return oaIndex.size
 }
 
-// Tamaño del nodo según su nivel de zoom semántico (no según el grado).
-const TAMANO_POR_ZOOM: Record<number, number> = { 1: 18, 2: 11, 3: 7 }
+// Tamaño de los nodos de agregación (zoom 1 dominio, zoom 2 concepto): fijo,
+// no son "conocimientos" y quedan fuera del cálculo del ICA.
+const TAMANO_AGREGACION: Record<number, number> = { 1: 18, 2: 11 }
+
+// Índice de Centralidad del Atlas (tools/ica.mjs): tamaño de los nodos zoom 3
+// (microconocimientos) según su peso estructural. Puramente visual — se
+// recalcula del dataset, nunca se persiste (A5 solo aplica a x/y, no al radio).
+interface FilaICA {
+  impacto_bruto: number
+  I: number
+  B: number
+  ICA: number
+  radio: number
+}
+const icaPorId: Map<string, FilaICA> = calcularICA(atlas.nodos, atlas.aristas)
+
+export function getICA(id: string): FilaICA | undefined {
+  return icaPorId.get(id)
+}
 
 // ── Construcción del grafo de graphology (solo reducción transitiva, A6) ──
 export function construirGrafo(): Graph {
   const g = new Graph({ type: 'directed', multi: false, allowSelfLoops: false })
   for (const n of atlas.nodos) {
+    const size =
+      n.nivel_zoom === 3
+        ? (icaPorId.get(n.id)?.radio ?? 18)
+        : (TAMANO_AGREGACION[n.nivel_zoom] ?? 18)
     g.addNode(n.id, {
       label: n.nombre,
       x: n.coordenada?.x ?? 0,
       y: -(n.coordenada?.y ?? 0), // y del dataset crece hacia abajo; Sigma crece hacia arriba
-      size: TAMANO_POR_ZOOM[n.nivel_zoom] ?? 7,
+      size,
       // Guardamos el color_token (no el id de región): es lo que resuelve la paleta.
       region: regiones.get(n.region ?? '')?.color_token ?? null,
       nivelZoom: n.nivel_zoom,
