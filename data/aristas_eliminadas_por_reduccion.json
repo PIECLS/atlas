@@ -1,0 +1,89 @@
+{
+  "generado": "2026-07-19T00:43:38.510Z",
+  "nota": "Aristas descartadas del merge de otros ejes por quedar implicadas por transitividad (A6), o por juicio de dominio tras la revisión. Si una arista del camino_implicante es rechazada en la revisión A2, esta arista debería reevaluarse para reincorporación.",
+  "por_transitividad": [
+    {
+      "de": "composicion_aditiva",
+      "a": "ecuacion_formal",
+      "de_nombre": "Composición y descomposición aditiva",
+      "a_nombre": "Resolución formal de ecuaciones",
+      "justificacion_original": "No es posible aplicar la descomposición y la correspondencia término a término sin dominar la composición y descomposición aditiva.",
+      "camino_implicante": [
+        "composicion_aditiva",
+        "suma",
+        "reversibilidad_aditiva",
+        "ecuacion_un_paso",
+        "ecuacion_formal"
+      ],
+      "camino_implicante_nombres": [
+        "Composición y descomposición aditiva",
+        "Suma",
+        "Reversibilidad aditiva",
+        "Ecuación aditiva de un paso",
+        "Resolución formal de ecuaciones"
+      ]
+    },
+    {
+      "de": "figuras_2d",
+      "a": "relacion_2d_3d",
+      "de_nombre": "Figuras 2D y sus atributos",
+      "a_nombre": "Relación entre 2D y 3D",
+      "justificacion_original": "No es posible coordinar red y cuerpo sin identificar las figuras 2D que componen la red.",
+      "camino_implicante": [
+        "figuras_2d",
+        "figuras_3d",
+        "relacion_2d_3d"
+      ],
+      "camino_implicante_nombres": [
+        "Figuras 2D y sus atributos",
+        "Cuerpos geométricos y sus elementos",
+        "Relación entre 2D y 3D"
+      ]
+    },
+    {
+      "de": "correspondencia_uno_a_uno",
+      "a": "registro_conteo",
+      "de_nombre": "Correspondencia uno a uno",
+      "a_nombre": "Registro y tabla de conteo",
+      "justificacion_original": "No es posible registrar caso a caso sin correspondencia uno a uno entre casos y marcas.",
+      "camino_implicante": [
+        "correspondencia_uno_a_uno",
+        "cardinalidad",
+        "registro_conteo"
+      ],
+      "camino_implicante_nombres": [
+        "Correspondencia uno a uno",
+        "Cardinalidad",
+        "Registro y tabla de conteo"
+      ]
+    },
+    {
+      "de": "particion_equitativa",
+      "a": "promedio",
+      "de_nombre": "Partición equitativa",
+      "a_nombre": "Promedio",
+      "justificacion_original": "No es posible interpretar la media como igualar repartiendo sin la partición equitativa.",
+      "camino_implicante": [
+        "particion_equitativa",
+        "division",
+        "promedio"
+      ],
+      "camino_implicante_nombres": [
+        "Partición equitativa",
+        "División",
+        "Promedio"
+      ]
+    }
+  ],
+  "por_juicio_dominio": [
+    {
+      "de": "multiplicacion",
+      "a": "escala_grafica",
+      "de_nombre": "Multiplicación",
+      "a_nombre": "Escala en representaciones de datos",
+      "justificacion_original": "No es posible calcular la frecuencia desde símbolos que valen varios casos sin multiplicar cantidad de símbolos por su valor.",
+      "razon": "OR mal registrado como dos AND independientes: multiplicacion no es prerrequisito estricto de escala_grafica (se puede leer una escala contando a saltos sin saber multiplicar). Se conserva conteo_a_saltos→escala_grafica y se descarta esta rama.",
+      "arista_conservada_en_su_lugar": "conteo_a_saltos->escala_grafica"
+    }
+  ]
+}

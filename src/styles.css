@@ -28,6 +28,10 @@
   --region-d: #d69289; /* numeracion · Numeración y valor posicional */
   --region-e: #9fc58a; /* decimales */
   --region-f: #8fa9d6; /* proporcion · Razones y porcentajes */
+  --region-g: #e0c26e; /* patrones_algebra · Patrones y Álgebra */
+  --region-h: #7fc4a8; /* geometria */
+  --region-i: #d68fb0; /* medicion */
+  --region-j: #9a9fd6; /* datos_probabilidades */
   --region-fallback: #7f8ca3;
 
   /* — Selección tipo árbol tecnológico — */
@@ -73,6 +77,10 @@
     --region-d: #c56b5f;
     --region-e: #6ba54e;
     --region-f: #5a78c0;
+    --region-g: #b8901f;
+    --region-h: #2f9a76;
+    --region-i: #b84d80;
+    --region-j: #5a5fb8;
     --sel-nodo: #e0a020;
     --sel-pre: #2fa579;
     --sel-post: #2f6fe0;

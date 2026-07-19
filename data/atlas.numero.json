@@ -1,14 +1,9 @@
 {
-  "atlas_version": "0.2.0",
+  "atlas_version": "0.3.0",
   "schema_version": "1.0.0",
   "certificacion": {
-    "verificado": true,
-    "fecha": "2026-07-18T02:54:06Z",
-    "herramienta": "R 4.6.1 / kst 0.5.5",
-    "aciclico": true,
-    "reduccion_transitiva": true,
-    "huerfanos": [],
-    "notas": "Hipótesis estructural consistente con los axiomas, verificada mecánicamente y versionada. Sin validación empírica (A8)."
+    "verificado": false,
+    "notas": "Fusion de otros ejes (Geometria, Medicion, Datos y Probabilidades, Patrones y Algebra): +67 nodos, +72 aristas, +4 regiones. Checks estructurales JS en verde (validate.mjs); pendiente primera pasada del verificador R sobre este contenido."
   },
   "dominio": {
     "id": "numero_basica",
@@ -52,6 +47,30 @@
       "nombre": "Razones y porcentajes",
       "orden_x": 5,
       "color_token": "region-f"
+    },
+    {
+      "id": "patrones_algebra",
+      "nombre": "Patrones y Álgebra",
+      "orden_x": 6,
+      "color_token": "region-g"
+    },
+    {
+      "id": "geometria",
+      "nombre": "Geometría",
+      "orden_x": 7,
+      "color_token": "region-h"
+    },
+    {
+      "id": "medicion",
+      "nombre": "Medición",
+      "orden_x": 8,
+      "color_token": "region-i"
+    },
+    {
+      "id": "datos_probabilidades",
+      "nombre": "Datos y Probabilidades",
+      "orden_x": 9,
+      "color_token": "region-j"
     }
   ],
   "nodos": [
@@ -2690,6 +2709,1954 @@
         "y": 960,
         "fijada_a_mano": false
       }
+    },
+    {
+      "id": "patrones_algebra_c",
+      "nombre": "Patrones y Álgebra",
+      "nivel_zoom": 2,
+      "padre": null,
+      "region": "patrones_algebra",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 5400,
+        "y": -260,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "geometria_c",
+      "nombre": "Geometría",
+      "nivel_zoom": 2,
+      "padre": null,
+      "region": "geometria",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 6300,
+        "y": -260,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "medicion_c",
+      "nombre": "Medición",
+      "nivel_zoom": 2,
+      "padre": null,
+      "region": "medicion",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 7200,
+        "y": -260,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "datos_probabilidades_c",
+      "nombre": "Datos y Probabilidades",
+      "nivel_zoom": 2,
+      "padre": null,
+      "region": "datos_probabilidades",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 8100,
+        "y": -260,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "patron_repeticion",
+      "nombre": "Patrón de repetición",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Identificar el núcleo que se repite en una secuencia (sonidos, figuras, ritmos) y usarlo para continuar, completar y crear la secuencia.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 11",
+            "curso": "1B",
+            "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA02 OA 12",
+            "curso": "2B",
+            "eje": "Patrones y Álgebra"
+          }
+        ],
+        "bibliografia": [
+          "Clements & Sarama (2009)"
+        ]
+      },
+      "coordenada": {
+        "x": 5352,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "patron_numerico",
+      "nombre": "Patrón numérico",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Reconocer la regularidad aditiva constante de una secuencia numérica (crece o decrece siempre en la misma cantidad) y usarla para continuarla o completarla.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 11",
+            "curso": "1B",
+            "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA02 OA 12",
+            "curso": "2B",
+            "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA03 OA 12",
+            "curso": "3B",
+            "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA04 OA 13",
+            "curso": "4B",
+            "eje": "Patrones y Álgebra"
+          }
+        ],
+        "bibliografia": [
+          "Clements & Sarama (2009)"
+        ]
+      },
+      "coordenada": {
+        "x": 5400,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "igualdad_relacional",
+      "nombre": "La igualdad como equivalencia",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender el signo = como afirmación de que dos lados son la misma cantidad (equilibrio), y no como orden de calcular un resultado; su negación se registra con > y < como desequilibrio orientado.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 12",
+            "curso": "1B",
+            "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA02 OA 13",
+            "curso": "2B",
+            "eje": "Patrones y Álgebra"
+          }
+        ],
+        "bibliografia": [
+          "Falkner, Levi & Carpenter (1999); Carpenter, Franke & Levi (2003)"
+        ]
+      },
+      "coordenada": {
+        "x": 5400,
+        "y": 360,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "simbolo_incognita",
+      "nombre": "El símbolo como incógnita",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que un símbolo (figura o letra) puede representar un número desconocido pero determinado, que conserva su valor dentro de la igualdad.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 13",
+            "curso": "3B",
+            "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA06 OA 10",
+            "curso": "6B",
+            "eje": "Patrones y Álgebra"
+          }
+        ],
+        "bibliografia": [
+          "Kaput (2008)"
+        ]
+      },
+      "coordenada": {
+        "x": 5448,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "ecuacion_un_paso",
+      "nombre": "Ecuación aditiva de un paso",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Encontrar el valor desconocido de una igualdad aditiva (a + □ = b; □ − a = b), comprendiendo que la solución restaura el equilibrio.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 13",
+            "curso": "3B",
+            "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA04 OA 14",
+            "curso": "4B",
+            "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA05 OA 15",
+            "curso": "5B",
+            "eje": "Patrones y Álgebra"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 5400,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "inecuacion_un_paso",
+      "nombre": "Inecuación de un paso",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Determinar los valores que mantienen una desigualdad aditiva, comprendiendo que la solución no es única sino un conjunto.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 14",
+            "curso": "4B",
+            "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA05 OA 15",
+            "curso": "5B",
+            "eje": "Patrones y Álgebra"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 5400,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "regla_formacion",
+      "nombre": "Regla de formación de una sucesión",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Explicitar la regla que genera una sucesión y usarla para predecir términos no visibles sin extender término a término.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 14",
+            "curso": "5B",
+            "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA06 OA 09",
+            "curso": "6B",
+            "eje": "Patrones y Álgebra"
+          }
+        ],
+        "bibliografia": [
+          "Blanton & Kaput (2005)"
+        ]
+      },
+      "coordenada": {
+        "x": 5496,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "relacion_funcional",
+      "nombre": "Relación funcional en tablas",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender una tabla de valores como correspondencia regular entrada→salida gobernada por una operación, aplicable a cualquier par de la tabla.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 13",
+            "curso": "4B",
+            "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA06 OA 09",
+            "curso": "6B",
+            "eje": "Patrones y Álgebra"
+          }
+        ],
+        "bibliografia": [
+          "Blanton & Kaput (2005)"
+        ]
+      },
+      "coordenada": {
+        "x": 5304,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "lenguaje_algebraico",
+      "nombre": "Expresiones con letras",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Representar una relación general entre números mediante expresiones con letras, donde la letra funciona como número generalizado.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 10",
+            "curso": "6B",
+            "eje": "Patrones y Álgebra"
+          }
+        ],
+        "bibliografia": [
+          "Kaput (2008)"
+        ]
+      },
+      "coordenada": {
+        "x": 5448,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "ecuacion_formal",
+      "nombre": "Resolución formal de ecuaciones",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Resolver ecuaciones de primer grado operando sobre ambos lados de la igualdad para conservar el equilibrio (procedimientos formales, modelo de balanza).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 11",
+            "curso": "6B",
+            "eje": "Patrones y Álgebra"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 5352,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "distincion_recta_curva",
+      "nombre": "Línea recta y curva",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Distinguir y trazar líneas rectas y curvas como primer atributo que diferencia contornos de figuras.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 15",
+            "curso": "1B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6108,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "posicion_relativa",
+      "nombre": "Posición y lenguaje espacial",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Describir la posición de objetos y personas respecto de un punto de referencia, usando el marco corporal (derecha-izquierda, delante-detrás, arriba-abajo).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 13",
+            "curso": "1B",
+            "eje": "Geometría"
+          },
+          {
+            "codigo": "MA02 OA 14",
+            "curso": "2B",
+            "eje": "Geometría"
+          }
+        ],
+        "bibliografia": [
+          "Clements & Sarama (2009)"
+        ]
+      },
+      "coordenada": {
+        "x": 6204,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "figuras_2d",
+      "nombre": "Figuras 2D y sus atributos",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Reconocer y comparar figuras 2D por sus atributos definitorios (lados, vértices, curvatura) y no solo por su apariencia global u orientación.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 14",
+            "curso": "1B",
+            "eje": "Geometría"
+          },
+          {
+            "codigo": "MA02 OA 15",
+            "curso": "2B",
+            "eje": "Geometría"
+          }
+        ],
+        "bibliografia": [
+          "Van Hiele (1986); Clements & Battista (1992)"
+        ]
+      },
+      "coordenada": {
+        "x": 6108,
+        "y": 120,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "figuras_3d",
+      "nombre": "Cuerpos geométricos y sus elementos",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Reconocer y describir cuerpos geométricos según la forma de sus caras y el número de caras, aristas y vértices.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 14",
+            "curso": "1B",
+            "eje": "Geometría"
+          },
+          {
+            "codigo": "MA02 OA 16",
+            "curso": "2B",
+            "eje": "Geometría"
+          },
+          {
+            "codigo": "MA03 OA 16",
+            "curso": "3B",
+            "eje": "Geometría"
+          }
+        ],
+        "bibliografia": [
+          "Van Hiele (1986)"
+        ]
+      },
+      "coordenada": {
+        "x": 6300,
+        "y": 240,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "relacion_2d_3d",
+      "nombre": "Relación entre 2D y 3D",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que las superficies de un cuerpo son figuras 2D: anticipar la red que arma un cuerpo y el cuerpo que resulta de una red.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 14",
+            "curso": "1B",
+            "eje": "Geometría"
+          },
+          {
+            "codigo": "MA03 OA 15",
+            "curso": "3B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6396,
+        "y": 360,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "vistas_3d",
+      "nombre": "Vistas de cuerpos",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Anticipar cómo se ve un cuerpo desde el frente, el lado y arriba, comprendiendo cada vista como proyección 2D del mismo cuerpo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 16",
+            "curso": "4B",
+            "eje": "Geometría"
+          }
+        ],
+        "bibliografia": [
+          "Clements & Sarama (2009)"
+        ]
+      },
+      "coordenada": {
+        "x": 6204,
+        "y": 360,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "cuadricula_mapa",
+      "nombre": "Localización en cuadrícula",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Localizar objetos en mapas o cuadrículas mediante coordenadas informales (letra-número), coordinando dos referencias simultáneas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 14",
+            "curso": "3B",
+            "eje": "Geometría"
+          },
+          {
+            "codigo": "MA04 OA 15",
+            "curso": "4B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6204,
+        "y": 120,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "plano_cartesiano",
+      "nombre": "Plano cartesiano (primer cuadrante)",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Ubicar puntos mediante pares ordenados sobre dos rectas numéricas perpendiculares, comprendiendo que el orden del par no es intercambiable.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 16",
+            "curso": "5B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6300,
+        "y": 960,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "angulo_concepto",
+      "nombre": "El ángulo",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender el ángulo como abertura entre dos rayos o cantidad de giro, independiente del largo de sus lados, usando 90° y 45° como referentes.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 18",
+            "curso": "3B",
+            "eje": "Geometría"
+          }
+        ],
+        "bibliografia": [
+          "Mitchelmore & White (2000)"
+        ]
+      },
+      "coordenada": {
+        "x": 6396,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "medicion_angulos",
+      "nombre": "Medición y construcción de ángulos",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Medir y construir ángulos en grados con transportador, comprendiendo el grado como unidad angular que se itera; clasificar ángulos respecto de 90° y 180° (agudo, recto, obtuso, extendido, completo).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 19",
+            "curso": "4B",
+            "eje": "Geometría"
+          },
+          {
+            "codigo": "MA06 OA 15",
+            "curso": "6B",
+            "eje": "Geometría"
+          },
+          {
+            "codigo": "MA06 OA 20",
+            "curso": "6B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6300,
+        "y": 360,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "paralelas_perpendiculares",
+      "nombre": "Paralelismo y perpendicularidad",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Identificar pares de rectas, lados o caras que son paralelos, que se intersectan o que son perpendiculares.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 17",
+            "curso": "5B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6300,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "angulos_entre_rectas",
+      "nombre": "Ángulos entre rectas",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender las relaciones entre ángulos formados por rectas que se cortan (opuestos por el vértice, complementarios) y por paralelas cortadas por una transversal.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 16",
+            "curso": "6B",
+            "eje": "Geometría"
+          },
+          {
+            "codigo": "MA06 OA 21",
+            "curso": "6B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6252,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "suma_angulos_interiores",
+      "nombre": "Ángulos interiores de polígonos",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que los ángulos interiores de un triángulo suman 180° y los de un cuadrilátero 360°, y usarlo para calcular ángulos faltantes.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 17",
+            "curso": "6B",
+            "eje": "Geometría"
+          },
+          {
+            "codigo": "MA06 OA 21",
+            "curso": "6B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6348,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "transformaciones_isometricas",
+      "nombre": "Transformaciones isométricas",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Reconocer y aplicar traslaciones, reflexiones y rotaciones como movimientos que cambian posición u orientación sin cambiar forma ni tamaño.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 17",
+            "curso": "3B",
+            "eje": "Geometría"
+          },
+          {
+            "codigo": "MA04 OA 18",
+            "curso": "4B",
+            "eje": "Geometría"
+          }
+        ],
+        "bibliografia": [
+          "Clements & Battista (1992)"
+        ]
+      },
+      "coordenada": {
+        "x": 6492,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "simetria_axial",
+      "nombre": "Simetría axial",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender la línea de simetría como eje que refleja una mitad de la figura sobre la otra; identificar, crear y trazar ejes de simetría.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 17",
+            "curso": "4B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6396,
+        "y": 120,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "congruencia",
+      "nombre": "Congruencia",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que dos figuras son congruentes si una isometría lleva exactamente una sobre la otra.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 18",
+            "curso": "5B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6300,
+        "y": 120,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "teselado",
+      "nombre": "Teselación",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Cubrir el plano con figuras mediante isometrías, sin huecos ni superposiciones.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 14",
+            "curso": "6B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6492,
+        "y": 120,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "construccion_triangulos",
+      "nombre": "Construcción y clasificación de triángulos",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Construir triángulos a partir de medidas de lados y/o ángulos con instrumentos, y clasificarlos según esas medidas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 12",
+            "curso": "6B",
+            "eje": "Geometría"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 6300,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "comparacion_directa_magnitudes",
+      "nombre": "Comparación directa de magnitudes",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comparar dos objetos o eventos en una magnitud (largo, peso, duración) por percepción o superposición directa, sin unidades.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 16",
+            "curso": "1B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA01 OA 18",
+            "curso": "1B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA03 OA 22",
+            "curso": "3B",
+            "eje": "Medición"
+          }
+        ],
+        "bibliografia": [
+          "Piaget, Inhelder & Szeminska (1960)"
+        ]
+      },
+      "coordenada": {
+        "x": 7152,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "iteracion_unidad",
+      "nombre": "La unidad que se itera",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que medir es cubrir la magnitud repitiendo una misma unidad, sin huecos ni superposiciones, y que la medida es el conteo de esas iteraciones.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 16",
+            "curso": "1B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA02 OA 19",
+            "curso": "2B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA04 OA 24",
+            "curso": "4B",
+            "eje": "Medición"
+          }
+        ],
+        "bibliografia": [
+          "Lehrer (2003)"
+        ]
+      },
+      "coordenada": {
+        "x": 7200,
+        "y": 240,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "unidad_estandarizada",
+      "nombre": "Unidad estandarizada",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender la necesidad de unidades convencionales compartidas (cm, m, g, kg) para comunicar y comparar mediciones entre personas y contextos.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 19",
+            "curso": "2B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA03 OA 22",
+            "curso": "3B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA05 OA 19",
+            "curso": "5B",
+            "eje": "Medición"
+          }
+        ],
+        "bibliografia": [
+          "Lehrer (2003)"
+        ]
+      },
+      "coordenada": {
+        "x": 7104,
+        "y": 360,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "medicion_longitud",
+      "nombre": "Medición de longitud con instrumentos",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Medir longitudes con regla o huincha en m, cm y mm, alineando el cero y leyendo la escala como conteo de unidades acumuladas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 19",
+            "curso": "2B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA04 OA 22",
+            "curso": "4B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA05 OA 19",
+            "curso": "5B",
+            "eje": "Medición"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 7152,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "medicion_peso",
+      "nombre": "Medición de peso",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comparar, estimar y medir el peso de objetos en gramos y kilogramos, comprendiendo la relación entre ambas unidades.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 22",
+            "curso": "3B",
+            "eje": "Medición"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 7344,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estimacion_medidas",
+      "nombre": "Estimación de medidas",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Anticipar la medida aproximada de una magnitud usando referentes internalizados (un metro, un kilo, 90°) antes o en lugar de medir.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 18",
+            "curso": "3B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA03 OA 22",
+            "curso": "3B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA06 OA 20",
+            "curso": "6B",
+            "eje": "Medición"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 7248,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "conversion_unidades",
+      "nombre": "Conversión entre unidades",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Re-expresar una medición en otra unidad mediante la relación multiplicativa fija entre unidades (1 m = 100 cm; 1 h = 60 min), conservando la magnitud.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 21",
+            "curso": "4B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA04 OA 22",
+            "curso": "4B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA05 OA 20",
+            "curso": "5B",
+            "eje": "Medición"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 7104,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "secuencia_temporal",
+      "nombre": "Estructura del tiempo social",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Ordenar eventos con las estructuras cíclicas del calendario (días, semanas, meses, fechas) y leer líneas de tiempo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 17",
+            "curso": "1B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA02 OA 17",
+            "curso": "2B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA03 OA 19",
+            "curso": "3B",
+            "eje": "Medición"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 7248,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "lectura_reloj",
+      "nombre": "Lectura del reloj",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Leer y registrar la hora en relojes análogos y digitales (horas, medias, cuartos, minutos; A.M./P.M. y formato 24 h), coordinando las dos escalas de la esfera.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 18",
+            "curso": "2B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA03 OA 20",
+            "curso": "3B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA04 OA 20",
+            "curso": "4B",
+            "eje": "Medición"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 7056,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "perimetro",
+      "nombre": "Perímetro",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender el perímetro como la longitud total del contorno de una figura, obtenida al sumar las longitudes de sus lados.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 21",
+            "curso": "3B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA05 OA 21",
+            "curso": "5B",
+            "eje": "Medición"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 7200,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "area_recubrimiento",
+      "nombre": "Área como recubrimiento",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender el área como la cantidad de unidades cuadradas que cubren una superficie sin huecos ni superposiciones.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 23",
+            "curso": "4B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA05 OA 22",
+            "curso": "5B",
+            "eje": "Medición"
+          }
+        ],
+        "bibliografia": [
+          "Outhred & Mitchelmore (2000)"
+        ]
+      },
+      "coordenada": {
+        "x": 7200,
+        "y": 360,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "estructura_arreglo_area",
+      "nombre": "Área del rectángulo como arreglo",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender el rectángulo cuadriculado como arreglo de filas y columnas iguales, lo que condensa el conteo de cuadrados en una multiplicación (largo × ancho).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 23",
+            "curso": "4B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA05 OA 21",
+            "curso": "5B",
+            "eje": "Medición"
+          }
+        ],
+        "bibliografia": [
+          "Outhred & Mitchelmore (2000)"
+        ]
+      },
+      "coordenada": {
+        "x": 7296,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "relacion_perimetro_area",
+      "nombre": "Independencia entre perímetro y área",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que figuras con igual área pueden tener distinto perímetro y viceversa: las dos magnitudes no covarían.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 23",
+            "curso": "4B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA05 OA 21",
+            "curso": "5B",
+            "eje": "Medición"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 7248,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "areas_derivadas",
+      "nombre": "Áreas por composición y transformación",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Obtener el área de triángulos, paralelogramos y trapecios transformándolos o comparándolos con rectángulos de igual área (cortar, trasladar, completar).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 22",
+            "curso": "5B",
+            "eje": "Medición"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 7152,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "superficie_cuerpos",
+      "nombre": "Área de superficie de cuerpos",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Calcular la superficie total de cubos y paralelepípedos como suma de las áreas de las caras de su red.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 13",
+            "curso": "6B",
+            "eje": "Medición"
+          },
+          {
+            "codigo": "MA06 OA 18",
+            "curso": "6B",
+            "eje": "Medición"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 7056,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "volumen_unidades_cubicas",
+      "nombre": "Volumen como conteo de cubos",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender el volumen como la cantidad de unidades cúbicas que llenan un cuerpo sin huecos.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 24",
+            "curso": "4B",
+            "eje": "Medición"
+          }
+        ],
+        "bibliografia": [
+          "Battista & Clements (1996)"
+        ]
+      },
+      "coordenada": {
+        "x": 7296,
+        "y": 360,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "volumen_paralelepipedo",
+      "nombre": "Volumen del paralelepípedo",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Estructurar el cuerpo en capas de cubos iguales, condensando el llenado en una multiplicación (largo × ancho × alto), en cm³, m³ y mm³.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 19",
+            "curso": "6B",
+            "eje": "Medición"
+          }
+        ],
+        "bibliografia": [
+          "Battista & Clements (1996)"
+        ]
+      },
+      "coordenada": {
+        "x": 7344,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "pregunta_estadistica",
+      "nombre": "La pregunta estadística",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que los datos se recolectan para responder una pregunta, y que la pregunta define qué registrar y a quién.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 19",
+            "curso": "1B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA02 OA 20",
+            "curso": "2B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA03 OA 23",
+            "curso": "3B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA04 OA 25",
+            "curso": "4B",
+            "eje": "Datos y Probabilidades"
+          }
+        ],
+        "bibliografia": [
+          "Konold & Higgins (2003)"
+        ]
+      },
+      "coordenada": {
+        "x": 8148,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "registro_conteo",
+      "nombre": "Registro y tabla de conteo",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Registrar cada caso observado con una marca y organizar las marcas en tablas de conteo, conservando la correspondencia caso-marca.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 19",
+            "curso": "1B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA02 OA 20",
+            "curso": "2B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA02 OA 21",
+            "curso": "2B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA03 OA 23",
+            "curso": "3B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA03 OA 24",
+            "curso": "3B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA04 OA 26",
+            "curso": "4B",
+            "eje": "Datos y Probabilidades"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 8100,
+        "y": 240,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "pictograma",
+      "nombre": "Pictograma",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Construir y leer pictogramas donde cada símbolo representa un caso.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA01 OA 20",
+            "curso": "1B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA02 OA 22",
+            "curso": "2B",
+            "eje": "Datos y Probabilidades"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 8004,
+        "y": 120,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "escala_grafica",
+      "nombre": "Escala en representaciones de datos",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que un símbolo o una división del eje puede valer más de un caso, y que leer el gráfico exige contar a saltos o multiplicar según esa escala.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 22",
+            "curso": "2B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA03 OA 25",
+            "curso": "3B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA04 OA 27",
+            "curso": "4B",
+            "eje": "Datos y Probabilidades"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 8148,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "grafico_barras",
+      "nombre": "Gráfico de barras",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Construir y leer gráficos de barra (simple y doble), donde la altura de cada barra representa la frecuencia de una categoría sobre un eje graduado.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 21",
+            "curso": "2B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA02 OA 22",
+            "curso": "2B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA03 OA 23",
+            "curso": "3B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA03 OA 25",
+            "curso": "3B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA04 OA 26",
+            "curso": "4B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA04 OA 27",
+            "curso": "4B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA05 OA 26",
+            "curso": "5B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA06 OA 24",
+            "curso": "6B",
+            "eje": "Datos y Probabilidades"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 8052,
+        "y": 960,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "grafico_lineas",
+      "nombre": "Gráfico de líneas",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Leer y completar gráficos de líneas que muestran el cambio de una cantidad en el tiempo, interpretando la inclinación como aumento o disminución.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 26",
+            "curso": "5B",
+            "eje": "Datos y Probabilidades"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 8100,
+        "y": 120,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "grafico_circular",
+      "nombre": "Gráfico circular",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Leer gráficos circulares comprendiendo que cada sector representa la parte del total que corresponde a una categoría.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 24",
+            "curso": "6B",
+            "eje": "Datos y Probabilidades"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 8052,
+        "y": 480,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "diagrama_puntos",
+      "nombre": "Diagrama de puntos",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Representar cada dato como un punto apilado sobre una recta graduada, de modo que la forma del apilamiento muestra la distribución.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 26",
+            "curso": "3B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA06 OA 22",
+            "curso": "6B",
+            "eje": "Datos y Probabilidades"
+          }
+        ],
+        "bibliografia": [
+          "Konold & Higgins (2003)"
+        ]
+      },
+      "coordenada": {
+        "x": 8148,
+        "y": 960,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "tallo_hojas",
+      "nombre": "Diagrama de tallo y hojas",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Organizar datos numéricos separando cada valor en tallo (decenas) y hoja (unidades), de modo que la tabla misma muestre la distribución conservando cada dato.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 27",
+            "curso": "5B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA06 OA 22",
+            "curso": "6B",
+            "eje": "Datos y Probabilidades"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 8100,
+        "y": 720,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "lectura_interpretacion_graficos",
+      "nombre": "Interpretación de representaciones de datos",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Extraer información de tablas y gráficos en tres niveles: leer los datos, leer entre los datos (comparar, operar) y leer más allá de los datos (concluir, proyectar).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 25",
+            "curso": "3B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA04 OA 25",
+            "curso": "4B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA04 OA 27",
+            "curso": "4B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA05 OA 26",
+            "curso": "5B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA06 OA 24",
+            "curso": "6B",
+            "eje": "Datos y Probabilidades"
+          }
+        ],
+        "bibliografia": [
+          "Curcio (1987)"
+        ]
+      },
+      "coordenada": {
+        "x": 7956,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "extremos_punto_medio",
+      "nombre": "Mínimo, máximo y punto medio",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Identificar el menor y el mayor valor de un conjunto de datos y estimar el punto medio entre ambos.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA03 OA 24",
+            "curso": "3B",
+            "eje": "Datos y Probabilidades"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 8100,
+        "y": 840,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "promedio",
+      "nombre": "Promedio",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender la media aritmética como el valor que igualaría todos los datos si el total se repartiera en partes iguales, e interpretarla en su contexto.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 23",
+            "curso": "5B",
+            "eje": "Datos y Probabilidades"
+          }
+        ],
+        "bibliografia": [
+          "Mokros & Russell (1995)"
+        ]
+      },
+      "coordenada": {
+        "x": 8100,
+        "y": 600,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "nocion_muestra",
+      "nombre": "Noción de muestra",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que los datos provienen de una muestra de casos, y que muestras distintas del mismo fenómeno pueden dar resultados distintos.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA04 OA 25",
+            "curso": "4B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA05 OA 27",
+            "curso": "5B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA06 OA 22",
+            "curso": "6B",
+            "eje": "Datos y Probabilidades"
+          }
+        ],
+        "bibliografia": [
+          "Watson (2006)"
+        ]
+      },
+      "coordenada": {
+        "x": 8052,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "comparacion_distribuciones",
+      "nombre": "Comparación de distribuciones",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comparar dos grupos de datos mirando sus distribuciones completas (forma, centro, extremos) y no solo casos individuales.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 22",
+            "curso": "6B",
+            "eje": "Datos y Probabilidades"
+          }
+        ],
+        "bibliografia": [
+          "Konold & Higgins (2003); Watson (2006)"
+        ]
+      },
+      "coordenada": {
+        "x": 8100,
+        "y": 1080,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "experimento_aleatorio",
+      "nombre": "El experimento aleatorio",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Comprender que hay experimentos (dados, monedas) cuyo resultado individual es impredecible aunque el conjunto de resultados posibles sea conocido.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA02 OA 20",
+            "curso": "2B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA02 OA 21",
+            "curso": "2B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA03 OA 24",
+            "curso": "3B",
+            "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA04 OA 26",
+            "curso": "4B",
+            "eje": "Datos y Probabilidades"
+          }
+        ],
+        "bibliografia": [
+          "Piaget & Inhelder (1975); Fischbein (1975)"
+        ]
+      },
+      "coordenada": {
+        "x": 8244,
+        "y": 0,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "lenguaje_probabilistico",
+      "nombre": "Lenguaje de probabilidad",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Graduar la posibilidad de ocurrencia de un evento con los términos seguro, posible, poco posible e imposible.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 24",
+            "curso": "5B",
+            "eje": "Datos y Probabilidades"
+          }
+        ]
+      },
+      "coordenada": {
+        "x": 8196,
+        "y": 120,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "comparacion_probabilidades",
+      "nombre": "Comparación cualitativa de probabilidades",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Ordenar eventos por su probabilidad sin calcularla, razonando sobre la proporción de casos favorables.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA05 OA 25",
+            "curso": "5B",
+            "eje": "Datos y Probabilidades"
+          }
+        ],
+        "bibliografia": [
+          "Fischbein (1975)"
+        ]
+      },
+      "coordenada": {
+        "x": 8052,
+        "y": 360,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "tendencia_frecuencial",
+      "nombre": "Tendencia de frecuencias",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "metadatos": {
+        "definicion": "Conjeturar la tendencia que estabilizan las frecuencias al repetir muchas veces un experimento aleatorio (intuición frecuencial de la probabilidad).",
+        "oa_relacionados": [
+          {
+            "codigo": "MA06 OA 23",
+            "curso": "6B",
+            "eje": "Datos y Probabilidades"
+          }
+        ],
+        "bibliografia": [
+          "Fischbein (1975)"
+        ]
+      },
+      "coordenada": {
+        "x": 8148,
+        "y": 360,
+        "fijada_a_mano": false
+      }
     }
   ],
   "aristas": [
@@ -3434,7 +5401,510 @@
       "justificacion": "No es posible transitar entre las escrituras porcentual, fraccionaria y decimal sin comprender que designan la misma cantidad.",
       "clausula": null,
       "confianza": "hipotesis"
+    },
+    {
+      "de": "conteo_a_saltos",
+      "a": "patron_numerico",
+      "justificacion": "No es posible continuar un patrón numérico de salto constante sin poder contar a saltos desde cualquier término.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "patron_repeticion",
+      "a": "patron_numerico",
+      "justificacion": "No es posible tratar una secuencia numérica como patrón sin la noción previa de una regularidad que se repite.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_colecciones",
+      "a": "igualdad_relacional",
+      "justificacion": "No es posible juzgar el equilibrio o desequilibrio de la balanza sin comparar las dos cantidades que se contrastan.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "igualdad_relacional",
+      "a": "ecuacion_un_paso",
+      "justificacion": "No es posible restaurar una igualdad con un término desconocido si el signo igual se lee como orden de calcular y no como equilibrio.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "simbolo_incognita",
+      "a": "ecuacion_un_paso",
+      "justificacion": "No es posible resolver para un símbolo que no se comprende como número desconocido de valor fijo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "reversibilidad_aditiva",
+      "a": "ecuacion_un_paso",
+      "justificacion": "No es posible despejar el término desconocido de una igualdad aditiva sin la relación inversa entre adición y sustracción.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_orden_numeros",
+      "a": "inecuacion_un_paso",
+      "justificacion": "No es posible decidir qué valores mantienen una desigualdad sin dominar el orden de los números.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "simbolo_incognita",
+      "a": "inecuacion_un_paso",
+      "justificacion": "No es posible tratar el conjunto de valores admisibles sin un símbolo que representa lo desconocido.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "patron_numerico",
+      "a": "regla_formacion",
+      "justificacion": "No es posible explicitar la regla de una sucesión sin reconocer primero la regularidad que la sucesión exhibe.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "relacion_funcional",
+      "justificacion": "No es posible identificar la operación que liga cada entrada con su salida sin dominar la operación involucrada.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "regla_formacion",
+      "a": "lenguaje_algebraico",
+      "justificacion": "No es posible escribir con letras una relación general que todavía no se ha explicitado como regla.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "simbolo_incognita",
+      "a": "lenguaje_algebraico",
+      "justificacion": "No es posible usar la letra como número generalizado sin la comprensión previa del símbolo que representa un número.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "ecuacion_un_paso",
+      "a": "ecuacion_formal",
+      "justificacion": "No es posible operar sobre ambos lados para conservar el equilibrio sin la experiencia de restaurar igualdades de un paso.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "distincion_recta_curva",
+      "a": "figuras_2d",
+      "justificacion": "No es posible describir figuras por atributos sin discriminar el atributo básico del contorno: recto o curvo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "figuras_2d",
+      "a": "figuras_3d",
+      "justificacion": "No es posible describir un cuerpo por la forma de sus caras sin reconocer las figuras 2D que son esas caras.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "figuras_3d",
+      "a": "relacion_2d_3d",
+      "justificacion": "No es posible anticipar qué cuerpo arma una red sin conocer la estructura de caras del cuerpo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "figuras_3d",
+      "a": "vistas_3d",
+      "justificacion": "No es posible anticipar las vistas de un cuerpo cuya estructura de caras no se conoce.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "posicion_relativa",
+      "a": "cuadricula_mapa",
+      "justificacion": "No es posible localizar en cuadrículas sin el lenguaje de posición relativa que esas coordenadas formalizan.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "cuadricula_mapa",
+      "a": "plano_cartesiano",
+      "justificacion": "No es posible manejar pares ordenados sin la experiencia previa de coordinar dos referencias de localización.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "recta_numerica",
+      "a": "plano_cartesiano",
+      "justificacion": "No es posible ubicar puntos por coordenadas numéricas sin comprender cada eje como una recta numérica.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "angulo_concepto",
+      "a": "medicion_angulos",
+      "justificacion": "No es posible medir en grados una abertura que no se concibe como magnitud independiente del largo de los lados.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "iteracion_unidad",
+      "a": "medicion_angulos",
+      "justificacion": "No es posible usar el grado como unidad sin comprender que medir es iterar una unidad.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "medicion_angulos",
+      "a": "angulos_entre_rectas",
+      "justificacion": "No es posible establecer que dos ángulos suman 90° o 180° sin cuantificar ángulos en grados.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "paralelas_perpendiculares",
+      "a": "angulos_entre_rectas",
+      "justificacion": "No es posible razonar sobre ángulos entre paralelas cortadas por una transversal sin identificar el paralelismo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "medicion_angulos",
+      "a": "suma_angulos_interiores",
+      "justificacion": "No es posible establecer que los ángulos interiores suman 180° sin medir o componer ángulos en grados.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "transformaciones_isometricas",
+      "a": "congruencia",
+      "justificacion": "No es posible fundar la congruencia en superponer una figura sobre otra sin los movimientos que realizan esa superposición.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "transformaciones_isometricas",
+      "a": "teselado",
+      "justificacion": "No es posible teselar mediante traslaciones, reflexiones y rotaciones sin dominar esas transformaciones.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "transformaciones_isometricas",
+      "a": "simetria_axial",
+      "justificacion": "No es posible comprender el eje de simetría sin la reflexión como movimiento que superpone una mitad sobre la otra.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "medicion_longitud",
+      "a": "construccion_triangulos",
+      "justificacion": "No es posible construir un triángulo a partir de medidas de lados sin medir y trasladar longitudes.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "medicion_angulos",
+      "a": "construccion_triangulos",
+      "justificacion": "No es posible construir un triángulo a partir de medidas de ángulos sin construir ángulos con transportador.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_directa_magnitudes",
+      "a": "iteracion_unidad",
+      "justificacion": "No es posible captar qué resuelve la unidad (comparar sin superponer) sin la experiencia de comparar magnitudes directamente.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "cardinalidad",
+      "a": "iteracion_unidad",
+      "justificacion": "No es posible expresar la medida como número de unidades sin cardinalidad: la medida es el cardinal de las iteraciones.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "iteracion_unidad",
+      "a": "unidad_estandarizada",
+      "justificacion": "No es posible captar la necesidad de una unidad convencional sin comprender primero el papel de la unidad que se itera.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "unidad_estandarizada",
+      "a": "medicion_longitud",
+      "justificacion": "No es posible medir con regla en centímetros y metros sin comprender esas unidades convencionales.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "unidad_estandarizada",
+      "a": "medicion_peso",
+      "justificacion": "No es posible medir en gramos y kilogramos sin comprender la unidad convencional de peso.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "unidad_estandarizada",
+      "a": "estimacion_medidas",
+      "justificacion": "No es posible estimar en unidades convencionales sin referentes internalizados de esas unidades.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "conversion_unidades",
+      "justificacion": "No es posible convertir entre unidades sin operar la relación multiplicativa fija que las liga.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "conteo_a_saltos",
+      "a": "lectura_reloj",
+      "justificacion": "No es posible leer los minutos en el reloj análogo sin contar de cinco en cinco sobre la esfera.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "medicion_longitud",
+      "a": "perimetro",
+      "justificacion": "No es posible obtener el perímetro sin medir las longitudes de los lados que lo componen.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "suma",
+      "a": "perimetro",
+      "justificacion": "No es posible totalizar el contorno sin sumar las longitudes de los lados.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "iteracion_unidad",
+      "a": "area_recubrimiento",
+      "justificacion": "No es posible comprender el área como recubrimiento sin el principio de cubrir con unidades iguales, sin huecos ni superposiciones.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "area_recubrimiento",
+      "a": "estructura_arreglo_area",
+      "justificacion": "No es posible ver el rectángulo como arreglo multiplicativo sin comprender antes el área como conteo de cuadrados que cubren.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "estructura_arreglo_area",
+      "justificacion": "No es posible condensar filas y columnas en largo por ancho sin dominar la multiplicación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "perimetro",
+      "a": "relacion_perimetro_area",
+      "justificacion": "No es posible descubrir que perímetro y área no covarían sin dominar el perímetro como magnitud propia.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "estructura_arreglo_area",
+      "a": "relacion_perimetro_area",
+      "justificacion": "No es posible descubrir que área y perímetro no covarían sin dominar el área del rectángulo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "estructura_arreglo_area",
+      "a": "areas_derivadas",
+      "justificacion": "No es posible derivar áreas de triángulos y paralelogramos por comparación con el rectángulo sin dominar el área del rectángulo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "transformaciones_isometricas",
+      "a": "areas_derivadas",
+      "justificacion": "No es posible completar o recomponer figuras por corte y traslación sin las transformaciones que conservan el área.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "relacion_2d_3d",
+      "a": "superficie_cuerpos",
+      "justificacion": "No es posible calcular la superficie mediante la red sin coordinar el cuerpo con su red.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "estructura_arreglo_area",
+      "a": "superficie_cuerpos",
+      "justificacion": "No es posible sumar las áreas de las caras sin calcular el área de cada cara rectangular.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "iteracion_unidad",
+      "a": "volumen_unidades_cubicas",
+      "justificacion": "No es posible comprender el volumen como llenado con cubos sin el principio de la unidad que se itera sin huecos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "volumen_unidades_cubicas",
+      "a": "volumen_paralelepipedo",
+      "justificacion": "No es posible condensar el llenado en una fórmula sin comprender el volumen como conteo de cubos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "estructura_arreglo_area",
+      "a": "volumen_paralelepipedo",
+      "justificacion": "No es posible estructurar el cuerpo en capas sin la estructuración previa de cada capa como arreglo de filas y columnas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "cardinalidad",
+      "a": "registro_conteo",
+      "justificacion": "No es posible que el total de marcas represente el total de casos sin cardinalidad.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "pregunta_estadistica",
+      "a": "registro_conteo",
+      "justificacion": "No es posible decidir qué registrar y a quién sin una pregunta que la recolección responde.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "correspondencia_uno_a_uno",
+      "a": "pictograma",
+      "justificacion": "No es posible leer o construir un pictograma simple sin la correspondencia símbolo-caso.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "pictograma",
+      "a": "escala_grafica",
+      "justificacion": "No es posible comprender que el símbolo vale varios casos sin dominar antes el pictograma donde vale uno.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "conteo_a_saltos",
+      "a": "escala_grafica",
+      "justificacion": "No es posible leer un pictograma con escala sin contar a saltos del valor del símbolo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "recta_numerica",
+      "a": "grafico_barras",
+      "justificacion": "No es posible leer la altura de una barra sobre un eje graduado sin el número como posición en una recta.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "secuencia_temporal",
+      "a": "grafico_lineas",
+      "justificacion": "No es posible interpretar un gráfico de líneas temporal sin la estructura ordenada del tiempo en el eje.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "fraccion_parte_todo",
+      "a": "grafico_circular",
+      "justificacion": "No es posible leer sectores como partes del total sin la fracción como parte de un todo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "recta_numerica",
+      "a": "diagrama_puntos",
+      "justificacion": "No es posible apilar cada dato sobre una recta graduada sin el número como posición en la recta.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "valor_posicional",
+      "a": "tallo_hojas",
+      "justificacion": "No es posible separar cada dato en tallo (decenas) y hoja (unidades) sin dominar la descomposición decimal.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_orden_numeros",
+      "a": "extremos_punto_medio",
+      "justificacion": "No es posible identificar el menor y el mayor de un conjunto sin dominar el orden de los números.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division",
+      "a": "promedio",
+      "justificacion": "No es posible calcular la media repartiendo el total en partes iguales sin la división.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "diagrama_puntos",
+      "a": "comparacion_distribuciones",
+      "justificacion": "No es posible comparar distribuciones representadas en diagramas de puntos sin leer esa representación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "tallo_hojas",
+      "a": "comparacion_distribuciones",
+      "justificacion": "No es posible comparar distribuciones en tallo y hojas sin leer esa representación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "nocion_muestra",
+      "a": "comparacion_distribuciones",
+      "justificacion": "No es posible interpretar diferencias entre grupos muestrales sin comprender que cada grupo es una muestra.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "experimento_aleatorio",
+      "a": "lenguaje_probabilistico",
+      "justificacion": "No es posible graduar la posibilidad de un evento sin la experiencia de resultados individualmente impredecibles.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "lenguaje_probabilistico",
+      "a": "comparacion_probabilidades",
+      "justificacion": "No es posible ordenar eventos como más o menos probables sin el lenguaje que gradúa la posibilidad.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_colecciones",
+      "a": "comparacion_probabilidades",
+      "justificacion": "No es posible juzgar qué evento reúne más casos favorables sin comparar colecciones de casos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "experimento_aleatorio",
+      "a": "tendencia_frecuencial",
+      "justificacion": "No es posible conjeturar la tendencia de repeticiones sin comprender el experimento aleatorio que se repite.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "registro_conteo",
+      "a": "tendencia_frecuencial",
+      "justificacion": "No es posible detectar tendencias en frecuencias que no se registraron sistemáticamente.",
+      "clausula": null,
+      "confianza": "hipotesis"
     }
-  ],
-  "generado": "2026-07-18T02:54:06Z"
+  ]
 }

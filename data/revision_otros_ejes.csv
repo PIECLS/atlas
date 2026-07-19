@@ -1,0 +1,145 @@
+tipo,de_o_id,a,estado,confianza,origen,comentario,referencias
+nodo,patrones_algebra_c,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,geometria_c,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,medicion_c,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,datos_probabilidades_c,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,patron_repeticion,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Clements & Sarama (2009)
+nodo,patron_numerico,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Clements & Sarama (2009)
+nodo,igualdad_relacional,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,"Falkner, Levi & Carpenter (1999); Carpenter, Franke & Levi (2003)"
+nodo,simbolo_incognita,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Kaput (2008)
+nodo,ecuacion_un_paso,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,inecuacion_un_paso,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,regla_formacion,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Blanton & Kaput (2005)
+nodo,relacion_funcional,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Blanton & Kaput (2005)
+nodo,lenguaje_algebraico,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Kaput (2008)
+nodo,ecuacion_formal,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,distincion_recta_curva,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,posicion_relativa,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Clements & Sarama (2009)
+nodo,figuras_2d,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Van Hiele (1986); Clements & Battista (1992)
+nodo,figuras_3d,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Van Hiele (1986)
+nodo,relacion_2d_3d,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,vistas_3d,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Clements & Sarama (2009)
+nodo,cuadricula_mapa,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,plano_cartesiano,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,angulo_concepto,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Mitchelmore & White (2000)
+nodo,medicion_angulos,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,paralelas_perpendiculares,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,angulos_entre_rectas,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,suma_angulos_interiores,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,transformaciones_isometricas,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Clements & Battista (1992)
+nodo,simetria_axial,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,congruencia,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,teselado,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,construccion_triangulos,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,comparacion_directa_magnitudes,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,"Piaget, Inhelder & Szeminska (1960)"
+nodo,iteracion_unidad,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Lehrer (2003)
+nodo,unidad_estandarizada,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Lehrer (2003)
+nodo,medicion_longitud,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,medicion_peso,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,estimacion_medidas,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,conversion_unidades,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,secuencia_temporal,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,lectura_reloj,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,perimetro,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,area_recubrimiento,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Outhred & Mitchelmore (2000)
+nodo,estructura_arreglo_area,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Outhred & Mitchelmore (2000)
+nodo,relacion_perimetro_area,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,areas_derivadas,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,superficie_cuerpos,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,volumen_unidades_cubicas,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Battista & Clements (1996)
+nodo,volumen_paralelepipedo,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Battista & Clements (1996)
+nodo,pregunta_estadistica,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Konold & Higgins (2003)
+nodo,registro_conteo,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,pictograma,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,escala_grafica,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,grafico_barras,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,grafico_lineas,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,grafico_circular,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,diagrama_puntos,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Konold & Higgins (2003)
+nodo,tallo_hojas,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,lectura_interpretacion_graficos,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Curcio (1987)
+nodo,extremos_punto_medio,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,promedio,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Mokros & Russell (1995)
+nodo,nocion_muestra,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Watson (2006)
+nodo,comparacion_distribuciones,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Konold & Higgins (2003); Watson (2006)
+nodo,experimento_aleatorio,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Piaget & Inhelder (1975); Fischbein (1975)
+nodo,lenguaje_probabilistico,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+nodo,comparacion_probabilidades,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Fischbein (1975)
+nodo,tendencia_frecuencial,,incluido,hipotesis,extraccion_otros_ejes_v0.1,,Fischbein (1975)
+arista,conteo_a_saltos,patron_numerico,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números; vía alternativa por suma iterada (candidata a OR),
+arista,patron_repeticion,patron_numerico,incluido,hipotesis,extraccion_otros_ejes_v0.1,dirección discutible,
+arista,comparacion_colecciones,igualdad_relacional,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,igualdad_relacional,ecuacion_un_paso,incluido,hipotesis,extraccion_otros_ejes_v0.1,"Falkner, Levi & Carpenter (1999)",
+arista,simbolo_incognita,ecuacion_un_paso,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,reversibilidad_aditiva,ecuacion_un_paso,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,comparacion_orden_numeros,inecuacion_un_paso,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,simbolo_incognita,inecuacion_un_paso,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,patron_numerico,regla_formacion,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,multiplicacion,relacion_funcional,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,regla_formacion,lenguaje_algebraico,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,simbolo_incognita,lenguaje_algebraico,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,ecuacion_un_paso,ecuacion_formal,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,composicion_aditiva,ecuacion_formal,descartada,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,distincion_recta_curva,figuras_2d,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,figuras_2d,figuras_3d,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,figuras_2d,relacion_2d_3d,descartada,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,figuras_3d,relacion_2d_3d,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,figuras_3d,vistas_3d,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,posicion_relativa,cuadricula_mapa,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,cuadricula_mapa,plano_cartesiano,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,recta_numerica,plano_cartesiano,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números; pesa sobre tu decisión pendiente de recta_numerica,
+arista,angulo_concepto,medicion_angulos,incluido,hipotesis,extraccion_otros_ejes_v0.1,Mitchelmore & White (2000),
+arista,iteracion_unidad,medicion_angulos,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza desde Medición,
+arista,medicion_angulos,angulos_entre_rectas,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,paralelas_perpendiculares,angulos_entre_rectas,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,medicion_angulos,suma_angulos_interiores,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,transformaciones_isometricas,congruencia,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,transformaciones_isometricas,teselado,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,transformaciones_isometricas,simetria_axial,incluido,hipotesis,extraccion_otros_ejes_v0.1,dirección discutible: la simetría podría ser perceptivamente anterior a la reflexión formal,
+arista,medicion_longitud,construccion_triangulos,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza desde Medición,
+arista,medicion_angulos,construccion_triangulos,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,comparacion_directa_magnitudes,iteracion_unidad,incluido,hipotesis,extraccion_otros_ejes_v0.1,"Piaget, Inhelder & Szeminska (1960)",
+arista,cardinalidad,iteracion_unidad,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,iteracion_unidad,unidad_estandarizada,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,unidad_estandarizada,medicion_longitud,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,unidad_estandarizada,medicion_peso,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,unidad_estandarizada,estimacion_medidas,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,multiplicacion,conversion_unidades,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,conteo_a_saltos,lectura_reloj,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,medicion_longitud,perimetro,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,suma,perimetro,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,iteracion_unidad,area_recubrimiento,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,area_recubrimiento,estructura_arreglo_area,incluido,hipotesis,extraccion_otros_ejes_v0.1,Outhred & Mitchelmore (2000),
+arista,multiplicacion,estructura_arreglo_area,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,perimetro,relacion_perimetro_area,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,estructura_arreglo_area,relacion_perimetro_area,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,estructura_arreglo_area,areas_derivadas,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,transformaciones_isometricas,areas_derivadas,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza desde Geometría,
+arista,relacion_2d_3d,superficie_cuerpos,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza desde Geometría,
+arista,estructura_arreglo_area,superficie_cuerpos,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,iteracion_unidad,volumen_unidades_cubicas,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,volumen_unidades_cubicas,volumen_paralelepipedo,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,estructura_arreglo_area,volumen_paralelepipedo,incluido,hipotesis,extraccion_otros_ejes_v0.1,Battista & Clements (1996),
+arista,correspondencia_uno_a_uno,registro_conteo,descartada,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,cardinalidad,registro_conteo,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,pregunta_estadistica,registro_conteo,incluido,hipotesis,extraccion_otros_ejes_v0.1,discutible: se puede registrar mecánicamente sin pregunta (candidata a OR),
+arista,correspondencia_uno_a_uno,pictograma,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,pictograma,escala_grafica,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,conteo_a_saltos,escala_grafica,incluido,hipotesis,extraccion_otros_ejes_v0.1,OR con multiplicación — registrar como disyunción en v3,
+arista,multiplicacion,escala_grafica,descartada,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números; OR con conteo a saltos,
+arista,recta_numerica,grafico_barras,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números; pesa sobre tu decisión pendiente de recta_numerica,
+arista,secuencia_temporal,grafico_lineas,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza desde Medición,
+arista,fraccion_parte_todo,grafico_circular,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números (Fracciones),
+arista,recta_numerica,diagrama_puntos,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,valor_posicional,tallo_hojas,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,comparacion_orden_numeros,extremos_punto_medio,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,division,promedio,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números; la suma del total llega por transitividad,
+arista,particion_equitativa,promedio,descartada,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números (Fracciones); Mokros & Russell (1995),
+arista,diagrama_puntos,comparacion_distribuciones,incluido,hipotesis,extraccion_otros_ejes_v0.1,OR con tallo y hojas,
+arista,tallo_hojas,comparacion_distribuciones,incluido,hipotesis,extraccion_otros_ejes_v0.1,OR con diagrama de puntos,
+arista,nocion_muestra,comparacion_distribuciones,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,experimento_aleatorio,lenguaje_probabilistico,incluido,hipotesis,extraccion_otros_ejes_v0.1,discutible: hay graduación desde el conocimiento del mundo sin experimento,
+arista,lenguaje_probabilistico,comparacion_probabilidades,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,comparacion_colecciones,comparacion_probabilidades,incluido,hipotesis,extraccion_otros_ejes_v0.1,cruza a Números,
+arista,experimento_aleatorio,tendencia_frecuencial,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
+arista,registro_conteo,tendencia_frecuencial,incluido,hipotesis,extraccion_otros_ejes_v0.1,,
