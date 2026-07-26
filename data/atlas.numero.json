@@ -2,8 +2,13 @@
   "atlas_version": "0.4.0",
   "schema_version": "1.0.0",
   "certificacion": {
-    "verificado": false,
-    "notas": "Extensión 7º básico-2º medio: +90 nodos, +156 aristas, +4 regiones. Checks estructurales JS en verde; pendiente primera pasada del verificador R sobre este contenido."
+    "verificado": true,
+    "fecha": "2026-07-26T03:37:06Z",
+    "herramienta": "R 4.6.1 / kst 0.5.5",
+    "aciclico": true,
+    "reduccion_transitiva": true,
+    "huerfanos": [],
+    "notas": "Hipótesis estructural consistente con los axiomas, verificada mecánicamente y versionada. Sin validación empírica (A8)."
   },
   "dominio": {
     "id": "numero_basica",
@@ -9684,5 +9689,6 @@
       "clausula": null,
       "confianza": "hipotesis"
     }
-  ]
+  ],
+  "generado": "2026-07-26T03:37:06Z"
 }
