@@ -32,6 +32,10 @@
   --region-h: #7fc4a8; /* geometria */
   --region-i: #d68fb0; /* medicion */
   --region-j: #9a9fd6; /* datos_probabilidades */
+  --region-k: #c98f6f; /* enteros · Números enteros */
+  --region-l: #6fc9b8; /* potencias · Potencias, raíces y logaritmos */
+  --region-m: #a8c96f; /* reales · Racionales y reales */
+  --region-n: #b0708f; /* funciones */
   --region-fallback: #7f8ca3;
 
   /* — Selección tipo árbol tecnológico — */
@@ -81,6 +85,10 @@
     --region-h: #2f9a76;
     --region-i: #b84d80;
     --region-j: #5a5fb8;
+    --region-k: #a5673f;
+    --region-l: #3f9c88;
+    --region-m: #7fa53f;
+    --region-n: #85405a;
     --sel-nodo: #e0a020;
     --sel-pre: #2fa579;
     --sel-post: #2f6fe0;

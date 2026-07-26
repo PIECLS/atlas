@@ -1,21 +1,14 @@
 {
-  "atlas_version": "0.3.0",
+  "atlas_version": "0.4.0",
   "schema_version": "1.0.0",
   "certificacion": {
-    "verificado": true,
-    "fecha": "2026-07-19T00:49:12Z",
-    "herramienta": "R 4.6.1 / kst 0.5.5",
-    "aciclico": true,
-    "reduccion_transitiva": true,
-    "huerfanos": [
-      "lectura_interpretacion_graficos"
-    ],
-    "notas": "Hipótesis estructural consistente con los axiomas, verificada mecánicamente y versionada. Sin validación empírica (A8)."
+    "verificado": false,
+    "notas": "Extensión 7º básico-2º medio: +90 nodos, +156 aristas, +4 regiones. Checks estructurales JS en verde; pendiente primera pasada del verificador R sobre este contenido."
   },
   "dominio": {
     "id": "numero_basica",
     "nombre": "Número",
-    "descripcion": "Eje Numeros y Operaciones, 1º a 6º basico. Primer territorio cartografiado del Atlas.",
+    "descripcion": "Los cuatro ejes de la matemática escolar chilena (Números; Álgebra y funciones; Geometría; Probabilidad y estadística), 1º básico a 2º medio.",
     "asignatura": "Matemática"
   },
   "regiones": [
@@ -78,6 +71,30 @@
       "nombre": "Datos y Probabilidades",
       "orden_x": 9,
       "color_token": "region-j"
+    },
+    {
+      "id": "enteros",
+      "nombre": "Números enteros",
+      "orden_x": 10,
+      "color_token": "region-k"
+    },
+    {
+      "id": "potencias",
+      "nombre": "Potencias, raíces y logaritmos",
+      "orden_x": 11,
+      "color_token": "region-l"
+    },
+    {
+      "id": "reales",
+      "nombre": "Racionales y reales",
+      "orden_x": 12,
+      "color_token": "region-m"
+    },
+    {
+      "id": "funciones",
+      "nombre": "Funciones",
+      "orden_x": 13,
+      "color_token": "region-n"
     }
   ],
   "nodos": [
@@ -89,8 +106,8 @@
       "region": "conteo",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 2250,
-        "y": -520,
+        "x": 5600,
+        "y": -640,
         "fijada_a_mano": false
       }
     },
@@ -103,7 +120,7 @@
       "completitud": "esbozo",
       "coordenada": {
         "x": 0,
-        "y": -260,
+        "y": -320,
         "fijada_a_mano": false
       }
     },
@@ -115,8 +132,8 @@
       "region": "operaciones",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 1800,
-        "y": -260,
+        "x": 2800,
+        "y": -320,
         "fijada_a_mano": false
       }
     },
@@ -152,7 +169,7 @@
       "region": "conteo",
       "completitud": "basica",
       "coordenada": {
-        "x": -150,
+        "x": -260,
         "y": 0,
         "fijada_a_mano": false
       },
@@ -176,8 +193,8 @@
       "region": "conteo",
       "completitud": "completa",
       "coordenada": {
-        "x": -150,
-        "y": 120,
+        "x": -260,
+        "y": 150,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -280,8 +297,8 @@
       "region": "operaciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 1875,
-        "y": 360,
+        "x": 2930,
+        "y": 450,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -320,8 +337,8 @@
       "region": "numeracion",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 900,
-        "y": -260,
+        "x": 1400,
+        "y": -320,
         "fijada_a_mano": false
       }
     },
@@ -333,8 +350,8 @@
       "region": "fraccion",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 2700,
-        "y": -260,
+        "x": 4200,
+        "y": -320,
         "fijada_a_mano": false
       }
     },
@@ -346,8 +363,8 @@
       "region": "decimales",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 3600,
-        "y": -260,
+        "x": 5600,
+        "y": -320,
         "fijada_a_mano": false
       }
     },
@@ -359,8 +376,8 @@
       "region": "proporcion",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 4500,
-        "y": -260,
+        "x": 7000,
+        "y": -320,
         "fijada_a_mano": false
       }
     },
@@ -383,8 +400,8 @@
         ]
       },
       "coordenada": {
-        "x": 225,
-        "y": 240,
+        "x": 390,
+        "y": 300,
         "fijada_a_mano": false
       }
     },
@@ -421,7 +438,7 @@
       },
       "coordenada": {
         "x": 0,
-        "y": 120,
+        "y": 150,
         "fijada_a_mano": false
       }
     },
@@ -456,8 +473,8 @@
         ]
       },
       "coordenada": {
-        "x": -75,
-        "y": 240,
+        "x": -130,
+        "y": 300,
         "fijada_a_mano": false
       }
     },
@@ -502,7 +519,7 @@
       },
       "coordenada": {
         "x": 0,
-        "y": 360,
+        "y": 450,
         "fijada_a_mano": false
       }
     },
@@ -526,7 +543,7 @@
         ]
       },
       "coordenada": {
-        "x": 150,
+        "x": 260,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -550,8 +567,8 @@
         ]
       },
       "coordenada": {
-        "x": -225,
-        "y": 240,
+        "x": -390,
+        "y": 300,
         "fijada_a_mano": false
       }
     },
@@ -583,8 +600,8 @@
         ]
       },
       "coordenada": {
-        "x": 150,
-        "y": 120,
+        "x": 260,
+        "y": 150,
         "fijada_a_mano": false
       }
     },
@@ -614,8 +631,8 @@
         ]
       },
       "coordenada": {
-        "x": 75,
-        "y": 240,
+        "x": 130,
+        "y": 300,
         "fijada_a_mano": false
       }
     },
@@ -663,8 +680,8 @@
         ]
       },
       "coordenada": {
-        "x": 975,
-        "y": 240,
+        "x": 1530,
+        "y": 300,
         "fijada_a_mano": false
       }
     },
@@ -694,8 +711,8 @@
         ]
       },
       "coordenada": {
-        "x": 825,
-        "y": 240,
+        "x": 1270,
+        "y": 300,
         "fijada_a_mano": false
       }
     },
@@ -727,8 +744,8 @@
         ]
       },
       "coordenada": {
-        "x": 900,
-        "y": 480,
+        "x": 1400,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -798,8 +815,8 @@
         ]
       },
       "coordenada": {
-        "x": 900,
-        "y": 600,
+        "x": 1400,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -829,8 +846,8 @@
         ]
       },
       "coordenada": {
-        "x": 975,
-        "y": 720,
+        "x": 1530,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -886,8 +903,8 @@
         ]
       },
       "coordenada": {
-        "x": 825,
-        "y": 720,
+        "x": 1270,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -908,12 +925,18 @@
             "eje": "Números y operaciones",
             "cobertura": "parcial",
             "texto": "Comparar y ordenar números naturales hasta 1.000, utilizando la recta numérica o la tabla posicional."
+          },
+          {
+            "codigo": "MA07 OA 01",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "tangencial"
           }
         ]
       },
       "coordenada": {
-        "x": 825,
-        "y": 840,
+        "x": 1270,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -936,8 +959,8 @@
         ]
       },
       "coordenada": {
-        "x": 975,
-        "y": 840,
+        "x": 1530,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -987,8 +1010,8 @@
         ]
       },
       "coordenada": {
-        "x": 1725,
-        "y": 360,
+        "x": 2670,
+        "y": 450,
         "fijada_a_mano": false
       }
     },
@@ -1025,8 +1048,8 @@
         ]
       },
       "coordenada": {
-        "x": 2325,
-        "y": 480,
+        "x": 3710,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -1061,8 +1084,8 @@
         ]
       },
       "coordenada": {
-        "x": 1800,
-        "y": 600,
+        "x": 2800,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -1086,8 +1109,8 @@
         ]
       },
       "coordenada": {
-        "x": 1425,
-        "y": 480,
+        "x": 2150,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -1123,8 +1146,8 @@
         ]
       },
       "coordenada": {
-        "x": 1500,
-        "y": 600,
+        "x": 2280,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -1159,8 +1182,8 @@
         ]
       },
       "coordenada": {
-        "x": 1725,
-        "y": 720,
+        "x": 2670,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -1192,8 +1215,8 @@
         ]
       },
       "coordenada": {
-        "x": 2025,
-        "y": 480,
+        "x": 3190,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -1222,8 +1245,8 @@
         ]
       },
       "coordenada": {
-        "x": 1425,
-        "y": 840,
+        "x": 2150,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -1246,8 +1269,8 @@
         ]
       },
       "coordenada": {
-        "x": 1650,
-        "y": 600,
+        "x": 2540,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -1276,8 +1299,8 @@
         ]
       },
       "coordenada": {
-        "x": 1725,
-        "y": 480,
+        "x": 2670,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -1300,8 +1323,8 @@
         ]
       },
       "coordenada": {
-        "x": 1275,
-        "y": 480,
+        "x": 1890,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -1325,8 +1348,8 @@
         ]
       },
       "coordenada": {
-        "x": 1575,
-        "y": 480,
+        "x": 2410,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -1361,8 +1384,8 @@
         ]
       },
       "coordenada": {
-        "x": 1425,
-        "y": 720,
+        "x": 2150,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -1400,8 +1423,8 @@
         ]
       },
       "coordenada": {
-        "x": 1275,
-        "y": 840,
+        "x": 1890,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -1436,8 +1459,8 @@
         ]
       },
       "coordenada": {
-        "x": 1575,
-        "y": 720,
+        "x": 2410,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -1475,8 +1498,8 @@
         ]
       },
       "coordenada": {
-        "x": 2325,
-        "y": 840,
+        "x": 3710,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -1511,8 +1534,8 @@
         ]
       },
       "coordenada": {
-        "x": 1950,
-        "y": 960,
+        "x": 3060,
+        "y": 1200,
         "fijada_a_mano": false
       }
     },
@@ -1568,8 +1591,8 @@
         ]
       },
       "coordenada": {
-        "x": 2175,
-        "y": 480,
+        "x": 3450,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -1605,8 +1628,8 @@
         ]
       },
       "coordenada": {
-        "x": 2025,
-        "y": 720,
+        "x": 3190,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -1647,8 +1670,8 @@
         ]
       },
       "coordenada": {
-        "x": 1950,
-        "y": 600,
+        "x": 3060,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -1698,8 +1721,8 @@
         ]
       },
       "coordenada": {
-        "x": 1875,
-        "y": 480,
+        "x": 2930,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -1728,8 +1751,8 @@
         ]
       },
       "coordenada": {
-        "x": 2250,
-        "y": 600,
+        "x": 3580,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -1761,8 +1784,8 @@
         ]
       },
       "coordenada": {
-        "x": 1350,
-        "y": 600,
+        "x": 2020,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -1786,8 +1809,8 @@
         ]
       },
       "coordenada": {
-        "x": 2100,
-        "y": 600,
+        "x": 3320,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -1825,8 +1848,8 @@
         ]
       },
       "coordenada": {
-        "x": 1800,
-        "y": 960,
+        "x": 2800,
+        "y": 1200,
         "fijada_a_mano": false
       }
     },
@@ -1856,8 +1879,8 @@
         ]
       },
       "coordenada": {
-        "x": 1650,
-        "y": 960,
+        "x": 2540,
+        "y": 1200,
         "fijada_a_mano": false
       }
     },
@@ -1887,8 +1910,8 @@
         ]
       },
       "coordenada": {
-        "x": 1575,
-        "y": 840,
+        "x": 2410,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -1920,8 +1943,8 @@
         ]
       },
       "coordenada": {
-        "x": 1875,
-        "y": 840,
+        "x": 2930,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -1944,8 +1967,8 @@
         ]
       },
       "coordenada": {
-        "x": 1725,
-        "y": 840,
+        "x": 2670,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -1987,8 +2010,8 @@
         ]
       },
       "coordenada": {
-        "x": 2175,
-        "y": 720,
+        "x": 3450,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -2012,8 +2035,8 @@
         ]
       },
       "coordenada": {
-        "x": 2025,
-        "y": 840,
+        "x": 3190,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -2036,8 +2059,8 @@
         ]
       },
       "coordenada": {
-        "x": 1875,
-        "y": 720,
+        "x": 2930,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -2060,8 +2083,8 @@
         ]
       },
       "coordenada": {
-        "x": 2175,
-        "y": 840,
+        "x": 3450,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -2092,8 +2115,8 @@
         ]
       },
       "coordenada": {
-        "x": 2700,
-        "y": 240,
+        "x": 4200,
+        "y": 300,
         "fijada_a_mano": false
       }
     },
@@ -2152,8 +2175,8 @@
         ]
       },
       "coordenada": {
-        "x": 2700,
-        "y": 360,
+        "x": 4200,
+        "y": 450,
         "fijada_a_mano": false
       }
     },
@@ -2176,8 +2199,8 @@
         ]
       },
       "coordenada": {
-        "x": 2925,
-        "y": 480,
+        "x": 4590,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -2208,12 +2231,18 @@
             "curso": "6B",
             "eje": "Números y operaciones",
             "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA08 OA 02",
+            "curso": "8B",
+            "eje": "Números",
+            "cobertura": "parcial"
           }
         ]
       },
       "coordenada": {
-        "x": 2625,
-        "y": 960,
+        "x": 4070,
+        "y": 1200,
         "fijada_a_mano": false
       }
     },
@@ -2242,8 +2271,8 @@
         ]
       },
       "coordenada": {
-        "x": 2700,
-        "y": 840,
+        "x": 4200,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -2275,8 +2304,8 @@
         ]
       },
       "coordenada": {
-        "x": 2625,
-        "y": 480,
+        "x": 4070,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -2306,8 +2335,8 @@
         ]
       },
       "coordenada": {
-        "x": 2775,
-        "y": 480,
+        "x": 4330,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -2336,8 +2365,8 @@
         ]
       },
       "coordenada": {
-        "x": 2700,
-        "y": 600,
+        "x": 4200,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -2367,8 +2396,8 @@
         ]
       },
       "coordenada": {
-        "x": 2775,
-        "y": 960,
+        "x": 4330,
+        "y": 1200,
         "fijada_a_mano": false
       }
     },
@@ -2404,8 +2433,8 @@
         ]
       },
       "coordenada": {
-        "x": 2700,
-        "y": 1080,
+        "x": 4200,
+        "y": 1350,
         "fijada_a_mano": false
       }
     },
@@ -2443,8 +2472,8 @@
         ]
       },
       "coordenada": {
-        "x": 2475,
-        "y": 480,
+        "x": 3810,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -2480,8 +2509,8 @@
         ]
       },
       "coordenada": {
-        "x": 2700,
-        "y": 720,
+        "x": 4200,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -2514,8 +2543,8 @@
         ]
       },
       "coordenada": {
-        "x": 3600,
-        "y": 720,
+        "x": 5600,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -2553,8 +2582,8 @@
         ]
       },
       "coordenada": {
-        "x": 3600,
-        "y": 840,
+        "x": 5600,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -2578,8 +2607,8 @@
         ]
       },
       "coordenada": {
-        "x": 3750,
-        "y": 840,
+        "x": 5860,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -2629,8 +2658,8 @@
         ]
       },
       "coordenada": {
-        "x": 3450,
-        "y": 840,
+        "x": 5340,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -2650,12 +2679,19 @@
             "eje": "Números y operaciones",
             "cobertura": "total",
             "texto": "Demostrar que comprenden la multiplicación y la división de decimales por números naturales de un dígito, múltiplos de 10 y decimales hasta la milésima."
+          },
+          {
+            "codigo": "MA07 OA 03",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "parcial",
+            "texto": "Resolver problemas que involucren la multiplicación y la división de fracciones y de decimales positivos."
           }
         ]
       },
       "coordenada": {
-        "x": 3600,
-        "y": 1080,
+        "x": 5600,
+        "y": 1350,
         "fijada_a_mano": false
       }
     },
@@ -2687,8 +2723,8 @@
         ]
       },
       "coordenada": {
-        "x": 4500,
-        "y": 600,
+        "x": 7000,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -2708,12 +2744,19 @@
             "eje": "Números y operaciones",
             "cobertura": "total",
             "texto": "Demostrar que comprenden el concepto de porcentaje de manera concreta, pictórica y simbólica."
+          },
+          {
+            "codigo": "MA07 OA 04",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "total",
+            "texto": "Mostrar que comprenden el concepto de porcentaje: representándolo de manera pictórica; calculando de varias maneras; aplicándolo a situaciones sencillas."
           }
         ]
       },
       "coordenada": {
-        "x": 4500,
-        "y": 960,
+        "x": 7000,
+        "y": 1200,
         "fijada_a_mano": false
       }
     },
@@ -2725,8 +2768,8 @@
       "region": "patrones_algebra",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 5400,
-        "y": -260,
+        "x": 12600,
+        "y": -320,
         "fijada_a_mano": false
       }
     },
@@ -2738,8 +2781,8 @@
       "region": "geometria",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 6300,
-        "y": -260,
+        "x": 15400,
+        "y": -320,
         "fijada_a_mano": false
       }
     },
@@ -2751,8 +2794,8 @@
       "region": "medicion",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 7200,
-        "y": -260,
+        "x": 16800,
+        "y": -320,
         "fijada_a_mano": false
       }
     },
@@ -2764,8 +2807,8 @@
       "region": "datos_probabilidades",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 8100,
-        "y": -260,
+        "x": 18200,
+        "y": -320,
         "fijada_a_mano": false
       }
     },
@@ -2795,7 +2838,7 @@
         ]
       },
       "coordenada": {
-        "x": 5352,
+        "x": 12470,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -2836,8 +2879,8 @@
         ]
       },
       "coordenada": {
-        "x": 5400,
-        "y": 480,
+        "x": 12600,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -2867,8 +2910,8 @@
         ]
       },
       "coordenada": {
-        "x": 5400,
-        "y": 360,
+        "x": 12600,
+        "y": 450,
         "fijada_a_mano": false
       }
     },
@@ -2898,7 +2941,7 @@
         ]
       },
       "coordenada": {
-        "x": 5448,
+        "x": 12730,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -2931,8 +2974,8 @@
         ]
       },
       "coordenada": {
-        "x": 5400,
-        "y": 600,
+        "x": 12340,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -2959,8 +3002,8 @@
         ]
       },
       "coordenada": {
-        "x": 5400,
-        "y": 840,
+        "x": 12730,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -2983,6 +3026,12 @@
             "codigo": "MA06 OA 09",
             "curso": "6B",
             "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA08 OA 07",
+            "curso": "8B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
           }
         ],
         "bibliografia": [
@@ -2990,8 +3039,8 @@
         ]
       },
       "coordenada": {
-        "x": 5496,
-        "y": 600,
+        "x": 12600,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -3014,6 +3063,12 @@
             "codigo": "MA06 OA 09",
             "curso": "6B",
             "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA08 OA 07",
+            "curso": "8B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
           }
         ],
         "bibliografia": [
@@ -3021,8 +3076,8 @@
         ]
       },
       "coordenada": {
-        "x": 5304,
-        "y": 600,
+        "x": 12860,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -3040,6 +3095,13 @@
             "codigo": "MA06 OA 10",
             "curso": "6B",
             "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA07 OA 06",
+            "curso": "7B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Utilizar el lenguaje algebraico para generalizar relaciones entre números, para establecer y formular reglas y propiedades y construir ecuaciones."
           }
         ],
         "bibliografia": [
@@ -3047,8 +3109,8 @@
         ]
       },
       "coordenada": {
-        "x": 5448,
-        "y": 720,
+        "x": 12730,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -3066,12 +3128,18 @@
             "codigo": "MA06 OA 11",
             "curso": "6B",
             "eje": "Patrones y Álgebra"
+          },
+          {
+            "codigo": "MA07 OA 09",
+            "curso": "7B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
           }
         ]
       },
       "coordenada": {
-        "x": 5352,
-        "y": 720,
+        "x": 12470,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -3093,7 +3161,7 @@
         ]
       },
       "coordenada": {
-        "x": 6108,
+        "x": 15140,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -3124,7 +3192,7 @@
         ]
       },
       "coordenada": {
-        "x": 6204,
+        "x": 15660,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -3155,8 +3223,8 @@
         ]
       },
       "coordenada": {
-        "x": 6108,
-        "y": 120,
+        "x": 15400,
+        "y": 150,
         "fijada_a_mano": false
       }
     },
@@ -3191,8 +3259,8 @@
         ]
       },
       "coordenada": {
-        "x": 6300,
-        "y": 240,
+        "x": 15400,
+        "y": 300,
         "fijada_a_mano": false
       }
     },
@@ -3215,12 +3283,18 @@
             "codigo": "MA03 OA 15",
             "curso": "3B",
             "eje": "Geometría"
+          },
+          {
+            "codigo": "MA08 OA 11",
+            "curso": "8B",
+            "eje": "Geometría",
+            "cobertura": "parcial"
           }
         ]
       },
       "coordenada": {
-        "x": 6396,
-        "y": 360,
+        "x": 15400,
+        "y": 450,
         "fijada_a_mano": false
       }
     },
@@ -3245,8 +3319,8 @@
         ]
       },
       "coordenada": {
-        "x": 6204,
-        "y": 360,
+        "x": 15660,
+        "y": 450,
         "fijada_a_mano": false
       }
     },
@@ -3273,8 +3347,8 @@
         ]
       },
       "coordenada": {
-        "x": 6204,
-        "y": 120,
+        "x": 15140,
+        "y": 150,
         "fijada_a_mano": false
       }
     },
@@ -3296,8 +3370,8 @@
         ]
       },
       "coordenada": {
-        "x": 6300,
-        "y": 960,
+        "x": 15270,
+        "y": 1200,
         "fijada_a_mano": false
       }
     },
@@ -3322,7 +3396,7 @@
         ]
       },
       "coordenada": {
-        "x": 6396,
+        "x": 14880,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -3351,12 +3425,18 @@
             "codigo": "MA06 OA 20",
             "curso": "6B",
             "eje": "Geometría"
+          },
+          {
+            "codigo": "MA1M OA 06",
+            "curso": "1M",
+            "eje": "Geometría",
+            "cobertura": "parcial"
           }
         ]
       },
       "coordenada": {
-        "x": 6300,
-        "y": 360,
+        "x": 15140,
+        "y": 450,
         "fijada_a_mano": false
       }
     },
@@ -3378,7 +3458,7 @@
         ]
       },
       "coordenada": {
-        "x": 6300,
+        "x": 15400,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -3406,8 +3486,8 @@
         ]
       },
       "coordenada": {
-        "x": 6252,
-        "y": 480,
+        "x": 15140,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -3434,8 +3514,8 @@
         ]
       },
       "coordenada": {
-        "x": 6348,
-        "y": 480,
+        "x": 15660,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -3458,6 +3538,12 @@
             "codigo": "MA04 OA 18",
             "curso": "4B",
             "eje": "Geometría"
+          },
+          {
+            "codigo": "MA08 OA 13",
+            "curso": "8B",
+            "eje": "Geometría",
+            "cobertura": "parcial"
           }
         ],
         "bibliografia": [
@@ -3465,7 +3551,7 @@
         ]
       },
       "coordenada": {
-        "x": 6492,
+        "x": 15920,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -3488,8 +3574,8 @@
         ]
       },
       "coordenada": {
-        "x": 6396,
-        "y": 120,
+        "x": 15660,
+        "y": 150,
         "fijada_a_mano": false
       }
     },
@@ -3511,8 +3597,8 @@
         ]
       },
       "coordenada": {
-        "x": 6300,
-        "y": 120,
+        "x": 14880,
+        "y": 150,
         "fijada_a_mano": false
       }
     },
@@ -3534,8 +3620,8 @@
         ]
       },
       "coordenada": {
-        "x": 6492,
-        "y": 120,
+        "x": 15920,
+        "y": 150,
         "fijada_a_mano": false
       }
     },
@@ -3557,8 +3643,8 @@
         ]
       },
       "coordenada": {
-        "x": 6300,
-        "y": 600,
+        "x": 15530,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -3593,7 +3679,7 @@
         ]
       },
       "coordenada": {
-        "x": 7152,
+        "x": 16670,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -3629,8 +3715,8 @@
         ]
       },
       "coordenada": {
-        "x": 7200,
-        "y": 240,
+        "x": 16800,
+        "y": 300,
         "fijada_a_mano": false
       }
     },
@@ -3665,8 +3751,8 @@
         ]
       },
       "coordenada": {
-        "x": 7104,
-        "y": 360,
+        "x": 16800,
+        "y": 450,
         "fijada_a_mano": false
       }
     },
@@ -3698,8 +3784,8 @@
         ]
       },
       "coordenada": {
-        "x": 7152,
-        "y": 480,
+        "x": 16930,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -3721,8 +3807,8 @@
         ]
       },
       "coordenada": {
-        "x": 7344,
-        "y": 480,
+        "x": 17190,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -3754,8 +3840,8 @@
         ]
       },
       "coordenada": {
-        "x": 7248,
-        "y": 480,
+        "x": 16410,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -3787,8 +3873,8 @@
         ]
       },
       "coordenada": {
-        "x": 7104,
-        "y": 600,
+        "x": 16540,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -3820,7 +3906,7 @@
         ]
       },
       "coordenada": {
-        "x": 7248,
+        "x": 16930,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -3853,8 +3939,8 @@
         ]
       },
       "coordenada": {
-        "x": 7056,
-        "y": 480,
+        "x": 16670,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -3881,8 +3967,8 @@
         ]
       },
       "coordenada": {
-        "x": 7200,
-        "y": 600,
+        "x": 17060,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -3912,8 +3998,8 @@
         ]
       },
       "coordenada": {
-        "x": 7200,
-        "y": 360,
+        "x": 16540,
+        "y": 450,
         "fijada_a_mano": false
       }
     },
@@ -3943,8 +4029,8 @@
         ]
       },
       "coordenada": {
-        "x": 7296,
-        "y": 600,
+        "x": 16800,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -3971,8 +4057,8 @@
         ]
       },
       "coordenada": {
-        "x": 7248,
-        "y": 720,
+        "x": 16670,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -3994,8 +4080,8 @@
         ]
       },
       "coordenada": {
-        "x": 7152,
-        "y": 720,
+        "x": 16410,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -4018,12 +4104,18 @@
             "codigo": "MA06 OA 18",
             "curso": "6B",
             "eje": "Medición"
+          },
+          {
+            "codigo": "MA08 OA 11",
+            "curso": "8B",
+            "eje": "Geometría",
+            "cobertura": "parcial"
           }
         ]
       },
       "coordenada": {
-        "x": 7056,
-        "y": 720,
+        "x": 16930,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -4048,8 +4140,8 @@
         ]
       },
       "coordenada": {
-        "x": 7296,
-        "y": 360,
+        "x": 17060,
+        "y": 450,
         "fijada_a_mano": false
       }
     },
@@ -4074,8 +4166,8 @@
         ]
       },
       "coordenada": {
-        "x": 7344,
-        "y": 720,
+        "x": 17190,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -4115,7 +4207,7 @@
         ]
       },
       "coordenada": {
-        "x": 8148,
+        "x": 18590,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -4163,8 +4255,8 @@
         ]
       },
       "coordenada": {
-        "x": 8100,
-        "y": 240,
+        "x": 18200,
+        "y": 300,
         "fijada_a_mano": false
       }
     },
@@ -4191,8 +4283,8 @@
         ]
       },
       "coordenada": {
-        "x": 8004,
-        "y": 120,
+        "x": 18460,
+        "y": 150,
         "fijada_a_mano": false
       }
     },
@@ -4224,8 +4316,8 @@
         ]
       },
       "coordenada": {
-        "x": 8148,
-        "y": 480,
+        "x": 18070,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -4282,8 +4374,8 @@
         ]
       },
       "coordenada": {
-        "x": 8052,
-        "y": 960,
+        "x": 17810,
+        "y": 1200,
         "fijada_a_mano": false
       }
     },
@@ -4305,8 +4397,8 @@
         ]
       },
       "coordenada": {
-        "x": 8100,
-        "y": 120,
+        "x": 17940,
+        "y": 150,
         "fijada_a_mano": false
       }
     },
@@ -4328,8 +4420,8 @@
         ]
       },
       "coordenada": {
-        "x": 8052,
-        "y": 480,
+        "x": 18330,
+        "y": 600,
         "fijada_a_mano": false
       }
     },
@@ -4359,8 +4451,8 @@
         ]
       },
       "coordenada": {
-        "x": 8148,
-        "y": 960,
+        "x": 17550,
+        "y": 1200,
         "fijada_a_mano": false
       }
     },
@@ -4387,8 +4479,8 @@
         ]
       },
       "coordenada": {
-        "x": 8100,
-        "y": 720,
+        "x": 18460,
+        "y": 900,
         "fijada_a_mano": false
       }
     },
@@ -4426,6 +4518,12 @@
             "codigo": "MA06 OA 24",
             "curso": "6B",
             "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA08 OA 16",
+            "curso": "8B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
           }
         ],
         "bibliografia": [
@@ -4433,7 +4531,7 @@
         ]
       },
       "coordenada": {
-        "x": 7956,
+        "x": 18070,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -4456,8 +4554,8 @@
         ]
       },
       "coordenada": {
-        "x": 8100,
-        "y": 840,
+        "x": 17810,
+        "y": 1050,
         "fijada_a_mano": false
       }
     },
@@ -4475,6 +4573,12 @@
             "codigo": "MA05 OA 23",
             "curso": "5B",
             "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA07 OA 17",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
           }
         ],
         "bibliografia": [
@@ -4482,8 +4586,8 @@
         ]
       },
       "coordenada": {
-        "x": 8100,
-        "y": 600,
+        "x": 18330,
+        "y": 750,
         "fijada_a_mano": false
       }
     },
@@ -4511,6 +4615,18 @@
             "codigo": "MA06 OA 22",
             "curso": "6B",
             "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA07 OA 15",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA1M OA 13",
+            "curso": "1M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
           }
         ],
         "bibliografia": [
@@ -4518,7 +4634,7 @@
         ]
       },
       "coordenada": {
-        "x": 8052,
+        "x": 18330,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -4537,6 +4653,18 @@
             "codigo": "MA06 OA 22",
             "curso": "6B",
             "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA08 OA 15",
+            "curso": "8B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA1M OA 13",
+            "curso": "1M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
           }
         ],
         "bibliografia": [
@@ -4544,8 +4672,8 @@
         ]
       },
       "coordenada": {
-        "x": 8100,
-        "y": 1080,
+        "x": 17550,
+        "y": 1350,
         "fijada_a_mano": false
       }
     },
@@ -4585,7 +4713,7 @@
         ]
       },
       "coordenada": {
-        "x": 8244,
+        "x": 17810,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -4608,8 +4736,8 @@
         ]
       },
       "coordenada": {
-        "x": 8196,
-        "y": 120,
+        "x": 18200,
+        "y": 150,
         "fijada_a_mano": false
       }
     },
@@ -4634,8 +4762,8 @@
         ]
       },
       "coordenada": {
-        "x": 8052,
-        "y": 360,
+        "x": 17810,
+        "y": 450,
         "fijada_a_mano": false
       }
     },
@@ -4653,6 +4781,18 @@
             "codigo": "MA06 OA 23",
             "curso": "6B",
             "eje": "Datos y Probabilidades"
+          },
+          {
+            "codigo": "MA07 OA 19",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA1M OA 15",
+            "curso": "1M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
           }
         ],
         "bibliografia": [
@@ -4660,9 +4800,2548 @@
         ]
       },
       "coordenada": {
-        "x": 8148,
-        "y": 360,
+        "x": 18590,
+        "y": 450,
         "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "enteros_c",
+      "nombre": "Números enteros",
+      "nivel_zoom": 2,
+      "padre": "numero",
+      "region": "enteros",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 8400,
+        "y": -320,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "potencias_c",
+      "nombre": "Potencias y raíces",
+      "nivel_zoom": 2,
+      "padre": "numero",
+      "region": "potencias",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 9800,
+        "y": -320,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "reales_c",
+      "nombre": "Racionales y reales",
+      "nivel_zoom": 2,
+      "padre": "numero",
+      "region": "reales",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 11200,
+        "y": -320,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "funciones_c",
+      "nombre": "Funciones",
+      "nivel_zoom": 2,
+      "padre": null,
+      "region": "funciones",
+      "completitud": "esbozo",
+      "coordenada": {
+        "x": 14000,
+        "y": -320,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "numero_negativo",
+      "nombre": "Número negativo",
+      "nivel_zoom": 3,
+      "padre": "enteros_c",
+      "region": "enteros",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 8400,
+        "y": 1200,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Concebir cantidades menores que cero como magnitudes orientadas en sentido opuesto respecto de un punto de referencia.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 01",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "parcial",
+            "texto": "Mostrar que comprenden la adición y la sustracción de números enteros: representando los números enteros en la recta numérica; dándole significado a los símbolos + y – según el contexto."
+          }
+        ],
+        "representaciones": [
+          {
+            "tipo": "concreto",
+            "nombre": "Fichas opuestas",
+            "descripcion": "Dos colores que se anulan de a pares: lo que sobra es el resultado con su sentido.",
+            "ancla_visual": "fichas_opuestas"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "mas_negativo_es_mayor",
+            "descripcion": "Aplica el orden de los naturales al signo: afirma que -5 > -3 porque 5 > 3.",
+            "naturaleza": "conceptual",
+            "nodo_implicado": "recta_numerica_entera",
+            "retroalimentacion_sugerida": "Ubicar ambos en la recta: lo que está más a la izquierda es menor, sin importar el tamaño del dígito."
+          },
+          {
+            "id": "signo_como_operacion",
+            "descripcion": "Lee el signo menos siempre como orden de restar, y no como marca del sentido de la cantidad.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Contrastar 'la temperatura es -3' con '5 menos 3': el mismo símbolo hace dos trabajos distintos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "recta_numerica_entera",
+      "nombre": "La recta con sentido",
+      "nivel_zoom": 3,
+      "padre": "enteros_c",
+      "region": "enteros",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 8270,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Extender la recta numérica en ambos sentidos desde el cero, de modo que la posición codifique magnitud y sentido a la vez.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 01",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "adicion_sustraccion_enteros",
+      "nombre": "Adición y sustracción de enteros",
+      "nivel_zoom": 3,
+      "padre": "enteros_c",
+      "region": "enteros",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 8270,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Componer cantidades con sentido, donde un desplazamiento seguido de su opuesto no produce cambio alguno.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 01",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "total"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "restar_negativo",
+            "descripcion": "Trata restar un negativo como restar: resuelve 5 - (-3) = 2.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Mostrar en la recta que quitar un desplazamiento hacia la izquierda deja más a la derecha que antes."
+          }
+        ]
+      }
+    },
+    {
+      "id": "regla_signos",
+      "nombre": "Regla de los signos",
+      "nivel_zoom": 3,
+      "padre": "enteros_c",
+      "region": "enteros",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 8530,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar el sentido del resultado de un producto o cociente a partir del sentido de sus términos.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 01",
+            "curso": "8B",
+            "eje": "Números",
+            "cobertura": "parcial",
+            "texto": "Mostrar que comprenden la multiplicación y la división de números enteros: aplicando la regla de los signos de la operación."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "signos_cruzados_aditivos",
+            "descripcion": "Aplica la regla de los signos del producto a la suma: resuelve -3 + (-4) = 7.",
+            "naturaleza": "procedimental",
+            "nodo_implicado": "adicion_sustraccion_enteros",
+            "retroalimentacion_sugerida": "Separar los contextos: en la suma los sentidos se acumulan; en el producto se combinan."
+          }
+        ]
+      }
+    },
+    {
+      "id": "multiplicacion_division_enteros",
+      "nombre": "Multiplicación y división de enteros",
+      "nivel_zoom": 3,
+      "padre": "enteros_c",
+      "region": "enteros",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 8530,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Repetir y repartir cantidades con sentido, conservando los procedimientos de los naturales.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 01",
+            "curso": "8B",
+            "eje": "Números",
+            "cobertura": "total"
+          }
+        ]
+      }
+    },
+    {
+      "id": "multiplicacion_fracciones",
+      "nombre": "Multiplicación de fracciones",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 4200,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Tomar una parte de una parte: el producto de dos fracciones expresa una fracción del todo original.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 02",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "parcial",
+            "texto": "Explicar la multiplicación y la división de fracciones positivas: utilizando representaciones concretas, pictóricas y simbólicas; relacionándolas con la multiplicación y la división de números decimales."
+          },
+          {
+            "codigo": "MA07 OA 03",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "parcial"
+          }
+        ],
+        "representaciones": [
+          {
+            "tipo": "pictorico",
+            "nombre": "Doble sombreado",
+            "descripcion": "Rectángulo dividido en dos direcciones: la intersección de ambos sombreados es el producto.",
+            "ancla_visual": "doble_sombreado"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "multiplicar_siempre_agranda",
+            "descripcion": "Sostiene que el producto siempre es mayor que los factores, y rechaza que 1/2 x 1/2 sea menor que 1/2.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Sombrear la mitad de una mitad sobre el mismo todo: tomar parte de una parte deja menos, no más."
+          }
+        ]
+      }
+    },
+    {
+      "id": "division_fracciones",
+      "nombre": "División de fracciones",
+      "nivel_zoom": 3,
+      "padre": "fracciones_c",
+      "region": "fraccion",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 4200,
+        "y": 1650,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar cuántas veces una fracción cabe en otra, o repartir una fracción en partes iguales.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 02",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA07 OA 03",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "dividir_siempre_achica",
+            "descripcion": "Sostiene que el cociente siempre es menor que el dividendo, y rechaza que 1 : 1/2 sea 2.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Preguntar cuántas mitades caben en un entero: repartir en partes menores que la unidad produce más partes."
+          }
+        ]
+      }
+    },
+    {
+      "id": "numero_racional",
+      "nombre": "Número racional",
+      "nivel_zoom": 3,
+      "padre": "reales_c",
+      "region": "reales",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 11200,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Reconocer como un mismo tipo de número a fracciones, decimales y enteros: todo aquel que puede expresarse como cociente de dos enteros.",
+        "descripcion": "Nodo de unificación: reúne tres escrituras que hasta aquí vivían en regiones separadas del mapa.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 02",
+            "curso": "8B",
+            "eje": "Números",
+            "cobertura": "parcial",
+            "texto": "Utilizar las operaciones de multiplicación y división con los números racionales: representándolos en la recta numérica; involucrando diferentes conjuntos numéricos."
+          },
+          {
+            "codigo": "MA1M OA 01",
+            "curso": "1M",
+            "eje": "Números",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "operatoria_racionales",
+      "nombre": "Operatoria con racionales",
+      "nivel_zoom": 3,
+      "padre": "reales_c",
+      "region": "reales",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 11200,
+        "y": 1800,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Operar con racionales en forma simbólica, transitando entre sus escrituras según convenga al cálculo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 01",
+            "curso": "1M",
+            "eje": "Números",
+            "cobertura": "total",
+            "texto": "Calcular operaciones con números racionales en forma simbólica."
+          },
+          {
+            "codigo": "MA08 OA 02",
+            "curso": "8B",
+            "eje": "Números",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "numero_irracional",
+      "nombre": "Número irracional",
+      "nivel_zoom": 3,
+      "padre": "reales_c",
+      "region": "reales",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 11200,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Reconocer cantidades que no admiten expresión como cociente de dos enteros y cuya escritura decimal no es periódica.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 01",
+            "curso": "2M",
+            "eje": "Números",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "numero_real",
+      "nombre": "Número real",
+      "nivel_zoom": 3,
+      "padre": "reales_c",
+      "region": "reales",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 11200,
+        "y": 1650,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Concebir la recta numérica como completa: a cada punto le corresponde un número, racional o irracional.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 01",
+            "curso": "2M",
+            "eje": "Números",
+            "cobertura": "parcial",
+            "texto": "Realizar cálculos y estimaciones que involucren operaciones con números reales."
+          }
+        ]
+      }
+    },
+    {
+      "id": "potencia",
+      "nombre": "Potencia",
+      "nivel_zoom": 3,
+      "padre": "potencias_c",
+      "region": "potencias",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 9800,
+        "y": 750,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Expresar la multiplicación repetida de un mismo factor, distinguiendo base, exponente y valor.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 05",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "parcial",
+            "texto": "Utilizar potencias de base 10 con exponente natural: usando los términos potencia, base, exponente, elevado."
+          },
+          {
+            "codigo": "MA08 OA 03",
+            "curso": "8B",
+            "eje": "Números",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "potencia_como_producto",
+            "descripcion": "Multiplica base por exponente: resuelve 2^3 = 6.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Desplegar la potencia como cadena de factores: 2·2·2, no 2·3."
+          }
+        ]
+      }
+    },
+    {
+      "id": "potencia_base_10",
+      "nombre": "Potencia de base diez",
+      "nivel_zoom": 3,
+      "padre": "potencias_c",
+      "region": "potencias",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 9670,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Comprender las potencias de diez como los órdenes del sistema posicional.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 05",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "exponente_cero",
+      "nombre": "Exponente cero",
+      "nivel_zoom": 3,
+      "padre": "potencias_c",
+      "region": "potencias",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 9410,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Fundamentar por qué toda potencia de exponente cero vale uno, a partir del cociente de potencias iguales.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 05",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "notacion_cientifica",
+      "nombre": "Notación científica",
+      "nivel_zoom": 3,
+      "padre": "potencias_c",
+      "region": "potencias",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 9670,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Expresar cantidades muy grandes o muy pequeñas como producto de un número entre uno y diez por una potencia de diez.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 05",
+            "curso": "7B",
+            "eje": "Números",
+            "cobertura": "parcial",
+            "texto": "Expresando números naturales en notación científica; resolviendo problemas, usando la notación científica."
+          }
+        ]
+      }
+    },
+    {
+      "id": "propiedades_potencias",
+      "nombre": "Propiedades de las potencias",
+      "nivel_zoom": 3,
+      "padre": "potencias_c",
+      "region": "potencias",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 9930,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Multiplicar y dividir potencias de igual base operando sus exponentes, y elevar una potencia a otra.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 03",
+            "curso": "8B",
+            "eje": "Números",
+            "cobertura": "total",
+            "texto": "Explicar la multiplicación y la división de potencias de base natural y exponente natural hasta 3, de manera concreta, pictórica y simbólica."
+          },
+          {
+            "codigo": "MA1M OA 02",
+            "curso": "1M",
+            "eje": "Números",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "multiplica_bases",
+            "descripcion": "Al multiplicar potencias de igual base multiplica también las bases: resuelve 2^3 · 2^4 = 4^7.",
+            "naturaleza": "procedimental",
+            "nodo_implicado": "potencia",
+            "retroalimentacion_sugerida": "Desplegar ambas como cadenas de factores y contar: la base no cambia, los factores se acumulan."
+          }
+        ]
+      }
+    },
+    {
+      "id": "potencia_exponente_entero",
+      "nombre": "Potencia de exponente entero",
+      "nivel_zoom": 3,
+      "padre": "potencias_c",
+      "region": "potencias",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 9800,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Extender la potencia a exponentes negativos y a bases racionales, conservando las propiedades ya establecidas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 02",
+            "curso": "1M",
+            "eje": "Números",
+            "cobertura": "total",
+            "texto": "Mostrar que comprenden las potencias de base racional y exponente entero: transfiriendo propiedades de la multiplicación y división de potencias; relacionándolas con el crecimiento y decrecimiento de cantidades."
+          }
+        ]
+      }
+    },
+    {
+      "id": "raiz_cuadrada",
+      "nombre": "Raíz cuadrada",
+      "nivel_zoom": 3,
+      "padre": "potencias_c",
+      "region": "potencias",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 10190,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar el número que, elevado al cuadrado, produce una cantidad dada.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 04",
+            "curso": "8B",
+            "eje": "Números",
+            "cobertura": "total",
+            "texto": "Mostrar que comprenden las raíces cuadradas de números naturales: estimándolas de manera intuitiva; representándolas de manera concreta, pictórica y simbólica; aplicándolas en situaciones geométricas y en la vida diaria."
+          }
+        ],
+        "representaciones": [
+          {
+            "tipo": "concreto",
+            "nombre": "Lado del cuadrado",
+            "descripcion": "Construir un cuadrado con esa área: la raíz es la medida de su lado.",
+            "ancla_visual": "lado_cuadrado"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "raiz_distribuye_suma",
+            "descripcion": "Reparte la raíz sobre una suma: sostiene que la raíz de 9+16 es 3+4.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Calcular ambos lados: la raíz de 25 es 5, no 7. La raíz no se reparte sobre la suma."
+          }
+        ]
+      }
+    },
+    {
+      "id": "raiz_enesima",
+      "nombre": "Raíz enésima",
+      "nivel_zoom": 3,
+      "padre": "potencias_c",
+      "region": "potencias",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 9930,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Generalizar la raíz a cualquier índice: el número que elevado a n produce la cantidad dada.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 02",
+            "curso": "2M",
+            "eje": "Números",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "propiedades_raices",
+      "nombre": "Propiedades de las raíces",
+      "nivel_zoom": 3,
+      "padre": "potencias_c",
+      "region": "potencias",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 9800,
+        "y": 1800,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Descomponer y combinar raíces mediante sus propiedades para simplificar cálculos.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 01",
+            "curso": "2M",
+            "eje": "Números",
+            "cobertura": "parcial",
+            "texto": "Utilizando la descomposición de raíces y las propiedades de las raíces; combinando raíces con números racionales."
+          }
+        ]
+      }
+    },
+    {
+      "id": "exponente_racional",
+      "nombre": "Exponente racional",
+      "nivel_zoom": 3,
+      "padre": "potencias_c",
+      "region": "potencias",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 9800,
+        "y": 1650,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Reconocer la raíz como una potencia de exponente fraccionario, y convertir entre ambas escrituras.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 02",
+            "curso": "2M",
+            "eje": "Números",
+            "cobertura": "parcial",
+            "texto": "Comparando representaciones de potencias de exponente racional con raíces enésimas en la recta numérica; convirtiendo raíces enésimas a potencias de exponente racional y viceversa."
+          }
+        ]
+      }
+    },
+    {
+      "id": "logaritmo",
+      "nombre": "Logaritmo",
+      "nivel_zoom": 3,
+      "padre": "potencias_c",
+      "region": "potencias",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 9800,
+        "y": 1200,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar el exponente al que hay que elevar una base para obtener una cantidad dada.",
+        "descripcion": "Tercera incógnita de la potencia: la raíz busca la base, el logaritmo busca el exponente.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 02",
+            "curso": "2M",
+            "eje": "Números",
+            "cobertura": "parcial",
+            "texto": "Describiendo la relación entre potencias y logaritmos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "variacion_porcentual",
+      "nombre": "Variación porcentual",
+      "nivel_zoom": 3,
+      "padre": "proporcion_c",
+      "region": "proporcion",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 7000,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Cuantificar el aumento o la disminución de una cantidad como porcentaje de su valor inicial.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 05",
+            "curso": "8B",
+            "eje": "Números",
+            "cobertura": "total",
+            "texto": "Resolver problemas que involucran variaciones porcentuales en contextos diversos; por ejemplo: el interés anual del ahorro."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "porcentaje_reversible",
+            "descripcion": "Cree que subir un porcentaje y luego bajar el mismo porcentaje devuelve al valor inicial.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Calcular ambos pasos sobre una cantidad concreta: la base del segundo porcentaje ya no es la misma."
+          }
+        ]
+      }
+    },
+    {
+      "id": "expresion_algebraica",
+      "nombre": "Expresión algebraica",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 12470,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Componer términos con coeficiente y parte literal para representar cantidades generales.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 07",
+            "curso": "7B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA08 OA 06",
+            "curso": "8B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "letra_como_etiqueta",
+            "descripcion": "Lee la letra como abreviatura de un objeto y no como un número: interpreta 3m como 'tres metros' en vez de 'el triple de un número'.",
+            "naturaleza": "conceptual",
+            "nodo_implicado": "lenguaje_algebraico",
+            "retroalimentacion_sugerida": "Sustituir la letra por varios valores distintos: la expresión sigue teniendo sentido en todos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "termino_semejante",
+      "nombre": "Término semejante y reducción",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 12600,
+        "y": 1200,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Reconocer los términos que comparten parte literal y reunirlos en uno solo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 07",
+            "curso": "7B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Reducir expresiones algebraicas, reuniendo términos semejantes para obtener expresiones de la forma ax + by + cz."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "suma_no_semejantes",
+            "descripcion": "Reúne términos que no comparten parte literal: resuelve 3x + 2y = 5xy.",
+            "naturaleza": "procedimental",
+            "retroalimentacion_sugerida": "Nombrar las partes literales como objetos distintos: tres de una cosa y dos de otra no son cinco de una tercera."
+          }
+        ]
+      }
+    },
+    {
+      "id": "operatoria_algebraica",
+      "nombre": "Operatoria algebraica",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 12600,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Multiplicar y dividir expresiones algebraicas aplicando las propiedades de las operaciones numéricas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 06",
+            "curso": "8B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial",
+            "texto": "Mostrar que comprenden la operatoria de expresiones algebraicas: relacionándolas con el área de cuadrados, rectángulos y volúmenes de paralelepípedos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "productos_notables",
+      "nombre": "Productos notables",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 12600,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Reconocer y aplicar los patrones que resultan de multiplicar ciertas expresiones recurrentes.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 03",
+            "curso": "1M",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Desarrollar los productos notables: transformando productos en sumas y viceversa; completando el cuadrado del binomio."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "cuadrado_distribuye",
+            "descripcion": "Reparte el cuadrado sobre la suma: sostiene que (a+b)² = a² + b².",
+            "naturaleza": "conceptual",
+            "nodo_implicado": "estructura_arreglo_area",
+            "retroalimentacion_sugerida": "Construir el cuadrado de lado (a+b) con áreas: aparecen dos rectángulos que la respuesta olvida."
+          }
+        ]
+      }
+    },
+    {
+      "id": "factorizacion",
+      "nombre": "Factorización",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 12600,
+        "y": 1650,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Expresar una suma algebraica como producto de factores, invirtiendo el desarrollo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 06",
+            "curso": "8B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA1M OA 03",
+            "curso": "1M",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ecuacion_lineal",
+      "nombre": "Ecuación lineal general",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 12600,
+        "y": 1950,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Resolver igualdades con coeficientes racionales y la incógnita presente en ambos lados.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 09",
+            "curso": "7B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA08 OA 08",
+            "curso": "8B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Modelar situaciones de la vida diaria y de otras asignaturas, usando ecuaciones lineales de diversas formas."
+          }
+        ]
+      }
+    },
+    {
+      "id": "inecuacion_lineal",
+      "nombre": "Inecuación lineal general",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 12600,
+        "y": 2100,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar el conjunto de valores que satisfacen una desigualdad con coeficientes racionales.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 09",
+            "curso": "7B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA08 OA 09",
+            "curso": "8B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Resolver inecuaciones lineales con coeficientes racionales en el contexto de la resolución de problemas."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "no_invierte_desigualdad",
+            "descripcion": "Multiplica o divide por un negativo sin invertir el sentido de la desigualdad.",
+            "naturaleza": "procedimental",
+            "nodo_implicado": "numero_negativo",
+            "retroalimentacion_sugerida": "Verificar con un valor concreto antes y después: el orden se da vuelta al cambiar de sentido."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sistema_ecuaciones_lineales",
+      "nombre": "Sistema de ecuaciones lineales",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 12860,
+        "y": 2100,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar los valores que satisfacen simultáneamente dos condiciones lineales sobre dos incógnitas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 04",
+            "curso": "1M",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Resolver sistemas de ecuaciones lineales (2x2) mediante representaciones gráficas y simbólicas."
+          }
+        ]
+      }
+    },
+    {
+      "id": "ecuacion_cuadratica",
+      "nombre": "Ecuación cuadrática",
+      "nivel_zoom": 3,
+      "padre": "patrones_algebra_c",
+      "region": "patrones_algebra",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 12340,
+        "y": 2100,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar los valores que anulan una expresión de segundo grado, admitiendo más de una solución.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 04",
+            "curso": "2M",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Resolver ecuaciones cuadráticas de manera concreta, pictórica y simbólica o usando herramientas tecnológicas."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "una_sola_raiz",
+            "descripcion": "Entrega una única solución cuando la ecuación admite dos, descartando la negativa.",
+            "naturaleza": "conceptual",
+            "nodo_implicado": "numero_negativo",
+            "retroalimentacion_sugerida": "Verificar ambos valores en la ecuación original: los dos la satisfacen."
+          }
+        ]
+      }
+    },
+    {
+      "id": "proporcionalidad_directa",
+      "nombre": "Proporcionalidad directa",
+      "nivel_zoom": 3,
+      "padre": "funciones_c",
+      "region": "funciones",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 13870,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Reconocer dos magnitudes cuyo cociente permanece constante al variar ambas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 08",
+            "curso": "7B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial",
+            "texto": "Mostrar que comprenden las proporciones directas e inversas: realizando tablas de valores; graficando los valores de la tabla; explicando las características de la gráfica."
+          }
+        ]
+      }
+    },
+    {
+      "id": "proporcionalidad_inversa",
+      "nombre": "Proporcionalidad inversa",
+      "nivel_zoom": 3,
+      "padre": "funciones_c",
+      "region": "funciones",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 14130,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Reconocer dos magnitudes cuyo producto permanece constante, de modo que al crecer una decrece la otra.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 08",
+            "curso": "7B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "toda_relacion_es_directa",
+            "descripcion": "Asume proporcionalidad directa en cualquier relación creciente, sin verificar que el cociente se conserve.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Construir la tabla y calcular el cociente en cada fila: si cambia, la relación no es directa."
+          }
+        ]
+      }
+    },
+    {
+      "id": "funcion",
+      "nombre": "Función",
+      "nivel_zoom": 3,
+      "padre": "funciones_c",
+      "region": "funciones",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 14000,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Concebir una regla que asigna a cada valor de entrada un único valor de salida.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 07",
+            "curso": "8B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Mostrar que comprenden la noción de función por medio de un cambio lineal: utilizando tablas; usando metáforas de máquinas; estableciendo reglas entre x e y."
+          }
+        ],
+        "representaciones": [
+          {
+            "tipo": "concreto",
+            "nombre": "Máquina que transforma",
+            "descripcion": "Entra un número, la máquina aplica su regla, sale otro número.",
+            "ancla_visual": "maquina_funcion"
+          }
+        ]
+      }
+    },
+    {
+      "id": "funcion_lineal",
+      "nombre": "Función lineal",
+      "nivel_zoom": 3,
+      "padre": "funciones_c",
+      "region": "funciones",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 14130,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Representar una relación de cambio constante que pasa por el origen.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 05",
+            "curso": "1M",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial",
+            "texto": "Graficar relaciones lineales en dos variables de la forma f(x,y) = ax + by."
+          },
+          {
+            "codigo": "MA08 OA 07",
+            "curso": "8B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pendiente",
+      "nombre": "Pendiente",
+      "nivel_zoom": 3,
+      "padre": "funciones_c",
+      "region": "funciones",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 14130,
+        "y": 1650,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Cuantificar el cambio constante de una relación como razón entre la variación vertical y la horizontal.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 10",
+            "curso": "8B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA1M OA 05",
+            "curso": "1M",
+            "eje": "Álgebra y funciones",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "funcion_afin",
+      "nombre": "Función afín",
+      "nivel_zoom": 3,
+      "padre": "funciones_c",
+      "region": "funciones",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 14000,
+        "y": 1800,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Generalizar la función lineal sumándole una constante, que desplaza la recta sin alterar su inclinación.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 10",
+            "curso": "8B",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Mostrar que comprenden la función afín: generalizándola como la suma de una constante con una función lineal; trasladando funciones lineales en el plano cartesiano; relacionándola con el interés simple."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "confunde_pendiente_intercepto",
+            "descripcion": "Intercambia los roles de la inclinación y del punto de corte al leer o escribir la expresión.",
+            "naturaleza": "conceptual",
+            "nodo_implicado": "pendiente",
+            "retroalimentacion_sugerida": "Variar un parámetro a la vez sobre el gráfico: uno gira la recta, el otro la sube o baja."
+          }
+        ]
+      }
+    },
+    {
+      "id": "funcion_cuadratica",
+      "nombre": "Función cuadrática",
+      "nivel_zoom": 3,
+      "padre": "funciones_c",
+      "region": "funciones",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 14000,
+        "y": 2250,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Representar una relación cuyo cambio no es constante sino que varía de manera regular, describiendo una parábola.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 03",
+            "curso": "2M",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Mostrar que comprenden la función cuadrática: reconociéndola en situaciones de la vida diaria; representándola en tablas y gráficos; determinando puntos especiales de su gráfica."
+          }
+        ]
+      }
+    },
+    {
+      "id": "funcion_inversa",
+      "nombre": "Función inversa",
+      "nivel_zoom": 3,
+      "padre": "funciones_c",
+      "region": "funciones",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 13870,
+        "y": 1650,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar la regla que deshace lo que hace una función, devolviendo cada salida a su entrada.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 05",
+            "curso": "2M",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Mostrar que comprenden la inversa de una función: utilizando la metáfora de una máquina; utilizando la reflexión de la función en el gráfico; calculando las inversas en casos de funciones lineales y cuadráticas."
+          }
+        ]
+      }
+    },
+    {
+      "id": "cambio_porcentual_constante",
+      "nombre": "Cambio porcentual constante",
+      "nivel_zoom": 3,
+      "padre": "funciones_c",
+      "region": "funciones",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 13870,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Modelar situaciones en que una cantidad varía en un porcentaje fijo de sí misma en cada intervalo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 06",
+            "curso": "2M",
+            "eje": "Álgebra y funciones",
+            "cobertura": "total",
+            "texto": "Explicar el cambio porcentual constante en intervalos de tiempo: identificándolo con el interés compuesto; expresándolo en forma recursiva."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "compuesto_como_simple",
+            "descripcion": "Multiplica el porcentaje por el número de periodos, tratando el crecimiento como si fuera de cambio constante.",
+            "naturaleza": "conceptual",
+            "nodo_implicado": "funcion_afin",
+            "retroalimentacion_sugerida": "Calcular periodo a periodo sobre una cantidad concreta: la base crece en cada paso."
+          }
+        ]
+      }
+    },
+    {
+      "id": "plano_cartesiano_completo",
+      "nombre": "Plano cartesiano completo",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15400,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Localizar puntos en los cuatro cuadrantes mediante pares ordenados con signo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 14",
+            "curso": "7B",
+            "eje": "Geometría",
+            "cobertura": "parcial",
+            "texto": "Identificar puntos en el plano cartesiano, usando pares ordenados y vectores de forma concreta y pictórica."
+          },
+          {
+            "codigo": "MA08 OA 13",
+            "curso": "8B",
+            "eje": "Geometría",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "vector",
+      "nombre": "Vector",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15400,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Representar un desplazamiento mediante magnitud y dirección, independiente del punto donde se aplique.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 14",
+            "curso": "7B",
+            "eje": "Geometría",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA08 OA 13",
+            "curso": "8B",
+            "eje": "Geometría",
+            "cobertura": "parcial",
+            "texto": "Describir la posición y el movimiento de figuras 2D utilizando los vectores para la traslación."
+          },
+          {
+            "codigo": "MA1M OA 11",
+            "curso": "1M",
+            "eje": "Geometría",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "angulos_poligono",
+      "nombre": "Ángulos interiores y exteriores de polígonos",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15270,
+        "y": 750,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Descubrir las relaciones que cumplen los ángulos interiores y exteriores de un polígono cualquiera.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 10",
+            "curso": "7B",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Descubrir relaciones que involucran ángulos exteriores o interiores de diferentes polígonos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "circulo",
+      "nombre": "El círculo y sus elementos",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15010,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Describir el círculo por las relaciones entre su radio, su diámetro y su perímetro.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 11",
+            "curso": "7B",
+            "eje": "Geometría",
+            "cobertura": "parcial",
+            "texto": "Mostrar que comprenden el círculo: describiendo las relaciones entre el radio, el diámetro y el perímetro del círculo; identificándolo como lugar geométrico."
+          }
+        ]
+      }
+    },
+    {
+      "id": "razon_pi",
+      "nombre": "La razón constante del círculo",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15270,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Reconocer que el cociente entre el perímetro y el diámetro es el mismo en todo círculo.",
+        "descripcion": "Primera constante irracional que el estudiante encuentra: puente entre la razón y los números no racionales.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 11",
+            "curso": "7B",
+            "eje": "Geometría",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lugar_geometrico",
+      "nombre": "Lugar geométrico",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15010,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Concebir una figura como el conjunto de todos los puntos que cumplen una condición dada.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 11",
+            "curso": "7B",
+            "eje": "Geometría",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "construcciones_geometricas",
+      "nombre": "Construcciones con instrumentos",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15400,
+        "y": 600,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Construir rectas y puntos determinados por condiciones geométricas: perpendiculares, paralelas, bisectrices y alturas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 12",
+            "curso": "7B",
+            "eje": "Geometría",
+            "cobertura": "parcial",
+            "texto": "Construir objetos geométricos de manera manual y/o con software educativo: líneas como perpendiculares, paralelas, bisectrices y alturas."
+          }
+        ]
+      }
+    },
+    {
+      "id": "puntos_notables_triangulo",
+      "nombre": "Puntos notables del triángulo",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15530,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar los puntos que resultan de la intersección de rectas notables de un triángulo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 12",
+            "curso": "7B",
+            "eje": "Geometría",
+            "cobertura": "parcial",
+            "texto": "Puntos, como el punto medio, el centro de gravedad, el centro del círculo inscrito y del circunscrito de un triángulo."
+          }
+        ]
+      }
+    },
+    {
+      "id": "teorema_pitagoras",
+      "nombre": "Teorema de Pitágoras",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15790,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Relacionar las áreas de los cuadrados construidos sobre los lados de un triángulo rectángulo.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 12",
+            "curso": "8B",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Explicar, de manera concreta, pictórica y simbólica, la validez del teorema de Pitágoras y aplicar a la resolución de problemas geométricos y de la vida cotidiana."
+          }
+        ],
+        "representaciones": [
+          {
+            "tipo": "concreto",
+            "nombre": "Cuadrados sobre los lados",
+            "descripcion": "Recubrir con unidades los cuadrados de los catetos y comprobar que llenan el de la hipotenusa.",
+            "ancla_visual": "cuadrados_pitagoras"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "pitagoras_sin_rectangulo",
+            "descripcion": "Aplica la relación a triángulos que no son rectángulos.",
+            "naturaleza": "procedimental",
+            "nodo_implicado": "angulo_concepto",
+            "retroalimentacion_sugerida": "Verificar con un triángulo cualquiera: la igualdad falla si no hay ángulo recto."
+          },
+          {
+            "id": "hipotenusa_cualquiera",
+            "descripcion": "Toma como hipotenusa un lado que no es el opuesto al ángulo recto.",
+            "naturaleza": "procedimental",
+            "retroalimentacion_sugerida": "Marcar primero el ángulo recto: la hipotenusa es siempre el lado que no lo toca."
+          }
+        ]
+      }
+    },
+    {
+      "id": "composicion_transformaciones",
+      "nombre": "Composición de transformaciones",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15270,
+        "y": 1650,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Aplicar sucesivamente traslaciones, rotaciones y reflexiones, y reconocer el movimiento resultante.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 14",
+            "curso": "8B",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Componer rotaciones, traslaciones y reflexiones en el plano cartesiano y en el espacio, y aplicar a la simetría de polígonos y poliedros."
+          }
+        ]
+      }
+    },
+    {
+      "id": "homotecia",
+      "nombre": "Homotecia",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15270,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Transformar una figura ampliándola o reduciéndola desde un centro, conservando su forma.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 08",
+            "curso": "1M",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Mostrar que comprenden el concepto de homotecia: relacionándola con la perspectiva, el funcionamiento de instrumentos ópticos y el ojo humano; midiendo segmentos adecuados para determinar sus propiedades."
+          },
+          {
+            "codigo": "MA1M OA 11",
+            "curso": "1M",
+            "eje": "Geometría",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "semejanza",
+      "nombre": "Semejanza",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15530,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Reconocer figuras de igual forma y distinto tamaño, cuyos lados guardan una razón constante.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 10",
+            "curso": "1M",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Aplicar propiedades de semejanza y de proporcionalidad a modelos a escala y otras situaciones de la vida diaria y otras asignaturas."
+          }
+        ]
+      }
+    },
+    {
+      "id": "teorema_tales",
+      "nombre": "Teorema de Tales",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15790,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Establecer que un haz de paralelas corta segmentos proporcionales sobre dos transversales.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 09",
+            "curso": "1M",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Desarrollar el teorema de Tales mediante las propiedades de la homotecia, para aplicarlo en la resolución de problemas."
+          }
+        ]
+      }
+    },
+    {
+      "id": "razones_trigonometricas",
+      "nombre": "Razones trigonométricas",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15530,
+        "y": 1200,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Relacionar los ángulos agudos de un triángulo rectángulo con las razones entre sus lados.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 08",
+            "curso": "2M",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Mostrar que comprenden las razones trigonométricas de seno, coseno y tangente en triángulos rectángulos: relacionándolas con las propiedades de la semejanza y los ángulos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "proyeccion_vectorial",
+      "nombre": "Composición y proyección de vectores",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 15530,
+        "y": 1650,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Descomponer un desplazamiento en componentes perpendiculares y determinar su proyección.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 09",
+            "curso": "2M",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Aplicar las razones trigonométricas en diversos contextos en la composición y descomposición de vectores y determinar las proyecciones de vectores."
+          }
+        ]
+      }
+    },
+    {
+      "id": "formula_area_figuras",
+      "nombre": "Fórmulas de área de figuras planas",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 16540,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Deducir y aplicar las fórmulas del área del triángulo, del paralelogramo y del trapecio.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 13",
+            "curso": "7B",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Desarrollar y aplicar la fórmula del área de triángulos, paralelogramos y trapecios."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "altura_como_lado",
+            "descripcion": "Usa un lado inclinado como altura en vez de la distancia perpendicular a la base.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Trazar la perpendicular desde el vértice: la altura no siempre coincide con un lado."
+          }
+        ]
+      }
+    },
+    {
+      "id": "area_circulo",
+      "nombre": "Área del círculo",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 16670,
+        "y": 1200,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar la superficie encerrada por un círculo a partir de su radio.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 11",
+            "curso": "7B",
+            "eje": "Geometría",
+            "cobertura": "parcial",
+            "texto": "Estimando de manera intuitiva el perímetro y el área de un círculo; aplicando las aproximaciones en la resolución de problemas."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sector_circular",
+      "nombre": "Sector y segmento circular",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 16670,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar el área y el perímetro de una parte del círculo delimitada por un ángulo central.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 06",
+            "curso": "1M",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Desarrollar la fórmula de los valores del área y del perímetro de sectores y segmentos circulares, a partir de ángulos centrales de 60º, 90º, 120º y 180º."
+          }
+        ]
+      }
+    },
+    {
+      "id": "volumen_prisma_cilindro",
+      "nombre": "Volumen de prismas y cilindros",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 17060,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar el volumen de un cuerpo recto como el producto del área de su base por su altura.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 11",
+            "curso": "8B",
+            "eje": "Geometría",
+            "cobertura": "parcial",
+            "texto": "Transfiriendo la fórmula del volumen de un cubo (base por altura) en prismas diversos y cilindros."
+          }
+        ]
+      }
+    },
+    {
+      "id": "superficie_prisma_cilindro",
+      "nombre": "Área de superficie de prismas y cilindros",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 16800,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar la superficie de un cuerpo recto desplegando su red en figuras planas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 11",
+            "curso": "8B",
+            "eje": "Geometría",
+            "cobertura": "parcial",
+            "texto": "Desplegando la red de prismas rectos para encontrar la fórmula del área de superficie."
+          }
+        ]
+      }
+    },
+    {
+      "id": "superficie_volumen_cono",
+      "nombre": "Superficie y volumen del cono",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 16930,
+        "y": 1200,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar la superficie y el volumen de un cuerpo que termina en punta, relacionándolo con el cilindro.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 07",
+            "curso": "1M",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Desarrollar las fórmulas para encontrar el área de la superficie y el volumen del cono: desplegando la red del cono; experimentando para encontrar la relación entre el volumen del cilindro y el cono."
+          }
+        ]
+      }
+    },
+    {
+      "id": "superficie_volumen_esfera",
+      "nombre": "Superficie y volumen de la esfera",
+      "nivel_zoom": 3,
+      "padre": "medicion_c",
+      "region": "medicion",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 16930,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar la superficie y el volumen de un cuerpo sin caras planas ni red desplegable.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 07",
+            "curso": "2M",
+            "eje": "Geometría",
+            "cobertura": "total",
+            "texto": "Desarrollar las fórmulas del área de la superficie y del volumen de la esfera: conjeturando la fórmula; representando de manera concreta y simbólica."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tabla_frecuencias",
+      "nombre": "Tabla de frecuencias",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18330,
+        "y": 450,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Organizar los datos de una muestra según cuántas veces ocurre cada valor.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 16",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial",
+            "texto": "Representar datos obtenidos en una muestra mediante tablas de frecuencias absolutas y relativas, utilizando gráficos apropiados."
+          }
+        ]
+      }
+    },
+    {
+      "id": "frecuencia_relativa",
+      "nombre": "Frecuencia relativa",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 17940,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Expresar cuántas veces ocurre un valor respecto del total de observaciones, y no en términos absolutos.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 16",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA07 OA 18",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "compara_absolutos",
+            "descripcion": "Compara dos grupos de distinto tamaño usando frecuencias absolutas y concluye mal.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Calcular la proporción en cada grupo: veinte de cien no es lo mismo que veinte de treinta."
+          }
+        ]
+      }
+    },
+    {
+      "id": "medidas_tendencia_central",
+      "nombre": "Medidas de tendencia central",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18070,
+        "y": 1200,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Elegir entre media, mediana y moda el valor que mejor representa un conjunto de datos según la pregunta.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 17",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial",
+            "texto": "Mostrar que comprenden las medidas de tendencia central y el rango: determinando la medida adecuada para responder un problema planteado; utilizándolos para comparar dos poblaciones."
+          }
+        ]
+      }
+    },
+    {
+      "id": "rango_variabilidad",
+      "nombre": "Rango y variabilidad",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18850,
+        "y": 1200,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Cuantificar cuán dispersos están los datos, información que ninguna medida de tendencia central entrega.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 17",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dato_atipico",
+      "nombre": "Dato atípico",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 17810,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Reconocer el efecto que un valor muy distinto de los demás produce sobre las medidas del conjunto.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 17",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial",
+            "texto": "Determinando el efecto de un dato que es muy diferente a los otros."
+          }
+        ]
+      }
+    },
+    {
+      "id": "muestreo_inferencia",
+      "nombre": "Muestreo e inferencia",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18590,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Estimar una característica de una población desconocida a partir de lo observado en una muestra.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 15",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "total",
+            "texto": "Estimar el porcentaje de algunas características de una población desconocida por medio del muestreo."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probabilidad_experimental",
+      "nombre": "Probabilidad experimental",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18330,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Estimar la probabilidad de un evento a partir de las frecuencias relativas observadas al repetir el experimento.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 18",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "total",
+            "texto": "Explicar las probabilidades de eventos obtenidos por medio de experimentos: estimándolas de manera intuitiva; utilizando frecuencias relativas; relacionándolas con razones, fracciones o porcentaje."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probabilidad_teorica",
+      "nombre": "Probabilidad teórica",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18200,
+        "y": 900,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar la probabilidad de un evento razonando sobre los casos posibles, sin necesidad de experimentar.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 19",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial",
+            "texto": "Comparar las frecuencias relativas de un evento obtenidas al repetir un experimento con la probabilidad obtenida de manera teórica."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "equiprobabilidad_asumida",
+            "descripcion": "Supone que todos los resultados son igualmente probables sin verificarlo.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Enumerar los casos posibles del experimento: no siempre son del mismo tipo ni del mismo número."
+          }
+        ]
+      }
+    },
+    {
+      "id": "diagrama_arbol",
+      "nombre": "Diagrama de árbol",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 17550,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Representar de forma ramificada todos los resultados posibles de un experimento de varias etapas.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA07 OA 19",
+            "curso": "7B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA08 OA 17",
+            "curso": "8B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "medidas_posicion",
+      "nombre": "Medidas de posición",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18330,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Ubicar un dato dentro del conjunto según qué proporción de observaciones queda por debajo de él.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 15",
+            "curso": "8B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial",
+            "texto": "Mostrar que comprenden las medidas de posición, percentiles y cuartiles: identificando la población que está sobre o bajo el percentil; utilizándolas para comparar poblaciones."
+          }
+        ]
+      }
+    },
+    {
+      "id": "diagrama_cajon",
+      "nombre": "Diagrama de cajón",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 17940,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Representar gráficamente la posición y la dispersión de un conjunto de datos mediante sus cuartiles.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 15",
+            "curso": "8B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "evaluacion_representaciones",
+      "nombre": "Evaluación crítica de representaciones",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18070,
+        "y": 750,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Juzgar si una representación es adecuada para los datos que muestra, y detectar cuándo distorsiona su lectura.",
+        "descripcion": "Nodo de alfabetización estadística: el único del eje cuyo objeto es la representación misma y no los datos.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 16",
+            "curso": "8B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "total",
+            "texto": "Evaluar la forma en que los datos están presentados: comparando la información de los mismos datos en distintos tipos de gráficos; justificando la elección del gráfico; detectando manipulaciones de gráficos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "principio_multiplicativo",
+      "nombre": "Principio combinatorio multiplicativo",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18330,
+        "y": 1200,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Contar los resultados de un experimento de varias etapas multiplicando las opciones de cada una.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 17",
+            "curso": "8B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial",
+            "texto": "Explicar el principio combinatorio multiplicativo: a partir de situaciones concretas; representándolo con tablas y árboles regulares."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probabilidad_evento_compuesto",
+      "nombre": "Probabilidad de evento compuesto",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18460,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar la probabilidad de un resultado que exige que ocurran varias cosas a la vez o en sucesión.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA08 OA 17",
+            "curso": "8B",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial",
+            "texto": "Utilizándolo para calcular la probabilidad de un evento compuesto."
+          }
+        ]
+      }
+    },
+    {
+      "id": "tabla_doble_entrada",
+      "nombre": "Tabla de doble entrada",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18070,
+        "y": 450,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Registrar simultáneamente dos características de una misma población y cruzar sus valores.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 12",
+            "curso": "1M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial",
+            "texto": "Registrar distribuciones de dos características distintas, de una misma población, en una tabla de doble entrada y en una nube de puntos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "nube_puntos",
+      "nombre": "Nube de puntos",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18200,
+        "y": 1500,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Representar cada individuo como un punto según dos características, para observar cómo se relacionan.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 12",
+            "curso": "1M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
+          },
+          {
+            "codigo": "MA1M OA 13",
+            "curso": "1M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "total",
+            "texto": "Comparar poblaciones mediante la confección de gráficos xy para dos atributos de muestras: utilizando nubes de puntos en dos colores; separando la nube por medio de una recta trazada de manera intuitiva."
+          }
+        ]
+      }
+    },
+    {
+      "id": "regla_aditiva_probabilidad",
+      "nombre": "Regla aditiva",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18590,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar la probabilidad de que ocurra un evento u otro, descontando lo que ambos comparten.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 14",
+            "curso": "1M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial",
+            "texto": "Desarrollar las reglas de las probabilidades, la regla aditiva, la regla multiplicativa y la combinación de ambas."
+          }
+        ],
+        "errores_frecuentes": [
+          {
+            "id": "suma_sin_descontar",
+            "descripcion": "Suma las probabilidades de dos eventos que pueden ocurrir juntos sin restar la parte compartida.",
+            "naturaleza": "conceptual",
+            "retroalimentacion_sugerida": "Dibujar ambos conjuntos superpuestos: la zona común quedó contada dos veces."
+          }
+        ]
+      }
+    },
+    {
+      "id": "regla_multiplicativa_probabilidad",
+      "nombre": "Regla multiplicativa",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18200,
+        "y": 1650,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Determinar la probabilidad de que dos eventos ocurran ambos, atendiendo a si uno condiciona al otro.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 14",
+            "curso": "1M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial"
+          }
+        ]
+      }
+    },
+    {
+      "id": "modelo_azar",
+      "nombre": "El azar como modelo",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18070,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Concebir el comportamiento azaroso como algo que exhibe regularidad al acumular muchas repeticiones.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA1M OA 15",
+            "curso": "1M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "total",
+            "texto": "Mostrar que comprenden el concepto de azar: experimentando con la tabla de Galton y con paseos aleatorios sencillos; utilizando probabilidades para describir el comportamiento azaroso."
+          }
+        ]
+      }
+    },
+    {
+      "id": "variable_aleatoria",
+      "nombre": "Variable aleatoria",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18850,
+        "y": 1050,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Asignar un valor numérico a cada resultado posible de un experimento, para poder operar con él.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 10",
+            "curso": "2M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial",
+            "texto": "Mostrar que comprenden las variables aleatorias finitas: definiendo la variable; determinando los posibles valores de la incógnita."
+          }
+        ]
+      }
+    },
+    {
+      "id": "distribucion_probabilidad",
+      "nombre": "Distribución de probabilidad",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18070,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Describir cómo se reparte la probabilidad entre todos los valores que puede tomar una variable aleatoria.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 10",
+            "curso": "2M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "parcial",
+            "texto": "Calculando su probabilidad; graficando sus distribuciones."
+          }
+        ]
+      }
+    },
+    {
+      "id": "permutacion_combinatoria",
+      "nombre": "Permutaciones y combinatoria",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18850,
+        "y": 1350,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Contar de cuántas maneras pueden ordenarse o elegirse elementos de un conjunto.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 11",
+            "curso": "2M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "total",
+            "texto": "Utilizar permutaciones y la combinatoria sencilla para calcular probabilidades de eventos y resolver problemas."
+          }
+        ]
+      }
+    },
+    {
+      "id": "probabilidad_sociedad",
+      "nombre": "La probabilidad en la sociedad",
+      "nivel_zoom": 3,
+      "padre": "datos_probabilidades_c",
+      "region": "datos_probabilidades",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 18590,
+        "y": 1200,
+        "fijada_a_mano": false
+      },
+      "metadatos": {
+        "definicion": "Interpretar afirmaciones probabilísticas del discurso público y reconocer las suposiciones que las sostienen.",
+        "oa_relacionados": [
+          {
+            "codigo": "MA2M OA 12",
+            "curso": "2M",
+            "eje": "Probabilidad y estadística",
+            "cobertura": "total",
+            "texto": "Mostrar que comprenden el rol de la probabilidad en la sociedad: revisando informaciones de los medios; identificando suposiciones basadas en probabilidades; explicando cómo una probabilidad puede sustentar suposiciones opuestas."
+          }
+        ]
       }
     }
   ],
@@ -5912,7 +8591,1098 @@
       "justificacion": "No es posible detectar tendencias en frecuencias que no se registraron sistemáticamente.",
       "clausula": null,
       "confianza": "hipotesis"
+    },
+    {
+      "de": "recta_numerica",
+      "a": "numero_negativo",
+      "justificacion": "No es posible concebir cantidades orientadas en sentido opuesto respecto de un punto de referencia sin concebir los números como posiciones sobre una línea.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "numero_negativo",
+      "a": "recta_numerica_entera",
+      "justificacion": "No es posible extender la recta en ambos sentidos desde el cero sin admitir cantidades menores que cero.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "suma",
+      "a": "adicion_sustraccion_enteros",
+      "justificacion": "No es posible componer dos cantidades orientadas sin comprender qué hace la operación que compone cantidades.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "resta",
+      "a": "adicion_sustraccion_enteros",
+      "justificacion": "No es posible determinar la diferencia entre dos cantidades orientadas sin comprender qué hace la sustracción.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "recta_numerica_entera",
+      "a": "adicion_sustraccion_enteros",
+      "justificacion": "No es posible interpretar la operación como desplazamiento en un sentido u otro sin disponer de la recta extendida en ambos sentidos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "numero_negativo",
+      "a": "regla_signos",
+      "justificacion": "No es posible determinar el sentido del resultado sin comprender qué significa el sentido de una cantidad.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "regla_signos",
+      "justificacion": "No es posible establecer cómo se combinan los sentidos de los factores sin comprender qué hace la multiplicación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "regla_signos",
+      "a": "multiplicacion_division_enteros",
+      "justificacion": "No es posible determinar el resultado completo de la operación sin poder determinar su sentido.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division",
+      "a": "multiplicacion_division_enteros",
+      "justificacion": "No es posible repartir una cantidad orientada sin comprender qué hace la división.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "amplificacion_simplificacion",
+      "a": "multiplicacion_fracciones",
+      "justificacion": "No es posible reducir el producto a su forma más simple sin poder transformar una fracción en otra equivalente.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion_fracciones",
+      "a": "division_fracciones",
+      "justificacion": "No es posible resolver el cociente multiplicando por el inverso sin poder multiplicar fracciones.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion_division_decimales",
+      "a": "multiplicacion_fracciones",
+      "justificacion": "No es posible relacionar el producto de fracciones con el de sus escrituras decimales sin poder operar decimales.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "numero_negativo",
+      "a": "numero_racional",
+      "justificacion": "No es posible incluir las cantidades de sentido opuesto en un mismo conjunto numérico sin comprender qué son.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "equivalencia_fraccion_decimal",
+      "a": "numero_racional",
+      "justificacion": "No es posible reconocer fracción y decimal como escrituras del mismo número sin comprender que designan la misma cantidad.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "numero_racional",
+      "a": "operatoria_racionales",
+      "justificacion": "No es posible operar simbólicamente con estos números sin reconocerlos como un mismo tipo de número.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division_fracciones",
+      "a": "operatoria_racionales",
+      "justificacion": "No es posible operar racionales en cualquiera de sus escrituras sin poder dividir fracciones.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion_division_enteros",
+      "a": "operatoria_racionales",
+      "justificacion": "No es posible operar racionales de cualquier sentido sin poder multiplicar y dividir cantidades orientadas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "jerarquia_operaciones",
+      "a": "operatoria_racionales",
+      "justificacion": "No es posible resolver un cálculo simbólico con varias operaciones sin comprender en qué orden se resuelven.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "numero_racional",
+      "a": "numero_irracional",
+      "justificacion": "No es posible reconocer una cantidad que no admite expresión como cociente de enteros sin comprender qué cantidades sí la admiten.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "raiz_cuadrada",
+      "a": "numero_irracional",
+      "justificacion": "No es posible encontrar cantidades de escritura decimal no periódica sin disponer de una operación que las produzca.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "numero_irracional",
+      "a": "numero_real",
+      "justificacion": "No es posible completar la recta sin admitir las cantidades que no son cociente de enteros.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "potencia",
+      "justificacion": "No es posible expresar la repetición de un mismo factor sin comprender qué hace la multiplicación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "potencia",
+      "a": "potencia_base_10",
+      "justificacion": "No es posible tratar los órdenes del sistema posicional como potencias sin comprender qué es una potencia.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "valor_posicional",
+      "a": "potencia_base_10",
+      "justificacion": "No es posible reconocer cada orden como una potencia de diez sin comprender que la posición determina el valor.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "potencia_base_10",
+      "a": "notacion_cientifica",
+      "justificacion": "No es posible expresar una cantidad como producto por una potencia de diez sin comprender las potencias de diez.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "decimal_notacion",
+      "a": "notacion_cientifica",
+      "justificacion": "No es posible escribir el factor comprendido entre uno y diez sin comprender la escritura decimal.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "potencia",
+      "a": "exponente_cero",
+      "justificacion": "No es posible fundamentar el valor de una potencia de exponente nulo sin comprender qué es una potencia.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division",
+      "a": "exponente_cero",
+      "justificacion": "No es posible deducir ese valor desde el cociente de dos potencias iguales sin comprender qué hace la división.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "potencia",
+      "a": "propiedades_potencias",
+      "justificacion": "No es posible operar potencias mediante sus exponentes sin comprender qué es una potencia.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "division",
+      "a": "propiedades_potencias",
+      "justificacion": "No es posible justificar la cancelación de factores al dividir potencias sin comprender qué hace la división.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "propiedades_potencias",
+      "a": "potencia_exponente_entero",
+      "justificacion": "No es posible extender la potencia a exponentes negativos conservando las reglas sin disponer de esas reglas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "exponente_cero",
+      "a": "potencia_exponente_entero",
+      "justificacion": "No es posible continuar la secuencia de exponentes hacia los negativos sin haber establecido el valor en el cero.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "numero_racional",
+      "a": "potencia_exponente_entero",
+      "justificacion": "No es posible elevar una base que es cociente de enteros sin reconocer ese cociente como un número.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "potencia",
+      "a": "raiz_cuadrada",
+      "justificacion": "No es posible buscar el número que elevado al cuadrado produce una cantidad sin comprender qué es elevar al cuadrado.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "estructura_arreglo_area",
+      "a": "raiz_cuadrada",
+      "justificacion": "No es posible interpretar la raíz como el lado de un cuadrado de área dada sin comprender cómo el área se organiza en filas y columnas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "raiz_cuadrada",
+      "a": "raiz_enesima",
+      "justificacion": "No es posible generalizar la raíz a cualquier índice sin comprender el caso del índice dos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "raiz_enesima",
+      "a": "propiedades_raices",
+      "justificacion": "No es posible descomponer y combinar raíces sin comprender qué es una raíz.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "propiedades_potencias",
+      "a": "propiedades_raices",
+      "justificacion": "No es posible derivar las reglas de las raíces desde las de las potencias sin disponer de estas últimas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "numero_real",
+      "a": "propiedades_raices",
+      "justificacion": "No es posible combinar raíces con números de escritura no periódica sin admitir esas cantidades como números.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "raiz_enesima",
+      "a": "exponente_racional",
+      "justificacion": "No es posible reconocer la raíz como potencia de exponente fraccionario sin comprender qué es una raíz de índice cualquiera.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "potencia_exponente_entero",
+      "a": "exponente_racional",
+      "justificacion": "No es posible extender el exponente a los fraccionarios sin haberlo extendido antes más allá de los naturales.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "raiz_enesima",
+      "a": "logaritmo",
+      "justificacion": "No es posible distinguir cuál de los términos de la potencia se busca sin conocer la operación que busca la base.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "propiedades_potencias",
+      "a": "logaritmo",
+      "justificacion": "No es posible relacionar el logaritmo con el comportamiento de los exponentes sin conocer las reglas que estos cumplen.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "porcentaje",
+      "a": "variacion_porcentual",
+      "justificacion": "No es posible cuantificar un cambio como porcentaje del valor inicial sin comprender qué es un porcentaje.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "lenguaje_algebraico",
+      "a": "expresion_algebraica",
+      "justificacion": "No es posible componer términos con coeficiente y parte literal sin comprender que un símbolo puede designar cualquier número.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "multiplicacion",
+      "a": "expresion_algebraica",
+      "justificacion": "No es posible interpretar el coeficiente que acompaña a la parte literal sin comprender qué hace la multiplicación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "expresion_algebraica",
+      "a": "termino_semejante",
+      "justificacion": "No es posible reconocer qué términos comparten parte literal sin comprender cómo se compone un término.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "propiedad_distributiva",
+      "a": "operatoria_algebraica",
+      "justificacion": "No es posible multiplicar una expresión de varios términos sin comprender que el factor se reparte sobre la suma.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "termino_semejante",
+      "a": "operatoria_algebraica",
+      "justificacion": "No es posible reducir el resultado de multiplicar expresiones sin poder reunir los términos semejantes.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "operatoria_algebraica",
+      "a": "productos_notables",
+      "justificacion": "No es posible reconocer los patrones que produce cierta multiplicación sin poder multiplicar expresiones.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "factor_divisor",
+      "a": "factorizacion",
+      "justificacion": "No es posible descomponer una expresión en factores sin comprender qué es un factor.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "productos_notables",
+      "a": "factorizacion",
+      "justificacion": "No es posible reconocer una suma como el desarrollo de un producto conocido sin conocer esos desarrollos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "ecuacion_formal",
+      "a": "ecuacion_lineal",
+      "justificacion": "No es posible resolver una igualdad con la incógnita en ambos lados sin poder resolver una igualdad con la incógnita en uno solo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "termino_semejante",
+      "a": "ecuacion_lineal",
+      "justificacion": "No es posible reunir los términos de cada lado de la igualdad sin poder reducir términos semejantes.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "operatoria_racionales",
+      "a": "ecuacion_lineal",
+      "justificacion": "No es posible operar coeficientes que son cociente de enteros sin poder operar con esos números.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "inecuacion_un_paso",
+      "a": "inecuacion_lineal",
+      "justificacion": "No es posible determinar el conjunto solución de una desigualdad compuesta sin poder resolver una desigualdad de un paso.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "ecuacion_lineal",
+      "a": "inecuacion_lineal",
+      "justificacion": "No es posible operar los términos de una desigualdad sin poder operar los de una igualdad equivalente.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "ecuacion_lineal",
+      "a": "sistema_ecuaciones_lineales",
+      "justificacion": "No es posible satisfacer dos condiciones lineales a la vez sin poder resolver una condición lineal.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "funcion_lineal",
+      "a": "sistema_ecuaciones_lineales",
+      "justificacion": "No es posible interpretar la solución como intersección de dos rectas sin comprender qué recta representa cada condición.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "ecuacion_lineal",
+      "a": "ecuacion_cuadratica",
+      "justificacion": "No es posible resolver una igualdad de segundo grado sin poder resolver una de primer grado.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "raiz_cuadrada",
+      "a": "ecuacion_cuadratica",
+      "justificacion": "No es posible despejar la incógnita elevada al cuadrado sin disponer de la operación que la deshace.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "factorizacion",
+      "a": "ecuacion_cuadratica",
+      "justificacion": "No es posible anular la expresión mediante sus factores sin poder expresarla como producto.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "razon",
+      "a": "proporcionalidad_directa",
+      "justificacion": "No es posible reconocer que el cociente entre dos magnitudes se conserva sin comprender qué es una comparación multiplicativa.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "relacion_funcional",
+      "a": "proporcionalidad_directa",
+      "justificacion": "No es posible verificar la constancia del cociente en una tabla sin comprender que los valores de una tabla se relacionan por una regla.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "razon",
+      "a": "proporcionalidad_inversa",
+      "justificacion": "No es posible reconocer que el producto entre dos magnitudes se conserva sin comprender qué es una comparación multiplicativa.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "relacion_funcional",
+      "a": "funcion",
+      "justificacion": "No es posible enunciar una regla que asigna a cada entrada una única salida sin haber reconocido antes que los valores de una tabla se relacionan por una regla.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "lenguaje_algebraico",
+      "a": "funcion",
+      "justificacion": "No es posible escribir la regla para un valor de entrada cualquiera sin poder designar ese valor con un símbolo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "funcion",
+      "a": "funcion_lineal",
+      "justificacion": "No es posible identificar el caso de cambio constante sin comprender qué es una regla de correspondencia.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "proporcionalidad_directa",
+      "a": "funcion_lineal",
+      "justificacion": "No es posible reconocer la relación que pasa por el origen con cociente constante sin comprender esa constancia.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "plano_cartesiano_completo",
+      "a": "funcion_lineal",
+      "justificacion": "No es posible representar gráficamente la relación en todo su recorrido sin poder localizar puntos de cualquier signo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "funcion_lineal",
+      "a": "pendiente",
+      "justificacion": "No es posible cuantificar el cambio constante de una relación sin comprender qué relación tiene cambio constante.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "pendiente",
+      "a": "funcion_afin",
+      "justificacion": "No es posible distinguir la inclinación del desplazamiento sin poder cuantificar la inclinación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "funcion_afin",
+      "a": "funcion_cuadratica",
+      "justificacion": "No es posible reconocer que el cambio no es constante sin comprender antes una relación de cambio constante.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "ecuacion_cuadratica",
+      "a": "funcion_cuadratica",
+      "justificacion": "No es posible determinar los puntos donde la curva corta el eje sin poder resolver la igualdad de segundo grado.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "funcion_lineal",
+      "a": "funcion_inversa",
+      "justificacion": "No es posible calcular la inversa en el caso de cambio constante sin comprender esa relación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "reversibilidad_multiplicativa",
+      "a": "funcion_inversa",
+      "justificacion": "No es posible concebir una regla que deshace a otra sin haber comprendido antes que una operación puede deshacer a otra.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "simetria_axial",
+      "a": "funcion_inversa",
+      "justificacion": "No es posible obtener la inversa reflejando el gráfico respecto de una recta sin comprender qué hace una reflexión.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "variacion_porcentual",
+      "a": "cambio_porcentual_constante",
+      "justificacion": "No es posible modelar una variación porcentual repetida sin comprender qué es una variación porcentual.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "funcion",
+      "a": "cambio_porcentual_constante",
+      "justificacion": "No es posible expresar el cambio como regla que relaciona un periodo con el siguiente sin comprender qué es una regla de correspondencia.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "potencia",
+      "a": "cambio_porcentual_constante",
+      "justificacion": "No es posible acumular un factor de crecimiento repetido sin comprender la repetición de un mismo factor.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "plano_cartesiano",
+      "a": "plano_cartesiano_completo",
+      "justificacion": "No es posible localizar puntos en los cuatro cuadrantes sin poder localizarlos en uno.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "numero_negativo",
+      "a": "plano_cartesiano_completo",
+      "justificacion": "No es posible extender los ejes más allá del origen sin admitir cantidades menores que cero.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "plano_cartesiano_completo",
+      "a": "vector",
+      "justificacion": "No es posible expresar un desplazamiento por sus componentes sin poder localizar puntos mediante coordenadas con signo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "transformaciones_isometricas",
+      "a": "vector",
+      "justificacion": "No es posible concebir un desplazamiento independiente del punto donde se aplica sin comprender qué es trasladar una figura.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "suma_angulos_interiores",
+      "a": "angulos_poligono",
+      "justificacion": "No es posible generalizar la relación a un polígono cualquiera sin conocer la relación en el caso de menos lados.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "figuras_2d",
+      "a": "circulo",
+      "justificacion": "No es posible describir el círculo por sus elementos sin poder atender a los atributos de una figura plana.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "perimetro",
+      "a": "circulo",
+      "justificacion": "No es posible relacionar el contorno del círculo con su radio sin comprender qué es el contorno de una figura.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "razon",
+      "a": "razon_pi",
+      "justificacion": "No es posible reconocer que el cociente entre dos medidas es siempre el mismo sin comprender qué es una comparación multiplicativa.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "circulo",
+      "a": "razon_pi",
+      "justificacion": "No es posible comparar el contorno con el diámetro sin distinguir ambos elementos del círculo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "circulo",
+      "a": "lugar_geometrico",
+      "justificacion": "No es posible concebir una figura como el conjunto de puntos que cumplen una condición sin disponer de un caso donde esa condición sea reconocible.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "paralelas_perpendiculares",
+      "a": "construcciones_geometricas",
+      "justificacion": "No es posible construir rectas que cumplan una condición de dirección sin comprender esa condición.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "medicion_angulos",
+      "a": "construcciones_geometricas",
+      "justificacion": "No es posible construir la recta que divide un ángulo en dos partes iguales sin poder medir ángulos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "construccion_triangulos",
+      "a": "puntos_notables_triangulo",
+      "justificacion": "No es posible determinar puntos definidos por rectas del triángulo sin poder construir y clasificar triángulos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "construcciones_geometricas",
+      "a": "puntos_notables_triangulo",
+      "justificacion": "No es posible obtener el punto donde concurren esas rectas sin poder construirlas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "estructura_arreglo_area",
+      "a": "teorema_pitagoras",
+      "justificacion": "No es posible comparar las áreas de los cuadrados construidos sobre los lados sin comprender cómo se mide el área de un cuadrado.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "construccion_triangulos",
+      "a": "teorema_pitagoras",
+      "justificacion": "No es posible restringir la relación al caso del ángulo recto sin poder clasificar triángulos según sus ángulos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "congruencia",
+      "a": "composicion_transformaciones",
+      "justificacion": "No es posible reconocer que la figura resultante es la misma sin comprender qué figuras son congruentes.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "vector",
+      "a": "composicion_transformaciones",
+      "justificacion": "No es posible describir la traslación resultante sin poder expresar un desplazamiento por sus componentes.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "razon",
+      "a": "homotecia",
+      "justificacion": "No es posible ampliar o reducir conservando la forma sin comprender qué es una comparación multiplicativa.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "figuras_2d",
+      "a": "homotecia",
+      "justificacion": "No es posible reconocer que la forma se conserva sin poder atender a los atributos de una figura.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "homotecia",
+      "a": "semejanza",
+      "justificacion": "No es posible reconocer dos figuras de igual forma y distinto tamaño sin comprender la transformación que las relaciona.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "proporcionalidad_directa",
+      "a": "semejanza",
+      "justificacion": "No es posible establecer que los lados guardan una razón constante sin comprender qué es esa constancia.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "homotecia",
+      "a": "teorema_tales",
+      "justificacion": "No es posible deducir la proporcionalidad de los segmentos cortados sin comprender la transformación que la produce.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "paralelas_perpendiculares",
+      "a": "teorema_tales",
+      "justificacion": "No es posible enunciar la relación para un haz de paralelas sin comprender qué son rectas paralelas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "semejanza",
+      "a": "razones_trigonometricas",
+      "justificacion": "No es posible sostener que la razón entre los lados depende solo del ángulo sin comprender que las figuras de igual forma conservan esa razón.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "teorema_pitagoras",
+      "a": "razones_trigonometricas",
+      "justificacion": "No es posible relacionar los tres lados del triángulo rectángulo sin conocer la relación que cumplen.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "vector",
+      "a": "proyeccion_vectorial",
+      "justificacion": "No es posible descomponer un desplazamiento en componentes sin comprender qué es un desplazamiento con dirección.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "razones_trigonometricas",
+      "a": "proyeccion_vectorial",
+      "justificacion": "No es posible determinar la componente en una dirección dada sin poder relacionar el ángulo con las medidas de los lados.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "areas_derivadas",
+      "a": "formula_area_figuras",
+      "justificacion": "No es posible generalizar el cálculo del área en una fórmula sin haber obtenido antes esa área por composición o transformación.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "lenguaje_algebraico",
+      "a": "formula_area_figuras",
+      "justificacion": "No es posible enunciar una fórmula que valga para cualquier medida sin poder designar esas medidas con símbolos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "razon_pi",
+      "a": "area_circulo",
+      "justificacion": "No es posible determinar la superficie del círculo a partir de su radio sin conocer la constante que lo caracteriza.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "area_recubrimiento",
+      "a": "area_circulo",
+      "justificacion": "No es posible medir la superficie encerrada por una curva sin comprender qué es medir una superficie.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "area_circulo",
+      "a": "sector_circular",
+      "justificacion": "No es posible determinar el área de una parte del círculo sin poder determinar la del círculo completo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "medicion_angulos",
+      "a": "sector_circular",
+      "justificacion": "No es posible delimitar la parte del círculo que corresponde a un ángulo central sin poder medir ángulos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "volumen_paralelepipedo",
+      "a": "volumen_prisma_cilindro",
+      "justificacion": "No es posible transferir el cálculo del volumen a cuerpos de otra base sin comprender el caso de la base rectangular.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "superficie_cuerpos",
+      "a": "superficie_prisma_cilindro",
+      "justificacion": "No es posible calcular la superficie desplegando la red del cuerpo sin comprender qué es la superficie de un cuerpo.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "volumen_prisma_cilindro",
+      "a": "superficie_volumen_cono",
+      "justificacion": "No es posible relacionar el volumen del cono con el del cilindro sin poder determinar el del cilindro.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "superficie_prisma_cilindro",
+      "a": "superficie_volumen_cono",
+      "justificacion": "No es posible obtener la superficie del cono desde su red sin poder obtener la de un cuerpo recto desde la suya.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "superficie_volumen_cono",
+      "a": "superficie_volumen_esfera",
+      "justificacion": "No es posible conjeturar las fórmulas de un cuerpo sin red desplegable sin haber obtenido antes las de un cuerpo que sí la tiene.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "razon_pi",
+      "a": "superficie_volumen_esfera",
+      "justificacion": "No es posible expresar la superficie y el volumen de la esfera sin conocer la constante que caracteriza sus secciones circulares.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "registro_conteo",
+      "a": "tabla_frecuencias",
+      "justificacion": "No es posible organizar los datos según cuántas veces ocurre cada valor sin poder registrar esas ocurrencias.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "tabla_frecuencias",
+      "a": "frecuencia_relativa",
+      "justificacion": "No es posible expresar una frecuencia respecto del total sin disponer del recuento de cada valor.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "razon",
+      "a": "frecuencia_relativa",
+      "justificacion": "No es posible expresar una parte respecto del total sin comprender qué es una comparación multiplicativa.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "promedio",
+      "a": "medidas_tendencia_central",
+      "justificacion": "No es posible elegir entre varias medidas la que mejor representa un conjunto sin comprender al menos una de ellas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "extremos_punto_medio",
+      "a": "medidas_tendencia_central",
+      "justificacion": "No es posible ubicar el valor central de un conjunto ordenado sin poder ordenar los datos e identificar sus extremos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "extremos_punto_medio",
+      "a": "rango_variabilidad",
+      "justificacion": "No es posible cuantificar la dispersión como distancia entre los valores extremos sin poder identificar esos extremos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "medidas_tendencia_central",
+      "a": "dato_atipico",
+      "justificacion": "No es posible advertir el efecto de un valor alejado sobre el conjunto sin comprender qué medida resume ese conjunto.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "rango_variabilidad",
+      "a": "dato_atipico",
+      "justificacion": "No es posible reconocer un valor como muy distinto de los demás sin comprender cuán dispersos están los datos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "nocion_muestra",
+      "a": "muestreo_inferencia",
+      "justificacion": "No es posible estimar una característica de la población desde una parte sin comprender qué es esa parte.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "porcentaje",
+      "a": "muestreo_inferencia",
+      "justificacion": "No es posible expresar la característica estimada como proporción de la población sin comprender qué es un porcentaje.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "frecuencia_relativa",
+      "a": "probabilidad_experimental",
+      "justificacion": "No es posible estimar la probabilidad desde las repeticiones sin poder expresar cuántas veces ocurre respecto del total.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "lenguaje_probabilistico",
+      "a": "probabilidad_experimental",
+      "justificacion": "No es posible cuantificar la posibilidad de un evento sin poder describirla cualitativamente.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "razon",
+      "a": "probabilidad_teorica",
+      "justificacion": "No es posible expresar la probabilidad como casos favorables entre casos posibles sin comprender qué es una comparación multiplicativa.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "comparacion_probabilidades",
+      "a": "probabilidad_teorica",
+      "justificacion": "No es posible asignar un valor numérico a la posibilidad de un evento sin poder decidir antes cuál evento es más probable.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "probabilidad_teorica",
+      "a": "diagrama_arbol",
+      "justificacion": "No es posible usar la ramificación para determinar probabilidades sin poder razonar sobre los casos posibles.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "medidas_tendencia_central",
+      "a": "medidas_posicion",
+      "justificacion": "No es posible ubicar un dato respecto de la proporción que queda bajo él sin comprender cómo se resume un conjunto de datos.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "porcentaje",
+      "a": "medidas_posicion",
+      "justificacion": "No es posible expresar qué proporción de los datos queda bajo un valor sin comprender qué es un porcentaje.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "medidas_posicion",
+      "a": "diagrama_cajon",
+      "justificacion": "No es posible representar gráficamente los cuartiles sin comprender qué es un cuartil.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "rango_variabilidad",
+      "a": "diagrama_cajon",
+      "justificacion": "No es posible mostrar la dispersión de los datos en el diagrama sin comprender qué es la dispersión.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "lectura_interpretacion_graficos",
+      "a": "evaluacion_representaciones",
+      "justificacion": "No es posible juzgar si una representación distorsiona los datos sin poder leer lo que la representación muestra.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "escala_grafica",
+      "a": "evaluacion_representaciones",
+      "justificacion": "No es posible detectar una manipulación del gráfico sin comprender cómo la escala afecta lo que se ve.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "diagrama_arbol",
+      "a": "principio_multiplicativo",
+      "justificacion": "No es posible advertir que las opciones se multiplican sin haber desplegado antes los resultados de varias etapas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "registro_conteo",
+      "a": "tabla_doble_entrada",
+      "justificacion": "No es posible cruzar dos características en una tabla sin poder registrar los datos de una.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "plano_cartesiano_completo",
+      "a": "nube_puntos",
+      "justificacion": "No es posible ubicar cada individuo según dos características sin poder localizar puntos mediante coordenadas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "tabla_doble_entrada",
+      "a": "nube_puntos",
+      "justificacion": "No es posible representar gráficamente dos características cruzadas sin poder registrarlas juntas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "probabilidad_teorica",
+      "a": "regla_aditiva_probabilidad",
+      "justificacion": "No es posible determinar la probabilidad de que ocurra un evento u otro sin poder determinar la de cada uno.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "probabilidad_evento_compuesto",
+      "a": "regla_multiplicativa_probabilidad",
+      "justificacion": "No es posible formular la regla del producto sin haber determinado antes la probabilidad de un resultado que exige varias condiciones.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "tendencia_frecuencial",
+      "a": "modelo_azar",
+      "justificacion": "No es posible concebir el azar como algo con regularidad acumulada sin haber observado que las frecuencias se estabilizan.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "probabilidad_teorica",
+      "a": "modelo_azar",
+      "justificacion": "No es posible describir el comportamiento azaroso mediante probabilidades sin poder determinar esas probabilidades.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "probabilidad_teorica",
+      "a": "variable_aleatoria",
+      "justificacion": "No es posible asignar un valor numérico a cada resultado posible sin poder razonar sobre esos resultados.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "variable_aleatoria",
+      "a": "distribucion_probabilidad",
+      "justificacion": "No es posible describir cómo se reparte la probabilidad entre los valores sin haber definido esos valores.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "grafico_barras",
+      "a": "distribucion_probabilidad",
+      "justificacion": "No es posible graficar el reparto de la probabilidad sin poder representar cantidades mediante barras.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "principio_multiplicativo",
+      "a": "permutacion_combinatoria",
+      "justificacion": "No es posible contar ordenaciones y elecciones sin poder contar los resultados de un proceso de varias etapas.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "permutacion_combinatoria",
+      "a": "probabilidad_evento_compuesto",
+      "justificacion": "No es posible contar los casos favorables de un evento con muchas combinaciones sin poder contar ordenaciones y elecciones.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "modelo_azar",
+      "a": "probabilidad_sociedad",
+      "justificacion": "No es posible interpretar afirmaciones probabilísticas del discurso público sin comprender qué describe una probabilidad.",
+      "clausula": null,
+      "confianza": "hipotesis"
+    },
+    {
+      "de": "evaluacion_representaciones",
+      "a": "probabilidad_sociedad",
+      "justificacion": "No es posible reconocer las suposiciones que sostienen una afirmación sin poder juzgar críticamente la información que la acompaña.",
+      "clausula": null,
+      "confianza": "hipotesis"
     }
-  ],
-  "generado": "2026-07-19T00:49:12Z"
+  ]
 }
