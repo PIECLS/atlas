@@ -3,7 +3,7 @@
   "schema_version": "1.1.0",
   "certificacion": {
     "verificado": true,
-    "fecha": "2026-07-26T03:37:06Z",
+    "fecha": "2026-07-26T20:49:16Z",
     "herramienta": "R 4.6.1 / kst 0.5.5",
     "aciclico": true,
     "reduccion_transitiva": true,
@@ -10870,5 +10870,5 @@
       "confianza": "hipotesis"
     }
   ],
-  "generado": "2026-07-26T03:37:06Z"
+  "generado": "2026-07-26T20:49:16Z"
 }
