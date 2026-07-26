@@ -196,6 +196,10 @@ body {
   color: #06101f;
   font-weight: 600;
 }
+.selector-vista button:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}
 
 /* — Leyenda / pista de zoom — */
 .pista {

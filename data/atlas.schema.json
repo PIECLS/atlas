@@ -14,7 +14,7 @@
       "pattern": "^\\d+\\.\\d+\\.\\d+$"
     },
     "schema_version": {
-      "const": "1.0.0"
+      "const": "1.1.0"
     },
     "generado": {
       "type": "string",
@@ -138,6 +138,11 @@
         },
 
         "coordenada": { "$ref": "#/$defs/coordenada" },
+
+        "coordenada_radial": {
+          "description": "Proyección alternativa (Fase 3.6-B): mismo espacio de conocimiento, geografía radial. Ángulo = región (sectores proporcionales a la cantidad de nodos de cada región, en orden region.orden_x); radio = profundidad en el orden parcial, la MISMA magnitud que `coordenada.y` — derivada de la estructura, no del curso (A2). Aditivo: no reemplaza a `coordenada`, que sigue siendo la geografía canónica. Computada offline junto con `coordenada` (A5); nunca en runtime.",
+          "$ref": "#/$defs/coordenada"
+        },
 
         "metadatos": { "$ref": "#/$defs/metadatos" }
       }

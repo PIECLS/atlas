@@ -1,4 +1,4 @@
-// Traducción literal de atlas.schema.json (schema_version 1.0.0).
+// Traducción literal de atlas.schema.json (schema_version 1.1.0).
 // NO agregar campos que no estén en el esquema. Los tipos son el contrato.
 
 export type Completitud = 'esbozo' | 'basica' | 'completa'
@@ -115,6 +115,8 @@ export interface Nodo {
   /** Agregación visual, no prerrequisito. No participa en la estructura KST. */
   padre?: string | null
   coordenada?: Coordenada
+  /** Proyección radial (Fase 3.6-B): mismo espacio, ángulo=región, radio=profundidad. */
+  coordenada_radial?: Coordenada
   metadatos?: Metadatos
 }
 
@@ -140,7 +142,7 @@ export interface Certificacion {
 
 export interface Atlas {
   atlas_version: string
-  schema_version: '1.0.0'
+  schema_version: '1.1.0'
   generado?: string
   certificacion?: Certificacion
   dominio: Dominio

@@ -2,13 +2,20 @@
 // flotan encima. Navegación por estado (+ hash manual, sin router).
 
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import MapaAtlas from './graph/MapaAtlas'
+import MapaAtlas, { type Proyeccion } from './graph/MapaAtlas'
 import VistaNodo from './components/VistaNodo'
 import SelectorVista from './components/SelectorVista'
+import SelectorProyeccion from './components/SelectorProyeccion'
 import BuscadorOA, { OARotulo } from './components/BuscadorOA'
 import { atlas, getNodo, getOA } from './data/loadAtlas'
 import { nivelCamara, PISTA_NIVEL } from './graph/zoom'
 import { defVista, type Vista } from './vistas'
+
+// Radial es más orgánico y menos analítico: por defecto para Estudiante.
+// El resto lee "qué viene antes" en la altura, que es el argumento del Atlas.
+function proyeccionPorDefecto(v: Vista): Proyeccion {
+  return v === 'estudiante' ? 'radial' : 'capas'
+}
 
 export default function App() {
   const [vista, setVista] = useState<Vista>('profesor')
@@ -17,6 +24,13 @@ export default function App() {
   const [foco, setFoco] = useState<{ id: string; nonce: number } | null>(null)
   const [oaActivo, setOaActivo] = useState<string | null>(null)
   const [ratio, setRatio] = useState(1)
+  const [proyeccion, setProyeccion] = useState<Proyeccion>(() => proyeccionPorDefecto('profesor'))
+  const [animandoProyeccion, setAnimandoProyeccion] = useState(false)
+
+  const cambiarVista = useCallback((v: Vista) => {
+    setVista(v)
+    setProyeccion(proyeccionPorDefecto(v))
+  }, [])
 
   // Resaltado por OA y selección de nodo son estados mutuamente excluyentes.
   const seleccionar = useCallback((id: string | null) => {
@@ -86,6 +100,8 @@ export default function App() {
         onAbrir={abrir}
         foco={foco}
         oa={oa}
+        proyeccion={proyeccion}
+        onAnimandoProyeccion={setAnimandoProyeccion}
         onRatio={setRatio}
       />
 
@@ -103,7 +119,12 @@ export default function App() {
             onClear={() => setOaActivo(null)}
           />
         )}
-        <SelectorVista vista={vista} onCambio={setVista} />
+        <SelectorProyeccion
+          proyeccion={proyeccion}
+          onCambio={setProyeccion}
+          bloqueado={animandoProyeccion}
+        />
+        <SelectorVista vista={vista} onCambio={cambiarVista} />
       </header>
 
       {mostrarBuscador && oaActivo && (

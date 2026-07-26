@@ -315,10 +315,22 @@ export function construirGrafo(): Graph {
       n.nivel_zoom === 3
         ? (icaPorId.get(n.id)?.radio ?? 18)
         : (TAMANO_AGREGACION[n.nivel_zoom] ?? 18)
+    // Doble proyección (Fase 3.6-B): xCapas/yCapas y xRadial/yRadial son fijas
+    // (las dos ya vienen congeladas del dataset, A5); x/y son las que Sigma
+    // dibuja de verdad y arrancan iguales a "en capas" — MapaAtlas las anima
+    // entre uno y otro par al alternar, sin recalcular ninguna proyección.
+    const xCapas = n.coordenada?.x ?? 0
+    const yCapas = -(n.coordenada?.y ?? 0) // y del dataset crece hacia abajo; Sigma crece hacia arriba
+    const xRadial = n.coordenada_radial?.x ?? xCapas
+    const yRadial = -(n.coordenada_radial?.y ?? n.coordenada?.y ?? 0)
     g.addNode(n.id, {
       label: n.nombre,
-      x: n.coordenada?.x ?? 0,
-      y: -(n.coordenada?.y ?? 0), // y del dataset crece hacia abajo; Sigma crece hacia arriba
+      x: xCapas,
+      y: yCapas,
+      xCapas,
+      yCapas,
+      xRadial,
+      yRadial,
       size,
       // Guardamos el color_token (no el id de región): es lo que resuelve la paleta.
       region: regiones.get(n.region ?? '')?.color_token ?? null,

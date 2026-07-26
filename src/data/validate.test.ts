@@ -16,7 +16,7 @@ const dataset = JSON.parse(readFileSync(resolve(RAIZ, 'data/atlas.numero.json'),
 function mini() {
   return {
     atlas_version: '0.0.0',
-    schema_version: '1.0.0',
+    schema_version: '1.1.0',
     dominio: { id: 'mini', nombre: 'Mini' },
     regiones: [{ id: 'r', nombre: 'R', orden_x: 0, color_token: 'region-a' }],
     nodos: [
