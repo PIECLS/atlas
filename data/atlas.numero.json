@@ -1,5 +1,5 @@
 {
-  "atlas_version": "0.4.2",
+  "atlas_version": "0.4.3",
   "schema_version": "1.2.0",
   "certificacion": {
     "verificado": true,
@@ -111,8 +111,8 @@
       "region": "conteo",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 22400,
-        "y": 0,
+        "x": 32616,
+        "y": -900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
@@ -134,8 +134,8 @@
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 78,
-        "y": -341,
+        "x": 302,
+        "y": -1323,
         "fijada_a_mano": false
       }
     },
@@ -147,13 +147,13 @@
       "region": "operaciones",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 8400,
+        "x": 10872,
         "y": 110,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 315,
-        "y": -152,
+        "x": 1223,
+        "y": -589,
         "fijada_a_mano": false
       }
     },
@@ -166,7 +166,7 @@
       "completitud": "basica",
       "coordenada": {
         "x": 0,
-        "y": 700,
+        "y": 900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -181,8 +181,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 9491,
-        "y": -57287,
+        "x": 1090,
+        "y": -1631,
         "fijada_a_mano": false
       }
     },
@@ -194,8 +194,8 @@
       "region": "conteo",
       "completitud": "basica",
       "coordenada": {
-        "x": 454,
-        "y": 700,
+        "x": 604,
+        "y": 900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -210,8 +210,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 8594,
-        "y": -57428,
+        "x": 383,
+        "y": -1923,
         "fijada_a_mano": false
       }
     },
@@ -223,8 +223,8 @@
       "region": "conteo",
       "completitud": "completa",
       "coordenada": {
-        "x": 454,
-        "y": 2900,
+        "x": 604,
+        "y": 3200,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -319,8 +319,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 8665,
-        "y": -57877,
+        "x": 1939,
+        "y": -1680,
         "fijada_a_mano": false
       }
     },
@@ -332,8 +332,8 @@
       "region": "operaciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 8173,
-        "y": 7300,
+        "x": 10570,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -364,8 +364,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 50867,
-        "y": -30732,
+        "x": 2218,
+        "y": -3053,
         "fijada_a_mano": false
       }
     },
@@ -377,13 +377,13 @@
       "region": "numeracion",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 4200,
+        "x": 5436,
         "y": 180,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 218,
-        "y": -274,
+        "x": 846,
+        "y": -1061,
         "fijada_a_mano": false
       }
     },
@@ -395,12 +395,12 @@
       "region": "fraccion",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 12600,
+        "x": 16308,
         "y": 180,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 350,
+        "x": 1357,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -413,13 +413,13 @@
       "region": "decimales",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 16800,
+        "x": 21744,
         "y": 110,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 315,
-        "y": 152,
+        "x": 1223,
+        "y": 589,
         "fijada_a_mano": false
       }
     },
@@ -431,13 +431,13 @@
       "region": "proporcion",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 21000,
+        "x": 27180,
         "y": 180,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 218,
-        "y": 274,
+        "x": 846,
+        "y": 1061,
         "fijada_a_mano": false
       }
     },
@@ -460,13 +460,13 @@
         ]
       },
       "coordenada": {
-        "x": 227,
-        "y": 5100,
+        "x": 302,
+        "y": 5500,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 9857,
-        "y": -58146,
+        "x": 2564,
+        "y": 1863,
         "fijada_a_mano": false
       }
     },
@@ -503,12 +503,12 @@
       },
       "coordenada": {
         "x": 0,
-        "y": 2900,
+        "y": 3200,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 9562,
-        "y": -57735,
+        "x": 2539,
+        "y": -365,
         "fijada_a_mano": false
       }
     },
@@ -543,13 +543,13 @@
         ]
       },
       "coordenada": {
-        "x": -227,
-        "y": 5100,
+        "x": -302,
+        "y": 5500,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 9409,
-        "y": -58220,
+        "x": 2564,
+        "y": -1863,
         "fijada_a_mano": false
       }
     },
@@ -594,12 +594,12 @@
       },
       "coordenada": {
         "x": 0,
-        "y": 7300,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 9255,
-        "y": -58705,
+        "x": 784,
+        "y": -3691,
         "fijada_a_mano": false
       }
     },
@@ -623,13 +623,13 @@
         ]
       },
       "coordenada": {
-        "x": -454,
-        "y": 700,
+        "x": -604,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 9043,
-        "y": -57359,
+        "x": 1631,
+        "y": -1090,
         "fijada_a_mano": false
       }
     },
@@ -652,13 +652,13 @@
         ]
       },
       "coordenada": {
-        "x": 681,
-        "y": 5100,
+        "x": 906,
+        "y": 5500,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 8960,
-        "y": -58291,
+        "x": 979,
+        "y": -3014,
         "fijada_a_mano": false
       }
     },
@@ -690,13 +690,13 @@
         ]
       },
       "coordenada": {
-        "x": -454,
-        "y": 2900,
+        "x": -604,
+        "y": 3200,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 9114,
-        "y": -57808,
+        "x": 723,
+        "y": -2461,
         "fijada_a_mano": false
       }
     },
@@ -726,13 +726,13 @@
         ]
       },
       "coordenada": {
-        "x": -681,
-        "y": 5100,
+        "x": -906,
+        "y": 5500,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 8511,
-        "y": -58358,
+        "x": 3169,
+        "y": 0,
         "fijada_a_mano": false
       }
     },
@@ -780,13 +780,13 @@
         ]
       },
       "coordenada": {
-        "x": 3973,
-        "y": 5100,
+        "x": 5134,
+        "y": 5500,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 24189,
-        "y": -53787,
+        "x": 979,
+        "y": 3014,
         "fijada_a_mano": false
       }
     },
@@ -816,13 +816,13 @@
         ]
       },
       "coordenada": {
-        "x": 4427,
-        "y": 5100,
+        "x": 5738,
+        "y": 5500,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 24602,
-        "y": -53599,
+        "x": -979,
+        "y": 3014,
         "fijada_a_mano": false
       }
     },
@@ -854,13 +854,13 @@
         ]
       },
       "coordenada": {
-        "x": 4200,
-        "y": 9500,
+        "x": 5436,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 24771,
-        "y": -54520,
+        "x": 596,
+        "y": -4336,
         "fijada_a_mano": false
       }
     },
@@ -930,13 +930,13 @@
         ]
       },
       "coordenada": {
-        "x": 4200,
-        "y": 11700,
+        "x": 5436,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 24959,
-        "y": -54934,
+        "x": 742,
+        "y": -4926,
         "fijada_a_mano": false
       }
     },
@@ -966,13 +966,13 @@
         ]
       },
       "coordenada": {
-        "x": 3973,
-        "y": 13900,
+        "x": 5134,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 24940,
-        "y": -55441,
+        "x": 604,
+        "y": -5552,
         "fijada_a_mano": false
       }
     },
@@ -1028,13 +1028,13 @@
         ]
       },
       "coordenada": {
-        "x": 4427,
-        "y": 13900,
+        "x": 5738,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 25353,
-        "y": -55253,
+        "x": 1783,
+        "y": -5293,
         "fijada_a_mano": false
       }
     },
@@ -1065,13 +1065,13 @@
         ]
       },
       "coordenada": {
-        "x": 4427,
-        "y": 16100,
+        "x": 5738,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 25128,
-        "y": -55854,
+        "x": 607,
+        "y": -6159,
         "fijada_a_mano": false
       }
     },
@@ -1094,13 +1094,13 @@
         ]
       },
       "coordenada": {
-        "x": 3973,
-        "y": 16100,
+        "x": 5134,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 25541,
-        "y": -55666,
+        "x": 1797,
+        "y": -5923,
         "fijada_a_mano": false
       }
     },
@@ -1150,13 +1150,13 @@
         ]
       },
       "coordenada": {
-        "x": 8627,
-        "y": 7300,
+        "x": 11174,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 50631,
-        "y": -31119,
+        "x": 3268,
+        "y": -1887,
         "fijada_a_mano": false
       }
     },
@@ -1193,13 +1193,13 @@
         ]
       },
       "coordenada": {
-        "x": 9081,
-        "y": 9500,
+        "x": 11778,
+        "y": 10400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51718,
-        "y": -30187,
+        "x": 3199,
+        "y": 2988,
         "fijada_a_mano": false
       }
     },
@@ -1234,13 +1234,13 @@
         ]
       },
       "coordenada": {
-        "x": 7492,
-        "y": 11700,
+        "x": 9664,
+        "y": 12700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51287,
-        "y": -31785,
+        "x": 4314,
+        "y": -2491,
         "fijada_a_mano": false
       }
     },
@@ -1264,13 +1264,13 @@
         ]
       },
       "coordenada": {
-        "x": 6811,
-        "y": 9500,
+        "x": 8758,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 50292,
-        "y": -32508,
+        "x": 4124,
+        "y": -1466,
         "fijada_a_mano": false
       }
     },
@@ -1306,13 +1306,13 @@
         ]
       },
       "coordenada": {
-        "x": 7038,
-        "y": 11700,
+        "x": 9060,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 50803,
-        "y": -32553,
+        "x": 2161,
+        "y": -4488,
         "fijada_a_mano": false
       }
     },
@@ -1347,13 +1347,13 @@
         ]
       },
       "coordenada": {
-        "x": 7719,
-        "y": 13900,
+        "x": 9966,
+        "y": 15000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51794,
-        "y": -31828,
+        "x": 5512,
+        "y": -904,
         "fijada_a_mano": false
       }
     },
@@ -1385,13 +1385,13 @@
         ]
       },
       "coordenada": {
-        "x": 8173,
-        "y": 9500,
+        "x": 10570,
+        "y": 10400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51488,
-        "y": -30579,
+        "x": 2762,
+        "y": -3395,
         "fijada_a_mano": false
       }
     },
@@ -1420,13 +1420,13 @@
         ]
       },
       "coordenada": {
-        "x": 6811,
-        "y": 16100,
+        "x": 8758,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51456,
-        "y": -33217,
+        "x": 2918,
+        "y": -5458,
         "fijada_a_mano": false
       }
     },
@@ -1449,13 +1449,13 @@
         ]
       },
       "coordenada": {
-        "x": 7946,
-        "y": 11700,
+        "x": 10268,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51760,
-        "y": -31010,
+        "x": 3894,
+        "y": 3106,
         "fijada_a_mano": false
       }
     },
@@ -1484,13 +1484,13 @@
         ]
       },
       "coordenada": {
-        "x": 7265,
-        "y": 9500,
+        "x": 9362,
+        "y": 10400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 50537,
-        "y": -32126,
+        "x": 4286,
+        "y": 891,
         "fijada_a_mano": false
       }
     },
@@ -1513,13 +1513,13 @@
         ]
       },
       "coordenada": {
-        "x": 7719,
-        "y": 9500,
+        "x": 9966,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51255,
-        "y": -30968,
+        "x": 1744,
+        "y": -4015,
         "fijada_a_mano": false
       }
     },
@@ -1543,13 +1543,13 @@
         ]
       },
       "coordenada": {
-        "x": 8627,
-        "y": 9500,
+        "x": 11174,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51019,
-        "y": -31356,
+        "x": 3576,
+        "y": -2524,
         "fijada_a_mano": false
       }
     },
@@ -1584,13 +1584,13 @@
         ]
       },
       "coordenada": {
-        "x": 8627,
-        "y": 13900,
+        "x": 11174,
+        "y": 15000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52264,
-        "y": -31051,
+        "x": 4623,
+        "y": -3134,
         "fijada_a_mano": false
       }
     },
@@ -1628,13 +1628,13 @@
         ]
       },
       "coordenada": {
-        "x": 8627,
-        "y": 16100,
+        "x": 11174,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52182,
-        "y": -32064,
+        "x": 5923,
+        "y": -1797,
         "fijada_a_mano": false
       }
     },
@@ -1669,13 +1669,13 @@
         ]
       },
       "coordenada": {
-        "x": 7265,
-        "y": 13900,
+        "x": 9362,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51555,
-        "y": -32214,
+        "x": 2879,
+        "y": -4786,
         "fijada_a_mano": false
       }
     },
@@ -1713,13 +1713,13 @@
         ]
       },
       "coordenada": {
-        "x": 7265,
-        "y": 16100,
+        "x": 9362,
+        "y": 17300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51701,
-        "y": -32835,
+        "x": 4784,
+        "y": -3926,
         "fijada_a_mano": false
       }
     },
@@ -1754,13 +1754,13 @@
         ]
       },
       "coordenada": {
-        "x": 7946,
-        "y": 18300,
+        "x": 10268,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52450,
-        "y": -32494,
+        "x": 1118,
+        "y": -6701,
         "fijada_a_mano": false
       }
     },
@@ -1816,13 +1816,13 @@
         ]
       },
       "coordenada": {
-        "x": 9535,
-        "y": 9500,
+        "x": 12382,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51946,
-        "y": -29794,
+        "x": 4367,
+        "y": -299,
         "fijada_a_mano": false
       }
     },
@@ -1858,13 +1858,13 @@
         ]
       },
       "coordenada": {
-        "x": 8173,
-        "y": 13900,
+        "x": 10570,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52030,
-        "y": -31441,
+        "x": 3841,
+        "y": -4055,
         "fijada_a_mano": false
       }
     },
@@ -1905,13 +1905,13 @@
         ]
       },
       "coordenada": {
-        "x": 9308,
-        "y": 11700,
+        "x": 12080,
+        "y": 12700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52220,
-        "y": -30227,
+        "x": 4967,
+        "y": 372,
         "fijada_a_mano": false
       }
     },
@@ -1961,13 +1961,13 @@
         ]
       },
       "coordenada": {
-        "x": 9989,
-        "y": 9500,
+        "x": 12986,
+        "y": 10400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 50779,
-        "y": -31742,
+        "x": 3886,
+        "y": 2014,
         "fijada_a_mano": false
       }
     },
@@ -1996,13 +1996,13 @@
         ]
       },
       "coordenada": {
-        "x": 9762,
-        "y": 11700,
+        "x": 12684,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51046,
-        "y": -32170,
+        "x": 3388,
+        "y": -3651,
         "fijada_a_mano": false
       }
     },
@@ -2034,13 +2034,13 @@
         ]
       },
       "coordenada": {
-        "x": 8854,
-        "y": 11700,
+        "x": 11476,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51991,
-        "y": -30619,
+        "x": 4856,
+        "y": -1108,
         "fijada_a_mano": false
       }
     },
@@ -2064,13 +2064,13 @@
         ]
       },
       "coordenada": {
-        "x": 8400,
-        "y": 11700,
+        "x": 10872,
+        "y": 12700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51525,
-        "y": -31398,
+        "x": 4637,
+        "y": 1820,
         "fijada_a_mano": false
       }
     },
@@ -2108,13 +2108,13 @@
         ]
       },
       "coordenada": {
-        "x": 8854,
-        "y": 18300,
+        "x": 11476,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52923,
-        "y": -31719,
+        "x": 4998,
+        "y": -4601,
         "fijada_a_mano": false
       }
     },
@@ -2144,13 +2144,13 @@
         ]
       },
       "coordenada": {
-        "x": 8400,
-        "y": 18300,
+        "x": 10872,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52688,
-        "y": -32107,
+        "x": 3233,
+        "y": -5974,
         "fijada_a_mano": false
       }
     },
@@ -2180,13 +2180,13 @@
         ]
       },
       "coordenada": {
-        "x": 8173,
-        "y": 16100,
+        "x": 10570,
+        "y": 17300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52418,
-        "y": -31677,
+        "x": 5923,
+        "y": 1797,
         "fijada_a_mano": false
       }
     },
@@ -2218,13 +2218,13 @@
         ]
       },
       "coordenada": {
-        "x": 9989,
-        "y": 16100,
+        "x": 12986,
+        "y": 17300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 53109,
-        "y": -30503,
+        "x": 3926,
+        "y": -4784,
         "fijada_a_mano": false
       }
     },
@@ -2247,13 +2247,13 @@
         ]
       },
       "coordenada": {
-        "x": 9081,
-        "y": 16100,
+        "x": 11778,
+        "y": 17300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52651,
-        "y": -31287,
+        "x": 6159,
+        "y": -607,
         "fijada_a_mano": false
       }
     },
@@ -2295,13 +2295,13 @@
         ]
       },
       "coordenada": {
-        "x": 9535,
-        "y": 13900,
+        "x": 12382,
+        "y": 15000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51313,
-        "y": -32598,
+        "x": 5577,
+        "y": 302,
         "fijada_a_mano": false
       }
     },
@@ -2325,13 +2325,13 @@
         ]
       },
       "coordenada": {
-        "x": 7719,
-        "y": 16100,
+        "x": 9966,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 51942,
-        "y": -32450,
+        "x": 5458,
+        "y": -2918,
         "fijada_a_mano": false
       }
     },
@@ -2354,13 +2354,13 @@
         ]
       },
       "coordenada": {
-        "x": 9081,
-        "y": 13900,
+        "x": 11778,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52494,
-        "y": -30660,
+        "x": 5188,
+        "y": -2067,
         "fijada_a_mano": false
       }
     },
@@ -2383,13 +2383,13 @@
         ]
       },
       "coordenada": {
-        "x": 9535,
-        "y": 16100,
+        "x": 12382,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52882,
-        "y": -30896,
+        "x": 6159,
+        "y": 607,
         "fijada_a_mano": false
       }
     },
@@ -2420,13 +2420,13 @@
         ]
       },
       "coordenada": {
-        "x": 12600,
-        "y": 5100,
+        "x": 16308,
+        "y": 5500,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 58439,
-        "y": 7940,
+        "x": -2564,
+        "y": 1863,
         "fijada_a_mano": false
       }
     },
@@ -2485,13 +2485,13 @@
         ]
       },
       "coordenada": {
-        "x": 12600,
-        "y": 7300,
+        "x": 16308,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 58889,
-        "y": 8001,
+        "x": 3753,
+        "y": -394,
         "fijada_a_mano": false
       }
     },
@@ -2514,13 +2514,13 @@
         ]
       },
       "coordenada": {
-        "x": 12827,
-        "y": 9500,
+        "x": 16610,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 59308,
-        "y": 8287,
+        "x": 0,
+        "y": 4377,
         "fijada_a_mano": false
       }
     },
@@ -2561,13 +2561,13 @@
         ]
       },
       "coordenada": {
-        "x": 12373,
-        "y": 18300,
+        "x": 16006,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 61168,
-        "y": 8082,
+        "x": 6221,
+        "y": -2729,
         "fijada_a_mano": false
       }
     },
@@ -2596,13 +2596,13 @@
         ]
       },
       "coordenada": {
-        "x": 12600,
-        "y": 16100,
+        "x": 16308,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 60688,
-        "y": 8246,
+        "x": 5458,
+        "y": 2918,
         "fijada_a_mano": false
       }
     },
@@ -2634,13 +2634,13 @@
         ]
       },
       "coordenada": {
-        "x": 12373,
-        "y": 9500,
+        "x": 16006,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 59369,
-        "y": 7838,
+        "x": 1181,
+        "y": 4215,
         "fijada_a_mano": false
       }
     },
@@ -2670,13 +2670,13 @@
         ]
       },
       "coordenada": {
-        "x": 13281,
-        "y": 9500,
+        "x": 17214,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 59243,
-        "y": 8737,
+        "x": -1181,
+        "y": 4215,
         "fijada_a_mano": false
       }
     },
@@ -2705,13 +2705,13 @@
         ]
       },
       "coordenada": {
-        "x": 12600,
-        "y": 11700,
+        "x": 16308,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 59788,
-        "y": 8124,
+        "x": 2806,
+        "y": 4116,
         "fijada_a_mano": false
       }
     },
@@ -2741,13 +2741,13 @@
         ]
       },
       "coordenada": {
-        "x": 12827,
-        "y": 18300,
+        "x": 16610,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 61107,
-        "y": 8532,
+        "x": 6770,
+        "y": -561,
         "fijada_a_mano": false
       }
     },
@@ -2783,13 +2783,13 @@
         ]
       },
       "coordenada": {
-        "x": 12600,
-        "y": 20500,
+        "x": 16308,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 61588,
-        "y": 8368,
+        "x": 1443,
+        "y": -7255,
         "fijada_a_mano": false
       }
     },
@@ -2827,13 +2827,13 @@
         ]
       },
       "coordenada": {
-        "x": 11919,
-        "y": 9500,
+        "x": 15402,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 59426,
-        "y": 7387,
+        "x": 2274,
+        "y": 3740,
         "fijada_a_mano": false
       }
     },
@@ -2869,13 +2869,13 @@
         ]
       },
       "coordenada": {
-        "x": 12600,
-        "y": 13900,
+        "x": 16308,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 60238,
-        "y": 8185,
+        "x": 5382,
+        "y": 1494,
         "fijada_a_mano": false
       }
     },
@@ -2908,13 +2908,13 @@
         ]
       },
       "coordenada": {
-        "x": 16800,
-        "y": 13900,
+        "x": 21744,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 55871,
-        "y": 23961,
+        "x": 4935,
+        "y": 2616,
         "fijada_a_mano": false
       }
     },
@@ -2952,13 +2952,13 @@
         ]
       },
       "coordenada": {
-        "x": 16346,
-        "y": 16100,
+        "x": 21140,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 56465,
-        "y": 23722,
+        "x": 4784,
+        "y": 3926,
         "fijada_a_mano": false
       }
     },
@@ -2982,13 +2982,13 @@
         ]
       },
       "coordenada": {
-        "x": 17254,
-        "y": 16100,
+        "x": 22348,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 56288,
-        "y": 24140,
+        "x": 2918,
+        "y": 5458,
         "fijada_a_mano": false
       }
     },
@@ -3038,13 +3038,13 @@
         ]
       },
       "coordenada": {
-        "x": 16800,
-        "y": 16100,
+        "x": 21744,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 56107,
-        "y": 24556,
+        "x": 3926,
+        "y": 4784,
         "fijada_a_mano": false
       }
     },
@@ -3075,13 +3075,13 @@
         ]
       },
       "coordenada": {
-        "x": 16800,
-        "y": 20500,
+        "x": 21744,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 57122,
-        "y": 24498,
+        "x": 4110,
+        "y": -6151,
         "fijada_a_mano": false
       }
     },
@@ -3113,13 +3113,13 @@
         ]
       },
       "coordenada": {
-        "x": 21000,
-        "y": 11700,
+        "x": 27180,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 52396,
-        "y": 29921,
+        "x": 1468,
+        "y": 4760,
         "fijada_a_mano": false
       }
     },
@@ -3150,13 +3150,13 @@
         ]
       },
       "coordenada": {
-        "x": 21000,
-        "y": 18300,
+        "x": 27180,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 53579,
-        "y": 30596,
+        "x": 6585,
+        "y": 1668,
         "fijada_a_mano": false
       }
     },
@@ -3168,13 +3168,13 @@
       "region": "patrones_algebra",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 25200,
+        "x": 32616,
         "y": 110,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 78,
-        "y": 341,
+        "x": 302,
+        "y": 1323,
         "fijada_a_mano": false
       }
     },
@@ -3186,13 +3186,13 @@
       "region": "geometria",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 29400,
+        "x": 38052,
         "y": 180,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -78,
-        "y": 341,
+        "x": -302,
+        "y": 1323,
         "fijada_a_mano": false
       }
     },
@@ -3204,13 +3204,13 @@
       "region": "medicion",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 33600,
+        "x": 43488,
         "y": 110,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -218,
-        "y": 274,
+        "x": -846,
+        "y": 1061,
         "fijada_a_mano": false
       }
     },
@@ -3222,13 +3222,13 @@
       "region": "datos_probabilidades",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 37800,
+        "x": 48924,
         "y": 180,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -315,
-        "y": 152,
+        "x": -1223,
+        "y": 589,
         "fijada_a_mano": false
       }
     },
@@ -3258,13 +3258,13 @@
         ]
       },
       "coordenada": {
-        "x": 25427,
-        "y": 700,
+        "x": 32918,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 38952,
-        "y": 43065,
+        "x": 1923,
+        "y": 383,
         "fijada_a_mano": false
       }
     },
@@ -3304,13 +3304,13 @@
         ]
       },
       "coordenada": {
-        "x": 25200,
-        "y": 9500,
+        "x": 32616,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 40343,
-        "y": 44255,
+        "x": -2274,
+        "y": 3740,
         "fijada_a_mano": false
       }
     },
@@ -3340,13 +3340,13 @@
         ]
       },
       "coordenada": {
-        "x": 25200,
-        "y": 7300,
+        "x": 32616,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 40038,
-        "y": 43919,
+        "x": 3589,
+        "y": 1166,
         "fijada_a_mano": false
       }
     },
@@ -3376,13 +3376,13 @@
         ]
       },
       "coordenada": {
-        "x": 24973,
-        "y": 700,
+        "x": 32314,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 39287,
-        "y": 42759,
+        "x": 1923,
+        "y": -383,
         "fijada_a_mano": false
       }
     },
@@ -3414,13 +3414,13 @@
         ]
       },
       "coordenada": {
-        "x": 24746,
-        "y": 11700,
+        "x": 32012,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 40649,
-        "y": 44590,
+        "x": 0,
+        "y": 4981,
         "fijada_a_mano": false
       }
     },
@@ -3447,13 +3447,13 @@
         ]
       },
       "coordenada": {
-        "x": 24973,
-        "y": 16100,
+        "x": 32314,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 41429,
-        "y": 45108,
+        "x": 1797,
+        "y": 5923,
         "fijada_a_mano": false
       }
     },
@@ -3489,13 +3489,13 @@
         ]
       },
       "coordenada": {
-        "x": 25200,
-        "y": 11700,
+        "x": 32616,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 40313,
-        "y": 44895,
+        "x": -1468,
+        "y": 4760,
         "fijada_a_mano": false
       }
     },
@@ -3531,13 +3531,13 @@
         ]
       },
       "coordenada": {
-        "x": 25654,
-        "y": 11700,
+        "x": 33220,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 40984,
-        "y": 44283,
+        "x": -2806,
+        "y": 4116,
         "fijada_a_mano": false
       }
     },
@@ -3569,13 +3569,13 @@
         ]
       },
       "coordenada": {
-        "x": 25427,
-        "y": 13900,
+        "x": 32918,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 41123,
-        "y": 44772,
+        "x": 4257,
+        "y": 3616,
         "fijada_a_mano": false
       }
     },
@@ -3603,13 +3603,13 @@
         ]
       },
       "coordenada": {
-        "x": 24973,
-        "y": 13900,
+        "x": 32314,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 40787,
-        "y": 45078,
+        "x": 3380,
+        "y": 4446,
         "fijada_a_mano": false
       }
     },
@@ -3631,13 +3631,13 @@
         ]
       },
       "coordenada": {
-        "x": 28946,
-        "y": 700,
+        "x": 37448,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 908,
-        "y": 58061,
+        "x": -383,
+        "y": 1923,
         "fijada_a_mano": false
       }
     },
@@ -3667,13 +3667,13 @@
         ]
       },
       "coordenada": {
-        "x": 28492,
-        "y": 700,
+        "x": 36844,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 454,
-        "y": 58066,
+        "x": 383,
+        "y": 1923,
         "fijada_a_mano": false
       }
     },
@@ -3703,13 +3703,13 @@
         ]
       },
       "coordenada": {
-        "x": 28946,
-        "y": 2900,
+        "x": 37448,
+        "y": 3200,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 908,
-        "y": 58515,
+        "x": -1387,
+        "y": 2158,
         "fijada_a_mano": false
       }
     },
@@ -3744,13 +3744,13 @@
         ]
       },
       "coordenada": {
-        "x": 29400,
-        "y": 5100,
+        "x": 38052,
+        "y": 5500,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 0,
-        "y": 58976,
+        "x": -3169,
+        "y": 0,
         "fijada_a_mano": false
       }
     },
@@ -3783,13 +3783,13 @@
         ]
       },
       "coordenada": {
-        "x": 29854,
-        "y": 7300,
+        "x": 38656,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -454,
-        "y": 59428,
+        "x": 1535,
+        "y": 3447,
         "fijada_a_mano": false
       }
     },
@@ -3814,13 +3814,13 @@
         ]
       },
       "coordenada": {
-        "x": 28946,
-        "y": 7300,
+        "x": 37448,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 454,
-        "y": 59428,
+        "x": 0,
+        "y": 3773,
         "fijada_a_mano": false
       }
     },
@@ -3847,13 +3847,13 @@
         ]
       },
       "coordenada": {
-        "x": 28492,
-        "y": 2900,
+        "x": 36844,
+        "y": 3200,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 454,
-        "y": 58520,
+        "x": 0,
+        "y": 2565,
         "fijada_a_mano": false
       }
     },
@@ -3875,13 +3875,13 @@
         ]
       },
       "coordenada": {
-        "x": 29173,
-        "y": 18300,
+        "x": 37750,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 227,
-        "y": 61699,
+        "x": 4172,
+        "y": 5361,
         "fijada_a_mano": false
       }
     },
@@ -3906,13 +3906,13 @@
         ]
       },
       "coordenada": {
-        "x": 29854,
-        "y": 700,
+        "x": 38656,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -454,
-        "y": 58066,
+        "x": 1631,
+        "y": 1090,
         "fijada_a_mano": false
       }
     },
@@ -3950,13 +3950,13 @@
         ]
       },
       "coordenada": {
-        "x": 29400,
-        "y": 7300,
+        "x": 38052,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 0,
-        "y": 59430,
+        "x": 2804,
+        "y": 2525,
         "fijada_a_mano": false
       }
     },
@@ -3978,13 +3978,13 @@
         ]
       },
       "coordenada": {
-        "x": 29400,
-        "y": 700,
+        "x": 38052,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 0,
-        "y": 58068,
+        "x": -1090,
+        "y": 1631,
         "fijada_a_mano": false
       }
     },
@@ -4011,13 +4011,13 @@
         ]
       },
       "coordenada": {
-        "x": 29854,
-        "y": 9500,
+        "x": 38656,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -454,
-        "y": 59882,
+        "x": -3199,
+        "y": 2988,
         "fijada_a_mano": false
       }
     },
@@ -4044,13 +4044,13 @@
         ]
       },
       "coordenada": {
-        "x": 28946,
-        "y": 9500,
+        "x": 37448,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 454,
-        "y": 59882,
+        "x": -4286,
+        "y": 891,
         "fijada_a_mano": false
       }
     },
@@ -4086,13 +4086,13 @@
         ]
       },
       "coordenada": {
-        "x": 30308,
-        "y": 700,
+        "x": 39260,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -908,
-        "y": 58061,
+        "x": 1090,
+        "y": 1631,
         "fijada_a_mano": false
       }
     },
@@ -4114,13 +4114,13 @@
         ]
       },
       "coordenada": {
-        "x": 30308,
-        "y": 2900,
+        "x": 39260,
+        "y": 3200,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -908,
-        "y": 58515,
+        "x": -2333,
+        "y": 1066,
         "fijada_a_mano": false
       }
     },
@@ -4142,13 +4142,13 @@
         ]
       },
       "coordenada": {
-        "x": 29400,
-        "y": 2900,
+        "x": 38052,
+        "y": 3200,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": 0,
-        "y": 58522,
+        "x": 2333,
+        "y": 1066,
         "fijada_a_mano": false
       }
     },
@@ -4170,13 +4170,13 @@
         ]
       },
       "coordenada": {
-        "x": 29854,
-        "y": 2900,
+        "x": 38656,
+        "y": 3200,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -454,
-        "y": 58520,
+        "x": 1387,
+        "y": 2158,
         "fijada_a_mano": false
       }
     },
@@ -4198,13 +4198,13 @@
         ]
       },
       "coordenada": {
-        "x": 29627,
-        "y": 11700,
+        "x": 38354,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -227,
-        "y": 60337,
+        "x": -3894,
+        "y": 3106,
         "fijada_a_mano": false
       }
     },
@@ -4239,13 +4239,13 @@
         ]
       },
       "coordenada": {
-        "x": 33373,
-        "y": 700,
+        "x": 43186,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -41912,
-        "y": 40190,
+        "x": -1923,
+        "y": 383,
         "fijada_a_mano": false
       }
     },
@@ -4280,13 +4280,13 @@
         ]
       },
       "coordenada": {
-        "x": 33600,
-        "y": 5100,
+        "x": 43488,
+        "y": 5500,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -42727,
-        "y": 40652,
+        "x": -2564,
+        "y": -1863,
         "fijada_a_mano": false
       }
     },
@@ -4321,13 +4321,13 @@
         ]
       },
       "coordenada": {
-        "x": 33600,
-        "y": 7300,
+        "x": 43488,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -42741,
-        "y": 41293,
+        "x": -3589,
+        "y": 1166,
         "fijada_a_mano": false
       }
     },
@@ -4359,13 +4359,13 @@
         ]
       },
       "coordenada": {
-        "x": 33373,
-        "y": 9500,
+        "x": 43186,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -42912,
-        "y": 41769,
+        "x": -3576,
+        "y": -2524,
         "fijada_a_mano": false
       }
     },
@@ -4387,13 +4387,13 @@
         ]
       },
       "coordenada": {
-        "x": 34281,
-        "y": 9500,
+        "x": 44394,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -43541,
-        "y": 41113,
+        "x": -4124,
+        "y": -1466,
         "fijada_a_mano": false
       }
     },
@@ -4425,13 +4425,13 @@
         ]
       },
       "coordenada": {
-        "x": 33827,
-        "y": 9500,
+        "x": 43790,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -43228,
-        "y": 41442,
+        "x": -4367,
+        "y": -299,
         "fijada_a_mano": false
       }
     },
@@ -4463,13 +4463,13 @@
         ]
       },
       "coordenada": {
-        "x": 33146,
-        "y": 11700,
+        "x": 42884,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -43399,
-        "y": 41919,
+        "x": -4314,
+        "y": -2491,
         "fijada_a_mano": false
       }
     },
@@ -4501,13 +4501,13 @@
         ]
       },
       "coordenada": {
-        "x": 33827,
-        "y": 700,
+        "x": 43790,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -42225,
-        "y": 39861,
+        "x": -1631,
+        "y": 1090,
         "fijada_a_mano": false
       }
     },
@@ -4539,13 +4539,13 @@
         ]
       },
       "coordenada": {
-        "x": 32919,
-        "y": 9500,
+        "x": 42582,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -43851,
-        "y": 40782,
+        "x": -2762,
+        "y": -3395,
         "fijada_a_mano": false
       }
     },
@@ -4572,13 +4572,13 @@
         ]
       },
       "coordenada": {
-        "x": 33600,
-        "y": 11700,
+        "x": 43488,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -43713,
-        "y": 41591,
+        "x": -4856,
+        "y": -1108,
         "fijada_a_mano": false
       }
     },
@@ -4608,13 +4608,13 @@
         ]
       },
       "coordenada": {
-        "x": 33146,
-        "y": 7300,
+        "x": 42884,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -43056,
-        "y": 40965,
+        "x": -1535,
+        "y": 3447,
         "fijada_a_mano": false
       }
     },
@@ -4644,13 +4644,13 @@
         ]
       },
       "coordenada": {
-        "x": 34054,
-        "y": 11700,
+        "x": 44092,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -44025,
-        "y": 41261,
+        "x": -4967,
+        "y": 372,
         "fijada_a_mano": false
       }
     },
@@ -4677,13 +4677,13 @@
         ]
       },
       "coordenada": {
-        "x": 33827,
-        "y": 13900,
+        "x": 43790,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -44198,
-        "y": 41739,
+        "x": -4935,
+        "y": 2616,
         "fijada_a_mano": false
       }
     },
@@ -4705,13 +4705,13 @@
         ]
       },
       "coordenada": {
-        "x": 32919,
-        "y": 13900,
+        "x": 42582,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -43885,
-        "y": 42068,
+        "x": -2345,
+        "y": 5069,
         "fijada_a_mano": false
       }
     },
@@ -4744,13 +4744,13 @@
         ]
       },
       "coordenada": {
-        "x": 33373,
-        "y": 13900,
+        "x": 43186,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -43570,
-        "y": 42394,
+        "x": -3380,
+        "y": 4446,
         "fijada_a_mano": false
       }
     },
@@ -4775,13 +4775,13 @@
         ]
       },
       "coordenada": {
-        "x": 34054,
-        "y": 7300,
+        "x": 44092,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -43367,
-        "y": 40635,
+        "x": -2804,
+        "y": 2525,
         "fijada_a_mano": false
       }
     },
@@ -4806,13 +4806,13 @@
         ]
       },
       "coordenada": {
-        "x": 34281,
-        "y": 13900,
+        "x": 44394,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -44509,
-        "y": 41408,
+        "x": -4257,
+        "y": 3616,
         "fijada_a_mano": false
       }
     },
@@ -4852,13 +4852,13 @@
         ]
       },
       "coordenada": {
-        "x": 37573,
-        "y": 700,
+        "x": 48622,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -57256,
-        "y": -9674,
+        "x": -383,
+        "y": -1923,
         "fijada_a_mano": false
       }
     },
@@ -4905,13 +4905,13 @@
         ]
       },
       "coordenada": {
-        "x": 37800,
-        "y": 5100,
+        "x": 48924,
+        "y": 5500,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -58190,
-        "y": -9598,
+        "x": -979,
+        "y": -3014,
         "fijada_a_mano": false
       }
     },
@@ -4938,13 +4938,13 @@
         ]
       },
       "coordenada": {
-        "x": 37346,
-        "y": 2900,
+        "x": 48320,
+        "y": 3200,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -57666,
-        "y": -9972,
+        "x": -723,
+        "y": -2461,
         "fijada_a_mano": false
       }
     },
@@ -4976,13 +4976,13 @@
         ]
       },
       "coordenada": {
-        "x": 38027,
-        "y": 9500,
+        "x": 49226,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -59122,
-        "y": -9522,
+        "x": -1744,
+        "y": -4015,
         "fijada_a_mano": false
       }
     },
@@ -5039,13 +5039,13 @@
         ]
       },
       "coordenada": {
-        "x": 37119,
-        "y": 18300,
+        "x": 48018,
+        "y": 19600,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -60682,
-        "y": -11160,
+        "x": -4998,
+        "y": -4601,
         "fijada_a_mano": false
       }
     },
@@ -5067,13 +5067,13 @@
         ]
       },
       "coordenada": {
-        "x": 37800,
-        "y": 2900,
+        "x": 48924,
+        "y": 3200,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -57814,
-        "y": -9076,
+        "x": -2539,
+        "y": -365,
         "fijada_a_mano": false
       }
     },
@@ -5095,13 +5095,13 @@
         ]
       },
       "coordenada": {
-        "x": 37573,
-        "y": 9500,
+        "x": 48622,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -59048,
-        "y": -9970,
+        "x": -596,
+        "y": -4336,
         "fijada_a_mano": false
       }
     },
@@ -5131,13 +5131,13 @@
         ]
       },
       "coordenada": {
-        "x": 36665,
-        "y": 18300,
+        "x": 47414,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -60763,
-        "y": -10713,
+        "x": -6770,
+        "y": -561,
         "fijada_a_mano": false
       }
     },
@@ -5164,13 +5164,13 @@
         ]
       },
       "coordenada": {
-        "x": 37346,
-        "y": 13900,
+        "x": 48320,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -59906,
-        "y": -10341,
+        "x": -5512,
+        "y": -904,
         "fijada_a_mano": false
       }
     },
@@ -5221,13 +5221,13 @@
         ]
       },
       "coordenada": {
-        "x": 38027,
-        "y": 700,
+        "x": 49226,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -57401,
-        "y": -8778,
+        "x": -1631,
+        "y": -1090,
         "fijada_a_mano": false
       }
     },
@@ -5249,13 +5249,13 @@
         ]
       },
       "coordenada": {
-        "x": 36665,
-        "y": 16100,
+        "x": 47414,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -60234,
-        "y": -11086,
+        "x": -4784,
+        "y": -3926,
         "fijada_a_mano": false
       }
     },
@@ -5286,13 +5286,13 @@
         ]
       },
       "coordenada": {
-        "x": 37573,
-        "y": 11700,
+        "x": 48622,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -59496,
-        "y": -10044,
+        "x": -2161,
+        "y": -4488,
         "fijada_a_mano": false
       }
     },
@@ -5339,13 +5339,13 @@
         ]
       },
       "coordenada": {
-        "x": 37119,
-        "y": 700,
+        "x": 48018,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -57330,
-        "y": -9226,
+        "x": -1923,
+        "y": -383,
         "fijada_a_mano": false
       }
     },
@@ -5382,13 +5382,13 @@
         ]
       },
       "coordenada": {
-        "x": 37573,
-        "y": 20500,
+        "x": 48622,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -61211,
-        "y": -10787,
+        "x": -7255,
+        "y": 1443,
         "fijada_a_mano": false
       }
     },
@@ -5428,13 +5428,13 @@
         ]
       },
       "coordenada": {
-        "x": 38481,
-        "y": 700,
+        "x": 49830,
+        "y": 900,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -57179,
-        "y": -10122,
+        "x": -1090,
+        "y": -1631,
         "fijada_a_mano": false
       }
     },
@@ -5456,13 +5456,13 @@
         ]
       },
       "coordenada": {
-        "x": 38254,
-        "y": 2900,
+        "x": 49528,
+        "y": 3200,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -57742,
-        "y": -9524,
+        "x": -1939,
+        "y": -1680,
         "fijada_a_mano": false
       }
     },
@@ -5487,13 +5487,13 @@
         ]
       },
       "coordenada": {
-        "x": 37119,
-        "y": 7300,
+        "x": 48018,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -58523,
-        "y": -10343,
+        "x": -2218,
+        "y": -3053,
         "fijada_a_mano": false
       }
     },
@@ -5530,13 +5530,13 @@
         ]
       },
       "coordenada": {
-        "x": 38481,
-        "y": 7300,
+        "x": 49830,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -58600,
-        "y": -9896,
+        "x": -784,
+        "y": -3691,
         "fijada_a_mano": false
       }
     },
@@ -5548,12 +5548,12 @@
       "region": "enteros",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 42000,
+        "x": 54360,
         "y": 110,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -350,
+        "x": -1357,
         "y": 0,
         "fijada_a_mano": false
       }
@@ -5566,13 +5566,13 @@
       "region": "potencias",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 46200,
+        "x": 59796,
         "y": 180,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -315,
-        "y": -152,
+        "x": -1223,
+        "y": -589,
         "fijada_a_mano": false
       }
     },
@@ -5584,13 +5584,13 @@
       "region": "reales",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 50400,
+        "x": 65232,
         "y": 110,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -218,
-        "y": -274,
+        "x": -846,
+        "y": -1061,
         "fijada_a_mano": false
       }
     },
@@ -5602,13 +5602,13 @@
       "region": "funciones",
       "completitud": "esbozo",
       "coordenada": {
-        "x": 54600,
+        "x": 70668,
         "y": 180,
         "fijada_a_mano": false
       },
       "coordenada_radial": {
-        "x": -78,
-        "y": -341,
+        "x": -302,
+        "y": -1323,
         "fijada_a_mano": false
       }
     },
@@ -5620,8 +5620,8 @@
       "region": "enteros",
       "completitud": "basica",
       "coordenada": {
-        "x": 42000,
-        "y": 18300,
+        "x": 54360,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -5660,8 +5660,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -42211,
-        "y": -45001,
+        "x": -3233,
+        "y": -5974,
         "fijada_a_mano": false
       }
     },
@@ -5673,8 +5673,8 @@
       "region": "enteros",
       "completitud": "basica",
       "coordenada": {
-        "x": 42227,
-        "y": 20500,
+        "x": 54662,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -5689,8 +5689,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -42687,
-        "y": -45177,
+        "x": -6151,
+        "y": -4110,
         "fijada_a_mano": false
       }
     },
@@ -5702,8 +5702,8 @@
       "region": "enteros",
       "completitud": "basica",
       "coordenada": {
-        "x": 41773,
-        "y": 22700,
+        "x": 54058,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -5726,8 +5726,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -42666,
-        "y": -45819,
+        "x": -2071,
+        "y": 7729,
         "fijada_a_mano": false
       }
     },
@@ -5739,8 +5739,8 @@
       "region": "enteros",
       "completitud": "basica",
       "coordenada": {
-        "x": 41773,
-        "y": 20500,
+        "x": 54058,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -5765,8 +5765,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -42356,
-        "y": -45487,
+        "x": -4110,
+        "y": -6151,
         "fijada_a_mano": false
       }
     },
@@ -5778,8 +5778,8 @@
       "region": "enteros",
       "completitud": "basica",
       "coordenada": {
-        "x": 42227,
-        "y": 22700,
+        "x": 54662,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -5794,8 +5794,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -42997,
-        "y": -45508,
+        "x": -5658,
+        "y": 5658,
         "fijada_a_mano": false
       }
     },
@@ -5807,8 +5807,8 @@
       "region": "fraccion",
       "completitud": "basica",
       "coordenada": {
-        "x": 12600,
-        "y": 22700,
+        "x": 16308,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -5846,8 +5846,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 62038,
-        "y": 8429,
+        "x": 2071,
+        "y": -7729,
         "fijada_a_mano": false
       }
     },
@@ -5859,8 +5859,8 @@
       "region": "fraccion",
       "completitud": "basica",
       "coordenada": {
-        "x": 12600,
-        "y": 24900,
+        "x": 16308,
+        "y": 26200,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -5889,8 +5889,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 62488,
-        "y": 8490,
+        "x": 2943,
+        "y": -8086,
         "fijada_a_mano": false
       }
     },
@@ -5902,8 +5902,8 @@
       "region": "reales",
       "completitud": "basica",
       "coordenada": {
-        "x": 50400,
-        "y": 20500,
+        "x": 65232,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -5926,8 +5926,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -19123,
-        "y": -59139,
+        "x": -1443,
+        "y": -7255,
         "fijada_a_mano": false
       }
     },
@@ -5939,8 +5939,8 @@
       "region": "reales",
       "completitud": "basica",
       "coordenada": {
-        "x": 50400,
-        "y": 27100,
+        "x": 65232,
+        "y": 28500,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -5962,8 +5962,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -19542,
-        "y": -60435,
+        "x": 0,
+        "y": 9209,
         "fijada_a_mano": false
       }
     },
@@ -5975,8 +5975,8 @@
       "region": "reales",
       "completitud": "basica",
       "coordenada": {
-        "x": 50400,
-        "y": 22700,
+        "x": 65232,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -5991,8 +5991,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -19262,
-        "y": -59571,
+        "x": -7729,
+        "y": -2071,
         "fijada_a_mano": false
       }
     },
@@ -6004,8 +6004,8 @@
       "region": "reales",
       "completitud": "basica",
       "coordenada": {
-        "x": 50400,
-        "y": 24900,
+        "x": 65232,
+        "y": 26200,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6021,8 +6021,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -19402,
-        "y": -60003,
+        "x": -8474,
+        "y": 1494,
         "fijada_a_mano": false
       }
     },
@@ -6034,8 +6034,8 @@
       "region": "potencias",
       "completitud": "basica",
       "coordenada": {
-        "x": 46200,
-        "y": 11700,
+        "x": 59796,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6065,8 +6065,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -30293,
-        "y": -52182,
+        "x": -742,
+        "y": -4926,
         "fijada_a_mano": false
       }
     },
@@ -6078,8 +6078,8 @@
       "region": "potencias",
       "completitud": "basica",
       "coordenada": {
-        "x": 45519,
-        "y": 13900,
+        "x": 58890,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6094,8 +6094,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -30324,
-        "y": -52689,
+        "x": -4623,
+        "y": -3134,
         "fijada_a_mano": false
       }
     },
@@ -6107,8 +6107,8 @@
       "region": "potencias",
       "completitud": "basica",
       "coordenada": {
-        "x": 45973,
-        "y": 13900,
+        "x": 59494,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6123,8 +6123,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -29930,
-        "y": -52914,
+        "x": -3841,
+        "y": -4055,
         "fijada_a_mano": false
       }
     },
@@ -6136,8 +6136,8 @@
       "region": "potencias",
       "completitud": "basica",
       "coordenada": {
-        "x": 45973,
-        "y": 16100,
+        "x": 59494,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6153,8 +6153,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -30552,
-        "y": -53081,
+        "x": -1797,
+        "y": -5923,
         "fijada_a_mano": false
       }
     },
@@ -6166,8 +6166,8 @@
       "region": "potencias",
       "completitud": "basica",
       "coordenada": {
-        "x": 46427,
-        "y": 13900,
+        "x": 60098,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6198,8 +6198,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -30717,
-        "y": -52461,
+        "x": -2879,
+        "y": -4786,
         "fijada_a_mano": false
       }
     },
@@ -6211,8 +6211,8 @@
       "region": "potencias",
       "completitud": "basica",
       "coordenada": {
-        "x": 46200,
-        "y": 22700,
+        "x": 59796,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6228,8 +6228,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -31432,
-        "y": -54146,
+        "x": -7729,
+        "y": 2071,
         "fijada_a_mano": false
       }
     },
@@ -6241,8 +6241,8 @@
       "region": "potencias",
       "completitud": "basica",
       "coordenada": {
-        "x": 46881,
-        "y": 13900,
+        "x": 60702,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6274,8 +6274,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -31108,
-        "y": -52230,
+        "x": -5188,
+        "y": -2067,
         "fijada_a_mano": false
       }
     },
@@ -6287,8 +6287,8 @@
       "region": "potencias",
       "completitud": "basica",
       "coordenada": {
-        "x": 46427,
-        "y": 16100,
+        "x": 60098,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6303,8 +6303,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -30945,
-        "y": -52853,
+        "x": -2918,
+        "y": -5458,
         "fijada_a_mano": false
       }
     },
@@ -6316,8 +6316,8 @@
       "region": "potencias",
       "completitud": "basica",
       "coordenada": {
-        "x": 46200,
-        "y": 27100,
+        "x": 59796,
+        "y": 28500,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6333,8 +6333,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -31888,
-        "y": -54931,
+        "x": 7975,
+        "y": -4605,
         "fijada_a_mano": false
       }
     },
@@ -6346,8 +6346,8 @@
       "region": "potencias",
       "completitud": "basica",
       "coordenada": {
-        "x": 46200,
-        "y": 24900,
+        "x": 59796,
+        "y": 26200,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6363,8 +6363,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -31660,
-        "y": -54538,
+        "x": -5531,
+        "y": 6592,
         "fijada_a_mano": false
       }
     },
@@ -6376,8 +6376,8 @@
       "region": "potencias",
       "completitud": "basica",
       "coordenada": {
-        "x": 46200,
-        "y": 18300,
+        "x": 59796,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6394,8 +6394,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -30976,
-        "y": -53360,
+        "x": -1118,
+        "y": -6701,
         "fijada_a_mano": false
       }
     },
@@ -6407,8 +6407,8 @@
       "region": "proporcion",
       "completitud": "basica",
       "coordenada": {
-        "x": 21000,
-        "y": 20500,
+        "x": 27180,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6432,8 +6432,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 53973,
-        "y": 30822,
+        "x": 6151,
+        "y": -4110,
         "fijada_a_mano": false
       }
     },
@@ -6445,8 +6445,8 @@
       "region": "patrones_algebra",
       "completitud": "basica",
       "coordenada": {
-        "x": 25427,
-        "y": 16100,
+        "x": 32918,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6476,8 +6476,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 41093,
-        "y": 45414,
+        "x": 607,
+        "y": 6159,
         "fijada_a_mano": false
       }
     },
@@ -6489,8 +6489,8 @@
       "region": "patrones_algebra",
       "completitud": "basica",
       "coordenada": {
-        "x": 25200,
-        "y": 18300,
+        "x": 32616,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6514,8 +6514,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 41567,
-        "y": 45597,
+        "x": 5687,
+        "y": 3716,
         "fijada_a_mano": false
       }
     },
@@ -6527,8 +6527,8 @@
       "region": "patrones_algebra",
       "completitud": "basica",
       "coordenada": {
-        "x": 25200,
-        "y": 20500,
+        "x": 32616,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6544,8 +6544,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 41873,
-        "y": 45932,
+        "x": 7255,
+        "y": -1443,
         "fijada_a_mano": false
       }
     },
@@ -6557,8 +6557,8 @@
       "region": "patrones_algebra",
       "completitud": "basica",
       "coordenada": {
-        "x": 25200,
-        "y": 22700,
+        "x": 32616,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6583,8 +6583,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 42179,
-        "y": 46268,
+        "x": 5658,
+        "y": -5658,
         "fijada_a_mano": false
       }
     },
@@ -6596,8 +6596,8 @@
       "region": "patrones_algebra",
       "completitud": "basica",
       "coordenada": {
-        "x": 25200,
-        "y": 24900,
+        "x": 32616,
+        "y": 26200,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6618,8 +6618,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 42484,
-        "y": 46603,
+        "x": 7452,
+        "y": -4303,
         "fijada_a_mano": false
       }
     },
@@ -6631,8 +6631,8 @@
       "region": "patrones_algebra",
       "completitud": "basica",
       "coordenada": {
-        "x": 25200,
-        "y": 29300,
+        "x": 32616,
+        "y": 30800,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6654,8 +6654,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 43096,
-        "y": 47274,
+        "x": 0,
+        "y": 9813,
         "fijada_a_mano": false
       }
     },
@@ -6667,8 +6667,8 @@
       "region": "patrones_algebra",
       "completitud": "basica",
       "coordenada": {
-        "x": 24746,
-        "y": 31500,
+        "x": 32012,
+        "y": 33100,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6699,8 +6699,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 43065,
-        "y": 47914,
+        "x": 9022,
+        "y": -5209,
         "fijada_a_mano": false
       }
     },
@@ -6712,8 +6712,8 @@
       "region": "patrones_algebra",
       "completitud": "basica",
       "coordenada": {
-        "x": 25654,
-        "y": 31500,
+        "x": 33220,
+        "y": 33100,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6729,8 +6729,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 43402,
-        "y": 47610,
+        "x": -9022,
+        "y": -5209,
         "fijada_a_mano": false
       }
     },
@@ -6742,8 +6742,8 @@
       "region": "patrones_algebra",
       "completitud": "basica",
       "coordenada": {
-        "x": 25200,
-        "y": 31500,
+        "x": 32616,
+        "y": 33100,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6768,8 +6768,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 43736,
-        "y": 47303,
+        "x": 0,
+        "y": 10417,
         "fijada_a_mano": false
       }
     },
@@ -6781,8 +6781,8 @@
       "region": "funciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 54827,
-        "y": 13900,
+        "x": 70970,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6798,8 +6798,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -7981,
-        "y": -60266,
+        "x": -1783,
+        "y": -5293,
         "fijada_a_mano": false
       }
     },
@@ -6811,8 +6811,8 @@
       "region": "funciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 54373,
-        "y": 13900,
+        "x": 70366,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6835,8 +6835,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -7531,
-        "y": -60324,
+        "x": -604,
+        "y": -5552,
         "fijada_a_mano": false
       }
     },
@@ -6848,8 +6848,8 @@
       "region": "funciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 54600,
-        "y": 16100,
+        "x": 70668,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6873,8 +6873,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -7814,
-        "y": -60745,
+        "x": -607,
+        "y": -6159,
         "fijada_a_mano": false
       }
     },
@@ -6886,8 +6886,8 @@
       "region": "funciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 54827,
-        "y": 22700,
+        "x": 70970,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6909,8 +6909,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -8213,
-        "y": -62067,
+        "x": -5658,
+        "y": -5658,
         "fijada_a_mano": false
       }
     },
@@ -6922,8 +6922,8 @@
       "region": "funciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 54827,
-        "y": 24900,
+        "x": 70970,
+        "y": 26200,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6944,8 +6944,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -7821,
-        "y": -62575,
+        "x": -7452,
+        "y": -4303,
         "fijada_a_mano": false
       }
     },
@@ -6957,8 +6957,8 @@
       "region": "funciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 54600,
-        "y": 27100,
+        "x": 70668,
+        "y": 28500,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -6983,8 +6983,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -8104,
-        "y": -62997,
+        "x": -7975,
+        "y": -4605,
         "fijada_a_mano": false
       }
     },
@@ -6996,8 +6996,8 @@
       "region": "funciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 54600,
-        "y": 33700,
+        "x": 70668,
+        "y": 35400,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7013,8 +7013,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -8278,
-        "y": -64348,
+        "x": 0,
+        "y": 11021,
         "fijada_a_mano": false
       }
     },
@@ -7026,8 +7026,8 @@
       "region": "funciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 54373,
-        "y": 24900,
+        "x": 70366,
+        "y": 26200,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7043,8 +7043,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -8271,
-        "y": -62517,
+        "x": -2943,
+        "y": -8086,
         "fijada_a_mano": false
       }
     },
@@ -7056,8 +7056,8 @@
       "region": "funciones",
       "completitud": "basica",
       "coordenada": {
-        "x": 54373,
-        "y": 22700,
+        "x": 70366,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7082,8 +7082,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -7763,
-        "y": -62125,
+        "x": -2071,
+        "y": -7729,
         "fijada_a_mano": false
       }
     },
@@ -7095,8 +7095,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 29400,
-        "y": 20500,
+        "x": 38052,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7118,8 +7118,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 0,
-        "y": 62154,
+        "x": 7255,
+        "y": 1443,
         "fijada_a_mano": false
       }
     },
@@ -7131,8 +7131,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 29400,
-        "y": 22700,
+        "x": 38052,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7160,8 +7160,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 0,
-        "y": 62608,
+        "x": 7729,
+        "y": -2071,
         "fijada_a_mano": false
       }
     },
@@ -7173,8 +7173,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 29173,
-        "y": 11700,
+        "x": 37750,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7190,8 +7190,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 227,
-        "y": 60337,
+        "x": -4637,
+        "y": 1820,
         "fijada_a_mano": false
       }
     },
@@ -7203,8 +7203,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 29627,
-        "y": 13900,
+        "x": 38354,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7220,8 +7220,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -227,
-        "y": 60791,
+        "x": 0,
+        "y": 5585,
         "fijada_a_mano": false
       }
     },
@@ -7233,8 +7233,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 29173,
-        "y": 16100,
+        "x": 37750,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7250,8 +7250,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -227,
-        "y": 61245,
+        "x": -607,
+        "y": 6159,
         "fijada_a_mano": false
       }
     },
@@ -7263,8 +7263,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 29627,
-        "y": 16100,
+        "x": 38354,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7279,8 +7279,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 227,
-        "y": 61245,
+        "x": -1797,
+        "y": 5923,
         "fijada_a_mano": false
       }
     },
@@ -7292,8 +7292,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 29400,
-        "y": 9500,
+        "x": 38052,
+        "y": 10100,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7309,8 +7309,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 0,
-        "y": 59884,
+        "x": -3886,
+        "y": 2014,
         "fijada_a_mano": false
       }
     },
@@ -7322,8 +7322,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 29173,
-        "y": 13900,
+        "x": 37750,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7339,8 +7339,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 227,
-        "y": 60791,
+        "x": -1201,
+        "y": 5455,
         "fijada_a_mano": false
       }
     },
@@ -7352,8 +7352,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 30081,
-        "y": 13900,
+        "x": 38958,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7392,8 +7392,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -681,
-        "y": 60788,
+        "x": 1201,
+        "y": 5455,
         "fijada_a_mano": false
       }
     },
@@ -7405,8 +7405,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 29173,
-        "y": 24900,
+        "x": 37750,
+        "y": 26200,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7422,8 +7422,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 227,
-        "y": 63061,
+        "x": 8474,
+        "y": 1494,
         "fijada_a_mano": false
       }
     },
@@ -7435,8 +7435,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 28719,
-        "y": 13900,
+        "x": 37146,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7458,8 +7458,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 681,
-        "y": 60788,
+        "x": 2345,
+        "y": 5069,
         "fijada_a_mano": false
       }
     },
@@ -7471,8 +7471,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 30081,
-        "y": 16100,
+        "x": 38958,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7488,8 +7488,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -681,
-        "y": 61242,
+        "x": -3926,
+        "y": 4784,
         "fijada_a_mano": false
       }
     },
@@ -7501,8 +7501,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 28719,
-        "y": 16100,
+        "x": 37146,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7518,8 +7518,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": 681,
-        "y": 61242,
+        "x": -2918,
+        "y": 5458,
         "fijada_a_mano": false
       }
     },
@@ -7531,8 +7531,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 29627,
-        "y": 18300,
+        "x": 38354,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7548,8 +7548,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -227,
-        "y": 61699,
+        "x": 2206,
+        "y": 6425,
         "fijada_a_mano": false
       }
     },
@@ -7561,8 +7561,8 @@
       "region": "geometria",
       "completitud": "basica",
       "coordenada": {
-        "x": 29627,
-        "y": 24900,
+        "x": 38354,
+        "y": 26200,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7578,8 +7578,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -227,
-        "y": 63061,
+        "x": 5531,
+        "y": 6592,
         "fijada_a_mano": false
       }
     },
@@ -7591,8 +7591,8 @@
       "region": "medicion",
       "completitud": "basica",
       "coordenada": {
-        "x": 33146,
-        "y": 16100,
+        "x": 42884,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7616,8 +7616,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -44057,
-        "y": 42544,
+        "x": -4784,
+        "y": 3926,
         "fijada_a_mano": false
       }
     },
@@ -7629,8 +7629,8 @@
       "region": "medicion",
       "completitud": "basica",
       "coordenada": {
-        "x": 33373,
-        "y": 18300,
+        "x": 43186,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7646,8 +7646,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -44543,
-        "y": 42694,
+        "x": 0,
+        "y": 6793,
         "fijada_a_mano": false
       }
     },
@@ -7659,8 +7659,8 @@
       "region": "medicion",
       "completitud": "basica",
       "coordenada": {
-        "x": 33373,
-        "y": 20500,
+        "x": 43186,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7676,8 +7676,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -44872,
-        "y": 43007,
+        "x": 6151,
+        "y": 4110,
         "fijada_a_mano": false
       }
     },
@@ -7689,8 +7689,8 @@
       "region": "medicion",
       "completitud": "basica",
       "coordenada": {
-        "x": 34054,
-        "y": 16100,
+        "x": 44092,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7706,8 +7706,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -44683,
-        "y": 41887,
+        "x": -5923,
+        "y": 1797,
         "fijada_a_mano": false
       }
     },
@@ -7719,8 +7719,8 @@
       "region": "medicion",
       "completitud": "basica",
       "coordenada": {
-        "x": 33600,
-        "y": 16100,
+        "x": 43488,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7736,8 +7736,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -44371,
-        "y": 42217,
+        "x": -5458,
+        "y": 2918,
         "fijada_a_mano": false
       }
     },
@@ -7749,8 +7749,8 @@
       "region": "medicion",
       "completitud": "basica",
       "coordenada": {
-        "x": 33827,
-        "y": 18300,
+        "x": 43790,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7766,8 +7766,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -44856,
-        "y": 42365,
+        "x": -2206,
+        "y": 6425,
         "fijada_a_mano": false
       }
     },
@@ -7779,8 +7779,8 @@
       "region": "medicion",
       "completitud": "basica",
       "coordenada": {
-        "x": 33827,
-        "y": 20500,
+        "x": 43790,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7796,8 +7796,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -45185,
-        "y": 42678,
+        "x": 4110,
+        "y": 6151,
         "fijada_a_mano": false
       }
     },
@@ -7809,8 +7809,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38027,
-        "y": 7300,
+        "x": 49226,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7826,8 +7826,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -58744,
-        "y": -9000,
+        "x": -3268,
+        "y": -1887,
         "fijada_a_mano": false
       }
     },
@@ -7839,8 +7839,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 37800,
-        "y": 13900,
+        "x": 48924,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7869,8 +7869,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -60054,
-        "y": -9446,
+        "x": -5382,
+        "y": 1494,
         "fijada_a_mano": false
       }
     },
@@ -7882,8 +7882,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 37573,
-        "y": 18300,
+        "x": 48622,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7899,8 +7899,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -60914,
-        "y": -9818,
+        "x": -6585,
+        "y": 1668,
         "fijada_a_mano": false
       }
     },
@@ -7912,8 +7912,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38027,
-        "y": 18300,
+        "x": 49226,
+        "y": 19600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7928,8 +7928,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -60840,
-        "y": -10266,
+        "x": -5687,
+        "y": 3716,
         "fijada_a_mano": false
       }
     },
@@ -7941,8 +7941,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38481,
-        "y": 20500,
+        "x": 49830,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7958,8 +7958,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -61288,
-        "y": -10339,
+        "x": -6151,
+        "y": 4110,
         "fijada_a_mano": false
       }
     },
@@ -7971,8 +7971,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 36665,
-        "y": 20500,
+        "x": 47414,
+        "y": 21600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -7988,8 +7988,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -61500,
-        "y": -8994,
+        "x": -4110,
+        "y": 6151,
         "fijada_a_mano": false
       }
     },
@@ -8001,8 +8001,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 37119,
-        "y": 16100,
+        "x": 48018,
+        "y": 17300,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8018,8 +8018,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -60536,
-        "y": -9295,
+        "x": -5458,
+        "y": -2918,
         "fijada_a_mano": false
       }
     },
@@ -8031,8 +8031,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38254,
-        "y": 13900,
+        "x": 49528,
+        "y": 14700,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8056,8 +8056,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -59981,
-        "y": -9894,
+        "x": -5577,
+        "y": 302,
         "fijada_a_mano": false
       }
     },
@@ -8069,8 +8069,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38935,
-        "y": 16100,
+        "x": 50434,
+        "y": 17300,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8091,8 +8091,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -60604,
-        "y": -8846,
+        "x": -6159,
+        "y": 607,
         "fijada_a_mano": false
       }
     },
@@ -8104,8 +8104,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 37119,
-        "y": 20500,
+        "x": 48018,
+        "y": 21900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8121,8 +8121,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -61432,
-        "y": -9443,
+        "x": -1443,
+        "y": 7255,
         "fijada_a_mano": false
       }
     },
@@ -8134,8 +8134,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 37800,
-        "y": 22700,
+        "x": 48924,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8150,8 +8150,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -61773,
-        "y": -10189,
+        "x": 2071,
+        "y": 7729,
         "fijada_a_mano": false
       }
     },
@@ -8163,8 +8163,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38027,
-        "y": 11700,
+        "x": 49226,
+        "y": 12400,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8181,8 +8181,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -59570,
-        "y": -9596,
+        "x": -3388,
+        "y": -3651,
         "fijada_a_mano": false
       }
     },
@@ -8194,8 +8194,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38935,
-        "y": 18300,
+        "x": 50434,
+        "y": 19600,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8211,8 +8211,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -61052,
-        "y": -8920,
+        "x": -4172,
+        "y": 5361,
         "fijada_a_mano": false
       }
     },
@@ -8224,8 +8224,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38254,
-        "y": 22700,
+        "x": 49528,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8241,8 +8241,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -61698,
-        "y": -10637,
+        "x": 7729,
+        "y": 2071,
         "fijada_a_mano": false
       }
     },
@@ -8254,8 +8254,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 37573,
-        "y": 7300,
+        "x": 48622,
+        "y": 7800,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8271,8 +8271,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -58674,
-        "y": -9448,
+        "x": -3753,
+        "y": -394,
         "fijada_a_mano": false
       }
     },
@@ -8284,8 +8284,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 37346,
-        "y": 22700,
+        "x": 48320,
+        "y": 23900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8307,8 +8307,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -61845,
-        "y": -9741,
+        "x": 5658,
+        "y": 5658,
         "fijada_a_mano": false
       }
     },
@@ -8320,8 +8320,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38027,
-        "y": 16100,
+        "x": 49226,
+        "y": 17300,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8345,8 +8345,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -60392,
-        "y": -10192,
+        "x": -6159,
+        "y": -607,
         "fijada_a_mano": false
       }
     },
@@ -8358,8 +8358,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 37800,
-        "y": 24900,
+        "x": 48924,
+        "y": 26200,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8374,8 +8374,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -62221,
-        "y": -10263,
+        "x": 0,
+        "y": 8605,
         "fijada_a_mano": false
       }
     },
@@ -8387,8 +8387,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38481,
-        "y": 16100,
+        "x": 49830,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8404,8 +8404,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -60466,
-        "y": -9744,
+        "x": -3926,
+        "y": -4784,
         "fijada_a_mano": false
       }
     },
@@ -8417,8 +8417,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 37573,
-        "y": 16100,
+        "x": 48622,
+        "y": 17000,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8434,8 +8434,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -60315,
-        "y": -10639,
+        "x": -5923,
+        "y": -1797,
         "fijada_a_mano": false
       }
     },
@@ -8447,8 +8447,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38027,
-        "y": 20500,
+        "x": 49226,
+        "y": 21900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8464,8 +8464,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -61130,
-        "y": -11234,
+        "x": -7255,
+        "y": -1443,
         "fijada_a_mano": false
       }
     },
@@ -8477,8 +8477,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38935,
-        "y": 20500,
+        "x": 50434,
+        "y": 21900,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8494,8 +8494,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -61362,
-        "y": -9891,
+        "x": 1443,
+        "y": 7255,
         "fijada_a_mano": false
       }
     },
@@ -8507,8 +8507,8 @@
       "region": "datos_probabilidades",
       "completitud": "basica",
       "coordenada": {
-        "x": 38481,
-        "y": 18300,
+        "x": 49830,
+        "y": 19300,
         "fijada_a_mano": false
       },
       "metadatos": {
@@ -8524,8 +8524,8 @@
         ]
       },
       "coordenada_radial": {
-        "x": -60984,
-        "y": -9369,
+        "x": -6221,
+        "y": -2729,
         "fijada_a_mano": false
       }
     }

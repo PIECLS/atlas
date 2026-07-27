@@ -1,13 +1,13 @@
-// Herramienta de layout OFFLINE (Fase 5 + 3.6-B/C + 3.7-C). NO es parte de la
-// app (A5). Computa DOS proyecciones del mismo espacio de conocimiento y las
-// congela en el dataset como contenido editorial:
+// Herramienta de layout OFFLINE (Fase 5 + 3.6-B/C + 3.7-C + 3.8). NO es parte
+// de la app (A5). Computa DOS proyecciones del mismo espacio de conocimiento y
+// las congela en el dataset como contenido editorial:
 //
 //   coordenada         — "en capas": y = profundidad en el orden parcial
 //                         (longest path desde raíces), x = región + baricentro.
-//   coordenada_radial  — "radial": radio = profundidad (misma magnitud que y),
-//                         ángulo = región (sectores proporcionales a la
-//                         cantidad de nodos de cada región, en orden
-//                         region.orden_x).
+//   coordenada_radial  — "radial": radio = profundidad (consecuencia de cuántos
+//                         nodos hay en cada anillo, no una constante), ángulo =
+//                         región (repartida DENTRO de cada anillo según cuántos
+//                         nodos aporta esa región A ESE anillo — Fase 3.8-A).
 //
 // Ambas se computan offline, una vez, y se congelan (A5). El explorador LEE
 // las dos y alterna entre ellas; nunca calcula ninguna en runtime.
@@ -25,51 +25,22 @@ import { dirname, resolve } from 'node:path'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const RUTA = resolve(__dirname, '..', 'data', 'atlas.numero.json')
 
-// ═══════════════════════════════ EN CAPAS (Fase 5 + 3.6-C + 3.7-C) ═════════
-// SEP_NODO sube de 96 a 450 (Fase 3.7-C1): debe superar con holgura el ancho
-// típico de una etiqueta (~165px, medido; las peores llegan a ~340px). Con
-// las etiquetas ahora DEBAJO del nodo (Fase 3.7-B1) esto ya no compite con el
-// nodo vecino, pero SIGUE compitiendo con la ETIQUETA del vecino en la misma
-// capa — dos etiquetas centradas a menos de ~165-340px se solapan igual.
-// SEP_REGION y UNIDAD_Y suben en cascada para conservar la proporción 1:1–2:1
-// que fijó la Fase 3.6: al ensanchar las capas, las columnas necesitan más
-// aire entre sí, y el alto debe acompañar o el mapa vuelve a desbalancearse.
-const BANDA_L2 = 110 // altura de la fila de conceptos (zoom 2)
-const BANDA_L2_ALT = 70 // desfase de la fila alterna (evita encabalgar etiquetas, 3.6-B)
-// Microconocimientos (base, antes de sumar profundidad). 700, no 240: un
-// contenedor zoom2 se centra en el BARICENTRO de TODOS sus hijos, que puede
-// coincidir en x con uno de ellos en particular — con poco aire vertical
-// (240-180=60px) ese hijo de profundidad 0 quedaba pegado a su propio
-// contenedor (3.7-C1, hallazgo real: geometria_c ~ paralelas_perpendiculares
-// a 60px). El salto debe superar SEP_NODO igual que cualquier otro par.
-const BANDA_L3 = 700
-const UNIDAD_Y = 2200 // separación vertical por nivel de profundidad (antes 400)
-const SEP_REGION = 4200 // separación horizontal entre territorios (antes 700)
-// SEP_NODO_OBJETIVO es el criterio de cierre (450px, el que se reporta y se
-// verifica). SEP_NODO —usado en todos los cálculos— lleva un pequeño colchón
-// extra: el redondeo final a enteros (Math.round de x/y, y en radial la
-// conversión polar→cartesiana) puede recortar 1-2px del resultado teórico;
-// sin el colchón, algún par quedaba en 449px en vez de 450.
-const SEP_NODO_OBJETIVO = 450
-const SEP_NODO = SEP_NODO_OBJETIVO + 4 // separación entre nodos del mismo territorio y capa (antes 96)
-const SWEEPS = 8 // barridos de baricentro
-
-// ═══════════════════════════════ RADIAL (Fase 3.6-B + 3.7-C2) ══════════════
-// El radio de cada anillo deja de ser una constante (RADIO_INICIAL + d·SEP)
-// y pasa a ser una CONSECUENCIA de cuántos nodos contiene (Fase 3.7-C2): el
-// perímetro disponible en un anillo interior es mucho menor que en uno
-// exterior para el MISMO sector angular, así que un incremento fijo aprieta
-// el centro y deja el borde holgado. Cada anillo se empuja hacia afuera lo
-// necesario para que, dentro de su sector, sus nodos queden a ≥SEP_NODO de
-// distancia de arco real — nunca menos que el anillo anterior + un piso.
-const RADIO_INICIAL = 700 // el anillo central (profundidad 0) tiene 16 nodos; mínimo del anillo 0
-// Piso de separación RADIAL entre anillos consecutivos. Debe ser al menos
-// SEP_NODO: dos nodos de anillos vecinos con ángulos parecidos (frecuente en
-// regiones angostas, pocos nodos por anillo) quedan a una distancia ≈ esta
-// diferencia de radio — no solo importa la separación DENTRO de un anillo.
-const SEP_ANILLO_MIN = SEP_NODO
-const RADIO_ZOOM2 = 350 // anillo interior propio para los contenedores de región
-const SWEEPS_RADIAL = 8
+// ═══════════════════════════════ SEPARACIÓN (compartida) ═══════════════════
+// SEP_NODO sube de 450 a 600 (Fase 3.8-B1): con 450 un balde de 8 nodos
+// (operaciones, misma región+profundidad) medía 3.600px — más ancho que la
+// separación que había entre regiones vecinas, así que se invadían.
+// SEP_NODO_OBJETIVO es el criterio de cierre (el que se reporta y se
+// verifica). SEP_NODO —usado en todos los cálculos— lleva un colchón extra:
+// el redondeo final a enteros puede recortar 1-2px del resultado teórico.
+const SEP_NODO_OBJETIVO = 600
+const SEP_NODO = SEP_NODO_OBJETIVO + 4
+// Piso de separación RADIAL entre anillos consecutivos (antes SEP_ANILLO_MIN,
+// Fase 3.7-C2). Debe ser al menos SEP_NODO, no un valor menor: dos nodos de
+// anillos vecinos con ángulos parecidos (frecuente — el barrido de baricentro
+// alinea un nodo con sus vecinos, que suelen vivir en el anillo de al lado)
+// quedan a una distancia real ≈ esta diferencia de radio, sin importar cuánto
+// arco tengan disponible dentro de su propio anillo.
+const SEP_RADIAL = SEP_NODO
 
 const atlas = JSON.parse(readFileSync(RUTA, 'utf8'))
 atlas.schema_version = '1.2.0'
@@ -111,14 +82,69 @@ for (const n of nodos) if (n.padre && hijos.has(n.padre)) hijos.get(n.padre).pus
 function media(xs) {
   return xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0
 }
+// Punto medio del RANGO, no promedio de posiciones (Fase 3.8-B2): con
+// regiones de anchos muy desiguales, el promedio se corre hacia donde hay más
+// nodos. El punto medio del rango centra sobre el ESPACIO ocupado, no sobre
+// la masa de puntos.
+function puntoMedio(xs) {
+  return xs.length ? (Math.min(...xs) + Math.max(...xs)) / 2 : 0
+}
 const fijadaEn = (n, campo) => n[campo]?.fijada_a_mano === true
 
 // ─────────────────────────────── EN CAPAS ───────────────────────────────────
+const BANDA_L2 = 110 // altura de la fila de conceptos (zoom 2)
+const BANDA_L2_ALT = 70 // desfase de la fila alterna (evita encabalgar etiquetas, 3.6-B)
+// Microconocimientos (base, antes de sumar profundidad). El contenedor zoom2
+// se centra en el punto medio del rango de TODOS sus hijos (3.8-B2), que
+// puede coincidir en x con uno de ellos en particular — con poco aire
+// vertical ese hijo de profundidad 0 quedaba pegado a su propio contenedor
+// (3.7-C1: geometria_c~paralelas_perpendiculares). El salto debe superar
+// SEP_NODO igual que cualquier otro par; al subir SEP_NODO en 3.8 (450→600)
+// el viejo BANDA_L3=700 volvió a quedar corto (520px medido contra
+// BANDA_L2_ALT=180), así que sube con él.
+const BANDA_L3 = 900
+const UNIDAD_Y = 2300 // separación vertical por nivel de profundidad
+// Zigzag vertical para baldes de más de 5 nodos (Fase 3.8-B1 — propuesto en
+// 3.6, nunca aplicado porque el rebalance de constantes alcanzó sin él; con
+// SEP_NODO ahora en 600 un balde de 8+ nodos sigue siendo muy ancho, y
+// alternar la fila reduce cuántas etiquetas compiten a la misma altura). No
+// reemplaza la separación horizontal — es adicional.
+const ESCALON_ZOOM3 = 300
+// Separación clara entre el nodo raíz (zoom 1) y la fila de categorías (zoom
+// 2): hoy quedan a 110-180px de distancia, mucho menos que SEP_NODO, y el
+// nodo raíz se cruza con la fila (Fase 3.8-B2).
+const ZOOM1_Y = -900
+const SWEEPS = 8 // barridos de baricentro
+
 function yDeCapas(nodo) {
-  if (nodo.nivel_zoom === 1) return 0
+  if (nodo.nivel_zoom === 1) return ZOOM1_Y
   if (nodo.nivel_zoom === 2) return BANDA_L2
   return BANDA_L3 + prof.get(nodo.id) * UNIDAD_Y
 }
+
+// SEP_REGION deja de ser una constante fija (Fase 3.8-B1): se deriva del
+// ancho real de la región más ancha del dataset (cuántos nodos caben en su
+// balde más denso × SEP_NODO), más un margen de un SEP_NODO completo. Antes
+// era al revés — una constante fija elegida a ojo, sin relación con el
+// contenido — y por eso regiones anchas (operaciones) invadían a sus vecinas.
+function calcularSepRegion() {
+  const cuentaPorBalde = new Map() // `${region}|${y}` -> cuenta
+  for (const n of nodos) {
+    if (n.nivel_zoom !== 3) continue
+    const clave = `${n.region}|${yDeCapas(n)}`
+    cuentaPorBalde.set(clave, (cuentaPorBalde.get(clave) ?? 0) + 1)
+  }
+  const maxPorRegion = new Map()
+  for (const [clave, cuenta] of cuentaPorBalde) {
+    const region = clave.slice(0, clave.lastIndexOf('|'))
+    const ancho = cuenta * SEP_NODO
+    if (ancho > (maxPorRegion.get(region) ?? 0)) maxPorRegion.set(region, ancho)
+  }
+  const maxGlobal = Math.max(0, ...maxPorRegion.values())
+  return maxGlobal + SEP_NODO
+}
+const SEP_REGION = calcularSepRegion()
+
 function centroRegion(regionId) {
   const r = regionPorId.get(regionId)
   return (r?.orden_x ?? 0) * SEP_REGION
@@ -135,9 +161,9 @@ function calcularCapas() {
 
   // Nodos zoom 3 por balde (región @ y): baricentro estilo Sugiyama. La
   // fórmula (i - (largo-1)/2) * SEP_NODO da separación EXACTA = SEP_NODO
-  // entre consecutivos sin importar paridad — verificado, no había bug de
-  // centrado en esta implementación; lo que faltaba era que SEP_NODO fuera
-  // mayor que el ancho de etiqueta (3.7-C1).
+  // entre consecutivos sin importar paridad (verificado en 3.7 — no había bug
+  // de centrado; lo que faltaba era que SEP_NODO superara el ancho de
+  // etiqueta).
   const buckets = new Map()
   for (const n of nodos) {
     if (n.nivel_zoom !== 3 || fijada(n)) continue
@@ -157,117 +183,134 @@ function calcularCapas() {
     }
   }
 
-  // Contenedores zoom 2: x = baricentro de sus hijos; y ALTERNADA en dos filas
-  // (3.6-B: antes, 14 puntos colineales a la misma y — las etiquetas se
-  // encimaban). La fila se decide por el orden_x de la región (par/impar), no
-  // por el id, para que regiones vecinas en el mapa caigan en filas distintas.
+  // Zigzag (Fase 3.8-B1): baldes de más de 5 nodos alternan media fila, en el
+  // mismo orden final (por x) que dejó el barrido de baricentro.
+  for (const [, ids] of buckets) {
+    if (ids.length <= 5) continue
+    const base = yMap.get(ids[0])
+    ids.forEach((id, i) => {
+      if (i % 2 === 1) yMap.set(id, base + ESCALON_ZOOM3)
+    })
+  }
+
+  // Contenedores zoom 2: x = punto medio del rango de sus hijos (3.8-B2); y
+  // ALTERNADA en dos filas (3.6-B: antes, 14 puntos colineales a la misma y —
+  // las etiquetas se encimaban). La fila se decide por el orden_x de la
+  // región (par/impar), no por el id, para que regiones vecinas en el mapa
+  // caigan en filas distintas.
   for (const n of nodos) {
     if (n.nivel_zoom !== 2 || fijada(n)) continue
     const hs = hijos.get(n.id)
-    if (hs.length) xMap.set(n.id, media(hs.map((h) => xMap.get(h))))
+    if (hs.length) xMap.set(n.id, puntoMedio(hs.map((h) => xMap.get(h))))
     const orden = regionPorId.get(n.region)?.orden_x ?? 0
     yMap.set(n.id, BANDA_L2 + (orden % 2 === 1 ? BANDA_L2_ALT : 0))
   }
-  // Zoom 1 (dominio): x = baricentro de sus hijos directos.
+  // Zoom 1 (dominio): x = punto medio del rango de sus hijos directos (3.8-B2).
   for (const n of nodos) {
     if (n.nivel_zoom !== 1 || fijada(n)) continue
     const hs = hijos.get(n.id)
-    if (hs.length) xMap.set(n.id, media(hs.map((h) => xMap.get(h))))
+    if (hs.length) xMap.set(n.id, puntoMedio(hs.map((h) => xMap.get(h))))
   }
 
   return { xMap, yMap }
 }
 
 // ─────────────────────────────────── RADIAL ─────────────────────────────────
-// Sectores angulares proporcionales a la cantidad de nodos zoom 3 de cada
-// región (no partes iguales), recorridos en orden region.orden_x.
-function calcularSectores() {
-  const cuentaPorRegion = new Map()
-  let total = 0
+// Fase 3.8-A: el reparto angular deja de ser por región (sector fijo,
+// proporcional a la cantidad TOTAL de nodos de la región) y pasa a ser POR
+// ANILLO — cada anillo reparte sus 360° entre las regiones que efectivamente
+// tiene, proporcional a cuántos nodos aporta cada una A ESE ANILLO. El orden
+// de las regiones alrededor del círculo es siempre el mismo (region.orden_x);
+// solo cambia el ancho angular de cada una de un anillo a otro (estructura de
+// sunburst). Una región ausente de un anillo no ocupa ángulo ahí.
+//
+// Consecuencia importante: como el ancho de cada sector es proporcional a su
+// cuenta EN ESE ANILLO, el paso angular por nodo (ancho/cuenta) da
+// exactamente 2π/total_del_anillo para CUALQUIER región de ese anillo — el
+// mismo valor. Por eso no hace falta el margen angular ni la convergencia
+// iterativa que exigió la Fase 3.7-C2 (ahí los sectores eran fijos por
+// región, con paso distinto entre regiones vecinas): con paso uniforme, el
+// centrado simétrico dentro de cada sector ya deja, en el borde entre dos
+// regiones, exactamente el mismo hueco que entre dos nodos consecutivos de
+// una misma región.
+function calcularSectoresPorAnillo() {
+  const cuentaPorAnilloRegion = new Map() // `${d}|${region}` -> cuenta
+  const cuentaPorAnillo = new Map() // d -> total de nodos zoom 3 en ese anillo
   for (const n of nodos) {
     if (n.nivel_zoom !== 3) continue
-    cuentaPorRegion.set(n.region, (cuentaPorRegion.get(n.region) ?? 0) + 1)
-    total++
-  }
-  const sectores = new Map() // region -> {inicio, ancho, centro, centroEtiqueta, cuenta}
-  let cursor = -Math.PI / 2 // arranca arriba, sentido horario
-  const anchoUniforme = (2 * Math.PI) / (regionesOrdenadas.length || 1)
-  regionesOrdenadas.forEach((r, i) => {
-    const cuenta = cuentaPorRegion.get(r.id) ?? 0
-    const ancho = total > 0 ? (cuenta / total) * 2 * Math.PI : 0
-    // El contenido zoom3 usa el sector PROPORCIONAL (centro real). El nodo
-    // zoom2 (contenedor) usa un centro EQUIESPACIADO aparte: dos regiones
-    // angostas y vecinas (p.ej. decimales 8° y proporcion 5°) dejarían sus
-    // centros reales a solo unos pocos grados — separación de arco casi nula
-    // a cualquier radio razonable. Repartir 360°/14 por igual SOLO para este
-    // punto evita que las etiquetas de región se encimen (3.6-B).
-    sectores.set(r.id, {
-      inicio: cursor,
-      ancho,
-      centro: cursor + ancho / 2,
-      centroEtiqueta: -Math.PI / 2 + (i + 0.5) * anchoUniforme,
-      cuenta,
-    })
-    cursor += ancho
-  })
-  return sectores
-}
-
-// Radio de cada anillo (profundidad): consecuencia de cuántos nodos contiene,
-// no una constante (3.7-C2). Para cada región con nodos en ese anillo, el
-// radio mínimo que evita solaparlos es (cuenta-1)*SEP_NODO / anchoSector (el
-// ancho de sector en radianes, convertido a píxeles de arco vía radio). Se
-// toma el máximo entre todas las regiones de ese anillo, nunca por debajo del
-// anillo anterior + el piso, para que el orden por profundidad no se altere.
-// Margen angular entre sectores VECINOS, en radianes, para un radio dado —
-// el equivalente a SEP_NODO de arco, repartido a ambos lados del sector. Sin
-// esto, el último nodo del sector de una región y el primero del sector
-// vecino (misma profundidad, ángulos parecidos si ambos quedan cerca del
-// borde) pueden terminar más cerca que SEP_NODO aunque cada uno, por
-// separado, respete la separación DENTRO de su propio sector.
-function margenAngular(radio) {
-  return radio > 0 ? SEP_NODO / radio : Infinity
-}
-
-function calcularRadiosAnillo(sectores) {
-  const cuentaPorAnilloRegion = new Map() // `${d}@${region}` -> cuenta
-  for (const n of nodos) {
-    if (n.nivel_zoom !== 3) continue
-    const clave = `${prof.get(n.id)}@${n.region}`
+    const d = prof.get(n.id)
+    const clave = `${d}|${n.region}`
     cuentaPorAnilloRegion.set(clave, (cuentaPorAnilloRegion.get(clave) ?? 0) + 1)
+    cuentaPorAnillo.set(d, (cuentaPorAnillo.get(d) ?? 0) + 1)
   }
+  const porAnillo = new Map() // d -> { total, sectores: Map<region, {ancho, centro, cuenta}> }
+  for (let d = 0; d <= profMax; d++) {
+    const total = cuentaPorAnillo.get(d) ?? 0
+    const sectores = new Map()
+    let cursor = -Math.PI / 2 // arranca arriba, sentido horario
+    for (const r of regionesOrdenadas) {
+      const cuenta = cuentaPorAnilloRegion.get(`${d}|${r.id}`) ?? 0
+      const ancho = total > 0 ? (cuenta / total) * 2 * Math.PI : 0
+      if (cuenta > 0) sectores.set(r.id, { ancho, centro: cursor + ancho / 2, cuenta })
+      cursor += ancho
+    }
+    porAnillo.set(d, { total, sectores })
+  }
+  return porAnillo
+}
+
+// El nodo zoom2 (contenedor de región) usa un centro angular EQUIESPACIADO,
+// independiente de los anillos: dos regiones angostas y vecinas dejarían sus
+// centros reales a solo unos pocos grados si se promediara su propio
+// contenido — separación de arco casi nula para la ETIQUETA de la región,
+// que es un elemento único por región, no ligado a ningún anillo (3.6-B).
+const anchoUniformeRegion = (2 * Math.PI) / (regionesOrdenadas.length || 1)
+function centroEtiquetaRegion(regionId) {
+  const i = regionesOrdenadas.findIndex((r) => r.id === regionId)
+  return -Math.PI / 2 + (i + 0.5) * anchoUniformeRegion
+}
+
+// Radio mínimo para que `cuenta` puntos EQUIESPACIADOS en una circunferencia
+// completa queden a ≥ sep de distancia real (línea recta), no de arco. Arco =
+// radio×ángulo siempre es ≥ cuerda = 2·radio·sin(ángulo/2) — usar el arco como
+// aproximación de la distancia real SUBESTIMA el radio que hace falta. La
+// diferencia es chica para anillos con muchos nodos (ángulo pequeño) pero
+// importa para anillos con pocos: con 14 nodos (el anillo de categorías,
+// zoom 2) la aproximación por arco dejaba pares a 598px con SEP_NODO=604,
+// midiendo directo en el navegador — 1% corto, pero corto.
+function radioParaSeparar(cuenta, sep) {
+  return cuenta > 1 ? sep / (2 * Math.sin(Math.PI / cuenta)) : 0
+}
+
+// Radio de cada anillo: consecuencia de cuántos nodos contiene, no una
+// constante (Fase 3.7-C2, extendido en 3.8-A). Nunca por debajo del anillo
+// anterior + SEP_RADIAL, para que el orden por profundidad no se altere.
+//
+// El anillo 0 además debe dejar sitio cómodo al anillo interior de
+// categorías (zoom 2, Fase 3.8-A): su radio también respeta
+// radioZoom2 + SEP_RADIAL, no solo su propio mínimo. El radio inicial fijo de
+// 700 que fijó la Fase 3.6 queda derogado — se recalcula desde los datos.
+function calcularRadiosAnillo(porAnillo) {
+  const cuentaZoom2 = nodos.filter((n) => n.nivel_zoom === 2).length
+  const radioZoom2 = radioParaSeparar(cuentaZoom2, SEP_NODO)
+
   const radioPorAnillo = new Map()
   let radioAnterior = 0
   for (let d = 0; d <= profMax; d++) {
-    let radioMinimo = d === 0 ? RADIO_INICIAL : 0
-    for (const r of regionesOrdenadas) {
-      const cuenta = cuentaPorAnilloRegion.get(`${d}@${r.id}`) ?? 0
-      if (cuenta === 0) continue
-      const sec = sectores.get(r.id)
-      // El radio necesario depende del margen (que depende del radio) y de
-      // la separación intra-sector (que depende del ancho YA descontado el
-      // margen, que también depende del radio): converge en pocas vueltas.
-      let radioEstimado = Math.max(radioAnterior + SEP_ANILLO_MIN, d === 0 ? RADIO_INICIAL : 0)
-      for (let it = 0; it < 4; it++) {
-        const margen = margenAngular(radioEstimado)
-        const anchoUtil = Math.max(sec.ancho - margen, sec.ancho * 0.05)
-        const necesarioMargen = SEP_NODO / sec.ancho // que el margen quepa dentro del sector
-        const necesarioIntra = cuenta > 1 ? ((cuenta - 1) * SEP_NODO) / anchoUtil : 0
-        radioEstimado = Math.max(radioEstimado, necesarioMargen, necesarioIntra)
-      }
-      if (radioEstimado > radioMinimo) radioMinimo = radioEstimado
-    }
-    const radio = Math.max(radioMinimo, radioAnterior + SEP_ANILLO_MIN)
+    const { total } = porAnillo.get(d)
+    const radioMinimo = radioParaSeparar(total, SEP_NODO)
+    const radio =
+      d === 0 ? Math.max(radioMinimo, radioZoom2 + SEP_RADIAL) : Math.max(radioMinimo, radioAnterior + SEP_RADIAL)
     radioPorAnillo.set(d, radio)
     radioAnterior = radio
   }
-  return radioPorAnillo
+  return { radioPorAnillo, radioZoom2 }
 }
 
 function calcularRadial() {
   const fijada = (n) => fijadaEn(n, 'coordenada_radial')
-  const sectores = calcularSectores()
-  const radioPorAnillo = calcularRadiosAnillo(sectores)
+  const porAnillo = calcularSectoresPorAnillo()
+  const { radioPorAnillo, radioZoom2 } = calcularRadiosAnillo(porAnillo)
 
   const radioMap = new Map()
   const anguloMap = new Map()
@@ -278,19 +321,19 @@ function calcularRadial() {
       radioMap.set(n.id, 0)
       anguloMap.set(n.id, 0)
     } else if (n.nivel_zoom === 2) {
-      const sec = sectores.get(n.region)
-      radioMap.set(n.id, RADIO_ZOOM2)
-      anguloMap.set(n.id, sec?.centroEtiqueta ?? 0)
+      radioMap.set(n.id, radioZoom2)
+      anguloMap.set(n.id, centroEtiquetaRegion(n.region))
     } else {
-      radioMap.set(n.id, radioPorAnillo.get(prof.get(n.id)))
-      anguloMap.set(n.id, sectores.get(n.region)?.centro ?? 0)
+      const d = prof.get(n.id)
+      radioMap.set(n.id, radioPorAnillo.get(d))
+      anguloMap.set(n.id, porAnillo.get(d).sectores.get(n.region)?.centro ?? 0)
     }
   }
 
-  // Nodos zoom 3 por balde (región @ profundidad): baricentro angular, con el
-  // ancho de separación convertido de píxeles de arco a radianes según el
-  // radio YA AJUSTADO de ese anillo (por diseño, siempre alcanza — el radio
-  // se calculó para que SEP_NODO quepa exactamente en el sector disponible).
+  // Nodos zoom 3 por balde (región @ profundidad): baricentro angular. El
+  // paso (ancho del sector / cuenta) da 2π/total_del_anillo para cualquier
+  // región de este anillo (ver comentario de calcularSectoresPorAnillo) — no
+  // hace falta convertir de píxeles de arco a radianes ni converger nada.
   const buckets = new Map()
   for (const n of nodos) {
     if (n.nivel_zoom !== 3 || fijada(n)) continue
@@ -304,22 +347,18 @@ function calcularRadial() {
     while (x < -Math.PI) x += 2 * Math.PI
     return x
   }
-  for (let s = 0; s < SWEEPS_RADIAL; s++) {
+  for (let s = 0; s < SWEEPS; s++) {
     for (const [, ids] of buckets) {
-      const sec = sectores.get(porId.get(ids[0]).region)
-      const radio = radioMap.get(ids[0])
-      const pasoAngular = radio > 0 ? SEP_NODO / radio : 0
+      const region = porId.get(ids[0]).region
+      const d = prof.get(ids[0])
+      const sec = porAnillo.get(d).sectores.get(region)
+      const paso = sec.cuenta > 1 ? sec.ancho / sec.cuenta : 0
       const bary = (id) => {
         const vecinos = [...pred.get(id), ...succ.get(id)]
         if (!vecinos.length) return anguloMap.get(id)
         return media(vecinos.map((v) => sec.centro + normalizarAngulo(anguloMap.get(v) - sec.centro)))
       }
       ids.sort((a, b) => bary(a) - bary(b) || (a < b ? -1 : a > b ? 1 : 0))
-      // Mismo margen que calcularRadiosAnillo: el ancho utilizable descuenta
-      // el arco reservado para no invadir al sector vecino.
-      const anchoDisponible = Math.max(sec.ancho - margenAngular(radio), sec.ancho * 0.05)
-      const anchoNecesario = (ids.length - 1) * pasoAngular
-      const paso = anchoNecesario > anchoDisponible && ids.length > 1 ? anchoDisponible / (ids.length - 1) : pasoAngular
       ids.forEach((id, i) => {
         anguloMap.set(id, sec.centro + (i - (ids.length - 1) / 2) * paso)
       })
@@ -354,11 +393,9 @@ function aplicar() {
 }
 
 // ─────────────────────────────────── REPORTE ─────────────────────────────────
-// Distancia mínima real (no solo dentro de un balde) entre nodos, en cada
-// proyección — el criterio de cierre de la Fase 3.7-C pide poder verificarlo
-// sin abrir la app. `filtro` por defecto mide solo zoom 3 (microconocimientos,
-// el foco de la Parte C); pasar null mide TODOS los nodos, incluidos los 14
-// contenedores zoom 2.
+// Distancia mínima real (no solo dentro de un balde) entre nodos zoom 3, en
+// cada proyección — para poder verificar el criterio de cierre sin abrir la
+// app (Fase 3.7-C, 3.8-C).
 function distanciaMinima(dataset, campo, filtro = (n) => n.nivel_zoom === 3) {
   const grupo = filtro ? dataset.nodos.filter(filtro) : dataset.nodos
   let min = Infinity
@@ -377,29 +414,55 @@ function distanciaMinima(dataset, campo, filtro = (n) => n.nivel_zoom === 3) {
   return { min, par }
 }
 
+function dimensiones(dataset, campo) {
+  const xs = dataset.nodos.map((n) => n[campo].x)
+  const ys = dataset.nodos.map((n) => n[campo].y)
+  const ancho = Math.max(...xs) - Math.min(...xs)
+  const alto = Math.max(...ys) - Math.min(...ys)
+  return { ancho, alto, proporcion: ancho / alto }
+}
+
+// Distancia del nodo zoom 1 (dominio) al nodo zoom 2 (categoría) más cercano
+// (Fase 3.8-C) — diagnóstico aparte, no sujeto al mismo piso SEP_NODO que los
+// zoom 3 (son solo 15 elementos en total, el criterio real es "no se cruzan").
+function distanciaZoom1Zoom2(dataset, campo) {
+  const z1 = dataset.nodos.find((n) => n.nivel_zoom === 1)
+  const z2s = dataset.nodos.filter((n) => n.nivel_zoom === 2)
+  let min = Infinity
+  let cual = null
+  for (const n of z2s) {
+    const d = Math.hypot(z1[campo].x - n[campo].x, z1[campo].y - n[campo].y)
+    if (d < min) {
+      min = d
+      cual = n.id
+    }
+  }
+  return { min, cual }
+}
+
 function reportar(dataset) {
-  console.log('\n── Reporte (Fase 3.7) ──────────────────────────────')
+  console.log('\n── Reporte (Fase 3.8) ──────────────────────────────')
 
   const dCapas = distanciaMinima(dataset, 'coordenada')
   const dRadial = distanciaMinima(dataset, 'coordenada_radial')
   console.log(`Distancia mínima en capas (zoom 3):  ${dCapas.min.toFixed(1)}px  (${dCapas.par.join(' ~ ')})`)
   console.log(`Distancia mínima en radial (zoom 3): ${dRadial.min.toFixed(1)}px  (${dRadial.par.join(' ~ ')})`)
-  console.log(`SEP_NODO objetivo: ${SEP_NODO_OBJETIVO}px — ${dCapas.min >= SEP_NODO_OBJETIVO && dRadial.min >= SEP_NODO_OBJETIVO ? '✓ cumplido en ambas' : '✗ NO cumplido'}`)
+  const cumpleAmbas = dCapas.min >= SEP_NODO_OBJETIVO && dRadial.min >= SEP_NODO_OBJETIVO
+  console.log(`SEP_NODO objetivo: ${SEP_NODO_OBJETIVO}px — ${cumpleAmbas ? '✓ cumplido en ambas' : '✗ NO cumplido'}`)
 
-  // Los 14 contenedores zoom 2 usan un estándar de separación propio (anillo
-  // interior fijo, equiespaciado — Fase 3.6-B), menor que SEP_NODO: son solo
-  // 14 elementos, y el criterio ahí es que sus ETIQUETAS no se encimen, ya
-  // verificado en 3.6. Se reporta aparte para no mezclar ambos estándares.
-  const dTodosCapas = distanciaMinima(dataset, 'coordenada', null)
-  const dTodosRadial = distanciaMinima(dataset, 'coordenada_radial', null)
-  console.log(`Distancia mínima en capas (todos):   ${dTodosCapas.min.toFixed(1)}px  (${dTodosCapas.par.join(' ~ ')})`)
-  console.log(`Distancia mínima en radial (todos):  ${dTodosRadial.min.toFixed(1)}px  (${dTodosRadial.par.join(' ~ ')})`)
+  const dimCapas = dimensiones(dataset, 'coordenada')
+  const dimRadial = dimensiones(dataset, 'coordenada_radial')
+  console.log(
+    `Dimensiones en capas:  ${dimCapas.ancho}×${dimCapas.alto} = ${dimCapas.proporcion.toFixed(2)}:1`,
+  )
+  console.log(
+    `Dimensiones en radial: ${dimRadial.ancho}×${dimRadial.alto} = ${dimRadial.proporcion.toFixed(2)}:1`,
+  )
 
-  const xs = dataset.nodos.map((n) => n.coordenada.x)
-  const ys = dataset.nodos.map((n) => n.coordenada.y)
-  const ancho = Math.max(...xs) - Math.min(...xs)
-  const alto = Math.max(...ys) - Math.min(...ys)
-  console.log(`Proporción del mapa (en capas): ${ancho}×${alto} = ${(ancho / alto).toFixed(2)}:1`)
+  const z1z2Capas = distanciaZoom1Zoom2(dataset, 'coordenada')
+  const z1z2Radial = distanciaZoom1Zoom2(dataset, 'coordenada_radial')
+  console.log(`Zoom1 ~ zoom2 más cercano (capas):  ${z1z2Capas.min.toFixed(1)}px  (${z1z2Capas.cual})`)
+  console.log(`Zoom1 ~ zoom2 más cercano (radial): ${z1z2Radial.min.toFixed(1)}px  (${z1z2Radial.cual})`)
 
   const largos = dataset.nodos.filter((n) => n.nombre.length > 25).sort((a, b) => b.nombre.length - a.nombre.length)
   console.log(`\nNodos con nombre > 25 caracteres: ${largos.length} de ${dataset.nodos.length}`)
@@ -412,6 +475,8 @@ function reportar(dataset) {
   const csv = 'id,nombre,largo,nombre_corto\n' + filas.join('\n') + '\n'
   writeFileSync(resolve(__dirname, '..', 'data', 'nodos_nombre_largo.csv'), csv)
   console.log(`\n✓ lista completa: data/nodos_nombre_largo.csv (${largos.length} filas, nombre_corto vacío para completar)`)
+
+  return cumpleAmbas
 }
 
 const { texto: salida, dataset } = aplicar()
@@ -429,4 +494,8 @@ if (process.argv.includes('--check')) {
   console.log('✓ coordenadas escritas en data/atlas.numero.json (en capas + radial)')
   console.log('  (respetadas las fijadas a mano; el resto derivado de la estructura)')
 }
-reportar(dataset)
+const cumpleAmbas = reportar(dataset)
+if (!cumpleAmbas) {
+  console.error('\n✗ el layout no cumple SEP_NODO en alguna proyección — corregir antes de cerrar la fase.')
+  process.exit(1)
+}
