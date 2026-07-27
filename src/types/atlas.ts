@@ -1,4 +1,4 @@
-// Traducción literal de atlas.schema.json (schema_version 1.1.0).
+// Traducción literal de atlas.schema.json (schema_version 1.2.0).
 // NO agregar campos que no estén en el esquema. Los tipos son el contrato.
 
 export type Completitud = 'esbozo' | 'basica' | 'completa'
@@ -109,6 +109,8 @@ export interface Metadatos {
 export interface Nodo {
   id: string
   nombre: string
+  /** Fase 3.7-B3: etiqueta para el mapa cuando `nombre` no cabe. La ficha de nodo usa siempre `nombre`. */
+  nombre_corto?: string
   nivel_zoom: NivelZoom
   completitud: Completitud
   region?: string
@@ -142,7 +144,7 @@ export interface Certificacion {
 
 export interface Atlas {
   atlas_version: string
-  schema_version: '1.1.0'
+  schema_version: '1.2.0'
   generado?: string
   certificacion?: Certificacion
   dominio: Dominio

@@ -14,7 +14,7 @@
       "pattern": "^\\d+\\.\\d+\\.\\d+$"
     },
     "schema_version": {
-      "const": "1.1.0"
+      "const": "1.2.0"
     },
     "generado": {
       "type": "string",
@@ -114,6 +114,12 @@
           "description": "Identificador estable y permanente. NUNCA se reutiliza ni se renombra: es la clave que las apps subordinadas referencian. Si un nodo se elimina, su id queda quemado."
         },
         "nombre": { "type": "string", "maxLength": 60 },
+
+        "nombre_corto": {
+          "type": "string",
+          "maxLength": 22,
+          "description": "Fase 3.7-B3: etiqueta para el mapa cuando `nombre` no cabe en el layout. Aditivo — opcional, no se inventa (el autor lo llena a mano). La interfaz usa nombre_corto en el mapa si existe, si no usa nombre; la ficha de nodo (zoom profundo) usa SIEMPRE nombre completo."
+        },
 
         "region": {
           "type": "string",

@@ -324,7 +324,10 @@ export function construirGrafo(): Graph {
     const xRadial = n.coordenada_radial?.x ?? xCapas
     const yRadial = -(n.coordenada_radial?.y ?? n.coordenada?.y ?? 0)
     g.addNode(n.id, {
-      label: n.nombre,
+      // Fase 3.7-B3: el mapa (etiqueta ambiente y hover) usa nombre_corto
+      // cuando existe; si no, cae a nombre. La ficha de nodo (VistaNodo) lee
+      // `nombre` directo del dataset, nunca del grafo — siempre completo.
+      label: n.nombre_corto || n.nombre,
       x: xCapas,
       y: yCapas,
       xCapas,

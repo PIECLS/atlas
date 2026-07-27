@@ -13,6 +13,7 @@ import { getCameraStateToFitViewportToNodes } from '@sigma/utils'
 import { construirGrafo, reach, reachInv } from '../data/loadAtlas'
 import { leerPaleta, rgba, type Paleta, type RGB } from './tokens'
 import { alphaNivel, alphaAristaInducida } from './zoom'
+import { dibujarEtiquetaDebajo } from './etiquetas'
 
 export interface OAResaltado {
   codigo: string
@@ -48,6 +49,32 @@ const T_RATIO_CURVA = 0.6
 // re-evaluarse. El paneo puro (x/y sin cambio de ratio) nunca lo cruza:
 // cero refrescos durante un arrastre (Fase 3.6-A).
 const PASO_RATIO_REFRESCO = 0.03
+
+// Escalado de tamaño con el zoom (Fase 3.7-A). Por defecto Sigma crece el
+// tamaño en pantalla con 1/sqrt(ratio) mientras la SEPARACIÓN entre nodos
+// crece con 1/ratio (geometría pura, lineal): el radio siempre gana terreno
+// sobre el hueco, y acercarse no despega nada — medido: a ratio=0.15 (máximo
+// zoom permitido) el radio ya superaba la separación entre vecinos. Fix:
+// `zoomToSizeRatioFunction` pasa a ser la identidad (ratio => ratio), así
+// `size / ratio` queda bajo control total del reducer, que aplica su propia
+// curva SUBLINEAL (EXPONENTE_TAMANO < 1, más chica que la lineal de las
+// distancias) y un clamp duro en píxeles de pantalla — un nodo nunca
+// desaparece ni ocupa media vista, sin importar cuánto se acerque o aleje la
+// cámara.
+const EXPONENTE_TAMANO = 0.3
+const TAMANO_PANTALLA_MIN = 4
+const TAMANO_PANTALLA_MAX = 30
+function clamp(v: number, min: number, max: number): number {
+  return v < min ? min : v > max ? max : v
+}
+// tamanoBase ya es el tamaño "de referencia" a ratio=1 (ICA o agregación).
+// maxPantalla se relaja un poco para el nodo seleccionado/resaltado por OA
+// (nunca hay más de un puñado a la vez; conviene que sigan destacando incluso
+// si el clamp ya "aplastó" el resto de la capa contra el techo).
+function tamanoParaSigma(tamanoBase: number, ratio: number, maxPantalla = TAMANO_PANTALLA_MAX): number {
+  const deseado = clamp(tamanoBase * ratio ** -EXPONENTE_TAMANO, TAMANO_PANTALLA_MIN, maxPantalla)
+  return deseado * ratio
+}
 
 // Intensidad del resaltado de OA según cobertura (A3: un OA no pesa igual en todos).
 function intensidadCobertura(cob?: string): number {
@@ -168,17 +195,49 @@ export default function MapaAtlas({
       labelFont: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
       labelSize: 12,
       labelWeight: '500',
-      labelDensity: 1.2,
-      // Etiquetas ambiente: solo nodos grandes en pantalla (el tamaño ya viene
-      // del ICA), sin encaballarse. Los resaltados (selección/OA) se fuerzan
-      // aparte, sin pasar por este filtro. El resto queda disponible al hover
-      // (Sigma lo dibuja aparte, siempre que no se vacíe el texto del label).
-      labelRenderedSizeThreshold: 12,
-      labelGridCellSize: 60,
+      // Fase 3.7-B1: centrada debajo del nodo, no al costado — la posición
+      // lateral por defecto invade la banda horizontal del vecino de la misma
+      // capa (~165px de ancho típico). El hover (drawDiscNodeHover, nativo de
+      // Sigma) no se toca: siempre visible, no compite con nada más.
+      defaultDrawNodeLabel: dibujarEtiquetaDebajo,
+      // Fase 3.7-B2: menos etiquetas ambiente, y que Sigma las descarte por
+      // colisión en vez de superponerlas. threshold más alto = en lejano/medio
+      // solo los nodos grandes se etiquetan. La grilla de Sigma (LabelGrid)
+      // NO mide el ancho real del texto: solo garantiza separación ≈
+      // gridCellSize entre candidatos de celdas distintas. Medido en el
+      // navegador con gridCellSize=90: colisiones reales de hasta 276 pares
+      // en 24 etiquetas, porque el texto (165px promedio, hasta 340px) es
+      // mucho más ancho que la celda. gridCellSize se sube a 260 (por encima
+      // del ancho promedio real) para que celdas vecinas no se pisen; density
+      // baja para compensar que, a mayor cellSize, cada celda cubre más área
+      // y sigma.getLabelsToDisplay ya no la usa como filtro efectivo en zoom
+      // cercano (density/ratio² crece rápido).
+      labelDensity: 0.35,
+      labelRenderedSizeThreshold: 16,
+      labelGridCellSize: 260,
       defaultEdgeType: 'curve',
       edgeProgramClasses: { curve: EdgeCurveProgram },
-      minCameraRatio: 0.15,
+      // El rango de zoom debe alcanzar para que, en el máximo acercamiento,
+      // la separación en pantalla (que depende del tamaño ABSOLUTO del
+      // layout) supere claramente el diámetro clampeado del nodo (3.7-A). El
+      // layout de la Fase 3.7-C creció ~5x en escala (SEP_NODO 96->454); sin
+      // bajar este piso, a ratio=0.15 el diámetro casi igualaba la
+      // separación (60 vs 59.3px, medido) — técnicamente no se tocaban, pero
+      // sin ningún margen real.
+      // La proyección radial tiene ~2x la extensión (bounding box) de la
+      // proyección en capas (mismo par mínimo, 453-454px en el grafo, se ve
+      // a la mitad de píxeles en pantalla al mismo ratio) porque los anillos
+      // se empujan hacia afuera para caber SEP_NODO. Un solo piso de zoom
+      // debe cubrir el peor caso (radial), no solo capas — medido: a
+      // ratio=0.03 el par mínimo radial SÍ se tocaba (58.2 vs 60px).
+      minCameraRatio: 0.012,
       maxCameraRatio: 3.5,
+      // Fase 3.7-A: el tamaño en pantalla lo decide el reducer (curva
+      // sublineal + clamp), no la fórmula por defecto de Sigma. Con la
+      // identidad, `size/ratio` reproduce exactamente lo que el reducer ya
+      // calculó — ver tamanoParaSigma().
+      itemSizesReference: 'screen',
+      zoomToSizeRatioFunction: (ratio: number) => ratio,
 
       nodeReducer: (node, data) => {
         // Sigma ya entrega `data` como copia privada (Object.assign en su
@@ -195,8 +254,9 @@ export default function MapaAtlas({
         const tamanoBase = data.size as number
         res.hidden = false
         res.color = rgba(base, alpha)
-        if (grupo === 'sel') res.size = tamanoBase * 1.3
-        else if (grupo === 'oa') res.size = tamanoBase * 1.15
+        if (grupo === 'sel') res.size = tamanoParaSigma(tamanoBase * 1.3, ratioRef.current, TAMANO_PANTALLA_MAX * 1.4)
+        else if (grupo === 'oa') res.size = tamanoParaSigma(tamanoBase * 1.15, ratioRef.current, TAMANO_PANTALLA_MAX * 1.25)
+        else res.size = tamanoParaSigma(tamanoBase, ratioRef.current)
         const resaltado = grupo !== 'atenuado' && grupo !== 'normal'
         if (resaltado) {
           // Selección/OA: la etiqueta se fuerza, sin importar el tamaño en pantalla.
