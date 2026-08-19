@@ -229,21 +229,55 @@ export function chequeosEstructurales(atlas) {
   }
 }
 
+// ── Integridad cruzada esqueleto ↔ códex (Fase 3.9) ─────────────────────────
+// El esqueleto (atlas.numero.json) y el códex (codex.json + codex_diccionario.json)
+// son archivos distintos desde la Fase 3.9: nada los mantiene sincronizados
+// salvo este chequeo. Toda clave de codex.json debe apuntar a un nodo real;
+// todo código OA / clave de bibliografía referenciada desde algún nodo debe
+// resolver en el diccionario.
+export function chequeosCodex(atlas, codex, codexDiccionario) {
+  const errores = []
+  const ids = new Set(atlas.nodos.map((n) => n.id))
+
+  for (const id of Object.keys(codex)) {
+    if (!ids.has(id)) errores.push(`codex.json: entrada para nodo inexistente: ${id}`)
+  }
+  for (const [id, m] of Object.entries(codex)) {
+    for (const oa of m.oa_relacionados ?? []) {
+      if (!(oa.codigo in codexDiccionario.oa))
+        errores.push(`codex.json[${id}]: código OA sin entrada en codex_diccionario.oa: ${oa.codigo}`)
+    }
+    for (const clave of m.bibliografia ?? []) {
+      if (!(clave in codexDiccionario.bibliografia))
+        errores.push(`codex.json[${id}]: clave de bibliografía sin entrada en codex_diccionario.bibliografia: ${clave}`)
+    }
+  }
+  return { ok: errores.length === 0, errores }
+}
+
 // ── Runner CLI ──────────────────────────────────────────────────────────────
 function main() {
-  const schema = JSON.parse(
-    readFileSync(resolve(RAIZ, 'data/atlas.schema.json'), 'utf8'),
-  )
-  const atlas = JSON.parse(
-    readFileSync(resolve(RAIZ, 'data/atlas.numero.json'), 'utf8'),
-  )
+  const leerJSON = (ruta) => JSON.parse(readFileSync(resolve(RAIZ, ruta), 'utf8'))
+
+  const schema = leerJSON('data/atlas.schema.json')
+  const atlas = leerJSON('data/atlas.numero.json')
+  const codexSchema = leerJSON('data/codex.schema.json')
+  const codex = leerJSON('data/codex.json')
+  const diccionarioSchema = leerJSON('data/codex_diccionario.schema.json')
+  const codexDiccionario = leerJSON('data/codex_diccionario.json')
 
   const s = validarSchema(atlas, schema)
+  const sCodex = validarSchema(codex, codexSchema)
+  const sDiccionario = validarSchema(codexDiccionario, diccionarioSchema)
   const c = chequeosEstructurales(atlas)
+  const cCodex = chequeosCodex(atlas, codex, codexDiccionario)
 
   console.log('── Atlas · validación ──────────────────────────────')
-  console.log(`schema:        ${s.ok ? 'OK' : 'FALLA'}`)
-  console.log(`estructura:    ${c.ok ? 'OK' : 'FALLA'}`)
+  console.log(`schema (esqueleto):    ${s.ok ? 'OK' : 'FALLA'}`)
+  console.log(`schema (codex):        ${sCodex.ok ? 'OK' : 'FALLA'}`)
+  console.log(`schema (diccionario):  ${sDiccionario.ok ? 'OK' : 'FALLA'}`)
+  console.log(`estructura:            ${c.ok ? 'OK' : 'FALLA'}`)
+  console.log(`integridad codex:      ${cCodex.ok ? 'OK' : 'FALLA'}`)
   console.log(`nodos estructurales: ${c.nodos_estructurales}`)
   console.log(
     `n_estados:     ${c.n_estados_calculado ? c.n_estados : '(dominio grande, no calculado)'}` +
@@ -251,7 +285,7 @@ function main() {
   )
 
   for (const w of c.advertencias) console.warn(`  ⚠ ${w}`)
-  const errores = [...s.errores, ...c.errores]
+  const errores = [...s.errores, ...sCodex.errores, ...sDiccionario.errores, ...c.errores, ...cCodex.errores]
   if (errores.length) {
     console.error('\nERRORES:')
     for (const e of errores) console.error(`  ✗ ${e}`)

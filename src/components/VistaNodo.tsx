@@ -3,8 +3,8 @@
 // no se ocultan. Los `nodo_implicado` de los errores son puentes diagnósticos.
 
 import { useMemo, useState } from 'react'
-import type { Nodo, Habilidad } from '../types/atlas'
-import { getNodo, pred, reach, reachInv, todasLasAristas } from '../data/loadAtlas'
+import type { Nodo, Habilidad, Metadatos } from '../types/atlas'
+import { getNodo, pred, reach, reachInv, todasLasAristas, getCodex, getOA, getCita } from '../data/loadAtlas'
 import { getRegion } from '../data/loadAtlas'
 import { defVista, type Vista } from '../vistas'
 
@@ -38,11 +38,11 @@ interface Pestana {
 export default function VistaNodo({ id, vista, onCerrar, onIrANodo }: Props) {
   const nodo = getNodo(id)
   const def = defVista(vista)
-  const m = nodo?.metadatos ?? {}
+  const m = getCodex(id) ?? {}
 
   const pestanas = useMemo<Pestana[]>(() => {
     if (!nodo) return []
-    return construirPestanas(nodo, onIrANodo)
+    return construirPestanas(getCodex(id) ?? {}, onIrANodo)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
@@ -166,11 +166,7 @@ function colorRegion(regionId: string | null | undefined): string {
     : 'var(--region-fallback)'
 }
 
-function construirPestanas(
-  nodo: Nodo,
-  onIrANodo: (id: string) => void,
-): Pestana[] {
-  const m = nodo.metadatos ?? {}
+function construirPestanas(m: Metadatos, onIrANodo: (id: string) => void): Pestana[] {
   return [
     {
       id: 'representaciones',
@@ -259,28 +255,31 @@ function construirPestanas(
       cuenta: m.oa_relacionados?.length ?? 0,
       render: () => (
         <div className="bloque">
-          {m.oa_relacionados!.map((oa, i) => (
-            <div className="tarjeta" key={i}>
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  gap: 8,
-                }}
-              >
-                <span className="oa-codigo">{oa.codigo}</span>
-                <span style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
-                  {oa.curso && <span className="etiqueta">{oa.curso}</span>}
-                  {oa.cobertura && <span className="cobertura">{oa.cobertura}</span>}
-                </span>
+          {m.oa_relacionados!.map((oa, i) => {
+            const texto = getOA(oa.codigo)
+            return (
+              <div className="tarjeta" key={i}>
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    gap: 8,
+                  }}
+                >
+                  <span className="oa-codigo">{oa.codigo}</span>
+                  <span style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
+                    {texto?.curso && <span className="etiqueta">{texto.curso}</span>}
+                    {oa.cobertura && <span className="cobertura">{oa.cobertura}</span>}
+                  </span>
+                </div>
+                {texto?.eje && (
+                  <p style={{ marginTop: 6, color: 'var(--texto-debil)' }}>{texto.eje}</p>
+                )}
+                {texto?.texto && <p style={{ marginTop: 6 }}>{texto.texto}</p>}
               </div>
-              {oa.eje && (
-                <p style={{ marginTop: 6, color: 'var(--texto-debil)' }}>{oa.eje}</p>
-              )}
-              {oa.texto && <p style={{ marginTop: 6 }}>{oa.texto}</p>}
-            </div>
-          ))}
+            )
+          })}
         </div>
       ),
     },
@@ -357,8 +356,8 @@ function construirPestanas(
       cuenta: m.bibliografia?.length ?? 0,
       render: () => (
         <ul className="lista-limpia">
-          {m.bibliografia!.map((b, i) => (
-            <li key={i}>{b}</li>
+          {m.bibliografia!.map((clave, i) => (
+            <li key={i}>{getCita(clave) ?? clave}</li>
           ))}
         </ul>
       ),

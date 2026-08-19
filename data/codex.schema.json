@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas-conocimiento.org/schema/v1/codex.schema.json",
+  "title": "Atlas del Conocimiento — Esquema del códex",
+  "description": "Capa 2 del Atlas: información asociada a un nodo que NO modifica el grafo (esqueleto, en atlas.schema.json). Objeto plano indexado por id de nodo — solo entran los nodos que tienen algún contenido. `oa_relacionados` referencia códigos que se resuelven en codex_diccionario.json (sección oa); `bibliografia` referencia claves que se resuelven en codex_diccionario.json (sección bibliografia). El resto de las categorías no tiene reutilización entre nodos y vive anidada tal cual.",
+  "type": "object",
+  "patternProperties": { "^[a-z0-9_]+$": { "$ref": "#/$defs/metadatos" } },
+  "additionalProperties": false,
+
+  "$defs": {
+
+    "metadatos": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+
+        "definicion": {
+          "type": "string",
+          "description": "Qué es este conocimiento, en términos epistémicos."
+        },
+        "descripcion": { "type": "string" },
+
+        "oa_relacionados": {
+          "description": "CÓDEX CURRICULAR. Referencia a los Objetivos de Aprendizaje (texto oficial en codex_diccionario.json/oa). Documenta el mundo, no lo gobierna. Un nodo puede tener cero OA (existe igual) o varios (de distintos cursos).",
+          "type": "array",
+          "items": { "$ref": "#/$defs/oa" }
+        },
+
+        "representaciones": {
+          "description": "Formas de enseñar el conocimiento (COPISI). NO son conocimientos ni nodos.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/representacion" }
+        },
+
+        "habilidades": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["resolver_problemas", "representar", "modelar", "argumentar_comunicar"]
+          }
+        },
+
+        "actitudes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+
+        "errores_frecuentes": {
+          "description": "Errores conceptuales típicos. Capa crítica: es lo que permite que una app subordinada dé retroalimentación como modelo concreto renderizado con los datos del error, en vez de 'incorrecto'.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/error_frecuente" }
+        },
+
+        "items": {
+          "description": "MAPEO COMPETENCIA→DESEMPEÑO (CbKST). El grafo del Atlas es la estructura de competencias; estos son los ítems observables. RESERVADO: en v1 se declara el tipo pero no se construyen ítems. Cuando existan, la estructura de desempeño se deriva mecánicamente con el paquete R.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/item" }
+        },
+
+        "evidencias": {
+          "description": "Formas de comprobar el conocimiento. NO notas, NO calificaciones: evidencias.",
+          "type": "array",
+          "items": { "type": "string" }
+        },
+
+        "adaptaciones_pie": {
+          "description": "Apoyos didácticos, NO diagnósticos. Nunca se indexa por categoría diagnóstica.",
+          "type": "array",
+          "items": { "$ref": "#/$defs/adaptacion" }
+        },
+
+        "recursos": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/recurso" }
+        },
+
+        "bibliografia": {
+          "description": "Claves hacia codex_diccionario.json/bibliografia — no el texto de la cita.",
+          "type": "array",
+          "items": { "type": "string", "pattern": "^bib_" }
+        }
+      }
+    },
+
+    "oa": {
+      "type": "object",
+      "required": ["codigo"],
+      "additionalProperties": false,
+      "properties": {
+        "codigo": {
+          "type": "string",
+          "description": "Código oficial MINEDUC. curso/eje/texto se resuelven en codex_diccionario.json/oa.",
+          "examples": ["MA01 OA 09", "MA04 OA 06"]
+        },
+        "cobertura": {
+          "description": "Qué relación tiene el OA con este nodo. Un OA típicamente cubre VARIOS nodos: por eso el OA no puede ser la unidad.",
+          "type": "string",
+          "enum": ["total", "parcial", "tangencial"]
+        }
+      }
+    },
+
+    "representacion": {
+      "type": "object",
+      "required": ["tipo"],
+      "additionalProperties": false,
+      "properties": {
+        "tipo": { "type": "string", "enum": ["concreto", "pictorico", "simbolico"] },
+        "nombre": { "type": "string", "examples": ["Balanza", "Rectángulo de área"] },
+        "descripcion": { "type": "string" },
+        "ancla_visual": {
+          "type": "string",
+          "description": "Modelo concreto que una app subordinada puede renderizar. Contrato con Eslabones."
+        }
+      }
+    },
+
+    "error_frecuente": {
+      "type": "object",
+      "required": ["descripcion"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "descripcion": { "type": "string", "examples": ["Cuenta dos veces el elemento de partida."] },
+        "naturaleza": {
+          "type": "string",
+          "enum": ["conceptual", "procedimental", "representacional", "atencional"]
+        },
+        "nodo_implicado": {
+          "type": ["string", "null"],
+          "description": "id de un nodo prerrequisito cuyo no-dominio explicaría el error. PUENTE DIAGNÓSTICO: conecta el error con la estructura. No crea arista."
+        },
+        "retroalimentacion_sugerida": {
+          "type": "string",
+          "description": "Cómo mostrar el error con el modelo concreto, sin decir 'incorrecto'."
+        }
+      }
+    },
+
+    "item": {
+      "type": "object",
+      "required": ["id"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "enunciado": { "type": "string" },
+        "formato": {
+          "type": "string",
+          "enum": ["respuesta_construida", "seleccion_multiple", "manipulativo", "observacional"]
+        },
+        "competencias_requeridas": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "ids de nodos. Esto ES el skill map de CbKST."
+        }
+      }
+    },
+
+    "adaptacion": {
+      "type": "object",
+      "required": ["descripcion"],
+      "additionalProperties": false,
+      "properties": {
+        "descripcion": { "type": "string" },
+        "barrera": {
+          "type": "string",
+          "description": "Qué barrera de acceso al conocimiento remueve. Se indexa por BARRERA, nunca por diagnóstico.",
+          "examples": ["Carga en memoria de trabajo", "Procesamiento visoespacial", "Demanda de lenguaje"]
+        },
+        "tipo": {
+          "type": "string",
+          "enum": ["acceso", "presentacion", "respuesta", "tiempo", "entorno"]
+        }
+      }
+    },
+
+    "recurso": {
+      "type": "object",
+      "required": ["titulo"],
+      "additionalProperties": false,
+      "properties": {
+        "titulo": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "tipo": { "type": "string", "enum": ["actividad", "video", "lectura", "manipulativo", "app"] },
+        "audiencia": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["profesor", "estudiante", "pie", "investigador"] }
+        }
+      }
+    }
+  }
+}

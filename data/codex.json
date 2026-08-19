@@ -1,0 +1,3250 @@
+{
+  "adicion_con_reserva": {
+    "definicion": "Reagrupar al sumar: cuando una columna excede nueve, componer una unidad del orden superior y trasladarla.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 06",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 03",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "reserva_perdida",
+        "descripcion": "Suma la columna y anota el número completo sin trasladar la reserva: 47+38 produce 715.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "agrupacion_decenas"
+      }
+    ]
+  },
+  "adicion_decimales": {
+    "definicion": "Sumar y restar decimales alineando las posiciones equivalentes.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 12",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA05 OA 12",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA05 OA 13",
+        "cobertura": "tangencial"
+      },
+      {
+        "codigo": "MA06 OA 08",
+        "cobertura": "tangencial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "alinea_a_la_derecha",
+        "descripcion": "Alinea los decimales por el último dígito en vez de por la coma: 3,5 + 0,25 produce 3,75 mal formado.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "decimal_notacion"
+      }
+    ]
+  },
+  "adicion_fracciones_distinto_denominador": {
+    "definicion": "Sumar y restar fracciones de distinto denominador reexpresándolas en partes del mismo tamaño.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 09",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA06 OA 06",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA06 OA 08",
+        "cobertura": "tangencial"
+      }
+    ]
+  },
+  "adicion_fracciones_igual_denominador": {
+    "definicion": "Sumar y restar fracciones que comparten denominador operando los numeradores, porque las partes son del mismo tamaño.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 09",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA05 OA 09",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "suma_denominadores",
+        "descripcion": "Suma numeradores y denominadores por separado: 1/4 + 1/4 = 2/8.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Sombrear ambas partes sobre el mismo todo partido en cuartos: el tamaño de la parte no cambia al juntar."
+      }
+    ]
+  },
+  "adicion_sustraccion_enteros": {
+    "definicion": "Componer cantidades con sentido, donde un desplazamiento seguido de su opuesto no produce cambio alguno.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 01",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "restar_negativo",
+        "descripcion": "Trata restar un negativo como restar: resuelve 5 - (-3) = 2.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Mostrar en la recta que quitar un desplazamiento hacia la izquierda deja más a la derecha que antes."
+      }
+    ]
+  },
+  "agrupacion_decenas": {
+    "definicion": "Agrupar de a diez y tratar el grupo como una unidad nueva que se cuenta y opera como un objeto.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 08",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "grupo_no_unitizado",
+        "descripcion": "Cuenta correctamente grupos y sueltos pero no puede decir el total sin recontar de a uno: el grupo de diez no funciona aún como unidad.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Con material agrupable, preguntar el total tapando los grupos ya contados: si necesita destapar, la decena no es todavía una unidad."
+      }
+    ]
+  },
+  "algoritmo_adicion": {
+    "definicion": "Sumar numerales de varias cifras operando columna a columna según el valor posicional, sin reagrupación.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 09",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 06",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 03",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "algoritmo_division": {
+    "definicion": "Dividir numerales de varias cifras estimando cocientes parciales por posición, multiplicando de vuelta y restando.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 06",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 04",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "algoritmo_multiplicacion": {
+    "definicion": "Multiplicar numerales de varias cifras mediante productos parciales posicionales (distributiva aplicada por columnas).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 05",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 03",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "olvida_corrimiento",
+        "descripcion": "Alinea todos los productos parciales a la derecha sin el corrimiento posicional del segundo factor.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "valor_posicional"
+      }
+    ]
+  },
+  "algoritmo_sustraccion": {
+    "definicion": "Restar numerales de varias cifras operando columna a columna según el valor posicional, sin canje.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 09",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 06",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 03",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "amplificacion_simplificacion": {
+    "definicion": "Transformar una fracción en otra equivalente multiplicando o dividiendo numerador y denominador por un mismo número.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 07",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 09",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "angulo_concepto": {
+    "definicion": "Comprender el ángulo como abertura entre dos rayos o cantidad de giro, independiente del largo de sus lados, usando 90° y 45° como referentes.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 18"
+      }
+    ],
+    "bibliografia": [
+      "bib_mitchelmore_white_2000"
+    ]
+  },
+  "angulos_entre_rectas": {
+    "definicion": "Comprender las relaciones entre ángulos formados por rectas que se cortan (opuestos por el vértice, complementarios) y por paralelas cortadas por una transversal.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 16"
+      },
+      {
+        "codigo": "MA06 OA 21"
+      }
+    ]
+  },
+  "angulos_poligono": {
+    "definicion": "Descubrir las relaciones que cumplen los ángulos interiores y exteriores de un polígono cualquiera.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 10",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "area_circulo": {
+    "definicion": "Determinar la superficie encerrada por un círculo a partir de su radio.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "area_recubrimiento": {
+    "definicion": "Comprender el área como la cantidad de unidades cuadradas que cubren una superficie sin huecos ni superposiciones.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 23"
+      },
+      {
+        "codigo": "MA05 OA 22"
+      }
+    ],
+    "bibliografia": [
+      "bib_outhred_mitchelmore_2000"
+    ]
+  },
+  "areas_derivadas": {
+    "definicion": "Obtener el área de triángulos, paralelogramos y trapecios transformándolos o comparándolos con rectángulos de igual área (cortar, trasladar, completar).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 22"
+      }
+    ]
+  },
+  "asociatividad_adicion": {
+    "definicion": "Comprender que la agrupación de los sumandos no altera la suma, y usarla para operar según conveniencia.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 04",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "calculo_por_conteo": {
+    "definicion": "Resolver adiciones y sustracciones avanzando o retrocediendo en la secuencia numérica desde uno de los términos.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 07",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "cambio_porcentual_constante": {
+    "definicion": "Modelar situaciones en que una cantidad varía en un porcentaje fijo de sí misma en cada intervalo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 06",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "compuesto_como_simple",
+        "descripcion": "Multiplica el porcentaje por el número de periodos, tratando el crecimiento como si fuera de cambio constante.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "funcion_afin",
+        "retroalimentacion_sugerida": "Calcular periodo a periodo sobre una cantidad concreta: la base crece en cada paso."
+      }
+    ]
+  },
+  "cardinalidad": {
+    "definicion": "Comprender que la última etiqueta pronunciada al contar una colección representa la cantidad total de la colección, y no el último objeto contado.",
+    "descripcion": "Es el salto entre contar como acto verbal-motor y contar como medición de cantidad. Sin cardinalidad, el conteo es un ritual sin referente.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA01 OA 03",
+        "cobertura": "parcial"
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "concreto",
+        "nombre": "Colección tapada",
+        "descripcion": "Se cuenta una colección, se tapa, y se pregunta cuántos hay. Si el niño necesita destapar y recontar, no hay cardinalidad.",
+        "ancla_visual": "coleccion_tapada"
+      },
+      {
+        "tipo": "pictorico",
+        "nombre": "Puntos y etiqueta",
+        "descripcion": "Colección de puntos con la etiqueta numérica encerrando el conjunto completo, no el último punto.",
+        "ancla_visual": "conjunto_encerrado"
+      },
+      {
+        "tipo": "simbolico",
+        "nombre": "Numeral",
+        "descripcion": "El numeral como nombre de la cantidad."
+      }
+    ],
+    "habilidades": [
+      "representar",
+      "argumentar_comunicar"
+    ],
+    "actitudes": [
+      "persistencia",
+      "curiosidad"
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "recuenta_al_preguntar",
+        "descripcion": "Al preguntarle cuántos hay tras haber contado, vuelve a contar desde el uno: la última etiqueta no quedó como respuesta.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": null,
+        "retroalimentacion_sugerida": "Tapar la colección después de contar y preguntar de nuevo. Mostrar que el número dicho ya guardaba la respuesta."
+      },
+      {
+        "id": "ultima_etiqueta_es_objeto",
+        "descripcion": "Cree que 'cinco' es el nombre del quinto objeto, no de la colección entera.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": null,
+        "retroalimentacion_sugerida": "Contar la misma colección empezando por otro objeto: el total no cambia, pero el objeto llamado 'cinco' sí."
+      },
+      {
+        "id": "salta_u_omite",
+        "descripcion": "Cuenta objetos dos veces o se salta alguno, obteniendo totales distintos.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "correspondencia_uno_a_uno",
+        "retroalimentacion_sugerida": "Mover cada objeto contado a un lado. El error no está en la cardinalidad sino en el emparejamiento."
+      }
+    ],
+    "items": [],
+    "evidencias": [
+      "Ante la pregunta '¿cuántos hay?' tras contar, responde sin recontar.",
+      "Cuenta la misma colección ordenada de distinta forma y afirma que el total no cambió.",
+      "Produce una colección de tamaño dado (dame 6 fichas) deteniéndose en el número pedido."
+    ],
+    "adaptaciones_pie": [
+      {
+        "descripcion": "Usar objetos que se puedan desplazar físicamente a una zona 'ya contado', para descargar el seguimiento del conteo.",
+        "barrera": "Carga en memoria de trabajo",
+        "tipo": "presentacion"
+      },
+      {
+        "descripcion": "Permitir respuesta señalando una tarjeta con el numeral en vez de respuesta verbal.",
+        "barrera": "Demanda de lenguaje expresivo",
+        "tipo": "respuesta"
+      }
+    ],
+    "recursos": [],
+    "bibliografia": [
+      "bib_gelman_r_gallistel_c_r_1978_the_child_s_"
+    ]
+  },
+  "cero_en_adicion_sustraccion": {
+    "definicion": "Comprender y explicar el efecto de sumar y restar cero a un número.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 08",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "circulo": {
+    "definicion": "Describir el círculo por las relaciones entre su radio, su diámetro y su perímetro.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "comparacion_colecciones": {
+    "definicion": "Determinar cuál de dos colecciones tiene más, menos o igual cantidad de elementos, mediante emparejamiento o conteo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 04",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "comparacion_directa_magnitudes": {
+    "definicion": "Comparar dos objetos o eventos en una magnitud (largo, peso, duración) por percepción o superposición directa, sin unidades.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 16"
+      },
+      {
+        "codigo": "MA01 OA 18"
+      },
+      {
+        "codigo": "MA03 OA 22"
+      }
+    ],
+    "bibliografia": [
+      "bib_piaget_inhelder_szeminska_1960"
+    ]
+  },
+  "comparacion_distribuciones": {
+    "definicion": "Comparar dos grupos de datos mirando sus distribuciones completas (forma, centro, extremos) y no solo casos individuales.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 22"
+      },
+      {
+        "codigo": "MA08 OA 15",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA1M OA 13",
+        "cobertura": "parcial"
+      }
+    ],
+    "bibliografia": [
+      "bib_konold_higgins_2003_watson_2006"
+    ]
+  },
+  "comparacion_fracciones_igual_denominador": {
+    "definicion": "Comparar fracciones de un mismo todo que comparten denominador atendiendo solo al numerador.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 11",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 08",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "comparacion_fracciones_igual_numerador": {
+    "definicion": "Comparar fracciones unitarias y de igual numerador: a mayor denominador, partes más pequeñas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 08",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "denominador_mayor_es_mayor",
+        "descripcion": "Aplica el orden de los naturales al denominador: afirma que 1/8 > 1/4 porque 8 > 4.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Partir el mismo todo en 4 y en 8: a más partes, cada parte es menor."
+      }
+    ]
+  },
+  "comparacion_orden_decimales": {
+    "definicion": "Comparar y ordenar decimales atendiendo al valor posicional de cada cifra.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 11",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 11",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "mas_digitos_mas_grande",
+        "descripcion": "Afirma que 0,125 > 0,4 porque tiene más cifras.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "decimal_notacion"
+      }
+    ]
+  },
+  "comparacion_orden_numeros": {
+    "definicion": "Determinar cuál de dos números representa mayor cantidad y ordenar conjuntos de números según su magnitud.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 04",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA02 OA 03",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 03",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 01",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "compara_por_digitos",
+        "descripcion": "Compara dígito a dígito sin atender la posición: concluye 29 > 41 porque 9 > 1.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "valor_posicional"
+      }
+    ]
+  },
+  "comparacion_probabilidades": {
+    "definicion": "Ordenar eventos por su probabilidad sin calcularla, razonando sobre la proporción de casos favorables.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 25"
+      }
+    ],
+    "bibliografia": [
+      "bib_fischbein_1975"
+    ]
+  },
+  "composicion_aditiva": {
+    "definicion": "Comprender la relación parte-todo numérica: toda cantidad puede descomponerse en partes y recomponerse a partir de ellas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 06",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA02 OA 05",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "composicion_transformaciones": {
+    "definicion": "Aplicar sucesivamente traslaciones, rotaciones y reflexiones, y reconocer el movimiento resultante.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 14",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "congruencia": {
+    "definicion": "Comprender que dos figuras son congruentes si una isometría lleva exactamente una sobre la otra.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 18"
+      }
+    ]
+  },
+  "conmutatividad_adicion": {
+    "definicion": "Comprender que el orden de los sumandos no altera la suma.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 10",
+        "cobertura": "tangencial"
+      },
+      {
+        "codigo": "MA02 OA 10",
+        "cobertura": "tangencial"
+      }
+    ]
+  },
+  "construccion_triangulos": {
+    "definicion": "Construir triángulos a partir de medidas de lados y/o ángulos con instrumentos, y clasificarlos según esas medidas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 12"
+      }
+    ]
+  },
+  "construcciones_geometricas": {
+    "definicion": "Construir rectas y puntos determinados por condiciones geométricas: perpendiculares, paralelas, bisectrices y alturas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 12",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "conteo_a_saltos": {
+    "definicion": "Recitar y usar secuencias de conteo por agrupaciones regulares (de 2 en 2, de 5 en 5, de 10 en 10, de 100 en 100).",
+    "descripcion": "El conteo con monedas nacionales (agrupaciones de 5, 10, 100) es una aplicación directa de este conocimiento.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA02 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA02 OA 03",
+        "cobertura": "tangencial"
+      }
+    ]
+  },
+  "conteo_desde_cualquier_numero": {
+    "definicion": "Iniciar la secuencia de conteo desde un punto arbitrario de la lista numérica, sin regresar al uno.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA02 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "conteo_hacia_atras": {
+    "definicion": "Producir la secuencia numérica en orden inverso desde un número dado.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA02 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "conversion_unidades": {
+    "definicion": "Re-expresar una medición en otra unidad mediante la relación multiplicativa fija entre unidades (1 m = 100 cm; 1 h = 60 min), conservando la magnitud.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 21"
+      },
+      {
+        "codigo": "MA04 OA 22"
+      },
+      {
+        "codigo": "MA05 OA 20"
+      }
+    ]
+  },
+  "correspondencia_uno_a_uno": {
+    "definicion": "Asignar exactamente una etiqueta numérica a cada objeto de una colección, sin omitir ni repetir.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "cuadricula_mapa": {
+    "definicion": "Localizar objetos en mapas o cuadrículas mediante coordenadas informales (letra-número), coordinando dos referencias simultáneas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 14"
+      },
+      {
+        "codigo": "MA04 OA 15"
+      }
+    ]
+  },
+  "dato_atipico": {
+    "definicion": "Reconocer el efecto que un valor muy distinto de los demás produce sobre las medidas del conjunto.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 17",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "decimal_notacion": {
+    "definicion": "Comprender el decimal como extensión del valor posicional hacia partes de la unidad: décimos, centésimos, milésimos.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 11",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "decimal_como_dos_enteros",
+        "descripcion": "Lee 3,45 como 'tres coma cuarenta y cinco' tratando la parte decimal como entero independiente: concluye 3,45 > 3,7.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "valor_posicional",
+        "retroalimentacion_sugerida": "Alinear ambos en la tabla posicional: la comparación se decide en los décimos, no en la cantidad de dígitos."
+      }
+    ]
+  },
+  "descomposicion_posicional": {
+    "definicion": "Descomponer un número según el valor de sus posiciones (4 325 = 4 000 + 300 + 20 + 5) y recomponerlo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "diagrama_arbol": {
+    "definicion": "Representar de forma ramificada todos los resultados posibles de un experimento de varias etapas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 19",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA08 OA 17",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "diagrama_cajon": {
+    "definicion": "Representar gráficamente la posición y la dispersión de un conjunto de datos mediante sus cuartiles.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 15",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "diagrama_puntos": {
+    "definicion": "Representar cada dato como un punto apilado sobre una recta graduada, de modo que la forma del apilamiento muestra la distribución.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 26"
+      },
+      {
+        "codigo": "MA06 OA 22"
+      }
+    ],
+    "bibliografia": [
+      "bib_konold_higgins_2003"
+    ]
+  },
+  "distincion_recta_curva": {
+    "definicion": "Distinguir y trazar líneas rectas y curvas como primer atributo que diferencia contornos de figuras.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 15"
+      }
+    ]
+  },
+  "distribucion_probabilidad": {
+    "definicion": "Describir cómo se reparte la probabilidad entre todos los valores que puede tomar una variable aleatoria.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 10",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "division": {
+    "definicion": "Operación que reparte un todo en partes iguales (repartición) o determina cuántos grupos de un tamaño dado caben en él (agrupación).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 09",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 10",
+        "cobertura": "tangencial"
+      },
+      {
+        "codigo": "MA04 OA 07",
+        "cobertura": "tangencial"
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "concreto",
+        "nombre": "Reparto uno a uno",
+        "descripcion": "Distribuir elementos de a uno entre los receptores hasta agotar el todo.",
+        "ancla_visual": "reparto"
+      },
+      {
+        "tipo": "concreto",
+        "nombre": "Sustracción repetida",
+        "descripcion": "Quitar grupos del mismo tamaño y contar cuántas veces se pudo.",
+        "ancla_visual": "sustraccion_repetida"
+      }
+    ]
+  },
+  "division_con_resto": {
+    "definicion": "Comprender la división inexacta: el resto como lo que no alcanza a formar otro grupo, y su interpretación según el contexto.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 04",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "resto_ignorado",
+        "descripcion": "Descarta el resto o lo anexa a la respuesta sin interpretarlo: para 25 personas en autos de 4 responde '6 autos' o '6,1 autos'.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Renderizar el reparto: los que quedan fuera del último grupo exigen decisión, no desaparecen."
+      }
+    ]
+  },
+  "division_fracciones": {
+    "definicion": "Determinar cuántas veces una fracción cabe en otra, o repartir una fracción en partes iguales.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 02",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA07 OA 03",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "dividir_siempre_achica",
+        "descripcion": "Sostiene que el cociente siempre es menor que el dividendo, y rechaza que 1 : 1/2 sea 2.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Preguntar cuántas mitades caben en un entero: repartir en partes menores que la unidad produce más partes."
+      }
+    ]
+  },
+  "ecuacion_cuadratica": {
+    "definicion": "Determinar los valores que anulan una expresión de segundo grado, admitiendo más de una solución.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 04",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "una_sola_raiz",
+        "descripcion": "Entrega una única solución cuando la ecuación admite dos, descartando la negativa.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "numero_negativo",
+        "retroalimentacion_sugerida": "Verificar ambos valores en la ecuación original: los dos la satisfacen."
+      }
+    ]
+  },
+  "ecuacion_formal": {
+    "definicion": "Resolver ecuaciones de primer grado operando sobre ambos lados de la igualdad para conservar el equilibrio (procedimientos formales, modelo de balanza).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 11"
+      },
+      {
+        "codigo": "MA07 OA 09",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "ecuacion_lineal": {
+    "definicion": "Resolver igualdades con coeficientes racionales y la incógnita presente en ambos lados.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 09",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA08 OA 08",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "ecuacion_un_paso": {
+    "definicion": "Encontrar el valor desconocido de una igualdad aditiva (a + □ = b; □ − a = b), comprendiendo que la solución restaura el equilibrio.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 13"
+      },
+      {
+        "codigo": "MA04 OA 14"
+      },
+      {
+        "codigo": "MA05 OA 15"
+      }
+    ]
+  },
+  "equivalencia_fraccion_decimal": {
+    "definicion": "Comprender que fracción y decimal son escrituras distintas de una misma cantidad, y convertir entre ellas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 10",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "escala_grafica": {
+    "definicion": "Comprender que un símbolo o una división del eje puede valer más de un caso, y que leer el gráfico exige contar a saltos o multiplicar según esa escala.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 22"
+      },
+      {
+        "codigo": "MA03 OA 25"
+      },
+      {
+        "codigo": "MA04 OA 27"
+      }
+    ]
+  },
+  "estimacion_calculo": {
+    "definicion": "Anticipar el orden de magnitud del resultado de una operación redondeando sus términos antes de calcular.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 03",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 05",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 03",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "estimacion_cantidades": {
+    "definicion": "Aproximar el tamaño de una colección sin contarla exhaustivamente, apoyándose en un referente conocido.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 05",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA02 OA 04",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "estimacion_medidas": {
+    "definicion": "Anticipar la medida aproximada de una magnitud usando referentes internalizados (un metro, un kilo, 90°) antes o en lugar de medir.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 18"
+      },
+      {
+        "codigo": "MA03 OA 22"
+      },
+      {
+        "codigo": "MA06 OA 20"
+      }
+    ]
+  },
+  "estrategia_compensacion": {
+    "definicion": "Ajustar los términos de una operación y compensar el ajuste conservando el resultado ('uno más uno menos', 'dos más dos menos', redondear y corregir).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 06",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "compensa_direccion_erronea",
+        "descripcion": "En la sustracción compensa en la dirección equivocada: para 33-16 vía 33-20 corrige restando 4 en vez de sumarlo.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Mostrar en la recta que al quitar de más hay que devolver: el salto largo se corrige regresando."
+      }
+    ]
+  },
+  "estrategia_completar_10": {
+    "definicion": "Sumar o restar lo necesario para alcanzar la decena más cercana y luego operar el resto.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 07",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA02 OA 06",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 04",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "estrategia_descomposicion_calculo": {
+    "definicion": "Descomponer los términos según posiciones para operar por partes (48 - 27 como 48 - 20 - 7).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 04",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 03",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "estrategia_doblar_mitad": {
+    "definicion": "Transformar un producto doblando un factor y reduciendo el otro a la mitad, incluso repetidamente (25 x 8 = 50 x 4 = 100 x 2).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 02",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 02",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "estrategia_dobles": {
+    "definicion": "Derivar resultados desde los dobles conocidos (7+8 como 7+7+1) y sus mitades.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 07",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA02 OA 06",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 04",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "estrategia_factorizar": {
+    "definicion": "Reordenar un producto descomponiendo los factores (8 x 75 = 2 x 4 x 25 x 3 = 600).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 02",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "estrategia_multiplos_10": {
+    "definicion": "Multiplicar por potencias y múltiplos de diez desplazando posiciones (70 x 90 = 63 seguido de los ceros).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 02",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "ceros_como_magia",
+        "descripcion": "Aplica 'agregar ceros' como regla sin base posicional y la extiende mal a decimales (4,5 x 10 = 4,50).",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "valor_posicional"
+      }
+    ]
+  },
+  "estrategia_sumar_en_vez_de_restar": {
+    "definicion": "Resolver una sustracción buscando el sumando que falta (47 - 29 como 29 + □ = 47).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 04",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "estructura_arreglo_area": {
+    "definicion": "Comprender el rectángulo cuadriculado como arreglo de filas y columnas iguales, lo que condensa el conteo de cuadrados en una multiplicación (largo × ancho).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 23"
+      },
+      {
+        "codigo": "MA05 OA 21"
+      }
+    ],
+    "bibliografia": [
+      "bib_outhred_mitchelmore_2000"
+    ]
+  },
+  "evaluacion_representaciones": {
+    "definicion": "Juzgar si una representación es adecuada para los datos que muestra, y detectar cuándo distorsiona su lectura.",
+    "descripcion": "Nodo de alfabetización estadística: el único del eje cuyo objeto es la representación misma y no los datos.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 16",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "experimento_aleatorio": {
+    "definicion": "Comprender que hay experimentos (dados, monedas) cuyo resultado individual es impredecible aunque el conjunto de resultados posibles sea conocido.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 20"
+      },
+      {
+        "codigo": "MA02 OA 21"
+      },
+      {
+        "codigo": "MA03 OA 24"
+      },
+      {
+        "codigo": "MA04 OA 26"
+      }
+    ],
+    "bibliografia": [
+      "bib_piaget_inhelder_1975_fischbein_1975"
+    ]
+  },
+  "exponente_cero": {
+    "definicion": "Fundamentar por qué toda potencia de exponente cero vale uno, a partir del cociente de potencias iguales.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 05",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "exponente_racional": {
+    "definicion": "Reconocer la raíz como una potencia de exponente fraccionario, y convertir entre ambas escrituras.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 02",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "expresion_algebraica": {
+    "definicion": "Componer términos con coeficiente y parte literal para representar cantidades generales.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 07",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA08 OA 06",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "letra_como_etiqueta",
+        "descripcion": "Lee la letra como abreviatura de un objeto y no como un número: interpreta 3m como 'tres metros' en vez de 'el triple de un número'.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "lenguaje_algebraico",
+        "retroalimentacion_sugerida": "Sustituir la letra por varios valores distintos: la expresión sigue teniendo sentido en todos."
+      }
+    ]
+  },
+  "extremos_punto_medio": {
+    "definicion": "Identificar el menor y el mayor valor de un conjunto de datos y estimar el punto medio entre ambos.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 24"
+      }
+    ]
+  },
+  "factor_divisor": {
+    "definicion": "Comprender los factores de un número como aquellos que lo dividen exactamente.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "factorizacion": {
+    "definicion": "Expresar una suma algebraica como producto de factores, invirtiendo el desarrollo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 06",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA1M OA 03",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "figuras_2d": {
+    "definicion": "Reconocer y comparar figuras 2D por sus atributos definitorios (lados, vértices, curvatura) y no solo por su apariencia global u orientación.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 14"
+      },
+      {
+        "codigo": "MA02 OA 15"
+      }
+    ],
+    "bibliografia": [
+      "bib_van_hiele_1986_clements_battista_1992"
+    ]
+  },
+  "figuras_3d": {
+    "definicion": "Reconocer y describir cuerpos geométricos según la forma de sus caras y el número de caras, aristas y vértices.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 14"
+      },
+      {
+        "codigo": "MA02 OA 16"
+      },
+      {
+        "codigo": "MA03 OA 16"
+      }
+    ],
+    "bibliografia": [
+      "bib_van_hiele_1986"
+    ]
+  },
+  "formula_area_figuras": {
+    "definicion": "Deducir y aplicar las fórmulas del área del triángulo, del paralelogramo y del trapecio.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 13",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "altura_como_lado",
+        "descripcion": "Usa un lado inclinado como altura en vez de la distancia perpendicular a la base.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Trazar la perpendicular desde el vértice: la altura no siempre coincide con un lado."
+      }
+    ]
+  },
+  "fraccion_en_recta": {
+    "definicion": "Ubicar una fracción como un número con posición propia en la recta numérica, entre los enteros.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 08",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 08",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA06 OA 05",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA08 OA 02",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "fraccion_equivalente": {
+    "definicion": "Comprender que una misma cantidad admite infinitas escrituras fraccionarias distintas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 08",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 07",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "fraccion_parte_grupo": {
+    "definicion": "Comprender que el todo puede ser una colección de elementos discretos y no solo un objeto continuo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 08",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "fraccion_parte_todo": {
+    "definicion": "Comprender que una fracción expresa un valor relativo a un todo tomado como unidad: 3/4 son 3 partes de un total de 4 partes iguales.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 11",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 08",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "numerador_denominador_independientes",
+        "descripcion": "Lee 3/4 como dos números separados y no como una sola cantidad relativa al todo.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Renderizar el todo dividido y sombreado: el denominador dice en cuántas partes, el numerador cuántas se toman."
+      },
+      {
+        "id": "todo_variable",
+        "descripcion": "Compara fracciones de todos distintos como si fueran del mismo: 1/2 de una hoja pequeña versus 1/4 de una grande.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Mostrar ambos todos superpuestos: la comparación exige la misma unidad de referencia."
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "concreto",
+        "nombre": "Todo partido",
+        "descripcion": "Objeto físico dividido en partes iguales de las cuales se toman algunas.",
+        "ancla_visual": "todo_partido"
+      },
+      {
+        "tipo": "pictorico",
+        "nombre": "Barra fraccionaria",
+        "descripcion": "Rectángulo segmentado en partes iguales con parte sombreada.",
+        "ancla_visual": "barra_fraccionaria"
+      }
+    ]
+  },
+  "fraccion_propia_impropia": {
+    "definicion": "Distinguir las fracciones menores que la unidad de aquellas que la igualan o superan.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 07",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 08",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "frecuencia_relativa": {
+    "definicion": "Expresar cuántas veces ocurre un valor respecto del total de observaciones, y no en términos absolutos.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 16",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA07 OA 18",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "compara_absolutos",
+        "descripcion": "Compara dos grupos de distinto tamaño usando frecuencias absolutas y concluye mal.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Calcular la proporción en cada grupo: veinte de cien no es lo mismo que veinte de treinta."
+      }
+    ]
+  },
+  "funcion": {
+    "definicion": "Concebir una regla que asigna a cada valor de entrada un único valor de salida.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 07",
+        "cobertura": "total"
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "concreto",
+        "nombre": "Máquina que transforma",
+        "descripcion": "Entra un número, la máquina aplica su regla, sale otro número.",
+        "ancla_visual": "maquina_funcion"
+      }
+    ]
+  },
+  "funcion_afin": {
+    "definicion": "Generalizar la función lineal sumándole una constante, que desplaza la recta sin alterar su inclinación.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 10",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confunde_pendiente_intercepto",
+        "descripcion": "Intercambia los roles de la inclinación y del punto de corte al leer o escribir la expresión.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "pendiente",
+        "retroalimentacion_sugerida": "Variar un parámetro a la vez sobre el gráfico: uno gira la recta, el otro la sube o baja."
+      }
+    ]
+  },
+  "funcion_cuadratica": {
+    "definicion": "Representar una relación cuyo cambio no es constante sino que varía de manera regular, describiendo una parábola.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 03",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "funcion_inversa": {
+    "definicion": "Determinar la regla que deshace lo que hace una función, devolviendo cada salida a su entrada.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 05",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "funcion_lineal": {
+    "definicion": "Representar una relación de cambio constante que pasa por el origen.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 05",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA08 OA 07",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "grafico_barras": {
+    "definicion": "Construir y leer gráficos de barra (simple y doble), donde la altura de cada barra representa la frecuencia de una categoría sobre un eje graduado.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 21"
+      },
+      {
+        "codigo": "MA02 OA 22"
+      },
+      {
+        "codigo": "MA03 OA 23"
+      },
+      {
+        "codigo": "MA03 OA 25"
+      },
+      {
+        "codigo": "MA04 OA 26"
+      },
+      {
+        "codigo": "MA04 OA 27"
+      },
+      {
+        "codigo": "MA05 OA 26"
+      },
+      {
+        "codigo": "MA06 OA 24"
+      }
+    ]
+  },
+  "grafico_circular": {
+    "definicion": "Leer gráficos circulares comprendiendo que cada sector representa la parte del total que corresponde a una categoría.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 24"
+      }
+    ]
+  },
+  "grafico_lineas": {
+    "definicion": "Leer y completar gráficos de líneas que muestran el cambio de una cantidad en el tiempo, interpretando la inclinación como aumento o disminución.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 26"
+      }
+    ]
+  },
+  "hechos_aditivos_basicos": {
+    "definicion": "Disponer con fluidez de las sumas y restas elementales, recuperándolas sin calcular.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 07",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA02 OA 09",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA02 OA 06",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "hechos_multiplicativos": {
+    "definicion": "Disponer con fluidez de los productos básicos hasta 10 x 10, recuperándolos sin calcular.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 11",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 08",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 02",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "homotecia": {
+    "definicion": "Transformar una figura ampliándola o reduciéndola desde un centro, conservando su forma.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 08",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA1M OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "igualdad_relacional": {
+    "definicion": "Comprender el signo = como afirmación de que dos lados son la misma cantidad (equilibrio), y no como orden de calcular un resultado; su negación se registra con > y < como desequilibrio orientado.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 12"
+      },
+      {
+        "codigo": "MA02 OA 13"
+      }
+    ],
+    "bibliografia": [
+      "bib_falkner_levi_carpenter_1999_carpenter_fr"
+    ]
+  },
+  "inecuacion_lineal": {
+    "definicion": "Determinar el conjunto de valores que satisfacen una desigualdad con coeficientes racionales.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 09",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA08 OA 09",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_invierte_desigualdad",
+        "descripcion": "Multiplica o divide por un negativo sin invertir el sentido de la desigualdad.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "numero_negativo",
+        "retroalimentacion_sugerida": "Verificar con un valor concreto antes y después: el orden se da vuelta al cambiar de sentido."
+      }
+    ]
+  },
+  "inecuacion_un_paso": {
+    "definicion": "Determinar los valores que mantienen una desigualdad aditiva, comprendiendo que la solución no es única sino un conjunto.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 14"
+      },
+      {
+        "codigo": "MA05 OA 15"
+      }
+    ]
+  },
+  "irrelevancia_orden": {
+    "definicion": "Comprender que el orden en que se cuentan los elementos de una colección no altera su cardinal.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 01",
+        "cobertura": "tangencial"
+      }
+    ]
+  },
+  "iteracion_unidad": {
+    "definicion": "Comprender que medir es cubrir la magnitud repitiendo una misma unidad, sin huecos ni superposiciones, y que la medida es el conteo de esas iteraciones.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 16"
+      },
+      {
+        "codigo": "MA02 OA 19"
+      },
+      {
+        "codigo": "MA04 OA 24"
+      }
+    ],
+    "bibliografia": [
+      "bib_lehrer_2003"
+    ]
+  },
+  "jerarquia_operaciones": {
+    "definicion": "Aplicar la prevalencia de la multiplicación y la división sobre la adición y la sustracción, y el rol de los paréntesis.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 05",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA05 OA 06",
+        "cobertura": "tangencial"
+      },
+      {
+        "codigo": "MA06 OA 02",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA06 OA 08",
+        "cobertura": "tangencial"
+      }
+    ]
+  },
+  "lectura_interpretacion_graficos": {
+    "definicion": "Extraer información de tablas y gráficos en tres niveles: leer los datos, leer entre los datos (comparar, operar) y leer más allá de los datos (concluir, proyectar).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 25"
+      },
+      {
+        "codigo": "MA04 OA 25"
+      },
+      {
+        "codigo": "MA04 OA 27"
+      },
+      {
+        "codigo": "MA05 OA 26"
+      },
+      {
+        "codigo": "MA06 OA 24"
+      },
+      {
+        "codigo": "MA08 OA 16",
+        "cobertura": "parcial"
+      }
+    ],
+    "bibliografia": [
+      "bib_curcio_1987"
+    ]
+  },
+  "lectura_reloj": {
+    "definicion": "Leer y registrar la hora en relojes análogos y digitales (horas, medias, cuartos, minutos; A.M./P.M. y formato 24 h), coordinando las dos escalas de la esfera.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 18"
+      },
+      {
+        "codigo": "MA03 OA 20"
+      },
+      {
+        "codigo": "MA04 OA 20"
+      }
+    ]
+  },
+  "lenguaje_algebraico": {
+    "definicion": "Representar una relación general entre números mediante expresiones con letras, donde la letra funciona como número generalizado.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 10"
+      },
+      {
+        "codigo": "MA07 OA 06",
+        "cobertura": "total"
+      }
+    ],
+    "bibliografia": [
+      "bib_kaput_2008"
+    ]
+  },
+  "lenguaje_probabilistico": {
+    "definicion": "Graduar la posibilidad de ocurrencia de un evento con los términos seguro, posible, poco posible e imposible.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 24"
+      }
+    ]
+  },
+  "logaritmo": {
+    "definicion": "Determinar el exponente al que hay que elevar una base para obtener una cantidad dada.",
+    "descripcion": "Tercera incógnita de la potencia: la raíz busca la base, el logaritmo busca el exponente.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 02",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "lugar_geometrico": {
+    "definicion": "Concebir una figura como el conjunto de todos los puntos que cumplen una condición dada.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "medicion_angulos": {
+    "definicion": "Medir y construir ángulos en grados con transportador, comprendiendo el grado como unidad angular que se itera; clasificar ángulos respecto de 90° y 180° (agudo, recto, obtuso, extendido, completo).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 19"
+      },
+      {
+        "codigo": "MA06 OA 15"
+      },
+      {
+        "codigo": "MA06 OA 20"
+      },
+      {
+        "codigo": "MA1M OA 06",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "medicion_longitud": {
+    "definicion": "Medir longitudes con regla o huincha en m, cm y mm, alineando el cero y leyendo la escala como conteo de unidades acumuladas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 19"
+      },
+      {
+        "codigo": "MA04 OA 22"
+      },
+      {
+        "codigo": "MA05 OA 19"
+      }
+    ]
+  },
+  "medicion_peso": {
+    "definicion": "Comparar, estimar y medir el peso de objetos en gramos y kilogramos, comprendiendo la relación entre ambas unidades.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 22"
+      }
+    ]
+  },
+  "medidas_posicion": {
+    "definicion": "Ubicar un dato dentro del conjunto según qué proporción de observaciones queda por debajo de él.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 15",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "medidas_tendencia_central": {
+    "definicion": "Elegir entre media, mediana y moda el valor que mejor representa un conjunto de datos según la pregunta.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 17",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "modelo_azar": {
+    "definicion": "Concebir el comportamiento azaroso como algo que exhibe regularidad al acumular muchas repeticiones.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 15",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "muestreo_inferencia": {
+    "definicion": "Estimar una característica de una población desconocida a partir de lo observado en una muestra.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 15",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "multiplicacion": {
+    "definicion": "Operación que cuantifica una cantidad repetida: tantos grupos iguales de tanto, expresable como adición de sumandos iguales.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 11",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 08",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 10",
+        "cobertura": "tangencial"
+      },
+      {
+        "codigo": "MA04 OA 07",
+        "cobertura": "tangencial"
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "concreto",
+        "nombre": "Grupos iguales",
+        "descripcion": "Colecciones repetidas del mismo tamaño (3 bolsas de 4).",
+        "ancla_visual": "grupos_iguales"
+      },
+      {
+        "tipo": "pictorico",
+        "nombre": "Arreglo rectangular",
+        "descripcion": "Filas y columnas: el producto es el área de la disposición.",
+        "ancla_visual": "arreglo_rectangular"
+      }
+    ]
+  },
+  "multiplicacion_division_decimales": {
+    "definicion": "Multiplicar y dividir decimales por naturales, por múltiplos de diez y por otros decimales.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 07",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA07 OA 03",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "multiplicacion_division_enteros": {
+    "definicion": "Repetir y repartir cantidades con sentido, conservando los procedimientos de los naturales.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 01",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "multiplicacion_fracciones": {
+    "definicion": "Tomar una parte de una parte: el producto de dos fracciones expresa una fracción del todo original.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 02",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA07 OA 03",
+        "cobertura": "parcial"
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "pictorico",
+        "nombre": "Doble sombreado",
+        "descripcion": "Rectángulo dividido en dos direcciones: la intersección de ambos sombreados es el producto.",
+        "ancla_visual": "doble_sombreado"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "multiplicar_siempre_agranda",
+        "descripcion": "Sostiene que el producto siempre es mayor que los factores, y rechaza que 1/2 x 1/2 sea menor que 1/2.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Sombrear la mitad de una mitad sobre el mismo todo: tomar parte de una parte deja menos, no más."
+      }
+    ]
+  },
+  "multiplo": {
+    "definicion": "Comprender los múltiplos de un número como los productos que ese número genera.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "nocion_muestra": {
+    "definicion": "Comprender que los datos provienen de una muestra de casos, y que muestras distintas del mismo fenómeno pueden dar resultados distintos.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 25"
+      },
+      {
+        "codigo": "MA05 OA 27"
+      },
+      {
+        "codigo": "MA06 OA 22"
+      },
+      {
+        "codigo": "MA07 OA 15",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA1M OA 13",
+        "cobertura": "parcial"
+      }
+    ],
+    "bibliografia": [
+      "bib_watson_2006"
+    ]
+  },
+  "notacion_cientifica": {
+    "definicion": "Expresar cantidades muy grandes o muy pequeñas como producto de un número entre uno y diez por una potencia de diez.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 05",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "nube_puntos": {
+    "definicion": "Representar cada individuo como un punto según dos características, para observar cómo se relacionan.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 12",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA1M OA 13",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "numeral_escrito": {
+    "definicion": "Asociar cantidad, nombre hablado y símbolo escrito de un número: leer y escribir numerales como nombres de cantidades.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 03",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA02 OA 02",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 02",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "numero_irracional": {
+    "definicion": "Reconocer cantidades que no admiten expresión como cociente de dos enteros y cuya escritura decimal no es periódica.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "numero_mixto": {
+    "definicion": "Expresar una cantidad mayor que la unidad como enteros más una fracción, y convertir entre esa forma y la fracción impropia.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 10",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA05 OA 08",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA06 OA 05",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "numero_negativo": {
+    "definicion": "Concebir cantidades menores que cero como magnitudes orientadas en sentido opuesto respecto de un punto de referencia.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 01",
+        "cobertura": "parcial"
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "concreto",
+        "nombre": "Fichas opuestas",
+        "descripcion": "Dos colores que se anulan de a pares: lo que sobra es el resultado con su sentido.",
+        "ancla_visual": "fichas_opuestas"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "mas_negativo_es_mayor",
+        "descripcion": "Aplica el orden de los naturales al signo: afirma que -5 > -3 porque 5 > 3.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "recta_numerica_entera",
+        "retroalimentacion_sugerida": "Ubicar ambos en la recta: lo que está más a la izquierda es menor, sin importar el tamaño del dígito."
+      },
+      {
+        "id": "signo_como_operacion",
+        "descripcion": "Lee el signo menos siempre como orden de restar, y no como marca del sentido de la cantidad.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Contrastar 'la temperatura es -3' con '5 menos 3': el mismo símbolo hace dos trabajos distintos."
+      }
+    ]
+  },
+  "numero_ordinal": {
+    "definicion": "Usar los números para indicar la posición de un elemento dentro de una serie ordenada, distinguiendo posición de cantidad.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 02",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "ordinal_como_cardinal",
+        "descripcion": "Responde con la posición cuando se le pregunta por la cantidad, o viceversa: 'el cuarto' y 'cuatro' se confunden.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Mostrar una fila de objetos y pedir 'el tercero' y luego 'tres': la respuesta señala uno versus toma un grupo."
+      }
+    ]
+  },
+  "numero_primo": {
+    "definicion": "Distinguir los números que solo admiten dos divisores de aquellos que admiten más.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "numero_racional": {
+    "definicion": "Reconocer como un mismo tipo de número a fracciones, decimales y enteros: todo aquel que puede expresarse como cociente de dos enteros.",
+    "descripcion": "Nodo de unificación: reúne tres escrituras que hasta aquí vivían en regiones separadas del mapa.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 02",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA1M OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "numero_real": {
+    "definicion": "Concebir la recta numérica como completa: a cada punto le corresponde un número, racional o irracional.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "operatoria_algebraica": {
+    "definicion": "Multiplicar y dividir expresiones algebraicas aplicando las propiedades de las operaciones numéricas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 06",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "operatoria_racionales": {
+    "definicion": "Operar con racionales en forma simbólica, transitando entre sus escrituras según convenga al cálculo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 01",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA08 OA 02",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "paralelas_perpendiculares": {
+    "definicion": "Identificar pares de rectas, lados o caras que son paralelos, que se intersectan o que son perpendiculares.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 17"
+      }
+    ]
+  },
+  "particion_equitativa": {
+    "definicion": "Dividir un todo en partes de igual tamaño, condición sin la cual las partes no son comparables entre sí.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 11",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "partes_desiguales",
+        "descripcion": "Acepta como 'un cuarto' cualquiera de cuatro partes, aunque sean de tamaños distintos.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Ofrecer dos repartos de la misma torta —uno equitativo y otro no— y preguntar cuál permite decir 'me tocó un cuarto'."
+      }
+    ]
+  },
+  "patron_numerico": {
+    "definicion": "Reconocer la regularidad aditiva constante de una secuencia numérica (crece o decrece siempre en la misma cantidad) y usarla para continuarla o completarla.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 11"
+      },
+      {
+        "codigo": "MA02 OA 12"
+      },
+      {
+        "codigo": "MA03 OA 12"
+      },
+      {
+        "codigo": "MA04 OA 13"
+      }
+    ],
+    "bibliografia": [
+      "bib_clements_sarama_2009"
+    ]
+  },
+  "patron_repeticion": {
+    "definicion": "Identificar el núcleo que se repite en una secuencia (sonidos, figuras, ritmos) y usarlo para continuar, completar y crear la secuencia.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 11"
+      },
+      {
+        "codigo": "MA02 OA 12"
+      }
+    ],
+    "bibliografia": [
+      "bib_clements_sarama_2009"
+    ]
+  },
+  "pendiente": {
+    "definicion": "Cuantificar el cambio constante de una relación como razón entre la variación vertical y la horizontal.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 10",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA1M OA 05",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "perimetro": {
+    "definicion": "Comprender el perímetro como la longitud total del contorno de una figura, obtenida al sumar las longitudes de sus lados.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 21"
+      },
+      {
+        "codigo": "MA05 OA 21"
+      }
+    ]
+  },
+  "permutacion_combinatoria": {
+    "definicion": "Contar de cuántas maneras pueden ordenarse o elegirse elementos de un conjunto.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 11",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "pictograma": {
+    "definicion": "Construir y leer pictogramas donde cada símbolo representa un caso.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 20"
+      },
+      {
+        "codigo": "MA02 OA 22"
+      }
+    ]
+  },
+  "plano_cartesiano": {
+    "definicion": "Ubicar puntos mediante pares ordenados sobre dos rectas numéricas perpendiculares, comprendiendo que el orden del par no es intercambiable.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 16"
+      }
+    ]
+  },
+  "plano_cartesiano_completo": {
+    "definicion": "Localizar puntos en los cuatro cuadrantes mediante pares ordenados con signo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 14",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA08 OA 13",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "porcentaje": {
+    "definicion": "Comprender el porcentaje como una razón cuyo todo es cien.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 04",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA07 OA 04",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "posicion_relativa": {
+    "definicion": "Describir la posición de objetos y personas respecto de un punto de referencia, usando el marco corporal (derecha-izquierda, delante-detrás, arriba-abajo).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 13"
+      },
+      {
+        "codigo": "MA02 OA 14"
+      }
+    ],
+    "bibliografia": [
+      "bib_clements_sarama_2009"
+    ]
+  },
+  "potencia": {
+    "definicion": "Expresar la multiplicación repetida de un mismo factor, distinguiendo base, exponente y valor.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 05",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA08 OA 03",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "potencia_como_producto",
+        "descripcion": "Multiplica base por exponente: resuelve 2^3 = 6.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Desplegar la potencia como cadena de factores: 2·2·2, no 2·3."
+      }
+    ]
+  },
+  "potencia_base_10": {
+    "definicion": "Comprender las potencias de diez como los órdenes del sistema posicional.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 05",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "potencia_exponente_entero": {
+    "definicion": "Extender la potencia a exponentes negativos y a bases racionales, conservando las propiedades ya establecidas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 02",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "pregunta_estadistica": {
+    "definicion": "Comprender que los datos se recolectan para responder una pregunta, y que la pregunta define qué registrar y a quién.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 19"
+      },
+      {
+        "codigo": "MA02 OA 20"
+      },
+      {
+        "codigo": "MA03 OA 23"
+      },
+      {
+        "codigo": "MA04 OA 25"
+      }
+    ],
+    "bibliografia": [
+      "bib_konold_higgins_2003"
+    ]
+  },
+  "principio_multiplicativo": {
+    "definicion": "Contar los resultados de un experimento de varias etapas multiplicando las opciones de cada una.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 17",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "probabilidad_evento_compuesto": {
+    "definicion": "Determinar la probabilidad de un resultado que exige que ocurran varias cosas a la vez o en sucesión.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 17",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "probabilidad_experimental": {
+    "definicion": "Estimar la probabilidad de un evento a partir de las frecuencias relativas observadas al repetir el experimento.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 18",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "probabilidad_sociedad": {
+    "definicion": "Interpretar afirmaciones probabilísticas del discurso público y reconocer las suposiciones que las sostienen.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 12",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "probabilidad_teorica": {
+    "definicion": "Determinar la probabilidad de un evento razonando sobre los casos posibles, sin necesidad de experimentar.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 19",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "equiprobabilidad_asumida",
+        "descripcion": "Supone que todos los resultados son igualmente probables sin verificarlo.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Enumerar los casos posibles del experimento: no siempre son del mismo tipo ni del mismo número."
+      }
+    ]
+  },
+  "productos_notables": {
+    "definicion": "Reconocer y aplicar los patrones que resultan de multiplicar ciertas expresiones recurrentes.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 03",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "cuadrado_distribuye",
+        "descripcion": "Reparte el cuadrado sobre la suma: sostiene que (a+b)² = a² + b².",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "estructura_arreglo_area",
+        "retroalimentacion_sugerida": "Construir el cuadrado de lado (a+b) con áreas: aparecen dos rectángulos que la respuesta olvida."
+      }
+    ]
+  },
+  "promedio": {
+    "definicion": "Comprender la media aritmética como el valor que igualaría todos los datos si el total se repartiera en partes iguales, e interpretarla en su contexto.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 23"
+      },
+      {
+        "codigo": "MA07 OA 17",
+        "cobertura": "parcial"
+      }
+    ],
+    "bibliografia": [
+      "bib_mokros_russell_1995"
+    ]
+  },
+  "propiedad_distributiva": {
+    "definicion": "Comprender que multiplicar una suma equivale a sumar los productos parciales: a(b+c) = ab + ac.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 11",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 08",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 05",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 02",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "propiedades_cero_uno": {
+    "definicion": "Fundamentar el efecto del 0 y del 1 como factores y del 1 como divisor.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 04",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "propiedades_potencias": {
+    "definicion": "Multiplicar y dividir potencias de igual base operando sus exponentes, y elevar una potencia a otra.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 03",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA1M OA 02",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "multiplica_bases",
+        "descripcion": "Al multiplicar potencias de igual base multiplica también las bases: resuelve 2^3 · 2^4 = 4^7.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "potencia",
+        "retroalimentacion_sugerida": "Desplegar ambas como cadenas de factores y contar: la base no cambia, los factores se acumulan."
+      }
+    ]
+  },
+  "propiedades_raices": {
+    "definicion": "Descomponer y combinar raíces mediante sus propiedades para simplificar cálculos.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "proporcionalidad_directa": {
+    "definicion": "Reconocer dos magnitudes cuyo cociente permanece constante al variar ambas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 08",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "proporcionalidad_inversa": {
+    "definicion": "Reconocer dos magnitudes cuyo producto permanece constante, de modo que al crecer una decrece la otra.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 08",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "toda_relacion_es_directa",
+        "descripcion": "Asume proporcionalidad directa en cualquier relación creciente, sin verificar que el cociente se conserve.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Construir la tabla y calcular el cociente en cada fila: si cambia, la relación no es directa."
+      }
+    ]
+  },
+  "proyeccion_vectorial": {
+    "definicion": "Descomponer un desplazamiento en componentes perpendiculares y determinar su proyección.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 09",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "puntos_notables_triangulo": {
+    "definicion": "Determinar los puntos que resultan de la intersección de rectas notables de un triángulo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 12",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "raiz_cuadrada": {
+    "definicion": "Determinar el número que, elevado al cuadrado, produce una cantidad dada.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 04",
+        "cobertura": "total"
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "concreto",
+        "nombre": "Lado del cuadrado",
+        "descripcion": "Construir un cuadrado con esa área: la raíz es la medida de su lado.",
+        "ancla_visual": "lado_cuadrado"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "raiz_distribuye_suma",
+        "descripcion": "Reparte la raíz sobre una suma: sostiene que la raíz de 9+16 es 3+4.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Calcular ambos lados: la raíz de 25 es 5, no 7. La raíz no se reparte sobre la suma."
+      }
+    ]
+  },
+  "raiz_enesima": {
+    "definicion": "Generalizar la raíz a cualquier índice: el número que elevado a n produce la cantidad dada.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 02",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "rango_variabilidad": {
+    "definicion": "Cuantificar cuán dispersos están los datos, información que ninguna medida de tendencia central entrega.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 17",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "razon": {
+    "definicion": "Comprender la razón como comparación multiplicativa entre dos cantidades.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 03",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "razon_como_diferencia",
+        "descripcion": "Compara las cantidades restando en vez de multiplicando: ante 'por cada 2 rojas hay 3 azules' razona '1 más'.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Escalar el grupo: al duplicar, la diferencia cambia pero la razón se conserva."
+      }
+    ]
+  },
+  "razon_pi": {
+    "definicion": "Reconocer que el cociente entre el perímetro y el diámetro es el mismo en todo círculo.",
+    "descripcion": "Primera constante irracional que el estudiante encuentra: puente entre la razón y los números no racionales.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "razones_trigonometricas": {
+    "definicion": "Relacionar los ángulos agudos de un triángulo rectángulo con las razones entre sus lados.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 08",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "recta_numerica": {
+    "definicion": "Concebir los números como posiciones ordenadas sobre una línea, donde la distancia representa diferencia de magnitud.",
+    "descripcion": "Metáfora estructurante ('los números son posiciones') que luego sostiene fracciones, decimales y medición.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 03",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA07 OA 01",
+        "cobertura": "tangencial"
+      }
+    ]
+  },
+  "recta_numerica_entera": {
+    "definicion": "Extender la recta numérica en ambos sentidos desde el cero, de modo que la posición codifique magnitud y sentido a la vez.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "redondeo": {
+    "definicion": "Sustituir un número por el múltiplo más cercano de una posición dada, conservando el orden de magnitud.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "registro_conteo": {
+    "definicion": "Registrar cada caso observado con una marca y organizar las marcas en tablas de conteo, conservando la correspondencia caso-marca.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 19"
+      },
+      {
+        "codigo": "MA02 OA 20"
+      },
+      {
+        "codigo": "MA02 OA 21"
+      },
+      {
+        "codigo": "MA03 OA 23"
+      },
+      {
+        "codigo": "MA03 OA 24"
+      },
+      {
+        "codigo": "MA04 OA 26"
+      }
+    ]
+  },
+  "regla_aditiva_probabilidad": {
+    "definicion": "Determinar la probabilidad de que ocurra un evento u otro, descontando lo que ambos comparten.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 14",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "suma_sin_descontar",
+        "descripcion": "Suma las probabilidades de dos eventos que pueden ocurrir juntos sin restar la parte compartida.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Dibujar ambos conjuntos superpuestos: la zona común quedó contada dos veces."
+      }
+    ]
+  },
+  "regla_formacion": {
+    "definicion": "Explicitar la regla que genera una sucesión y usarla para predecir términos no visibles sin extender término a término.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 14"
+      },
+      {
+        "codigo": "MA06 OA 09"
+      },
+      {
+        "codigo": "MA08 OA 07",
+        "cobertura": "parcial"
+      }
+    ],
+    "bibliografia": [
+      "bib_blanton_kaput_2005"
+    ]
+  },
+  "regla_multiplicativa_probabilidad": {
+    "definicion": "Determinar la probabilidad de que dos eventos ocurran ambos, atendiendo a si uno condiciona al otro.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 14",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "regla_signos": {
+    "definicion": "Determinar el sentido del resultado de un producto o cociente a partir del sentido de sus términos.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 01",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "signos_cruzados_aditivos",
+        "descripcion": "Aplica la regla de los signos del producto a la suma: resuelve -3 + (-4) = 7.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "adicion_sustraccion_enteros",
+        "retroalimentacion_sugerida": "Separar los contextos: en la suma los sentidos se acumulan; en el producto se combinan."
+      }
+    ]
+  },
+  "relacion_2d_3d": {
+    "definicion": "Comprender que las superficies de un cuerpo son figuras 2D: anticipar la red que arma un cuerpo y el cuerpo que resulta de una red.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 14"
+      },
+      {
+        "codigo": "MA03 OA 15"
+      },
+      {
+        "codigo": "MA08 OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "relacion_funcional": {
+    "definicion": "Comprender una tabla de valores como correspondencia regular entrada→salida gobernada por una operación, aplicable a cualquier par de la tabla.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 13"
+      },
+      {
+        "codigo": "MA06 OA 09"
+      },
+      {
+        "codigo": "MA08 OA 07",
+        "cobertura": "parcial"
+      }
+    ],
+    "bibliografia": [
+      "bib_blanton_kaput_2005"
+    ]
+  },
+  "relacion_perimetro_area": {
+    "definicion": "Comprender que figuras con igual área pueden tener distinto perímetro y viceversa: las dos magnitudes no covarían.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 23"
+      },
+      {
+        "codigo": "MA05 OA 21"
+      }
+    ]
+  },
+  "resta": {
+    "definicion": "Operación que determina la parte desconocida de un todo (quitar, comparar, completar) dadas la otra parte y el total.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 09",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA02 OA 09",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 06",
+        "cobertura": "parcial"
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "concreto",
+        "nombre": "Quitar de una colección",
+        "descripcion": "Separar físicamente una parte del todo y cuantificar lo que queda.",
+        "ancla_visual": "quitar"
+      },
+      {
+        "tipo": "pictorico",
+        "nombre": "Comparación de barras",
+        "descripcion": "Dos barras alineadas: la diferencia es el tramo no compartido.",
+        "ancla_visual": "comparacion_barras"
+      }
+    ]
+  },
+  "reversibilidad_aditiva": {
+    "definicion": "Comprender que adición y sustracción son operaciones inversas: los mismos tres números forman una familia de operaciones.",
+    "descripcion": "Glosario: los números 7, 8 y 15 se relacionan en 7+8=15, 8+7=15, 15-8=7, 15-7=8.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 10",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA02 OA 10",
+        "cobertura": "total"
+      },
+      {
+        "codigo": "MA03 OA 07",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "reversibilidad_multiplicativa": {
+    "definicion": "Comprender que multiplicación y división son operaciones inversas: 7 x 5 = 35 y 35 : 5 = 7 relacionan los mismos números.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 09",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 06",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "sector_circular": {
+    "definicion": "Determinar el área y el perímetro de una parte del círculo delimitada por un ángulo central.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 06",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "secuencia_temporal": {
+    "definicion": "Ordenar eventos con las estructuras cíclicas del calendario (días, semanas, meses, fechas) y leer líneas de tiempo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 17"
+      },
+      {
+        "codigo": "MA02 OA 17"
+      },
+      {
+        "codigo": "MA03 OA 19"
+      }
+    ]
+  },
+  "secuencia_verbal": {
+    "definicion": "Recitar la lista numérica en orden estable, como cadena verbal, sin necesidad de que refiera a objetos.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "semejanza": {
+    "definicion": "Reconocer figuras de igual forma y distinto tamaño, cuyos lados guardan una razón constante.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 10",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "simbolo_incognita": {
+    "definicion": "Comprender que un símbolo (figura o letra) puede representar un número desconocido pero determinado, que conserva su valor dentro de la igualdad.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 13"
+      },
+      {
+        "codigo": "MA06 OA 10"
+      }
+    ],
+    "bibliografia": [
+      "bib_kaput_2008"
+    ]
+  },
+  "simetria_axial": {
+    "definicion": "Comprender la línea de simetría como eje que refleja una mitad de la figura sobre la otra; identificar, crear y trazar ejes de simetría.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 17"
+      }
+    ]
+  },
+  "sistema_ecuaciones_lineales": {
+    "definicion": "Determinar los valores que satisfacen simultáneamente dos condiciones lineales sobre dos incógnitas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 04",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "subitizacion": {
+    "definicion": "Reconocer de manera inmediata la cantidad de una colección pequeña, sin contar.",
+    "descripcion": "Sin OA que lo nombre directamente: conocimiento estructural. El reconocimiento directo de cantidades pequeñas sirve de referente perceptivo para la estimación.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 05",
+        "cobertura": "tangencial"
+      }
+    ]
+  },
+  "suma": {
+    "definicion": "Operación que determina la cardinalidad de la unión de dos colecciones disjuntas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA01 OA 09",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "cuenta_dos_veces",
+        "descripcion": "Al contar todo, incluye el primer sumando en el reconteo y obtiene uno de más.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "cardinalidad",
+        "retroalimentacion_sugerida": "Renderizar ambas colecciones separadas y luego unidas, resaltando el objeto contado dos veces."
+      },
+      {
+        "id": "signo_como_hacer",
+        "descripcion": "Lee el signo + como orden de 'hacer algo' y no como relación entre cantidades; no acepta 5 = 3 + 2.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": null,
+        "retroalimentacion_sugerida": "Balanza: ambos lados existen simultáneamente, no hay un 'antes' y un 'después'."
+      }
+    ]
+  },
+  "suma_angulos_interiores": {
+    "definicion": "Comprender que los ángulos interiores de un triángulo suman 180° y los de un cuadrilátero 360°, y usarlo para calcular ángulos faltantes.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 17"
+      },
+      {
+        "codigo": "MA06 OA 21"
+      }
+    ]
+  },
+  "superficie_cuerpos": {
+    "definicion": "Calcular la superficie total de cubos y paralelepípedos como suma de las áreas de las caras de su red.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 13"
+      },
+      {
+        "codigo": "MA06 OA 18"
+      },
+      {
+        "codigo": "MA08 OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "superficie_prisma_cilindro": {
+    "definicion": "Determinar la superficie de un cuerpo recto desplegando su red en figuras planas.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "superficie_volumen_cono": {
+    "definicion": "Determinar la superficie y el volumen de un cuerpo que termina en punta, relacionándolo con el cilindro.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 07",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "superficie_volumen_esfera": {
+    "definicion": "Determinar la superficie y el volumen de un cuerpo sin caras planas ni red desplegable.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 07",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "sustraccion_con_canje": {
+    "definicion": "Reagrupar al restar: descomponer una unidad del orden superior cuando la columna del minuendo es insuficiente.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 06",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 03",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "resta_menor_al_mayor",
+        "descripcion": "En cada columna resta el dígito menor al mayor sin importar su lugar: 52-38 produce 26.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "agrupacion_decenas",
+        "retroalimentacion_sugerida": "Representar 52 con material multibase e intentar quitar 8 unidades: la necesidad del canje se vuelve física."
+      }
+    ]
+  },
+  "tabla_doble_entrada": {
+    "definicion": "Registrar simultáneamente dos características de una misma población y cruzar sus valores.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 12",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "tabla_frecuencias": {
+    "definicion": "Organizar los datos de una muestra según cuántas veces ocurre cada valor.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 16",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "tallo_hojas": {
+    "definicion": "Organizar datos numéricos separando cada valor en tallo (decenas) y hoja (unidades), de modo que la tabla misma muestre la distribución conservando cada dato.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA05 OA 27"
+      },
+      {
+        "codigo": "MA06 OA 22"
+      }
+    ]
+  },
+  "tendencia_frecuencial": {
+    "definicion": "Conjeturar la tendencia que estabilizan las frecuencias al repetir muchas veces un experimento aleatorio (intuición frecuencial de la probabilidad).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 23"
+      },
+      {
+        "codigo": "MA07 OA 19",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA1M OA 15",
+        "cobertura": "parcial"
+      }
+    ],
+    "bibliografia": [
+      "bib_fischbein_1975"
+    ]
+  },
+  "teorema_pitagoras": {
+    "definicion": "Relacionar las áreas de los cuadrados construidos sobre los lados de un triángulo rectángulo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 12",
+        "cobertura": "total"
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "concreto",
+        "nombre": "Cuadrados sobre los lados",
+        "descripcion": "Recubrir con unidades los cuadrados de los catetos y comprobar que llenan el de la hipotenusa.",
+        "ancla_visual": "cuadrados_pitagoras"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "pitagoras_sin_rectangulo",
+        "descripcion": "Aplica la relación a triángulos que no son rectángulos.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "angulo_concepto",
+        "retroalimentacion_sugerida": "Verificar con un triángulo cualquiera: la igualdad falla si no hay ángulo recto."
+      },
+      {
+        "id": "hipotenusa_cualquiera",
+        "descripcion": "Toma como hipotenusa un lado que no es el opuesto al ángulo recto.",
+        "naturaleza": "procedimental",
+        "retroalimentacion_sugerida": "Marcar primero el ángulo recto: la hipotenusa es siempre el lado que no lo toca."
+      }
+    ]
+  },
+  "teorema_tales": {
+    "definicion": "Establecer que un haz de paralelas corta segmentos proporcionales sobre dos transversales.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 09",
+        "cobertura": "total"
+      }
+    ]
+  },
+  "termino_semejante": {
+    "definicion": "Reconocer los términos que comparten parte literal y reunirlos en uno solo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 07",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "suma_no_semejantes",
+        "descripcion": "Reúne términos que no comparten parte literal: resuelve 3x + 2y = 5xy.",
+        "naturaleza": "procedimental",
+        "retroalimentacion_sugerida": "Nombrar las partes literales como objetos distintos: tres de una cosa y dos de otra no son cinco de una tercera."
+      }
+    ]
+  },
+  "teselado": {
+    "definicion": "Cubrir el plano con figuras mediante isometrías, sin huecos ni superposiciones.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 14"
+      }
+    ]
+  },
+  "transformaciones_isometricas": {
+    "definicion": "Reconocer y aplicar traslaciones, reflexiones y rotaciones como movimientos que cambian posición u orientación sin cambiar forma ni tamaño.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA03 OA 17"
+      },
+      {
+        "codigo": "MA04 OA 18"
+      },
+      {
+        "codigo": "MA08 OA 13",
+        "cobertura": "parcial"
+      }
+    ],
+    "bibliografia": [
+      "bib_clements_battista_1992"
+    ]
+  },
+  "unidad_estandarizada": {
+    "definicion": "Comprender la necesidad de unidades convencionales compartidas (cm, m, g, kg) para comunicar y comparar mediciones entre personas y contextos.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 19"
+      },
+      {
+        "codigo": "MA03 OA 22"
+      },
+      {
+        "codigo": "MA05 OA 19"
+      }
+    ],
+    "bibliografia": [
+      "bib_lehrer_2003"
+    ]
+  },
+  "valor_posicional": {
+    "definicion": "Comprender que el valor de un dígito depende de la posición que ocupa en el numeral, según agrupaciones sucesivas de diez.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA02 OA 07",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA03 OA 05",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA04 OA 01",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA05 OA 01",
+        "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "escritura_literal",
+        "descripcion": "Escribe los números como los oye: 'doscientos tres' se convierte en 2003.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "agrupacion_decenas"
+      },
+      {
+        "id": "digito_sin_posicion",
+        "descripcion": "Afirma que en 47 'hay un 4', sin reconocer que ese 4 vale cuarenta.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Representar 47 con material agrupado y pedir que muestre qué parte del material es el 4."
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "concreto",
+        "nombre": "Material multibase",
+        "descripcion": "Cubos sueltos, barras de diez y placas de cien: la posición se corresponde con el tipo de pieza.",
+        "ancla_visual": "multibase"
+      },
+      {
+        "tipo": "pictorico",
+        "nombre": "Tabla posicional",
+        "descripcion": "Columnas U/D/C donde el mismo dígito cambia de valor al cambiar de columna.",
+        "ancla_visual": "tabla_posicional"
+      }
+    ]
+  },
+  "variable_aleatoria": {
+    "definicion": "Asignar un valor numérico a cada resultado posible de un experimento, para poder operar con él.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA2M OA 10",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "variacion_porcentual": {
+    "definicion": "Cuantificar el aumento o la disminución de una cantidad como porcentaje de su valor inicial.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 05",
+        "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "porcentaje_reversible",
+        "descripcion": "Cree que subir un porcentaje y luego bajar el mismo porcentaje devuelve al valor inicial.",
+        "naturaleza": "conceptual",
+        "retroalimentacion_sugerida": "Calcular ambos pasos sobre una cantidad concreta: la base del segundo porcentaje ya no es la misma."
+      }
+    ]
+  },
+  "vector": {
+    "definicion": "Representar un desplazamiento mediante magnitud y dirección, independiente del punto donde se aplique.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 14",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA08 OA 13",
+        "cobertura": "parcial"
+      },
+      {
+        "codigo": "MA1M OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "vistas_3d": {
+    "definicion": "Anticipar cómo se ve un cuerpo desde el frente, el lado y arriba, comprendiendo cada vista como proyección 2D del mismo cuerpo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 16"
+      }
+    ],
+    "bibliografia": [
+      "bib_clements_sarama_2009"
+    ]
+  },
+  "volumen_paralelepipedo": {
+    "definicion": "Estructurar el cuerpo en capas de cubos iguales, condensando el llenado en una multiplicación (largo × ancho × alto), en cm³, m³ y mm³.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA06 OA 19"
+      }
+    ],
+    "bibliografia": [
+      "bib_battista_clements_1996"
+    ]
+  },
+  "volumen_prisma_cilindro": {
+    "definicion": "Determinar el volumen de un cuerpo recto como el producto del área de su base por su altura.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA08 OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "volumen_unidades_cubicas": {
+    "definicion": "Comprender el volumen como la cantidad de unidades cúbicas que llenan un cuerpo sin huecos.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA04 OA 24"
+      }
+    ],
+    "bibliografia": [
+      "bib_battista_clements_1996"
+    ]
+  }
+}

@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://atlas-conocimiento.org/schema/v1/atlas.schema.json",
   "title": "Atlas del Conocimiento — Esquema del dataset",
-  "description": "Contrato de datos del Atlas. La Capa 1 (estructura) es un espacio cuasi-ordinal: nodos + aristas de prerrequisito. La Capa 2 (metadatos/códex) cuelga de cada nodo y NUNCA modifica la estructura. Las apps subordinadas (p.ej. Eslabones) consumen este JSON.",
+  "description": "Contrato de datos del Atlas. Esqueleto: espacio cuasi-ordinal (nodos + aristas de prerrequisito) y geografía (coordenadas). El códex (definiciones, OA, representaciones, errores frecuentes, etc.) vive aparte, en data/codex.json + data/codex_diccionario.json (ver codex.schema.json) — no modifica la estructura ni comparte archivo con ella. Las apps subordinadas (p.ej. Eslabones) consumen este JSON.",
   "type": "object",
   "required": ["atlas_version", "schema_version", "dominio", "nodos", "aristas"],
   "additionalProperties": false,
@@ -148,9 +148,7 @@
         "coordenada_radial": {
           "description": "Proyección alternativa (Fase 3.6-B): mismo espacio de conocimiento, geografía radial. Ángulo = región (sectores proporcionales a la cantidad de nodos de cada región, en orden region.orden_x); radio = profundidad en el orden parcial, la MISMA magnitud que `coordenada.y` — derivada de la estructura, no del curso (A2). Aditivo: no reemplaza a `coordenada`, que sigue siendo la geografía canónica. Computada offline junto con `coordenada` (A5); nunca en runtime.",
           "$ref": "#/$defs/coordenada"
-        },
-
-        "metadatos": { "$ref": "#/$defs/metadatos" }
+        }
       }
     },
 
@@ -202,189 +200,6 @@
           "enum": ["hipotesis", "consenso_experto", "validada_empiricamente"],
           "default": "hipotesis",
           "description": "hipotesis: juicio del autor. consenso_experto: QUERY con especialistas. validada_empiricamente: derivada/confirmada con datos de respuesta (IITA/DAKS). El Atlas v1 nace enteramente en 'hipotesis' y eso se declara."
-        }
-      }
-    },
-
-    "metadatos": {
-      "description": "CAPA 2 — el códex. Información asociada al nodo que NO modifica el grafo. Los OA viven aquí: son una agrupación curricular de conocimientos, no el esqueleto.",
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-
-        "definicion": {
-          "type": "string",
-          "description": "Qué es este conocimiento, en términos epistémicos."
-        },
-        "descripcion": { "type": "string" },
-
-        "oa_relacionados": {
-          "description": "CÓDEX CURRICULAR. Referencia bidireccional a los Objetivos de Aprendizaje. Documenta el mundo, no lo gobierna. Un nodo puede tener cero OA (existe igual) o varios (de distintos cursos).",
-          "type": "array",
-          "items": { "$ref": "#/$defs/oa" }
-        },
-
-        "representaciones": {
-          "description": "Formas de enseñar el conocimiento (COPISI). NO son conocimientos ni nodos.",
-          "type": "array",
-          "items": { "$ref": "#/$defs/representacion" }
-        },
-
-        "habilidades": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": ["resolver_problemas", "representar", "modelar", "argumentar_comunicar"]
-          }
-        },
-
-        "actitudes": {
-          "type": "array",
-          "items": { "type": "string" }
-        },
-
-        "errores_frecuentes": {
-          "description": "Errores conceptuales típicos. Capa crítica: es lo que permite que una app subordinada dé retroalimentación como modelo concreto renderizado con los datos del error, en vez de 'incorrecto'.",
-          "type": "array",
-          "items": { "$ref": "#/$defs/error_frecuente" }
-        },
-
-        "items": {
-          "description": "MAPEO COMPETENCIA→DESEMPEÑO (CbKST). El grafo del Atlas es la estructura de competencias; estos son los ítems observables. RESERVADO: en v1 se declara el tipo pero no se construyen ítems. Cuando existan, la estructura de desempeño se deriva mecánicamente con el paquete R.",
-          "type": "array",
-          "items": { "$ref": "#/$defs/item" }
-        },
-
-        "evidencias": {
-          "description": "Formas de comprobar el conocimiento. NO notas, NO calificaciones: evidencias.",
-          "type": "array",
-          "items": { "type": "string" }
-        },
-
-        "adaptaciones_pie": {
-          "description": "Apoyos didácticos, NO diagnósticos. Nunca se indexa por categoría diagnóstica.",
-          "type": "array",
-          "items": { "$ref": "#/$defs/adaptacion" }
-        },
-
-        "recursos": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/recurso" }
-        },
-
-        "bibliografia": {
-          "type": "array",
-          "items": { "type": "string" }
-        }
-      }
-    },
-
-    "oa": {
-      "type": "object",
-      "required": ["codigo"],
-      "additionalProperties": false,
-      "properties": {
-        "codigo": {
-          "type": "string",
-          "description": "Código oficial MINEDUC.",
-          "examples": ["MA01 OA 09", "MA04 OA 06"]
-        },
-        "curso": { "type": "string", "examples": ["1B", "4B", "1M"] },
-        "eje": { "type": "string", "examples": ["Números y operaciones"] },
-        "texto": { "type": "string", "description": "Redacción oficial del OA." },
-        "cobertura": {
-          "description": "Qué relación tiene el OA con este nodo. Un OA típicamente cubre VARIOS nodos: por eso el OA no puede ser la unidad.",
-          "type": "string",
-          "enum": ["total", "parcial", "tangencial"]
-        }
-      }
-    },
-
-    "representacion": {
-      "type": "object",
-      "required": ["tipo"],
-      "additionalProperties": false,
-      "properties": {
-        "tipo": { "type": "string", "enum": ["concreto", "pictorico", "simbolico"] },
-        "nombre": { "type": "string", "examples": ["Balanza", "Rectángulo de área"] },
-        "descripcion": { "type": "string" },
-        "ancla_visual": {
-          "type": "string",
-          "description": "Modelo concreto que una app subordinada puede renderizar. Contrato con Eslabones."
-        }
-      }
-    },
-
-    "error_frecuente": {
-      "type": "object",
-      "required": ["descripcion"],
-      "additionalProperties": false,
-      "properties": {
-        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
-        "descripcion": { "type": "string", "examples": ["Cuenta dos veces el elemento de partida."] },
-        "naturaleza": {
-          "type": "string",
-          "enum": ["conceptual", "procedimental", "representacional", "atencional"]
-        },
-        "nodo_implicado": {
-          "type": ["string", "null"],
-          "description": "id de un nodo prerrequisito cuyo no-dominio explicaría el error. PUENTE DIAGNÓSTICO: conecta el error con la estructura. No crea arista."
-        },
-        "retroalimentacion_sugerida": {
-          "type": "string",
-          "description": "Cómo mostrar el error con el modelo concreto, sin decir 'incorrecto'."
-        }
-      }
-    },
-
-    "item": {
-      "type": "object",
-      "required": ["id"],
-      "additionalProperties": false,
-      "properties": {
-        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
-        "enunciado": { "type": "string" },
-        "formato": {
-          "type": "string",
-          "enum": ["respuesta_construida", "seleccion_multiple", "manipulativo", "observacional"]
-        },
-        "competencias_requeridas": {
-          "type": "array",
-          "items": { "type": "string" },
-          "description": "ids de nodos. Esto ES el skill map de CbKST."
-        }
-      }
-    },
-
-    "adaptacion": {
-      "type": "object",
-      "required": ["descripcion"],
-      "additionalProperties": false,
-      "properties": {
-        "descripcion": { "type": "string" },
-        "barrera": {
-          "type": "string",
-          "description": "Qué barrera de acceso al conocimiento remueve. Se indexa por BARRERA, nunca por diagnóstico.",
-          "examples": ["Carga en memoria de trabajo", "Procesamiento visoespacial", "Demanda de lenguaje"]
-        },
-        "tipo": {
-          "type": "string",
-          "enum": ["acceso", "presentacion", "respuesta", "tiempo", "entorno"]
-        }
-      }
-    },
-
-    "recurso": {
-      "type": "object",
-      "required": ["titulo"],
-      "additionalProperties": false,
-      "properties": {
-        "titulo": { "type": "string" },
-        "url": { "type": "string", "format": "uri" },
-        "tipo": { "type": "string", "enum": ["actividad", "video", "lectura", "manipulativo", "app"] },
-        "audiencia": {
-          "type": "array",
-          "items": { "type": "string", "enum": ["profesor", "estudiante", "pie", "investigador"] }
         }
       }
     }

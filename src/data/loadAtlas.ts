@@ -4,15 +4,31 @@
 
 import Graph from 'graphology'
 import datasetJson from '../../data/atlas.numero.json'
-import type { Atlas, Nodo, Region, Arista } from '../types/atlas'
+import codexJson from '../../data/codex.json'
+import codexDiccionarioJson from '../../data/codex_diccionario.json'
+import type { Atlas, Nodo, Region, Arista, Codex, Metadatos, CodexDiccionario } from '../types/atlas'
 // @ts-expect-error — módulo .mjs sin tipos; se consume por su contrato de runtime.
 import { calcularICA } from '../../tools/ica.mjs'
 
 const atlas = datasetJson as unknown as Atlas
+const codex = codexJson as unknown as Codex
+const codexDiccionario = codexDiccionarioJson as unknown as CodexDiccionario
 
 // ── Índices ──────────────────────────────────────────────────────────────
 const nodos = new Map<string, Nodo>(atlas.nodos.map((n) => [n.id, n]))
 const regiones = new Map<string, Region>((atlas.regiones ?? []).map((r) => [r.id, r]))
+
+/** Códex de un nodo (Fase 3.9): definiciones, OA, errores, recursos... Vive
+ * aparte del esqueleto (`data/codex.json`), no en `Nodo`. Ausente si el nodo
+ * todavía no tiene contenido. */
+export function getCodex(id: string): Metadatos | undefined {
+  return codex[id]
+}
+
+/** Cita bibliográfica completa a partir de su clave (`data/codex_diccionario.json`). */
+export function getCita(clave: string): string | undefined {
+  return codexDiccionario.bibliografia[clave]
+}
 
 const succMap = new Map<string, string[]>()
 const predMap = new Map<string, string[]>()
@@ -234,16 +250,14 @@ function normalizar(s: string): string {
 }
 
 for (const n of atlas.nodos) {
-  for (const oa of n.metadatos?.oa_relacionados ?? []) {
+  for (const oa of codex[n.id]?.oa_relacionados ?? []) {
     let e = oaIndex.get(oa.codigo)
     if (!e) {
-      e = { codigo: oa.codigo, nodos: [] }
+      const texto = codexDiccionario.oa[oa.codigo]
+      e = { codigo: oa.codigo, curso: texto?.curso, eje: texto?.eje, texto: texto?.texto, nodos: [] }
       oaIndex.set(oa.codigo, e)
     }
     e.nodos.push({ id: n.id, cobertura: oa.cobertura })
-    if (!e.curso && oa.curso) e.curso = oa.curso
-    if (!e.eje && oa.eje) e.eje = oa.eje
-    if (!e.texto && oa.texto) e.texto = oa.texto
   }
 }
 // Blob de búsqueda: código + curso + texto del OA + nombres y definiciones de sus nodos.
@@ -251,7 +265,7 @@ for (const e of oaIndex.values()) {
   const partes = [e.codigo, e.curso ?? '', e.texto ?? '']
   for (const { id } of e.nodos) {
     const n = nodos.get(id)
-    if (n) partes.push(n.nombre, n.metadatos?.definicion ?? '')
+    if (n) partes.push(n.nombre, codex[id]?.definicion ?? '')
   }
   oaBlob.set(e.codigo, normalizar(partes.join(' ')))
 }

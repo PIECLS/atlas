@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://atlas-conocimiento.org/schema/v1/codex_diccionario.schema.json",
+  "title": "Atlas del Conocimiento — Esquema del diccionario del códex",
+  "description": "Texto duro que SÍ se reutiliza entre nodos hoy: OA (código MINEDUC) y bibliografía (cita). codex.json referencia estas claves en vez de repetir el texto. El resto de las categorías del códex no tiene reutilización real y vive anidado directo en codex.json — no pasa por este archivo.",
+  "type": "object",
+  "required": ["oa", "bibliografia"],
+  "additionalProperties": false,
+  "properties": {
+    "oa": {
+      "type": "object",
+      "patternProperties": {
+        "^MA": { "$ref": "#/$defs/oaTexto" }
+      },
+      "additionalProperties": false
+    },
+    "bibliografia": {
+      "type": "object",
+      "patternProperties": {
+        "^bib_": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "oaTexto": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "curso": { "type": "string", "examples": ["1B", "4B", "1M"] },
+        "eje": { "type": "string", "examples": ["Números y operaciones"] },
+        "texto": { "type": "string", "description": "Redacción oficial del OA." }
+      }
+    }
+  }
+}

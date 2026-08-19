@@ -1,5 +1,6 @@
-// Traducción literal de atlas.schema.json (schema_version 1.2.0).
-// NO agregar campos que no estén en el esquema. Los tipos son el contrato.
+// Traducción literal de atlas.schema.json + codex.schema.json +
+// codex_diccionario.schema.json (schema_version 1.2.0). NO agregar campos
+// que no estén en el esquema. Los tipos son el contrato.
 
 export type Completitud = 'esbozo' | 'basica' | 'completa'
 export type NivelZoom = 1 | 2 | 3
@@ -45,12 +46,17 @@ export interface Dominio {
   asignatura?: string
 }
 
+/** Referencia dentro de codex.json. curso/eje/texto viven en CodexDiccionario.oa, indexados por `codigo`. */
 export interface OA {
   codigo: string
+  cobertura?: Cobertura
+}
+
+/** Entrada resuelta de codex_diccionario.json/oa. */
+export interface OATexto {
   curso?: string
   eje?: string
   texto?: string
-  cobertura?: Cobertura
 }
 
 export interface Representacion {
@@ -103,7 +109,17 @@ export interface Metadatos {
   evidencias?: string[]
   adaptaciones_pie?: Adaptacion[]
   recursos?: Recurso[]
+  /** Claves hacia CodexDiccionario.bibliografia, no el texto de la cita. */
   bibliografia?: string[]
+}
+
+/** data/codex.json — solo entran los nodos con contenido. */
+export type Codex = Record<string, Metadatos>
+
+/** data/codex_diccionario.json — texto duro reutilizado entre nodos (OA, bibliografía). */
+export interface CodexDiccionario {
+  oa: Record<string, OATexto>
+  bibliografia: Record<string, string>
 }
 
 export interface Nodo {
@@ -119,7 +135,6 @@ export interface Nodo {
   coordenada?: Coordenada
   /** Proyección radial (Fase 3.6-B): mismo espacio, ángulo=región, radio=profundidad. */
   coordenada_radial?: Coordenada
-  metadatos?: Metadatos
 }
 
 export interface Arista {
