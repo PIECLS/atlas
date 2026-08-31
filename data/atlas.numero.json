@@ -2,13 +2,15 @@
   "atlas_version": "0.4.4",
   "schema_version": "1.2.0",
   "certificacion": {
-    "verificado": false,
-    "fecha": "2026-08-19T03:28:18Z",
+    "verificado": true,
+    "fecha": "2026-08-31T13:54:22Z",
     "herramienta": "R 4.6.1 / kst 0.5.5",
     "aciclico": true,
     "reduccion_transitiva": true,
-    "huerfanos": [],
-    "notas": "Revisión 4.13 aplicada (3 nodos, 4 aristas): pendiente re-certificación mecánica (aciclicidad y reducción transitiva)."
+    "huerfanos": [
+      "valor_absoluto"
+    ],
+    "notas": "Hipótesis estructural consistente con los axiomas, verificada mecánicamente y versionada. Sin validación empírica (A8)."
   },
   "dominio": {
     "id": "numero_basica",
@@ -6856,5 +6858,5 @@
       "clausula": null
     }
   ],
-  "generado": "2026-08-31T12:53:09Z"
+  "generado": "2026-08-31T13:54:22Z"
 }
