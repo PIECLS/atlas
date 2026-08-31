@@ -683,6 +683,19 @@
       }
     ]
   },
+  "criterios_semejanza": {
+    "definicion": "Criterios AA, LAL, LLL de semejanza de triángulos",
+    "errores_frecuentes": [
+      {
+        "id": "exige_todos_los_datos",
+        "descripcion": "Exigir todos los datos en vez de un criterio (AA)."
+      },
+      {
+        "id": "confunde_semejanza_congruencia",
+        "descripcion": "Confundir semejanza con congruencia."
+      }
+    ]
+  },
   "cuadricula_mapa": {
     "definicion": "Localizar objetos en mapas o cuadrículas mediante coordenadas informales (letra-número), coordinando dos referencias simultáneas.",
     "oa_relacionados": [
@@ -853,6 +866,19 @@
         "descripcion": "Sostiene que el cociente siempre es menor que el dividendo, y rechaza que 1 : 1/2 sea 2.",
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Preguntar cuántas mitades caben en un entero: repartir en partes menores que la unidad produce más partes."
+      }
+    ]
+  },
+  "division_interior_segmento": {
+    "definicion": "Dividir un segmento en una razón dada",
+    "errores_frecuentes": [
+      {
+        "id": "invierte_razon",
+        "descripcion": "Invertir la razón al dividir el segmento."
+      },
+      {
+        "id": "extremo_equivocado",
+        "descripcion": "Medir desde el extremo equivocado."
       }
     ]
   },
@@ -2342,6 +2368,15 @@
       }
     ]
   },
+  "producto_vector_escalar": {
+    "definicion": "Multiplicación de un vector por un número real: el vector resultante conserva la dirección, multiplica su magnitud por el valor absoluto del escalar e invierte su sentido cuando el escalar es negativo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
   "productos_notables": {
     "definicion": "Reconocer y aplicar los patrones que resultan de multiplicar ciertas expresiones recurrentes.",
     "oa_relacionados": [
@@ -3012,6 +3047,47 @@
       "bib_fischbein_1975"
     ]
   },
+  "teorema_euclides": {
+    "definicion": "Relaciones métricas en el triángulo rectángulo: la altura trazada sobre la hipotenusa es media proporcional entre las proyecciones de los catetos, y cada cateto es media proporcional entre la hipotenusa y su propia proyección.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 10",
+        "cobertura": "parcial"
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "pictorico",
+        "nombre": "Altura sobre la hipotenusa",
+        "descripcion": "Los tres triángulos semejantes que genera la altura trazada sobre la hipotenusa."
+      },
+      {
+        "tipo": "simbolico",
+        "nombre": "Las tres relaciones",
+        "descripcion": "h²=p·q, a²=c·p, b²=c·q."
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "euclides_sin_raiz",
+        "descripcion": "Se detiene en h² y no extrae la raíz: responde 36 en vez de 6.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "raiz_cuadrada"
+      },
+      {
+        "id": "euclides_proyeccion_cruzada",
+        "descripcion": "Usa la proyección del cateto contrario: escribe b²=c·p en vez de b²=c·q.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "criterios_semejanza"
+      },
+      {
+        "id": "euclides_formula_confundida",
+        "descripcion": "No distingue cuándo corresponde la relación de la altura (dos proyecciones) y cuándo la del cateto (hipotenusa y su propia proyección).",
+        "naturaleza": "conceptual",
+        "nodo_implicado": null
+      }
+    ]
+  },
   "teorema_pitagoras": {
     "definicion": "Relacionar las áreas de los cuadrados construidos sobre los lados de un triángulo rectángulo.",
     "oa_relacionados": [
@@ -3111,6 +3187,15 @@
     ],
     "bibliografia": [
       "bib_lehrer_2003"
+    ]
+  },
+  "valor_absoluto": {
+    "definicion": "La distancia de un número al cero en la recta numérica; siempre positiva.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 01",
+        "cobertura": "parcial"
+      }
     ]
   },
   "valor_posicional": {
@@ -3245,65 +3330,6 @@
     ],
     "bibliografia": [
       "bib_battista_clements_1996"
-    ]
-  },
-  "teorema_euclides": {
-    "definicion": "Relaciones métricas en el triángulo rectángulo: la altura trazada sobre la hipotenusa es media proporcional entre las proyecciones de los catetos, y cada cateto es media proporcional entre la hipotenusa y su propia proyección.",
-    "oa_relacionados": [
-      {
-        "codigo": "MA1M OA 10",
-        "cobertura": "parcial"
-      }
-    ],
-    "representaciones": [
-      {
-        "tipo": "pictorico",
-        "nombre": "Altura sobre la hipotenusa",
-        "descripcion": "Los tres triángulos semejantes que genera la altura trazada sobre la hipotenusa."
-      },
-      {
-        "tipo": "simbolico",
-        "nombre": "Las tres relaciones",
-        "descripcion": "h²=p·q, a²=c·p, b²=c·q."
-      }
-    ],
-    "errores_frecuentes": [
-      {
-        "id": "euclides_sin_raiz",
-        "descripcion": "Se detiene en h² y no extrae la raíz: responde 36 en vez de 6.",
-        "naturaleza": "procedimental",
-        "nodo_implicado": "raiz_cuadrada"
-      },
-      {
-        "id": "euclides_proyeccion_cruzada",
-        "descripcion": "Usa la proyección del cateto contrario: escribe b²=c·p en vez de b²=c·q.",
-        "naturaleza": "conceptual",
-        "nodo_implicado": "criterios_semejanza"
-      },
-      {
-        "id": "euclides_formula_confundida",
-        "descripcion": "No distingue cuándo corresponde la relación de la altura (dos proyecciones) y cuándo la del cateto (hipotenusa y su propia proyección).",
-        "naturaleza": "conceptual",
-        "nodo_implicado": null
-      }
-    ]
-  },
-  "producto_vector_escalar": {
-    "definicion": "Multiplicación de un vector por un número real: el vector resultante conserva la dirección, multiplica su magnitud por el valor absoluto del escalar e invierte su sentido cuando el escalar es negativo.",
-    "oa_relacionados": [
-      {
-        "codigo": "MA1M OA 11",
-        "cobertura": "parcial"
-      }
-    ]
-  },
-  "valor_absoluto": {
-    "definicion": "La distancia de un número al cero en la recta numérica; siempre positiva.",
-    "oa_relacionados": [
-      {
-        "codigo": "MA07 OA 01",
-        "cobertura": "parcial"
-      }
     ]
   }
 }
