@@ -1,5 +1,5 @@
 {
-  "generado": "2026-07-19T00:43:38.510Z",
+  "generado": "2026-08-31T12:53:55Z",
   "nota": "Aristas descartadas del merge de otros ejes por quedar implicadas por transitividad (A6), o por juicio de dominio tras la revisión. Si una arista del camino_implicante es rechazada en la revisión A2, esta arista debería reevaluarse para reincorporación.",
   "por_transitividad": [
     {
@@ -73,6 +73,15 @@
         "División",
         "Promedio"
       ]
+    },
+    {
+      "de": "razon_pi",
+      "a": "superficie_volumen_esfera",
+      "de_nombre": "La razón constante del círculo",
+      "a_nombre": "Superficie y volumen de la esfera",
+      "justificacion_original": "No es posible expresar la superficie y el volumen de la esfera sin conocer la constante que caracteriza sus secciones circulares.",
+      "camino_implicante": "razon_pi -> area_circulo -> sector_circular -> superficie_volumen_cono -> superficie_volumen_esfera",
+      "motivo": "Queda implicada por transitividad al incorporar sector_circular -> superficie_volumen_cono (revision 4.13)."
     }
   ],
   "por_juicio_dominio": [

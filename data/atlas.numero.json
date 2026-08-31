@@ -2,13 +2,13 @@
   "atlas_version": "0.4.4",
   "schema_version": "1.2.0",
   "certificacion": {
-    "verificado": true,
+    "verificado": false,
     "fecha": "2026-08-19T03:28:18Z",
     "herramienta": "R 4.6.1 / kst 0.5.5",
     "aciclico": true,
     "reduccion_transitiva": true,
     "huerfanos": [],
-    "notas": "Hipótesis estructural consistente con los axiomas, verificada mecánicamente y versionada. Sin validación empírica (A8)."
+    "notas": "Revisión 4.13 aplicada (3 nodos, 4 aristas): pendiente re-certificación mecánica (aciclicidad y reducción transitiva)."
   },
   "dominio": {
     "id": "numero_basica",
@@ -4404,6 +4404,60 @@
         "y": 5613,
         "fijada_a_mano": false
       }
+    },
+    {
+      "id": "teorema_euclides",
+      "nombre": "Teorema de Euclides",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 38052,
+        "y": 21600,
+        "fijada_a_mano": false
+      },
+      "coordenada_radial": {
+        "x": 2002,
+        "y": 6491,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "producto_vector_escalar",
+      "nombre": "Producto de un vector por un escalar",
+      "nivel_zoom": 3,
+      "padre": "geometria_c",
+      "region": "geometria",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 38052,
+        "y": 26200,
+        "fijada_a_mano": false
+      },
+      "coordenada_radial": {
+        "x": 7729,
+        "y": -2071,
+        "fijada_a_mano": false
+      }
+    },
+    {
+      "id": "valor_absoluto",
+      "nombre": "El valor absoluto",
+      "nivel_zoom": 3,
+      "padre": "enteros_c",
+      "region": "enteros",
+      "completitud": "basica",
+      "coordenada": {
+        "x": 54058,
+        "y": 21600,
+        "fijada_a_mano": false
+      },
+      "coordenada_radial": {
+        "x": -2071,
+        "y": 7729,
+        "fijada_a_mano": false
+      }
     }
   ],
   "aristas": [
@@ -6487,13 +6541,6 @@
       "confianza": "hipotesis"
     },
     {
-      "de": "razon_pi",
-      "a": "superficie_volumen_esfera",
-      "justificacion": "No es posible expresar la superficie y el volumen de la esfera sin conocer la constante que caracteriza sus secciones circulares.",
-      "clausula": null,
-      "confianza": "hipotesis"
-    },
-    {
       "de": "registro_conteo",
       "a": "tabla_frecuencias",
       "justificacion": "No es posible organizar los datos según cuántas veces ocurre cada valor sin poder registrar esas ocurrencias.",
@@ -6786,7 +6833,28 @@
       "justificacion": "No es posible reconocer que el contorno se multiplica una sola vez por la razón sin comprender el perímetro como suma de las longitudes de los lados.",
       "clausula": null,
       "confianza": "hipotesis"
+    },
+    {
+      "de": "criterios_semejanza",
+      "a": "teorema_euclides",
+      "justificacion": "No es posible establecer las relaciones métricas del triángulo rectángulo sin reconocer que la altura sobre la hipotenusa determina dos triángulos semejantes entre sí y semejantes al original.",
+      "confianza": "hipotesis",
+      "clausula": null
+    },
+    {
+      "de": "vector",
+      "a": "producto_vector_escalar",
+      "justificacion": "No es posible ponderar un vector por un escalar sin comprender qué es un vector, es decir una magnitud con dirección y sentido expresable por sus componentes.",
+      "confianza": "hipotesis",
+      "clausula": null
+    },
+    {
+      "de": "sector_circular",
+      "a": "superficie_volumen_cono",
+      "justificacion": "No es posible desarrollar la fórmula del área de superficie del cono sin reconocer que su manto, al desplegarse, es un sector circular.",
+      "confianza": "hipotesis",
+      "clausula": null
     }
   ],
-  "generado": "2026-08-19T03:28:18Z"
+  "generado": "2026-08-31T12:53:09Z"
 }

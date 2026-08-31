@@ -3246,5 +3246,64 @@
     "bibliografia": [
       "bib_battista_clements_1996"
     ]
+  },
+  "teorema_euclides": {
+    "definicion": "Relaciones métricas en el triángulo rectángulo: la altura trazada sobre la hipotenusa es media proporcional entre las proyecciones de los catetos, y cada cateto es media proporcional entre la hipotenusa y su propia proyección.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 10",
+        "cobertura": "parcial"
+      }
+    ],
+    "representaciones": [
+      {
+        "tipo": "pictorico",
+        "nombre": "Altura sobre la hipotenusa",
+        "descripcion": "Los tres triángulos semejantes que genera la altura trazada sobre la hipotenusa."
+      },
+      {
+        "tipo": "simbolico",
+        "nombre": "Las tres relaciones",
+        "descripcion": "h²=p·q, a²=c·p, b²=c·q."
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "euclides_sin_raiz",
+        "descripcion": "Se detiene en h² y no extrae la raíz: responde 36 en vez de 6.",
+        "naturaleza": "procedimental",
+        "nodo_implicado": "raiz_cuadrada"
+      },
+      {
+        "id": "euclides_proyeccion_cruzada",
+        "descripcion": "Usa la proyección del cateto contrario: escribe b²=c·p en vez de b²=c·q.",
+        "naturaleza": "conceptual",
+        "nodo_implicado": "criterios_semejanza"
+      },
+      {
+        "id": "euclides_formula_confundida",
+        "descripcion": "No distingue cuándo corresponde la relación de la altura (dos proyecciones) y cuándo la del cateto (hipotenusa y su propia proyección).",
+        "naturaleza": "conceptual",
+        "nodo_implicado": null
+      }
+    ]
+  },
+  "producto_vector_escalar": {
+    "definicion": "Multiplicación de un vector por un número real: el vector resultante conserva la dirección, multiplica su magnitud por el valor absoluto del escalar e invierte su sentido cuando el escalar es negativo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 11",
+        "cobertura": "parcial"
+      }
+    ]
+  },
+  "valor_absoluto": {
+    "definicion": "La distancia de un número al cero en la recta numérica; siempre positiva.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 01",
+        "cobertura": "parcial"
+      }
+    ]
   }
 }
