@@ -88,6 +88,7 @@ export default function VistaNodo({ id, vista, onCerrar, onIrANodo }: Props) {
           </div>
           <h2 className="vn-titulo">{nodo.nombre}</h2>
           {m.definicion && <p className="vn-def">{m.definicion}</p>}
+          {m.descripcion && <p className="vn-desc">{m.descripcion}</p>}
           <CompletitudInsignia c={nodo.completitud} />
           {def.muestraPropiedades && <PropiedadesEstructurales id={id} />}
         </header>

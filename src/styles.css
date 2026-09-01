@@ -511,6 +511,12 @@ body {
   line-height: 1.55;
   margin: 0;
 }
+.vn-desc {
+  color: var(--texto-debil);
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 6px 0 0;
+}
 .insignia-completitud {
   display: inline-flex;
   align-items: center;
