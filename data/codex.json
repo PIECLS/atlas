@@ -18,7 +18,8 @@
         "naturaleza": "procedimental",
         "nodo_implicado": "agrupacion_decenas"
       }
-    ]
+    ],
+    "descripcion": "Suma con reserva (llevar la decena/centena)"
   },
   "adicion_decimales": {
     "definicion": "Sumar y restar decimales alineando las posiciones equivalentes.",
@@ -47,7 +48,8 @@
         "naturaleza": "procedimental",
         "nodo_implicado": "decimal_notacion"
       }
-    ]
+    ],
+    "descripcion": "Sumar/restar decimales alineando la coma"
   },
   "adicion_fracciones_distinto_denominador": {
     "definicion": "Sumar y restar fracciones de distinto denominador reexpresándolas en partes del mismo tamaño.",
@@ -64,7 +66,14 @@
         "codigo": "MA06 OA 08",
         "cobertura": "tangencial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "sumar_numeradores_y_denominado",
+        "descripcion": "Sumar numeradores y denominadores directo (1/2+1/3=2/5) sin igualar denominadores."
+      }
+    ],
+    "descripcion": "Amplificar a común denominador y operar"
   },
   "adicion_fracciones_igual_denominador": {
     "definicion": "Sumar y restar fracciones que comparten denominador operando los numeradores, porque las partes son del mismo tamaño.",
@@ -85,7 +94,8 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Sombrear ambas partes sobre el mismo todo partido en cuartos: el tamaño de la parte no cambia al juntar."
       }
-    ]
+    ],
+    "descripcion": "Sumar/restar fracciones de igual denominador"
   },
   "adicion_sustraccion_enteros": {
     "definicion": "Componer cantidades con sentido, donde un desplazamiento seguido de su opuesto no produce cambio alguno.",
@@ -102,7 +112,8 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Mostrar en la recta que quitar un desplazamiento hacia la izquierda deja más a la derecha que antes."
       }
-    ]
+    ],
+    "descripcion": "Sumar/restar enteros en la recta; valor absoluto"
   },
   "agrupacion_decenas": {
     "definicion": "Agrupar de a diez y tratar el grupo como una unidad nueva que se cuenta y opera como un objeto.",
@@ -119,7 +130,8 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Con material agrupable, preguntar el total tapando los grupos ya contados: si necesita destapar, la decena no es todavía una unidad."
       }
-    ]
+    ],
+    "descripcion": "Bloques base diez (barras=decenas, cubos=unidades); marco de diez; agrupar de a 10"
   },
   "algoritmo_adicion": {
     "definicion": "Sumar numerales de varias cifras operando columna a columna según el valor posicional, sin reagrupación.",
@@ -136,7 +148,18 @@
         "codigo": "MA04 OA 03",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "sumar_por_columnas_sin_alinear",
+        "descripcion": "Sumar por columnas sin alinear las posiciones."
+      },
+      {
+        "id": "anotar_el_numero_completo_sin",
+        "descripcion": "Anotar el número completo sin llevar la reserva (47+38→715)."
+      }
+    ],
+    "descripcion": "Algoritmo por columnas; suma con reserva (llevar)"
   },
   "algoritmo_division": {
     "definicion": "Dividir numerales de varias cifras estimando cocientes parciales por posición, multiplicando de vuelta y restando.",
@@ -149,7 +172,18 @@
         "codigo": "MA05 OA 04",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "bajar_mal_la_cifra_siguiente",
+        "descripcion": "Bajar mal la cifra siguiente."
+      },
+      {
+        "id": "olvidar_poner_0_en_el_cociente",
+        "descripcion": "Olvidar poner 0 en el cociente cuando no cabe."
+      }
+    ],
+    "descripcion": "División por pasos; cociente de dos dígitos"
   },
   "algoritmo_multiplicacion": {
     "definicion": "Multiplicar numerales de varias cifras mediante productos parciales posicionales (distributiva aplicada por columnas).",
@@ -170,7 +204,8 @@
         "naturaleza": "procedimental",
         "nodo_implicado": "valor_posicional"
       }
-    ]
+    ],
+    "descripcion": "Multiplicar por columnas reagrupando (2-3 dígitos × 1)"
   },
   "algoritmo_sustraccion": {
     "definicion": "Restar numerales de varias cifras operando columna a columna según el valor posicional, sin canje.",
@@ -187,7 +222,14 @@
         "codigo": "MA04 OA 03",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "restar_columna_a_columna_el_me",
+        "descripcion": "Restar columna a columna el menor del mayor sin canjear (desagrupar)."
+      }
+    ],
+    "descripcion": "Algoritmo por columnas; resta con canje (pedir prestado)"
   },
   "amplificacion_simplificacion": {
     "definicion": "Transformar una fracción en otra equivalente multiplicando o dividiendo numerador y denominador por un mismo número.",
@@ -200,7 +242,14 @@
         "codigo": "MA05 OA 09",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "sumar_el_mismo_numero_a_numera",
+        "descripcion": "Sumar el mismo número a numerador y denominador en vez de multiplicar/dividir."
+      }
+    ],
+    "descripcion": "Multiplicar/dividir numerador y denominador por un mismo número"
   },
   "angulo_concepto": {
     "definicion": "Comprender el ángulo como abertura entre dos rayos o cantidad de giro, independiente del largo de sus lados, usando 90° y 45° como referentes.",
@@ -211,7 +260,14 @@
     ],
     "bibliografia": [
       "bib_mitchelmore_white_2000"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "creer_que_el_angulo_depende_de",
+        "descripcion": "Creer que el ángulo depende del largo de los lados y no de la abertura."
+      }
+    ],
+    "descripcion": "Ángulos recto, agudo, obtuso, llano; el recto como referencia"
   },
   "angulos_entre_rectas": {
     "definicion": "Comprender las relaciones entre ángulos formados por rectas que se cortan (opuestos por el vértice, complementarios) y por paralelas cortadas por una transversal.",
@@ -222,7 +278,18 @@
       {
         "codigo": "MA06 OA 21"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_reconocer_angulos_correspon",
+        "descripcion": "No reconocer ángulos correspondientes/alternos entre paralelas."
+      },
+      {
+        "id": "sumar_mal_a_180",
+        "descripcion": "Sumar mal a 180°."
+      }
+    ],
+    "descripcion": "Ángulos entre paralelas cortadas por transversal"
   },
   "angulos_poligono": {
     "definicion": "Descubrir las relaciones que cumplen los ángulos interiores y exteriores de un polígono cualquiera.",
@@ -231,7 +298,18 @@
         "codigo": "MA07 OA 10",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_angulos_interiores_c",
+        "descripcion": "Confundir ángulos interiores con exteriores."
+      },
+      {
+        "id": "sumar_mal_por_no_usar_n_2_180",
+        "descripcion": "Sumar mal por no usar (n−2)·180."
+      }
+    ],
+    "descripcion": "Ángulos interiores y exteriores de polígonos"
   },
   "area_circulo": {
     "definicion": "Determinar la superficie encerrada por un círculo a partir de su radio.",
@@ -240,7 +318,18 @@
         "codigo": "MA07 OA 11",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "usar_d_en_vez_de_r",
+        "descripcion": "Usar π·d en vez de π·r²."
+      },
+      {
+        "id": "elevar_mal_el_radio_al_cuadrad",
+        "descripcion": "Elevar mal el radio al cuadrado."
+      }
+    ],
+    "descripcion": "Área del círculo = π·r²"
   },
   "area_recubrimiento": {
     "definicion": "Comprender el área como la cantidad de unidades cuadradas que cubren una superficie sin huecos ni superposiciones.",
@@ -254,7 +343,18 @@
     ],
     "bibliografia": [
       "bib_outhred_mitchelmore_2000"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "contar_el_contorno_en_vez_de_l",
+        "descripcion": "Contar el contorno en vez de los cuadrados que cubren."
+      },
+      {
+        "id": "dejar_la_unidad_de_area_sin_no",
+        "descripcion": "Dejar la unidad de área sin nombrar."
+      }
+    ],
+    "descripcion": "Cubrir la superficie con cuadrados unitarios"
   },
   "areas_derivadas": {
     "definicion": "Obtener el área de triángulos, paralelogramos y trapecios transformándolos o comparándolos con rectángulos de igual área (cortar, trasladar, completar).",
@@ -262,7 +362,14 @@
       {
         "codigo": "MA05 OA 22"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "aplicar_la_formula_del_rectang",
+        "descripcion": "Aplicar la fórmula del rectángulo a triángulo/trapecio sin dividir por 2 o sin promediar las bases."
+      }
+    ],
+    "descripcion": "Área de triángulo/paralelogramo/trapecio por composición con el rectángulo"
   },
   "asociatividad_adicion": {
     "definicion": "Comprender que la agrupación de los sumandos no altera la suma, y usarla para operar según conveniencia.",
@@ -271,7 +378,18 @@
         "codigo": "MA03 OA 04",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "cambiar_el_resultado_al_reagru",
+        "descripcion": "Cambiar el resultado al reagrupar."
+      },
+      {
+        "id": "no_respetar_que_solo_se_reagru",
+        "descripcion": "No respetar que solo se reagrupan sumas."
+      }
+    ],
+    "descripcion": "Agrupar los sumandos de distinta forma: (a+b)+c = a+(b+c)"
   },
   "calculo_por_conteo": {
     "definicion": "Resolver adiciones y sustracciones avanzando o retrocediendo en la secuencia numérica desde uno de los términos.",
@@ -280,7 +398,14 @@
         "codigo": "MA01 OA 07",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "contar_incluyendo_el_numero_de",
+        "descripcion": "Contar incluyendo el número de partida (5+3 empieza en 5 y cuenta 5,6,7 → da 7)."
+      }
+    ],
+    "descripcion": "Conteo hacia adelante/atrás desde un número; apoyo con dedos y recta numérica"
   },
   "cambio_porcentual_constante": {
     "definicion": "Modelar situaciones en que una cantidad varía en un porcentaje fijo de sí misma en cada intervalo.",
@@ -298,7 +423,8 @@
         "nodo_implicado": "funcion_afin",
         "retroalimentacion_sugerida": "Calcular periodo a periodo sobre una cantidad concreta: la base crece en cada paso."
       }
-    ]
+    ],
+    "descripcion": "Crecimiento/decrecimiento exponencial; factor constante"
   },
   "cardinalidad": {
     "definicion": "Comprender que la última etiqueta pronunciada al contar una colección representa la cantidad total de la colección, y no el último objeto contado.",
@@ -393,7 +519,14 @@
         "codigo": "MA02 OA 08",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "pensar_que_sumar_restar_0_camb",
+        "descripcion": "Pensar que sumar/restar 0 cambia el número o lo vuelve 0."
+      }
+    ],
+    "descripcion": "Sumar/restar 0 con objetos; el 0 no cambia la cantidad"
   },
   "circulo": {
     "definicion": "Describir el círculo por las relaciones entre su radio, su diámetro y su perímetro.",
@@ -402,7 +535,18 @@
         "codigo": "MA07 OA 11",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_radio_con_diametro",
+        "descripcion": "Confundir radio con diámetro."
+      },
+      {
+        "id": "mezclar_perimetro_circunferenc",
+        "descripcion": "Mezclar perímetro (circunferencia) con área."
+      }
+    ],
+    "descripcion": "Elementos del círculo: radio, diámetro, perímetro"
   },
   "comparacion_colecciones": {
     "definicion": "Determinar cuál de dos colecciones tiene más, menos o igual cantidad de elementos, mediante emparejamiento o conteo.",
@@ -411,7 +555,14 @@
         "codigo": "MA01 OA 04",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "decir_que_hay_mas_donde_los_ob",
+        "descripcion": "Decir que hay más donde los objetos son más grandes o están más dispersos, no donde hay más cantidad."
+      }
+    ],
+    "descripcion": "Dos colecciones enfrentadas; correspondencia uno a uno; '¿dónde hay más?'"
   },
   "comparacion_directa_magnitudes": {
     "definicion": "Comparar dos objetos o eventos en una magnitud (largo, peso, duración) por percepción o superposición directa, sin unidades.",
@@ -428,7 +579,14 @@
     ],
     "bibliografia": [
       "bib_piaget_inhelder_szeminska_1960"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "comparar_longitudes_sin_alinea",
+        "descripcion": "Comparar longitudes sin alinear los extremos de partida."
+      }
+    ],
+    "descripcion": "Comparar largo o peso directamente, sin unidades"
   },
   "comparacion_distribuciones": {
     "definicion": "Comparar dos grupos de datos mirando sus distribuciones completas (forma, centro, extremos) y no solo casos individuales.",
@@ -447,7 +605,14 @@
     ],
     "bibliografia": [
       "bib_konold_higgins_2003_watson_2006"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "comparar_solo_el_maximo_y_no_l",
+        "descripcion": "Comparar solo el máximo y no la distribución completa de cada grupo."
+      }
+    ],
+    "descripcion": "Comparar dos conjuntos de datos (tallo y hojas)"
   },
   "comparacion_fracciones_igual_denominador": {
     "definicion": "Comparar fracciones de un mismo todo que comparten denominador atendiendo solo al numerador.",
@@ -460,7 +625,18 @@
         "codigo": "MA04 OA 08",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "comparar_por_el_denominador_cr",
+        "descripcion": "Comparar por el denominador (creer que 3/8 > 3/5 porque 8>5)."
+      },
+      {
+        "id": "mirar_solo_los_numeros_sueltos",
+        "descripcion": "Mirar solo los números sueltos."
+      }
+    ],
+    "descripcion": "Comparar fracciones del mismo entero; ordenar"
   },
   "comparacion_fracciones_igual_numerador": {
     "definicion": "Comparar fracciones unitarias y de igual numerador: a mayor denominador, partes más pequeñas.",
@@ -498,7 +674,8 @@
         "naturaleza": "procedimental",
         "nodo_implicado": "decimal_notacion"
       }
-    ]
+    ],
+    "descripcion": "Comparar decimales por posición; recta numérica"
   },
   "comparacion_orden_numeros": {
     "definicion": "Determinar cuál de dos números representa mayor cantidad y ordenar conjuntos de números según su magnitud.",
@@ -531,7 +708,8 @@
         "naturaleza": "procedimental",
         "nodo_implicado": "valor_posicional"
       }
-    ]
+    ],
+    "descripcion": "Recta numérica; signos <, >, =; ordenar tarjetas de menor a mayor"
   },
   "comparacion_probabilidades": {
     "definicion": "Ordenar eventos por su probabilidad sin calcularla, razonando sobre la proporción de casos favorables.",
@@ -555,7 +733,18 @@
         "codigo": "MA02 OA 05",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_ver_el_todo_como_suma_de_pa",
+        "descripcion": "No ver el todo como suma de partes."
+      },
+      {
+        "id": "contar_todo_de_nuevo_en_vez_de",
+        "descripcion": "Contar todo de nuevo en vez de componer."
+      }
+    ],
+    "descripcion": "Descomponer un total en partes; familias de números; cubos que se juntan y separan"
   },
   "composicion_transformaciones": {
     "definicion": "Aplicar sucesivamente traslaciones, rotaciones y reflexiones, y reconocer el movimiento resultante.",
@@ -585,7 +774,18 @@
         "codigo": "MA02 OA 10",
         "cobertura": "tangencial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "creer_que_a_b_y_b_a_pueden_dar",
+        "descripcion": "Creer que a+b y b+a pueden dar distinto."
+      },
+      {
+        "id": "recontar_en_vez_de_reconocer_l",
+        "descripcion": "Recontar en vez de reconocer la equivalencia."
+      }
+    ],
+    "descripcion": "Sumas gemelas: 2+3 y 3+2 dan lo mismo"
   },
   "construccion_triangulos": {
     "definicion": "Construir triángulos a partir de medidas de lados y/o ángulos con instrumentos, y clasificarlos según esas medidas.",
@@ -593,7 +793,18 @@
       {
         "codigo": "MA06 OA 12"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "clasificar_solo_por_un_criteri",
+        "descripcion": "Clasificar solo por un criterio."
+      },
+      {
+        "id": "intentar_construir_triangulos",
+        "descripcion": "Intentar construir triángulos que no cumplen la desigualdad triangular."
+      }
+    ],
+    "descripcion": "Clasificar triángulos por lados/ángulos; construir con instrumentos"
   },
   "construcciones_geometricas": {
     "definicion": "Construir rectas y puntos determinados por condiciones geométricas: perpendiculares, paralelas, bisectrices y alturas.",
@@ -606,7 +817,7 @@
   },
   "conteo_a_saltos": {
     "definicion": "Recitar y usar secuencias de conteo por agrupaciones regulares (de 2 en 2, de 5 en 5, de 10 en 10, de 100 en 100).",
-    "descripcion": "El conteo con monedas nacionales (agrupaciones de 5, 10, 100) es una aplicación directa de este conocimiento.",
+    "descripcion": "El conteo con monedas nacionales (agrupaciones de 5, 10, 100) es una aplicación directa de este conocimiento. · Recta numérica con saltos; cuadro de 100; contar de 2, 5 y 10 en 10",
     "oa_relacionados": [
       {
         "codigo": "MA01 OA 01",
@@ -623,6 +834,12 @@
       {
         "codigo": "MA02 OA 03",
         "cobertura": "tangencial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "perder_el_salto_constante_2_4",
+        "descripcion": "Perder el salto constante (2,4,6,7,8) o no poder iniciar el conteo en un número cualquiera."
       }
     ]
   },
@@ -672,7 +889,18 @@
       {
         "codigo": "MA05 OA 20"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "convertir_en_el_sentido_equivo",
+        "descripcion": "Convertir en el sentido equivocado (multiplicar cuando toca dividir)."
+      },
+      {
+        "id": "errar_el_factor_1_m_100_cm",
+        "descripcion": "Errar el factor (1 m=100 cm)."
+      }
+    ],
+    "descripcion": "Convertir h↔min↔s, kg↔g, m↔cm"
   },
   "correspondencia_uno_a_uno": {
     "definicion": "Asignar exactamente una etiqueta numérica a cada objeto de una colección, sin omitir ni repetir.",
@@ -694,7 +922,8 @@
         "id": "confunde_semejanza_congruencia",
         "descripcion": "Confundir semejanza con congruencia."
       }
-    ]
+    ],
+    "descripcion": "Criterios AA, LAL, LLL de semejanza de triángulos"
   },
   "cuadricula_mapa": {
     "definicion": "Localizar objetos en mapas o cuadrículas mediante coordenadas informales (letra-número), coordinando dos referencias simultáneas.",
@@ -705,7 +934,18 @@
       {
         "codigo": "MA04 OA 15"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "invertir_el_orden_del_par_fila",
+        "descripcion": "Invertir el orden del par (fila/columna) al ubicar."
+      },
+      {
+        "id": "contar_desde_1_en_vez_del_orig",
+        "descripcion": "Contar desde 1 en vez del origen."
+      }
+    ],
+    "descripcion": "Ubicar objetos y trayectorias en un plano/mapa (calles, cuadras)"
   },
   "dato_atipico": {
     "definicion": "Reconocer el efecto que un valor muy distinto de los demás produce sobre las medidas del conjunto.",
@@ -732,7 +972,8 @@
         "nodo_implicado": "valor_posicional",
         "retroalimentacion_sugerida": "Alinear ambos en la tabla posicional: la comparación se decide en los décimos, no en la cantidad de dígitos."
       }
-    ]
+    ],
+    "descripcion": "Décimos y centésimos; grilla decimal; valor posicional decimal"
   },
   "descomposicion_posicional": {
     "definicion": "Descomponer un número según el valor de sus posiciones (4 325 = 4 000 + 300 + 20 + 5) y recomponerlo.",
@@ -745,7 +986,14 @@
         "codigo": "MA05 OA 01",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "descomponer_por_el_digito_y_no",
+        "descripcion": "Descomponer por el dígito y no por su valor (35 → 3+5 en vez de 30+5)."
+      }
+    ],
+    "descripcion": "Forma expandida (3.000+400+20+5); descomponer cantidades de dinero"
   },
   "diagrama_arbol": {
     "definicion": "Representar de forma ramificada todos los resultados posibles de un experimento de varias etapas.",
@@ -758,7 +1006,18 @@
         "codigo": "MA08 OA 17",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_abrir_todas_las_ramas",
+        "descripcion": "No abrir todas las ramas."
+      },
+      {
+        "id": "contar_mal_los_resultados_posi",
+        "descripcion": "Contar mal los resultados posibles del proceso."
+      }
+    ],
+    "descripcion": "Ramas que enumeran los resultados posibles"
   },
   "diagrama_cajon": {
     "definicion": "Representar gráficamente la posición y la dispersión de un conjunto de datos mediante sus cuartiles.",
@@ -781,7 +1040,18 @@
     ],
     "bibliografia": [
       "bib_konold_higgins_2003"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "apilar_mal_los_datos",
+        "descripcion": "Apilar mal los datos."
+      },
+      {
+        "id": "contar_puntos_en_la_posicion_e",
+        "descripcion": "Contar puntos en la posición equivocada de la recta."
+      }
+    ],
+    "descripcion": "Cada dato como un punto sobre la recta"
   },
   "distincion_recta_curva": {
     "definicion": "Distinguir y trazar líneas rectas y curvas como primer atributo que diferencia contornos de figuras.",
@@ -798,7 +1068,18 @@
         "codigo": "MA2M OA 10",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "que_las_probabilidades_no_sume",
+        "descripcion": "Que las probabilidades no sumen 1."
+      },
+      {
+        "id": "confundir_frecuencia_con_proba",
+        "descripcion": "Confundir frecuencia con probabilidad."
+      }
+    ],
+    "descripcion": "Función de distribución de una variable aleatoria"
   },
   "division": {
     "definicion": "Operación que reparte un todo en partes iguales (repartición) o determina cuántos grupos de un tamaño dado caben en él (agrupación).",
@@ -829,6 +1110,16 @@
         "descripcion": "Quitar grupos del mismo tamaño y contar cuántas veces se pudo.",
         "ancla_visual": "sustraccion_repetida"
       }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "repartir_de_forma_no_equitativ",
+        "descripcion": "Repartir de forma no equitativa."
+      },
+      {
+        "id": "confundir_cuantos_grupos_con_c",
+        "descripcion": "Confundir cuántos grupos con cuántos en cada grupo (los dos sentidos)."
+      }
     ]
   },
   "division_con_resto": {
@@ -846,7 +1137,8 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Renderizar el reparto: los que quedan fuera del último grupo exigen decisión, no desaparecen."
       }
-    ]
+    ],
+    "descripcion": "Reparto que sobra; resto < divisor"
   },
   "division_fracciones": {
     "definicion": "Determinar cuántas veces una fracción cabe en otra, o repartir una fracción en partes iguales.",
@@ -867,7 +1159,8 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Preguntar cuántas mitades caben en un entero: repartir en partes menores que la unidad produce más partes."
       }
-    ]
+    ],
+    "descripcion": "Dividir fracciones multiplicando por el inverso"
   },
   "division_interior_segmento": {
     "definicion": "Dividir un segmento en una razón dada",
@@ -880,7 +1173,8 @@
         "id": "extremo_equivocado",
         "descripcion": "Medir desde el extremo equivocado."
       }
-    ]
+    ],
+    "descripcion": "Dividir un segmento en una razón dada"
   },
   "ecuacion_cuadratica": {
     "definicion": "Determinar los valores que anulan una expresión de segundo grado, admitiendo más de una solución.",
@@ -898,7 +1192,8 @@
         "nodo_implicado": "numero_negativo",
         "retroalimentacion_sugerida": "Verificar ambos valores en la ecuación original: los dos la satisfacen."
       }
-    ]
+    ],
+    "descripcion": "ax²+bx+c=0; fórmula general y discriminante"
   },
   "ecuacion_formal": {
     "definicion": "Resolver ecuaciones de primer grado operando sobre ambos lados de la igualdad para conservar el equilibrio (procedimientos formales, modelo de balanza).",
@@ -910,7 +1205,18 @@
         "codigo": "MA07 OA 09",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_aplicar_la_misma_operacion",
+        "descripcion": "No aplicar la misma operación a ambos lados."
+      },
+      {
+        "id": "despejar_sin_invertir_la_opera",
+        "descripcion": "Despejar sin invertir la operación correcta."
+      }
+    ],
+    "descripcion": "Ecuación ax=b resuelta con transformaciones (balanza)"
   },
   "ecuacion_lineal": {
     "definicion": "Resolver igualdades con coeficientes racionales y la incógnita presente en ambos lados.",
@@ -923,7 +1229,18 @@
         "codigo": "MA08 OA 08",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "operar_en_un_solo_lado_de_la_i",
+        "descripcion": "Operar en un solo lado de la igualdad."
+      },
+      {
+        "id": "cambiar_mal_el_signo_al_pasar",
+        "descripcion": "Cambiar mal el signo al 'pasar' un término."
+      }
+    ],
+    "descripcion": "Ecuación de primer grado con incógnita en ambos lados"
   },
   "ecuacion_un_paso": {
     "definicion": "Encontrar el valor desconocido de una igualdad aditiva (a + □ = b; □ − a = b), comprendiendo que la solución restaura el equilibrio.",
@@ -937,7 +1254,18 @@
       {
         "codigo": "MA05 OA 15"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "operar_solo_en_un_lado_de_la_i",
+        "descripcion": "Operar solo en un lado de la igualdad."
+      },
+      {
+        "id": "no_aplicar_la_operacion_invers",
+        "descripcion": "No aplicar la operación inversa para despejar."
+      }
+    ],
+    "descripcion": "Balanza en equilibrio; incógnita a despejar"
   },
   "equivalencia_fraccion_decimal": {
     "definicion": "Comprender que fracción y decimal son escrituras distintas de una misma cantidad, y convertir entre ellas.",
@@ -946,7 +1274,18 @@
         "codigo": "MA05 OA 10",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_reconocer_0_5_y_1_2_como_el",
+        "descripcion": "No reconocer 0,5 y 1/2 como el mismo número."
+      },
+      {
+        "id": "convertir_mal_decimos_y_centes",
+        "descripcion": "Convertir mal décimos y centésimos."
+      }
+    ],
+    "descripcion": "Mismo número como fracción y como decimal"
   },
   "escala_grafica": {
     "definicion": "Comprender que un símbolo o una división del eje puede valer más de un caso, y que leer el gráfico exige contar a saltos o multiplicar según esa escala.",
@@ -960,7 +1299,18 @@
       {
         "codigo": "MA04 OA 27"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "leer_cada_simbolo_barra_como_1",
+        "descripcion": "Leer cada símbolo/barra como 1 cuando la escala vale varios."
+      },
+      {
+        "id": "ignorar_la_escala",
+        "descripcion": "Ignorar la escala."
+      }
+    ],
+    "descripcion": "El símbolo/barra vale varios casos (escala del gráfico)"
   },
   "estimacion_calculo": {
     "definicion": "Anticipar el orden de magnitud del resultado de una operación redondeando sus términos antes de calcular.",
@@ -990,7 +1340,18 @@
         "codigo": "MA02 OA 04",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "contar_uno_a_uno_en_vez_de_est",
+        "descripcion": "Contar uno a uno en vez de estimar."
+      },
+      {
+        "id": "no_usar_el_referente_dado_para",
+        "descripcion": "No usar el referente dado para aproximar."
+      }
+    ],
+    "descripcion": "Referente visual (frasco modelo); '¿más o menos que…?'; aproximar sin contar"
   },
   "estimacion_medidas": {
     "definicion": "Anticipar la medida aproximada de una magnitud usando referentes internalizados (un metro, un kilo, 90°) antes o en lugar de medir.",
@@ -1038,7 +1399,18 @@
         "codigo": "MA03 OA 04",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_identificar_cuanto_falta_pa",
+        "descripcion": "No identificar cuánto falta para 10."
+      },
+      {
+        "id": "completar_mal_el_complemento_7",
+        "descripcion": "Completar mal el complemento (7 necesita 2)."
+      }
+    ],
+    "descripcion": "Marco de diez; completar hasta 10 y seguir contando"
   },
   "estrategia_descomposicion_calculo": {
     "definicion": "Descomponer los términos según posiciones para operar por partes (48 - 27 como 48 - 20 - 7).",
@@ -1051,7 +1423,14 @@
         "codigo": "MA04 OA 03",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "descomponer_bien_pero_perder_u",
+        "descripcion": "Descomponer bien pero perder una parte al recomponer el resultado."
+      }
+    ],
+    "descripcion": "Sumar/restar descomponiendo por posiciones"
   },
   "estrategia_doblar_mitad": {
     "definicion": "Transformar un producto doblando un factor y reduciendo el otro a la mitad, incluso repetidamente (25 x 8 = 50 x 4 = 100 x 2).",
@@ -1064,7 +1443,14 @@
         "codigo": "MA05 OA 02",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "doblar_un_factor_sin_reducir_e",
+        "descripcion": "Doblar un factor sin reducir el otro a la mitad (pierde la equivalencia del producto)."
+      }
+    ],
+    "descripcion": "Doble del doble (×4 = ×2 y ×2)"
   },
   "estrategia_dobles": {
     "definicion": "Derivar resultados desde los dobles conocidos (7+8 como 7+7+1) y sus mitades.",
@@ -1081,7 +1467,18 @@
         "codigo": "MA03 OA 04",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_el_doble_con_sumar_2",
+        "descripcion": "Confundir el doble con 'sumar 2'."
+      },
+      {
+        "id": "errar_el_doble_base_del_que_se",
+        "descripcion": "Errar el doble base del que se deriva."
+      }
+    ],
+    "descripcion": "Dobles con fichas (4+4); dobles y mitades"
   },
   "estrategia_factorizar": {
     "definicion": "Reordenar un producto descomponiendo los factores (8 x 75 = 2 x 4 x 25 x 3 = 600).",
@@ -1130,7 +1527,18 @@
     ],
     "bibliografia": [
       "bib_outhred_mitchelmore_2000"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "sumar_largo_y_ancho_en_vez_de",
+        "descripcion": "Sumar largo y ancho en vez de multiplicarlos."
+      },
+      {
+        "id": "contar_cuadrados_uno_a_uno_con",
+        "descripcion": "Contar cuadrados uno a uno con errores."
+      }
+    ],
+    "descripcion": "Área del rectángulo como filas × columnas de cuadrados"
   },
   "evaluacion_representaciones": {
     "definicion": "Juzgar si una representación es adecuada para los datos que muestra, y detectar cuándo distorsiona su lectura.",
@@ -1200,7 +1608,8 @@
         "nodo_implicado": "lenguaje_algebraico",
         "retroalimentacion_sugerida": "Sustituir la letra por varios valores distintos: la expresión sigue teniendo sentido en todos."
       }
-    ]
+    ],
+    "descripcion": "Términos con coeficiente y parte literal"
   },
   "extremos_punto_medio": {
     "definicion": "Identificar el menor y el mayor valor de un conjunto de datos y estimar el punto medio entre ambos.",
@@ -1217,7 +1626,18 @@
         "codigo": "MA06 OA 01",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_factor_con_multiplo",
+        "descripcion": "Confundir factor con múltiplo."
+      },
+      {
+        "id": "no_reconocer_que_un_factor_div",
+        "descripcion": "No reconocer que un factor divide exacto al número."
+      }
+    ],
+    "descripcion": "Factores/divisores de un número; descomposición"
   },
   "factorizacion": {
     "definicion": "Expresar una suma algebraica como producto de factores, invirtiendo el desarrollo.",
@@ -1230,7 +1650,18 @@
         "codigo": "MA1M OA 03",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "factorizar_mal_la_diferencia_d",
+        "descripcion": "Factorizar mal la diferencia de cuadrados."
+      },
+      {
+        "id": "sacar_factor_comun_solo_de_un",
+        "descripcion": "Sacar factor común solo de un término."
+      }
+    ],
+    "descripcion": "Factor común; diferencia de cuadrados; productos notables"
   },
   "figuras_2d": {
     "definicion": "Reconocer y comparar figuras 2D por sus atributos definitorios (lados, vértices, curvatura) y no solo por su apariencia global u orientación.",
@@ -1244,7 +1675,18 @@
     ],
     "bibliografia": [
       "bib_van_hiele_1986_clements_battista_1992"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "clasificar_por_orientacion_o_t",
+        "descripcion": "Clasificar por orientación o tamaño y no por atributos (lados, vértices)."
+      },
+      {
+        "id": "no_reconocer_una_figura_girada",
+        "descripcion": "No reconocer una figura girada."
+      }
+    ],
+    "descripcion": "Figuras recortadas; atributos (lados, vértices); triángulo, cuadrado, círculo"
   },
   "figuras_3d": {
     "definicion": "Reconocer y describir cuerpos geométricos según la forma de sus caras y el número de caras, aristas y vértices.",
@@ -1261,7 +1703,18 @@
     ],
     "bibliografia": [
       "bib_van_hiele_1986"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_caras_aristas_y_vert",
+        "descripcion": "Confundir caras, aristas y vértices."
+      },
+      {
+        "id": "contar_mal_las_caras_ocultas",
+        "descripcion": "Contar mal las caras ocultas."
+      }
+    ],
+    "descripcion": "Cuerpos geométricos; caras y aristas; relación con sus caras 2D"
   },
   "formula_area_figuras": {
     "definicion": "Deducir y aplicar las fórmulas del área del triángulo, del paralelogramo y del trapecio.",
@@ -1278,7 +1731,8 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Trazar la perpendicular desde el vértice: la altura no siempre coincide con un lado."
       }
-    ]
+    ],
+    "descripcion": "Fórmulas de área de polígonos"
   },
   "fraccion_en_recta": {
     "definicion": "Ubicar una fracción como un número con posición propia en la recta numérica, entre los enteros.",
@@ -1299,7 +1753,18 @@
         "codigo": "MA08 OA 02",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "contar_las_marcas_en_vez_de_lo",
+        "descripcion": "Contar las marcas en vez de los intervalos."
+      },
+      {
+        "id": "ubicar_sin_dividir_el_entero_e",
+        "descripcion": "Ubicar sin dividir el entero en partes iguales."
+      }
+    ],
+    "descripcion": "Fracción/número mixto como punto en la recta"
   },
   "fraccion_equivalente": {
     "definicion": "Comprender que una misma cantidad admite infinitas escrituras fraccionarias distintas.",
@@ -1312,7 +1777,18 @@
         "codigo": "MA05 OA 07",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "amplificar_simplificar_solo_el",
+        "descripcion": "Amplificar/simplificar solo el numerador o solo el denominador."
+      },
+      {
+        "id": "no_multiplicar_ambos_por_lo_mi",
+        "descripcion": "No multiplicar ambos por lo mismo."
+      }
+    ],
+    "descripcion": "Fracciones equivalentes en la recta; amplificar/simplificar"
   },
   "fraccion_parte_grupo": {
     "definicion": "Comprender que el todo puede ser una colección de elementos discretos y no solo un objeto continuo.",
@@ -1320,6 +1796,12 @@
       {
         "codigo": "MA04 OA 08",
         "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "usar_el_tamano_de_un_subgrupo",
+        "descripcion": "Usar el tamaño de un subgrupo como denominador en vez del total del grupo."
       }
     ]
   },
@@ -1375,7 +1857,18 @@
         "codigo": "MA05 OA 08",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_reconocer_que_una_fraccion",
+        "descripcion": "No reconocer que una fracción ≥1 es impropia."
+      },
+      {
+        "id": "confundir_con_numero_mixto",
+        "descripcion": "Confundir con número mixto."
+      }
+    ],
+    "descripcion": "Propia (<1) vs impropia (≥1); número mixto asociado"
   },
   "frecuencia_relativa": {
     "definicion": "Expresar cuántas veces ocurre un valor respecto del total de observaciones, y no en términos absolutos.",
@@ -1431,7 +1924,8 @@
         "nodo_implicado": "pendiente",
         "retroalimentacion_sugerida": "Variar un parámetro a la vez sobre el gráfico: uno gira la recta, el otro la sube o baja."
       }
-    ]
+    ],
+    "descripcion": "y = m·x + n; recta con coeficiente de posición"
   },
   "funcion_cuadratica": {
     "definicion": "Representar una relación cuyo cambio no es constante sino que varía de manera regular, describiendo una parábola.",
@@ -1440,7 +1934,18 @@
         "codigo": "MA2M OA 03",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_vertice_con_los_cero",
+        "descripcion": "Confundir vértice con los ceros."
+      },
+      {
+        "id": "creer_que_la_parabola_siempre",
+        "descripcion": "Creer que la parábola siempre abre hacia arriba."
+      }
+    ],
+    "descripcion": "Parábola; vértice, eje de simetría, concavidad"
   },
   "funcion_inversa": {
     "definicion": "Determinar la regla que deshace lo que hace una función, devolviendo cada salida a su entrada.",
@@ -1449,7 +1954,18 @@
         "codigo": "MA2M OA 05",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "invertir_solo_el_signo_en_vez",
+        "descripcion": "Invertir solo el signo en vez de despejar."
+      },
+      {
+        "id": "confundir_la_inversa_con_la_re",
+        "descripcion": "Confundir la inversa con la recíproca (1/f)."
+      }
+    ],
+    "descripcion": "Deshace la función; reflexión respecto de y=x"
   },
   "funcion_lineal": {
     "definicion": "Representar una relación de cambio constante que pasa por el origen.",
@@ -1462,7 +1978,18 @@
         "codigo": "MA08 OA 07",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_pendiente_con_interc",
+        "descripcion": "Confundir pendiente con intercepto."
+      },
+      {
+        "id": "leer_y_mx_sin_que_pase_por_el",
+        "descripcion": "Leer y=mx sin que pase por el origen."
+      }
+    ],
+    "descripcion": "y = m·x; gráfico que pasa por el origen"
   },
   "grafico_barras": {
     "definicion": "Construir y leer gráficos de barra (simple y doble), donde la altura de cada barra representa la frecuencia de una categoría sobre un eje graduado.",
@@ -1491,7 +2018,18 @@
       {
         "codigo": "MA06 OA 24"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "leer_mal_la_altura_por_no_usar",
+        "descripcion": "Leer mal la altura por no usar la escala."
+      },
+      {
+        "id": "comparar_barras_de_distinto_an",
+        "descripcion": "Comparar barras de distinto ancho."
+      }
+    ],
+    "descripcion": "Gráfico de barras; tabla de conteo; pictograma"
   },
   "grafico_circular": {
     "definicion": "Leer gráficos circulares comprendiendo que cada sector representa la parte del total que corresponde a una categoría.",
@@ -1507,7 +2045,18 @@
       {
         "codigo": "MA05 OA 26"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "leer_puntos_sueltos_sin_interp",
+        "descripcion": "Leer puntos sueltos sin interpretar la tendencia."
+      },
+      {
+        "id": "ejes_sin_escala_uniforme",
+        "descripcion": "Ejes sin escala uniforme."
+      }
+    ],
+    "descripcion": "Puntos unidos que muestran cambio en el tiempo"
   },
   "hechos_aditivos_basicos": {
     "definicion": "Disponer con fluidez de las sumas y restas elementales, recuperándolas sin calcular.",
@@ -1541,6 +2090,16 @@
         "codigo": "MA04 OA 02",
         "cobertura": "parcial"
       }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "recitar_la_tabla_con_errores_e",
+        "descripcion": "Recitar la tabla con errores en los saltos."
+      },
+      {
+        "id": "no_recuperar_el_producto_y_rec",
+        "descripcion": "No recuperar el producto y recontar."
+      }
     ]
   },
   "homotecia": {
@@ -1554,7 +2113,18 @@
         "codigo": "MA1M OA 11",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "cambiar_la_forma_al_ampliar",
+        "descripcion": "Cambiar la forma al ampliar."
+      },
+      {
+        "id": "aplicar_la_razon_solo_a_una_di",
+        "descripcion": "Aplicar la razón solo a una dimensión."
+      }
+    ],
+    "descripcion": "Ampliar/reducir desde un centro con razón k"
   },
   "igualdad_relacional": {
     "definicion": "Comprender el signo = como afirmación de que dos lados son la misma cantidad (equilibrio), y no como orden de calcular un resultado; su negación se registra con > y < como desequilibrio orientado.",
@@ -1568,7 +2138,14 @@
     ],
     "bibliografia": [
       "bib_falkner_levi_carpenter_1999_carpenter_fr"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "leer_el_signo_como_da_como_res",
+        "descripcion": "Leer el signo = como 'da como resultado' y no como equilibrio (4+3=□+2 → 7)."
+      }
+    ],
+    "descripcion": "Balanza en equilibrio; el signo = como equilibrio, no como 'resultado'"
   },
   "inecuacion_lineal": {
     "definicion": "Determinar el conjunto de valores que satisfacen una desigualdad con coeficientes racionales.",
@@ -1590,7 +2167,8 @@
         "nodo_implicado": "numero_negativo",
         "retroalimentacion_sugerida": "Verificar con un valor concreto antes y después: el orden se da vuelta al cambiar de sentido."
       }
-    ]
+    ],
+    "descripcion": "Desigualdad de primer grado; conjunto solución"
   },
   "inecuacion_un_paso": {
     "definicion": "Determinar los valores que mantienen una desigualdad aditiva, comprendiendo que la solución no es única sino un conjunto.",
@@ -1601,7 +2179,18 @@
       {
         "codigo": "MA05 OA 15"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "tratar_la_desigualdad_como_igu",
+        "descripcion": "Tratar la desigualdad como igualdad."
+      },
+      {
+        "id": "olvidar_que_hay_un_conjunto_de",
+        "descripcion": "Olvidar que hay un conjunto de soluciones."
+      }
+    ],
+    "descripcion": "Desigualdad; valores que la cumplen"
   },
   "irrelevancia_orden": {
     "definicion": "Comprender que el orden en que se cuentan los elementos de una colección no altera su cardinal.",
@@ -1627,7 +2216,18 @@
     ],
     "bibliografia": [
       "bib_lehrer_2003"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "dejar_huecos_o_solapes_al_iter",
+        "descripcion": "Dejar huecos o solapes al iterar la unidad."
+      },
+      {
+        "id": "usar_unidades_de_distinto_tama",
+        "descripcion": "Usar unidades de distinto tamaño."
+      }
+    ],
+    "descripcion": "Repetir una unidad para medir (unidades no estándar)"
   },
   "jerarquia_operaciones": {
     "definicion": "Aplicar la prevalencia de la multiplicación y la división sobre la adición y la sustracción, y el rol de los paréntesis.",
@@ -1648,7 +2248,18 @@
         "codigo": "MA06 OA 08",
         "cobertura": "tangencial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "resolver_de_izquierda_a_derech",
+        "descripcion": "Resolver de izquierda a derecha sin respetar que × y ÷ van antes que + y −."
+      },
+      {
+        "id": "ignorar_parentesis",
+        "descripcion": "Ignorar paréntesis."
+      }
+    ],
+    "descripcion": "Orden de operaciones; paréntesis y prevalencia de × ÷"
   },
   "lectura_interpretacion_graficos": {
     "definicion": "Extraer información de tablas y gráficos en tres niveles: leer los datos, leer entre los datos (comparar, operar) y leer más allá de los datos (concluir, proyectar).",
@@ -1675,7 +2286,18 @@
     ],
     "bibliografia": [
       "bib_curcio_1987"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "extraer_datos_sin_considerar_l",
+        "descripcion": "Extraer datos sin considerar la escala o la pregunta."
+      },
+      {
+        "id": "sobreinterpretar_el_grafico",
+        "descripcion": "Sobreinterpretar el gráfico."
+      }
+    ],
+    "descripcion": "Leer barras y tablas; responder preguntas del gráfico"
   },
   "lectura_reloj": {
     "definicion": "Leer y registrar la hora en relojes análogos y digitales (horas, medias, cuartos, minutos; A.M./P.M. y formato 24 h), coordinando las dos escalas de la esfera.",
@@ -1689,7 +2311,18 @@
       {
         "codigo": "MA04 OA 20"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "leer_los_minutos_como_si_fuera",
+        "descripcion": "Leer los minutos como si fueran las horas."
+      },
+      {
+        "id": "no_contar_de_5_en_5_la_esfera",
+        "descripcion": "No contar de 5 en 5 la esfera."
+      }
+    ],
+    "descripcion": "Reloj análogo; horas y medias horas"
   },
   "lenguaje_algebraico": {
     "definicion": "Representar una relación general entre números mediante expresiones con letras, donde la letra funciona como número generalizado.",
@@ -1704,7 +2337,18 @@
     ],
     "bibliografia": [
       "bib_kaput_2008"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "traducir_el_doble_de_x_mas_3_c",
+        "descripcion": "Traducir 'el doble de x más 3' como 2(x+3)."
+      },
+      {
+        "id": "confundir_el_orden_de_las_oper",
+        "descripcion": "Confundir el orden de las operaciones al simbolizar."
+      }
+    ],
+    "descripcion": "Traducir 'doble', 'triple' a expresiones con letras"
   },
   "lenguaje_probabilistico": {
     "definicion": "Graduar la posibilidad de ocurrencia de un evento con los términos seguro, posible, poco posible e imposible.",
@@ -1712,15 +2356,36 @@
       {
         "codigo": "MA05 OA 24"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "usar_seguro_imposible_de_forma",
+        "descripcion": "Usar 'seguro/imposible' de forma intercambiable."
+      },
+      {
+        "id": "graduar_mal_la_posibilidad_de",
+        "descripcion": "Graduar mal la posibilidad de un evento."
+      }
+    ],
+    "descripcion": "Eventos posible / imposible / seguro; experimentos simples"
   },
   "logaritmo": {
     "definicion": "Determinar el exponente al que hay que elevar una base para obtener una cantidad dada.",
-    "descripcion": "Tercera incógnita de la potencia: la raíz busca la base, el logaritmo busca el exponente.",
+    "descripcion": "Tercera incógnita de la potencia: la raíz busca la base, el logaritmo busca el exponente. · log_b(a) como inverso de la potencia",
     "oa_relacionados": [
       {
         "codigo": "MA2M OA 02",
         "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_log_a_b_con_log_a_lo",
+        "descripcion": "Confundir log(a·b) con log a · log b."
+      },
+      {
+        "id": "tratar_el_logaritmo_como_una_m",
+        "descripcion": "Tratar el logaritmo como una multiplicación."
       }
     ]
   },
@@ -1749,6 +2414,16 @@
         "codigo": "MA1M OA 06",
         "cobertura": "parcial"
       }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "leer_la_escala_equivocada_del",
+        "descripcion": "Leer la escala equivocada del transportador."
+      },
+      {
+        "id": "no_alinear_el_vertice_y_el_lad",
+        "descripcion": "No alinear el vértice y el lado con el 0."
+      }
     ]
   },
   "medicion_longitud": {
@@ -1763,7 +2438,18 @@
       {
         "codigo": "MA05 OA 19"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "leer_mal_la_regla_desde_el_bor",
+        "descripcion": "Leer mal la regla (desde el borde, no desde 0)."
+      },
+      {
+        "id": "confundir_mm_cm_y_m",
+        "descripcion": "Confundir mm, cm y m."
+      }
+    ],
+    "descripcion": "Medir con regla/huincha en mm, cm y m"
   },
   "medicion_peso": {
     "definicion": "Comparar, estimar y medir el peso de objetos en gramos y kilogramos, comprendiendo la relación entre ambas unidades.",
@@ -1780,7 +2466,18 @@
         "codigo": "MA08 OA 15",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_cuartil_con_cuarto_v",
+        "descripcion": "Confundir cuartil con cuarto valor."
+      },
+      {
+        "id": "ubicar_mal_q1_q3_sin_ordenar_l",
+        "descripcion": "Ubicar mal Q1/Q3 sin ordenar los datos."
+      }
+    ],
+    "descripcion": "Cuartiles Q1, Q2, Q3; posición de un dato"
   },
   "medidas_tendencia_central": {
     "definicion": "Elegir entre media, mediana y moda el valor que mejor representa un conjunto de datos según la pregunta.",
@@ -1789,7 +2486,18 @@
         "codigo": "MA07 OA 17",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "calcular_la_mediana_sin_ordena",
+        "descripcion": "Calcular la mediana sin ordenar los datos."
+      },
+      {
+        "id": "elegir_la_medida_que_no_repres",
+        "descripcion": "Elegir la medida que no representa el conjunto."
+      }
+    ],
+    "descripcion": "Media, mediana, moda de un conjunto"
   },
   "modelo_azar": {
     "definicion": "Concebir el comportamiento azaroso como algo que exhibe regularidad al acumular muchas repeticiones.",
@@ -1807,7 +2515,18 @@
         "codigo": "MA07 OA 15",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "generalizar_desde_una_muestra",
+        "descripcion": "Generalizar desde una muestra sesgada."
+      },
+      {
+        "id": "confundir_muestra_con_poblacio",
+        "descripcion": "Confundir muestra con población."
+      }
+    ],
+    "descripcion": "Estimar la población desde una muestra; encuestas"
   },
   "multiplicacion": {
     "definicion": "Operación que cuantifica una cantidad repetida: tantos grupos iguales de tanto, expresable como adición de sumandos iguales.",
@@ -1842,6 +2561,20 @@
         "descripcion": "Filas y columnas: el producto es el área de la disposición.",
         "ancla_visual": "arreglo_rectangular"
       }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "sumar_en_vez_de_multiplicar_lo",
+        "descripcion": "Sumar en vez de multiplicar los grupos."
+      },
+      {
+        "id": "contar_solo_un_grupo",
+        "descripcion": "Contar solo un grupo."
+      },
+      {
+        "id": "confundir_cantidad_de_grupos_c",
+        "descripcion": "Confundir cantidad de grupos con tamaño del grupo."
+      }
     ]
   },
   "multiplicacion_division_decimales": {
@@ -1855,7 +2588,18 @@
         "codigo": "MA07 OA 03",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "ubicar_mal_la_coma_en_el_resul",
+        "descripcion": "Ubicar mal la coma en el resultado."
+      },
+      {
+        "id": "contar_mal_los_decimales_del_p",
+        "descripcion": "Contar mal los decimales del producto."
+      }
+    ],
+    "descripcion": "Multiplicar/dividir decimales; posición de la coma"
   },
   "multiplicacion_division_enteros": {
     "definicion": "Repetir y repartir cantidades con sentido, conservando los procedimientos de los naturales.",
@@ -1864,7 +2608,18 @@
         "codigo": "MA08 OA 01",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "aplicar_mal_la_regla_de_los_si",
+        "descripcion": "Aplicar mal la regla de los signos (− por − da −)."
+      },
+      {
+        "id": "tratar_el_signo_como_si_fuera",
+        "descripcion": "Tratar el signo como si fuera del resultado y no de cada factor."
+      }
+    ],
+    "descripcion": "Multiplicar/dividir enteros; regla de los signos"
   },
   "multiplicacion_fracciones": {
     "definicion": "Tomar una parte de una parte: el producto de dos fracciones expresa una fracción del todo original.",
@@ -1902,7 +2657,18 @@
         "codigo": "MA06 OA 01",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_multiplo_con_factor",
+        "descripcion": "Confundir múltiplo con factor."
+      },
+      {
+        "id": "olvidar_que_el_propio_numero_e",
+        "descripcion": "Olvidar que el propio número es múltiplo de sí mismo."
+      }
+    ],
+    "descripcion": "Múltiplos de un número; m.c.m. como el menor común"
   },
   "nocion_muestra": {
     "definicion": "Comprender que los datos provienen de una muestra de casos, y que muestras distintas del mismo fenómeno pueden dar resultados distintos.",
@@ -1927,7 +2693,18 @@
     ],
     "bibliografia": [
       "bib_watson_2006"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "creer_que_la_muestra_es_toda_l",
+        "descripcion": "Creer que la muestra es toda la población."
+      },
+      {
+        "id": "generalizar_desde_una_muestra",
+        "descripcion": "Generalizar desde una muestra sesgada."
+      }
+    ],
+    "descripcion": "Una parte de la población que la representa"
   },
   "notacion_cientifica": {
     "definicion": "Expresar cantidades muy grandes o muy pequeñas como producto de un número entre uno y diez por una potencia de diez.",
@@ -1936,7 +2713,18 @@
         "codigo": "MA07 OA 05",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "escribir_el_factor_fuera_del_r",
+        "descripcion": "Escribir el factor fuera del rango 1–10."
+      },
+      {
+        "id": "mover_mal_la_coma_contar_cifra",
+        "descripcion": "Mover mal la coma (contar cifras en el sentido equivocado)."
+      }
+    ],
+    "descripcion": "Número como a×10ⁿ (notación científica)"
   },
   "nube_puntos": {
     "definicion": "Representar cada individuo como un punto según dos características, para observar cómo se relacionan.",
@@ -1949,7 +2737,18 @@
         "codigo": "MA1M OA 13",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "leer_correlacion_como_causalid",
+        "descripcion": "Leer correlación como causalidad."
+      },
+      {
+        "id": "ver_correlacion_donde_la_nube",
+        "descripcion": "Ver correlación donde la nube no la muestra."
+      }
+    ],
+    "descripcion": "Dispersión de dos variables; correlación"
   },
   "numeral_escrito": {
     "definicion": "Asociar cantidad, nombre hablado y símbolo escrito de un número: leer y escribir numerales como nombres de cantidades.",
@@ -1974,7 +2773,18 @@
         "codigo": "MA05 OA 01",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "escribir_el_numero_tal_como_se",
+        "descripcion": "Escribir el número tal como se dicta (204 → 'doscientos cuatro' escrito 2004)."
+      },
+      {
+        "id": "invertir_cifras",
+        "descripcion": "Invertir cifras."
+      }
+    ],
+    "descripcion": "Tarjetas de números; el numeral escrito; palabra-número (p. ej. 'quince'→15)"
   },
   "numero_irracional": {
     "definicion": "Reconocer cantidades que no admiten expresión como cociente de dos enteros y cuya escritura decimal no es periódica.",
@@ -1983,7 +2793,18 @@
         "codigo": "MA2M OA 01",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "tratar_2_como_si_tuviera_decim",
+        "descripcion": "Tratar √2 como si tuviera decimal exacto."
+      },
+      {
+        "id": "confundir_irracional_con_decim",
+        "descripcion": "Confundir irracional con 'decimal largo pero periódico'."
+      }
+    ],
+    "descripcion": "Decimal no periódico; √2 en la recta numérica"
   },
   "numero_mixto": {
     "definicion": "Expresar una cantidad mayor que la unidad como enteros más una fracción, y convertir entre esa forma y la fracción impropia.",
@@ -2000,7 +2821,18 @@
         "codigo": "MA06 OA 05",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "sumar_entero_y_numerador_2_1_4",
+        "descripcion": "Sumar entero y numerador (2 1/4 → 3/4)."
+      },
+      {
+        "id": "ignorar_el_entero_al_convertir",
+        "descripcion": "Ignorar el entero al convertir a impropia."
+      }
+    ],
+    "descripcion": "Entero + fracción; barras y partes"
   },
   "numero_negativo": {
     "definicion": "Concebir cantidades menores que cero como magnitudes orientadas en sentido opuesto respecto de un punto de referencia.",
@@ -2058,11 +2890,22 @@
         "codigo": "MA06 OA 01",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "clasificar_como_primo_un_numer",
+        "descripcion": "Clasificar como primo un número con más de dos divisores (ej. 9)."
+      },
+      {
+        "id": "creer_que_1_es_primo",
+        "descripcion": "Creer que 1 es primo."
+      }
+    ],
+    "descripcion": "Primos vs compuestos; pares e impares"
   },
   "numero_racional": {
     "definicion": "Reconocer como un mismo tipo de número a fracciones, decimales y enteros: todo aquel que puede expresarse como cociente de dos enteros.",
-    "descripcion": "Nodo de unificación: reúne tres escrituras que hasta aquí vivían en regiones separadas del mapa.",
+    "descripcion": "Nodo de unificación: reúne tres escrituras que hasta aquí vivían en regiones separadas del mapa. · Racionales como fracciones/decimales; subconjuntos N⊂Z⊂Q",
     "oa_relacionados": [
       {
         "codigo": "MA08 OA 02",
@@ -2071,6 +2914,16 @@
       {
         "codigo": "MA1M OA 01",
         "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "creer_que_todo_numero_es_racio",
+        "descripcion": "Creer que todo número es racional."
+      },
+      {
+        "id": "no_reconocer_un_decimal_period",
+        "descripcion": "No reconocer un decimal periódico como fracción."
       }
     ]
   },
@@ -2081,7 +2934,18 @@
         "codigo": "MA2M OA 01",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_ubicar_irracionales_en_la_r",
+        "descripcion": "No ubicar irracionales en la recta."
+      },
+      {
+        "id": "creer_que_entre_dos_racionales",
+        "descripcion": "Creer que entre dos racionales no hay más números."
+      }
+    ],
+    "descripcion": "Racionales e irracionales completan la recta"
   },
   "operatoria_algebraica": {
     "definicion": "Multiplicar y dividir expresiones algebraicas aplicando las propiedades de las operaciones numéricas.",
@@ -2090,7 +2954,18 @@
         "codigo": "MA08 OA 06",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "reducir_terminos_no_semejantes",
+        "descripcion": "Reducir términos no semejantes (2x+3y=5xy)."
+      },
+      {
+        "id": "perder_el_signo_al_quitar_pare",
+        "descripcion": "Perder el signo al quitar paréntesis con un − delante."
+      }
+    ],
+    "descripcion": "Reducir y operar expresiones algebraicas"
   },
   "operatoria_racionales": {
     "definicion": "Operar con racionales en forma simbólica, transitando entre sus escrituras según convenga al cálculo.",
@@ -2103,7 +2978,18 @@
         "codigo": "MA08 OA 02",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "operar_numeradores_y_denominad",
+        "descripcion": "Operar numeradores y denominadores sin igualar denominadores."
+      },
+      {
+        "id": "perder_el_signo_al_operar",
+        "descripcion": "Perder el signo al operar."
+      }
+    ],
+    "descripcion": "Operar racionales en forma fraccionaria y decimal"
   },
   "paralelas_perpendiculares": {
     "definicion": "Identificar pares de rectas, lados o caras que son paralelos, que se intersectan o que son perpendiculares.",
@@ -2111,7 +2997,18 @@
       {
         "codigo": "MA05 OA 17"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_paralelas_con_perpen",
+        "descripcion": "Confundir paralelas con perpendiculares."
+      },
+      {
+        "id": "juzgar_por_apariencia_sin_veri",
+        "descripcion": "Juzgar por apariencia sin verificar."
+      }
+    ],
+    "descripcion": "Rectas paralelas y perpendiculares"
   },
   "particion_equitativa": {
     "definicion": "Dividir un todo en partes de igual tamaño, condición sin la cual las partes no son comparables entre sí.",
@@ -2128,7 +3025,8 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Ofrecer dos repartos de la misma torta —uno equitativo y otro no— y preguntar cuál permite decir 'me tocó un cuarto'."
       }
-    ]
+    ],
+    "descripcion": "Repartir en partes iguales (concreto/pictórico)"
   },
   "patron_numerico": {
     "definicion": "Reconocer la regularidad aditiva constante de una secuencia numérica (crece o decrece siempre en la misma cantidad) y usarla para continuarla o completarla.",
@@ -2148,7 +3046,18 @@
     ],
     "bibliografia": [
       "bib_clements_sarama_2009"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "asumir_siempre_suma_constante",
+        "descripcion": "Asumir siempre suma constante."
+      },
+      {
+        "id": "no_detectar_la_regla_real_del",
+        "descripcion": "No detectar la regla real del patrón."
+      }
+    ],
+    "descripcion": "Secuencia numérica con regla (2,4,6…); patrón ascendente y descendente"
   },
   "patron_repeticion": {
     "definicion": "Identificar el núcleo que se repite en una secuencia (sonidos, figuras, ritmos) y usarlo para continuar, completar y crear la secuencia.",
@@ -2162,7 +3071,18 @@
     ],
     "bibliografia": [
       "bib_clements_sarama_2009"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_identificar_el_nucleo_que_s",
+        "descripcion": "No identificar el núcleo que se repite."
+      },
+      {
+        "id": "continuar_el_patron_por_aparie",
+        "descripcion": "Continuar el patrón por apariencia."
+      }
+    ],
+    "descripcion": "Secuencia de figuras o colores que se repite"
   },
   "pendiente": {
     "definicion": "Cuantificar el cambio constante de una relación como razón entre la variación vertical y la horizontal.",
@@ -2175,7 +3095,18 @@
         "codigo": "MA1M OA 05",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "calcular_x_y_en_vez_de_y_x",
+        "descripcion": "Calcular Δx/Δy en vez de Δy/Δx."
+      },
+      {
+        "id": "ignorar_el_signo_de_la_inclina",
+        "descripcion": "Ignorar el signo de la inclinación."
+      }
+    ],
+    "descripcion": "Inclinación m de la recta (cambio y/cambio x)"
   },
   "perimetro": {
     "definicion": "Comprender el perímetro como la longitud total del contorno de una figura, obtenida al sumar las longitudes de sus lados.",
@@ -2186,7 +3117,18 @@
       {
         "codigo": "MA05 OA 21"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_perimetro_con_area",
+        "descripcion": "Confundir perímetro con área."
+      },
+      {
+        "id": "olvidar_sumar_algun_lado_del_c",
+        "descripcion": "Olvidar sumar algún lado del contorno."
+      }
+    ],
+    "descripcion": "Suma de los lados del contorno"
   },
   "permutacion_combinatoria": {
     "definicion": "Contar de cuántas maneras pueden ordenarse o elegirse elementos de un conjunto.",
@@ -2195,7 +3137,18 @@
         "codigo": "MA2M OA 11",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "usar_permutacion_cuando_el_ord",
+        "descripcion": "Usar permutación cuando el orden no importa (y viceversa)."
+      },
+      {
+        "id": "contar_repeticiones_no_permiti",
+        "descripcion": "Contar repeticiones no permitidas."
+      }
+    ],
+    "descripcion": "Permutaciones, variaciones y combinaciones"
   },
   "pictograma": {
     "definicion": "Construir y leer pictogramas donde cada símbolo representa un caso.",
@@ -2214,7 +3167,18 @@
       {
         "codigo": "MA05 OA 16"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "invertir_x_e_y_en_el_par_orden",
+        "descripcion": "Invertir x e y en el par ordenado."
+      },
+      {
+        "id": "contar_lineas_en_vez_de_unidad",
+        "descripcion": "Contar líneas en vez de unidades."
+      }
+    ],
+    "descripcion": "Ejes X e Y; pares ordenados; puntos cardinales"
   },
   "plano_cartesiano_completo": {
     "definicion": "Localizar puntos en los cuatro cuadrantes mediante pares ordenados con signo.",
@@ -2254,7 +3218,14 @@
     ],
     "bibliografia": [
       "bib_clements_sarama_2009"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_izquierda_derecha_re",
+        "descripcion": "Confundir izquierda/derecha respecto de sí mismo vs. del observador de enfrente."
+      }
+    ],
+    "descripcion": "Izquierda/derecha, adelante/atrás respecto de un referente"
   },
   "potencia": {
     "definicion": "Expresar la multiplicación repetida de un mismo factor, distinguiendo base, exponente y valor.",
@@ -2275,7 +3246,8 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Desplegar la potencia como cadena de factores: 2·2·2, no 2·3."
       }
-    ]
+    ],
+    "descripcion": "Potencia como producto repetido; base y exponente"
   },
   "potencia_base_10": {
     "definicion": "Comprender las potencias de diez como los órdenes del sistema posicional.",
@@ -2284,7 +3256,18 @@
         "codigo": "MA07 OA 05",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "contar_mal_los_ceros_10_1_000",
+        "descripcion": "Contar mal los ceros (10³ = 1.000)."
+      },
+      {
+        "id": "confundir_exponente_con_factor",
+        "descripcion": "Confundir exponente con factor."
+      }
+    ],
+    "descripcion": "Potencias de 10; descomposición canónica"
   },
   "potencia_exponente_entero": {
     "definicion": "Extender la potencia a exponentes negativos y a bases racionales, conservando las propiedades ya establecidas.",
@@ -2293,7 +3276,18 @@
         "codigo": "MA1M OA 02",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "creer_que_exponente_negativo_d",
+        "descripcion": "Creer que exponente negativo da resultado negativo."
+      },
+      {
+        "id": "tratar_a_como_0",
+        "descripcion": "Tratar a⁰ como 0."
+      }
+    ],
+    "descripcion": "Potencias de base racional y exponente entero (±, 0)"
   },
   "pregunta_estadistica": {
     "definicion": "Comprender que los datos se recolectan para responder una pregunta, y que la pregunta define qué registrar y a quién.",
@@ -2322,7 +3316,14 @@
         "codigo": "MA08 OA 17",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "sumar_las_opciones_de_cada_eta",
+        "descripcion": "Sumar las opciones de cada etapa en vez de multiplicarlas."
+      }
+    ],
+    "descripcion": "Multiplicar las opciones de cada etapa"
   },
   "probabilidad_evento_compuesto": {
     "definicion": "Determinar la probabilidad de un resultado que exige que ocurran varias cosas a la vez o en sucesión.",
@@ -2331,7 +3332,14 @@
         "codigo": "MA08 OA 17",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "sumar_cuando_corresponde_multi",
+        "descripcion": "Sumar cuando corresponde multiplicar (o al revés) las etapas del evento."
+      }
+    ],
+    "descripcion": "Evento de varias etapas; espacio muestral con diagramas"
   },
   "probabilidad_experimental": {
     "definicion": "Estimar la probabilidad de un evento a partir de las frecuencias relativas observadas al repetir el experimento.",
@@ -2340,7 +3348,14 @@
         "codigo": "MA07 OA 18",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "esperar_que_la_frecuencia_rela",
+        "descripcion": "Esperar que la frecuencia relativa iguale exacto a la teórica con pocos ensayos."
+      }
+    ],
+    "descripcion": "Frecuencia relativa como estimación de la probabilidad"
   },
   "probabilidad_sociedad": {
     "definicion": "Interpretar afirmaciones probabilísticas del discurso público y reconocer las suposiciones que las sostienen.",
@@ -2366,7 +3381,8 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Enumerar los casos posibles del experimento: no siempre son del mismo tipo ni del mismo número."
       }
-    ]
+    ],
+    "descripcion": "Casos favorables / casos posibles; espacio muestral"
   },
   "producto_vector_escalar": {
     "definicion": "Multiplicación de un vector por un número real: el vector resultante conserva la dirección, multiplica su magnitud por el valor absoluto del escalar e invierte su sentido cuando el escalar es negativo.",
@@ -2393,7 +3409,8 @@
         "nodo_implicado": "estructura_arreglo_area",
         "retroalimentacion_sugerida": "Construir el cuadrado de lado (a+b) con áreas: aparecen dos rectángulos que la respuesta olvida."
       }
-    ]
+    ],
+    "descripcion": "Cuadrado del binomio; suma por diferencia"
   },
   "promedio": {
     "definicion": "Comprender la media aritmética como el valor que igualaría todos los datos si el total se repartiera en partes iguales, e interpretarla en su contexto.",
@@ -2408,7 +3425,18 @@
     ],
     "bibliografia": [
       "bib_mokros_russell_1995"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "dividir_por_un_numero_distinto",
+        "descripcion": "Dividir por un número distinto a la cantidad de datos."
+      },
+      {
+        "id": "sumar_mal_antes_de_repartir",
+        "descripcion": "Sumar mal antes de repartir."
+      }
+    ],
+    "descripcion": "Sumar los datos y repartir en partes iguales (media)"
   },
   "propiedad_distributiva": {
     "definicion": "Comprender que multiplicar una suma equivale a sumar los productos parciales: a(b+c) = ab + ac.",
@@ -2460,7 +3488,8 @@
         "nodo_implicado": "potencia",
         "retroalimentacion_sugerida": "Desplegar ambas como cadenas de factores y contar: la base no cambia, los factores se acumulan."
       }
-    ]
+    ],
+    "descripcion": "Producto/cociente de potencias de igual base"
   },
   "propiedades_raices": {
     "definicion": "Descomponer y combinar raíces mediante sus propiedades para simplificar cálculos.",
@@ -2469,7 +3498,18 @@
         "codigo": "MA2M OA 01",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "repartir_la_raiz_sobre_una_sum",
+        "descripcion": "'Repartir' la raíz sobre una suma (√(a+b)=√a+√b)."
+      },
+      {
+        "id": "multiplicar_raices_de_distinto",
+        "descripcion": "Multiplicar raíces de distinto índice sin igualar."
+      }
+    ],
+    "descripcion": "Descomponer y combinar raíces; multiplicar/dividir de igual índice"
   },
   "proporcionalidad_directa": {
     "definicion": "Reconocer dos magnitudes cuyo cociente permanece constante al variar ambas.",
@@ -2478,7 +3518,18 @@
         "codigo": "MA07 OA 08",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_directa_con_inversa",
+        "descripcion": "Confundir directa con inversa."
+      },
+      {
+        "id": "buscar_una_diferencia_constant",
+        "descripcion": "Buscar una diferencia constante en vez de un cociente constante."
+      }
+    ],
+    "descripcion": "Dos variables que cambian en la misma razón"
   },
   "proporcionalidad_inversa": {
     "definicion": "Reconocer dos magnitudes cuyo producto permanece constante, de modo que al crecer una decrece la otra.",
@@ -2495,7 +3546,8 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Construir la tabla y calcular el cociente en cada fila: si cambia, la relación no es directa."
       }
-    ]
+    ],
+    "descripcion": "Dos variables cuyo producto se conserva"
   },
   "proyeccion_vectorial": {
     "definicion": "Descomponer un desplazamiento en componentes perpendiculares y determinar su proyección.",
@@ -2504,7 +3556,18 @@
         "codigo": "MA2M OA 09",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "descomponer_intercambiando_com",
+        "descripcion": "Descomponer intercambiando componente horizontal y vertical."
+      },
+      {
+        "id": "ignorar_el_angulo_en_la_proyec",
+        "descripcion": "Ignorar el ángulo en la proyección."
+      }
+    ],
+    "descripcion": "Descomponer un vector; proyección horizontal/vertical"
   },
   "puntos_notables_triangulo": {
     "definicion": "Determinar los puntos que resultan de la intersección de rectas notables de un triángulo.",
@@ -2547,7 +3610,18 @@
         "codigo": "MA2M OA 02",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_indice_con_radicando",
+        "descripcion": "Confundir índice con radicando."
+      },
+      {
+        "id": "creer_que_reparte_sobre_la_sum",
+        "descripcion": "Creer que ⁿ√ reparte sobre la suma."
+      }
+    ],
+    "descripcion": "Raíz de índice n; ⁿ√a; relación con potencias"
   },
   "rango_variabilidad": {
     "definicion": "Cuantificar cuán dispersos están los datos, información que ninguna medida de tendencia central entrega.",
@@ -2556,7 +3630,18 @@
         "codigo": "MA07 OA 17",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_rango_con_promedio",
+        "descripcion": "Confundir rango con promedio."
+      },
+      {
+        "id": "restar_valores_no_extremos",
+        "descripcion": "Restar valores no extremos."
+      }
+    ],
+    "descripcion": "Diferencia entre el mayor y el menor dato"
   },
   "razon": {
     "definicion": "Comprender la razón como comparación multiplicativa entre dos cantidades.",
@@ -2573,15 +3658,26 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Escalar el grupo: al duplicar, la diferencia cambia pero la razón se conserva."
       }
-    ]
+    ],
+    "descripcion": "Comparación entre dos cantidades (a:b)"
   },
   "razon_pi": {
     "definicion": "Reconocer que el cociente entre el perímetro y el diámetro es el mismo en todo círculo.",
-    "descripcion": "Primera constante irracional que el estudiante encuentra: puente entre la razón y los números no racionales.",
+    "descripcion": "Primera constante irracional que el estudiante encuentra: puente entre la razón y los números no racionales. · π como razón perímetro/diámetro constante",
     "oa_relacionados": [
       {
         "codigo": "MA07 OA 11",
         "cobertura": "parcial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "usar_como_si_dependiera_del_ta",
+        "descripcion": "Usar π como si dependiera del tamaño del círculo."
+      },
+      {
+        "id": "confundir_la_formula_del_perim",
+        "descripcion": "Confundir la fórmula del perímetro con la del área."
       }
     ]
   },
@@ -2592,11 +3688,22 @@
         "codigo": "MA2M OA 08",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_seno_con_coseno_cate",
+        "descripcion": "Confundir seno con coseno (cateto opuesto vs adyacente)."
+      },
+      {
+        "id": "usar_razones_fuera_del_triangu",
+        "descripcion": "Usar razones fuera del triángulo rectángulo."
+      }
+    ],
+    "descripcion": "seno, coseno, tangente en el triángulo rectángulo"
   },
   "recta_numerica": {
     "definicion": "Concebir los números como posiciones ordenadas sobre una línea, donde la distancia representa diferencia de magnitud.",
-    "descripcion": "Metáfora estructurante ('los números son posiciones') que luego sostiene fracciones, decimales y medición.",
+    "descripcion": "Metáfora estructurante ('los números son posiciones') que luego sostiene fracciones, decimales y medición. · Recta numérica graduada; ubicar y comparar posiciones",
     "oa_relacionados": [
       {
         "codigo": "MA03 OA 03",
@@ -2605,6 +3712,16 @@
       {
         "codigo": "MA07 OA 01",
         "cobertura": "tangencial"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "contar_las_marcas_en_vez_de_lo",
+        "descripcion": "Contar las marcas en vez de los intervalos."
+      },
+      {
+        "id": "graduar_la_recta_con_saltos_de",
+        "descripcion": "Graduar la recta con saltos desiguales."
       }
     ]
   },
@@ -2615,7 +3732,14 @@
         "codigo": "MA07 OA 01",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "ordenar_negativos_como_si_fuer",
+        "descripcion": "Ordenar negativos como si fueran positivos (creer −8 > −3 porque 8>3)."
+      }
+    ],
+    "descripcion": "Recta que se extiende a ambos lados del cero"
   },
   "redondeo": {
     "definicion": "Sustituir un número por el múltiplo más cercano de una posición dada, conservando el orden de magnitud.",
@@ -2647,7 +3771,18 @@
       {
         "codigo": "MA04 OA 26"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "perder_la_cuenta_de_las_marcas",
+        "descripcion": "Perder la cuenta de las marcas."
+      },
+      {
+        "id": "no_cerrar_los_grupos_de_cinco",
+        "descripcion": "No cerrar los grupos de cinco."
+      }
+    ],
+    "descripcion": "Tabla de conteo con marcas; registrar datos de una encuesta"
   },
   "regla_aditiva_probabilidad": {
     "definicion": "Determinar la probabilidad de que ocurra un evento u otro, descontando lo que ambos comparten.",
@@ -2664,7 +3799,8 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Dibujar ambos conjuntos superpuestos: la zona común quedó contada dos veces."
       }
-    ]
+    ],
+    "descripcion": "P(A o B); diagramas de Venn"
   },
   "regla_formacion": {
     "definicion": "Explicitar la regla que genera una sucesión y usarla para predecir términos no visibles sin extender término a término.",
@@ -2682,7 +3818,14 @@
     ],
     "bibliografia": [
       "bib_blanton_kaput_2005"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "dar_solo_el_siguiente_termino",
+        "descripcion": "Dar solo el siguiente término sin la regla general según la posición."
+      }
+    ],
+    "descripcion": "Regla que genera una sucesión (según la posición)"
   },
   "regla_multiplicativa_probabilidad": {
     "definicion": "Determinar la probabilidad de que dos eventos ocurran ambos, atendiendo a si uno condiciona al otro.",
@@ -2691,7 +3834,18 @@
         "codigo": "MA1M OA 14",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "aplicar_p_a_y_b_p_a_p_b_a_even",
+        "descripcion": "Aplicar P(A y B)=P(A)·P(B) a eventos dependientes."
+      },
+      {
+        "id": "confundir_y_con_o",
+        "descripcion": "Confundir 'y' con 'o'."
+      }
+    ],
+    "descripcion": "P(A y B); diagrama de árbol"
   },
   "regla_signos": {
     "definicion": "Determinar el sentido del resultado de un producto o cociente a partir del sentido de sus términos.",
@@ -2709,7 +3863,8 @@
         "nodo_implicado": "adicion_sustraccion_enteros",
         "retroalimentacion_sugerida": "Separar los contextos: en la suma los sentidos se acumulan; en el producto se combinan."
       }
-    ]
+    ],
+    "descripcion": "Regla de los signos en enteros"
   },
   "relacion_2d_3d": {
     "definicion": "Comprender que las superficies de un cuerpo son figuras 2D: anticipar la red que arma un cuerpo y el cuerpo que resulta de una red.",
@@ -2724,7 +3879,18 @@
         "codigo": "MA08 OA 11",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_anticipar_que_cuerpo_arma_u",
+        "descripcion": "No anticipar qué cuerpo arma una red."
+      },
+      {
+        "id": "no_relacionar_la_cara_con_la_f",
+        "descripcion": "No relacionar la cara con la figura 2D."
+      }
+    ],
+    "descripcion": "Red (plantilla) que se pliega en un cuerpo 3D"
   },
   "relacion_funcional": {
     "definicion": "Comprender una tabla de valores como correspondencia regular entrada→salida gobernada por una operación, aplicable a cualquier par de la tabla.",
@@ -2742,7 +3908,18 @@
     ],
     "bibliografia": [
       "bib_blanton_kaput_2005"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_ver_la_regla_que_liga_entra",
+        "descripcion": "No ver la regla que liga entrada y salida en la tabla."
+      },
+      {
+        "id": "mirar_filas_aisladas",
+        "descripcion": "Mirar filas aisladas."
+      }
+    ],
+    "descripcion": "Tabla de valores con una regla entrada→salida"
   },
   "relacion_perimetro_area": {
     "definicion": "Comprender que figuras con igual área pueden tener distinto perímetro y viceversa: las dos magnitudes no covarían.",
@@ -2753,7 +3930,18 @@
       {
         "codigo": "MA05 OA 21"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "creer_que_a_mayor_perimetro_si",
+        "descripcion": "Creer que a mayor perímetro siempre mayor área (covarían)."
+      },
+      {
+        "id": "no_distinguir_ambas_magnitudes",
+        "descripcion": "No distinguir ambas magnitudes."
+      }
+    ],
+    "descripcion": "Distintos rectángulos con igual perímetro o área"
   },
   "resta": {
     "definicion": "Operación que determina la parte desconocida de un todo (quitar, comparar, completar) dadas la otra parte y el total.",
@@ -2784,11 +3972,17 @@
         "descripcion": "Dos barras alineadas: la diferencia es el tramo no compartido.",
         "ancla_visual": "comparacion_barras"
       }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "restar_el_menor_del_mayor_en_c",
+        "descripcion": "Restar el menor del mayor en cada columna sin pedir prestado (52−18 → unidades 8−2=6)."
+      }
     ]
   },
   "reversibilidad_aditiva": {
     "definicion": "Comprender que adición y sustracción son operaciones inversas: los mismos tres números forman una familia de operaciones.",
-    "descripcion": "Glosario: los números 7, 8 y 15 se relacionan en 7+8=15, 8+7=15, 15-8=7, 15-7=8.",
+    "descripcion": "Glosario: los números 7, 8 y 15 se relacionan en 7+8=15, 8+7=15, 15-8=7, 15-7=8. · Familia de operaciones (suma↔resta con los mismos tres números)",
     "oa_relacionados": [
       {
         "codigo": "MA01 OA 10",
@@ -2801,6 +3995,12 @@
       {
         "codigo": "MA03 OA 07",
         "cobertura": "total"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "al_buscar_el_digito_o_sumando",
+        "descripcion": "Al buscar el dígito o sumando que falta, ignorar el canje/reserva de la columna anterior. || Al buscar el dígito o sumando que falta, ignorar el canje de la columna anterior."
       }
     ]
   },
@@ -2815,7 +4015,18 @@
         "codigo": "MA04 OA 06",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "no_usar_que_multiplicar_deshac",
+        "descripcion": "No usar que multiplicar deshace dividir."
+      },
+      {
+        "id": "buscar_el_cociente_por_tanteo",
+        "descripcion": "Buscar el cociente por tanteo sin relación con el producto."
+      }
+    ],
+    "descripcion": "Comprobar división multiplicando cociente×divisor"
   },
   "sector_circular": {
     "definicion": "Determinar el área y el perímetro de una parte del círculo delimitada por un ángulo central.",
@@ -2838,7 +4049,18 @@
       {
         "codigo": "MA03 OA 19"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "errar_el_orden_de_dias_meses",
+        "descripcion": "Errar el orden de días/meses."
+      },
+      {
+        "id": "no_manejar_la_ciclicidad_de_la",
+        "descripcion": "No manejar la ciclicidad de la semana."
+      }
+    ],
+    "descripcion": "Días de la semana; calendario; estructura del tiempo"
   },
   "secuencia_verbal": {
     "definicion": "Recitar la lista numérica en orden estable, como cadena verbal, sin necesidad de que refiera a objetos.",
@@ -2847,7 +4069,18 @@
         "codigo": "MA01 OA 01",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "saltarse_o_repetir_numeros_al",
+        "descripcion": "Saltarse o repetir números al recitar."
+      },
+      {
+        "id": "errores_en_los_nudos_de_la_dec",
+        "descripcion": "Errores en los 'nudos' de la decena (28,29,20 en vez de 30)."
+      }
+    ],
+    "descripcion": "Secuencia numérica oral (0,1,2…); conteo hacia adelante y atrás; cuadro de números"
   },
   "semejanza": {
     "definicion": "Reconocer figuras de igual forma y distinto tamaño, cuyos lados guardan una razón constante.",
@@ -2856,7 +4089,18 @@
         "codigo": "MA1M OA 10",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "creer_que_igual_forma_implica",
+        "descripcion": "Creer que igual forma implica igual tamaño."
+      },
+      {
+        "id": "no_mantener_la_razon_constante",
+        "descripcion": "No mantener la razón constante entre lados."
+      }
+    ],
+    "descripcion": "Figuras de igual forma y distinto tamaño; razón constante"
   },
   "simbolo_incognita": {
     "definicion": "Comprender que un símbolo (figura o letra) puede representar un número desconocido pero determinado, que conserva su valor dentro de la igualdad.",
@@ -2878,7 +4122,18 @@
       {
         "codigo": "MA04 OA 17"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "trazar_el_eje_donde_no_corresp",
+        "descripcion": "Trazar el eje donde no corresponde."
+      },
+      {
+        "id": "reflejar_cambiando_la_distanci",
+        "descripcion": "Reflejar cambiando la distancia al eje."
+      }
+    ],
+    "descripcion": "Figura y su reflejo; eje de simetría"
   },
   "sistema_ecuaciones_lineales": {
     "definicion": "Determinar los valores que satisfacen simultáneamente dos condiciones lineales sobre dos incógnitas.",
@@ -2887,7 +4142,18 @@
         "codigo": "MA1M OA 04",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "sumar_restar_sin_igualar_coefi",
+        "descripcion": "Sumar/restar sin igualar coeficientes."
+      },
+      {
+        "id": "hallar_solo_una_incognita_y_no",
+        "descripcion": "Hallar solo una incógnita y no verificar en ambas ecuaciones."
+      }
+    ],
+    "descripcion": "Dos rectas en el plano; solución = intersección; reducción"
   },
   "subitizacion": {
     "definicion": "Reconocer de manera inmediata la cantidad de una colección pequeña, sin contar.",
@@ -2922,7 +4188,8 @@
         "nodo_implicado": null,
         "retroalimentacion_sugerida": "Balanza: ambos lados existen simultáneamente, no hay un 'antes' y un 'después'."
       }
-    ]
+    ],
+    "descripcion": "Juntar dos colecciones; recta numérica avanzando; frase numérica a+b=c"
   },
   "suma_angulos_interiores": {
     "definicion": "Comprender que los ángulos interiores de un triángulo suman 180° y los de un cuadrilátero 360°, y usarlo para calcular ángulos faltantes.",
@@ -2933,7 +4200,18 @@
       {
         "codigo": "MA06 OA 21"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "aplicar_180_a_cualquier_poligo",
+        "descripcion": "Aplicar 180° a cualquier polígono."
+      },
+      {
+        "id": "olvidar_el_numero_de_lados_en",
+        "descripcion": "Olvidar el número de lados en la fórmula."
+      }
+    ],
+    "descripcion": "Suma de ángulos interiores de un polígono"
   },
   "superficie_cuerpos": {
     "definicion": "Calcular la superficie total de cubos y paralelepípedos como suma de las áreas de las caras de su red.",
@@ -2948,7 +4226,18 @@
         "codigo": "MA08 OA 11",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "calcular_volumen_en_vez_de_are",
+        "descripcion": "Calcular volumen en vez de área de superficie."
+      },
+      {
+        "id": "olvidar_caras_al_sumar",
+        "descripcion": "Olvidar caras al sumar."
+      }
+    ],
+    "descripcion": "Área de superficie = suma de las áreas de las caras"
   },
   "superficie_prisma_cilindro": {
     "definicion": "Determinar la superficie de un cuerpo recto desplegando su red en figuras planas.",
@@ -2957,7 +4246,18 @@
         "codigo": "MA08 OA 11",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "calcular_volumen_en_vez_de_sup",
+        "descripcion": "Calcular volumen en vez de superficie."
+      },
+      {
+        "id": "olvidar_alguna_cara_o_la_tapa",
+        "descripcion": "Olvidar alguna cara o la tapa/base."
+      }
+    ],
+    "descripcion": "Área de superficie desde la red del cuerpo"
   },
   "superficie_volumen_cono": {
     "definicion": "Determinar la superficie y el volumen de un cuerpo que termina en punta, relacionándolo con el cilindro.",
@@ -2966,7 +4266,18 @@
         "codigo": "MA1M OA 07",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_generatriz_con_altur",
+        "descripcion": "Confundir generatriz con altura."
+      },
+      {
+        "id": "usar_la_formula_del_cilindro_s",
+        "descripcion": "Usar la fórmula del cilindro sin el factor 1/3."
+      }
+    ],
+    "descripcion": "Cono; relación de volumen con el cilindro"
   },
   "superficie_volumen_esfera": {
     "definicion": "Determinar la superficie y el volumen de un cuerpo sin caras planas ni red desplegable.",
@@ -2975,7 +4286,18 @@
         "codigo": "MA2M OA 07",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_r_con_d",
+        "descripcion": "Confundir r con d."
+      },
+      {
+        "id": "mezclar_la_formula_de_superfic",
+        "descripcion": "Mezclar la fórmula de superficie (4πr²) con la de volumen (4/3πr³)."
+      }
+    ],
+    "descripcion": "Esfera como sólido de rotación; V=4/3πr³"
   },
   "sustraccion_con_canje": {
     "definicion": "Reagrupar al restar: descomponer una unidad del orden superior cuando la columna del minuendo es insuficiente.",
@@ -2997,7 +4319,8 @@
         "nodo_implicado": "agrupacion_decenas",
         "retroalimentacion_sugerida": "Representar 52 con material multibase e intentar quitar 8 unidades: la necesidad del canje se vuelve física."
       }
-    ]
+    ],
+    "descripcion": "Resta con canje (desagrupar 1 centena en 10 decenas)"
   },
   "tabla_doble_entrada": {
     "definicion": "Registrar simultáneamente dos características de una misma población y cruzar sus valores.",
@@ -3006,7 +4329,18 @@
         "codigo": "MA1M OA 12",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "leer_mal_la_celda_de_cruce",
+        "descripcion": "Leer mal la celda de cruce."
+      },
+      {
+        "id": "sumar_filas_y_columnas_de_form",
+        "descripcion": "Sumar filas y columnas de forma inconsistente."
+      }
+    ],
+    "descripcion": "Tabla de contingencia cruzando dos características"
   },
   "tabla_frecuencias": {
     "definicion": "Organizar los datos de una muestra según cuántas veces ocurre cada valor.",
@@ -3015,7 +4349,18 @@
         "codigo": "MA07 OA 16",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_el_valor_con_su_frec",
+        "descripcion": "Confundir el valor con su frecuencia."
+      },
+      {
+        "id": "que_las_frecuencias_no_sumen_e",
+        "descripcion": "Que las frecuencias no sumen el total."
+      }
+    ],
+    "descripcion": "Tabla de frecuencias absolutas de cada valor"
   },
   "tallo_hojas": {
     "definicion": "Organizar datos numéricos separando cada valor en tallo (decenas) y hoja (unidades), de modo que la tabla misma muestre la distribución conservando cada dato.",
@@ -3026,7 +4371,18 @@
       {
         "codigo": "MA06 OA 22"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "separar_mal_tallo_y_hoja_decen",
+        "descripcion": "Separar mal tallo y hoja (decenas/unidades)."
+      },
+      {
+        "id": "leer_la_hoja_como_numero_compl",
+        "descripcion": "Leer la hoja como número completo."
+      }
+    ],
+    "descripcion": "Tallo (decenas) y hoja (unidades) de cada dato"
   },
   "tendencia_frecuencial": {
     "definicion": "Conjeturar la tendencia que estabilizan las frecuencias al repetir muchas veces un experimento aleatorio (intuición frecuencial de la probabilidad).",
@@ -3127,7 +4483,18 @@
         "codigo": "MA1M OA 09",
         "cobertura": "total"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "emparejar_mal_los_segmentos_co",
+        "descripcion": "Emparejar mal los segmentos correspondientes en la proporción."
+      },
+      {
+        "id": "aplicarlo_sin_rectas_paralelas",
+        "descripcion": "Aplicarlo sin rectas paralelas."
+      }
+    ],
+    "descripcion": "Paralelas que cortan segmentos proporcionales"
   },
   "termino_semejante": {
     "definicion": "Reconocer los términos que comparten parte literal y reunirlos en uno solo.",
@@ -3144,7 +4511,8 @@
         "naturaleza": "procedimental",
         "retroalimentacion_sugerida": "Nombrar las partes literales como objetos distintos: tres de una cosa y dos de otra no son cinco de una tercera."
       }
-    ]
+    ],
+    "descripcion": "Términos con la misma parte literal se reducen"
   },
   "teselado": {
     "definicion": "Cubrir el plano con figuras mediante isometrías, sin huecos ni superposiciones.",
@@ -3152,7 +4520,18 @@
       {
         "codigo": "MA06 OA 14"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "dejar_huecos_o_superposiciones",
+        "descripcion": "Dejar huecos o superposiciones."
+      },
+      {
+        "id": "no_usar_transformaciones_para",
+        "descripcion": "No usar transformaciones para encajar las piezas."
+      }
+    ],
+    "descripcion": "Cubrir el plano con traslación, reflexión y rotación"
   },
   "transformaciones_isometricas": {
     "definicion": "Reconocer y aplicar traslaciones, reflexiones y rotaciones como movimientos que cambian posición u orientación sin cambiar forma ni tamaño.",
@@ -3170,7 +4549,18 @@
     ],
     "bibliografia": [
       "bib_clements_battista_1992"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_traslacion_rotacion",
+        "descripcion": "Confundir traslación, rotación y reflexión."
+      },
+      {
+        "id": "cambiar_el_tamano_de_la_figura",
+        "descripcion": "Cambiar el tamaño de la figura al transformarla."
+      }
+    ],
+    "descripcion": "Traslación, rotación y reflexión en la cuadrícula"
   },
   "unidad_estandarizada": {
     "definicion": "Comprender la necesidad de unidades convencionales compartidas (cm, m, g, kg) para comunicar y comparar mediciones entre personas y contextos.",
@@ -3187,7 +4577,18 @@
     ],
     "bibliografia": [
       "bib_lehrer_2003"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "empezar_a_medir_desde_el_1_de",
+        "descripcion": "Empezar a medir desde el 1 de la regla y no desde el 0."
+      },
+      {
+        "id": "mezclar_unidades",
+        "descripcion": "Mezclar unidades."
+      }
+    ],
+    "descripcion": "Medir con unidades no estándar vs regla/huincha (cm, m)"
   },
   "valor_absoluto": {
     "definicion": "La distancia de un número al cero en la recta numérica; siempre positiva.",
@@ -3254,7 +4655,18 @@
         "codigo": "MA2M OA 10",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_el_valor_de_la_varia",
+        "descripcion": "Confundir el valor de la variable con su probabilidad."
+      },
+      {
+        "id": "incluir_resultados_imposibles",
+        "descripcion": "Incluir resultados imposibles en el recorrido."
+      }
+    ],
+    "descripcion": "Variable discreta que toma valores contables"
   },
   "variacion_porcentual": {
     "definicion": "Cuantificar el aumento o la disminución de una cantidad como porcentaje de su valor inicial.",
@@ -3288,7 +4700,18 @@
         "codigo": "MA1M OA 11",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_magnitud_con_sentido",
+        "descripcion": "Confundir magnitud con sentido."
+      },
+      {
+        "id": "sumar_vectores_sumando_solo_su",
+        "descripcion": "Sumar vectores sumando solo sus longitudes."
+      }
+    ],
+    "descripcion": "Magnitud, dirección y sentido; componentes"
   },
   "vistas_3d": {
     "definicion": "Anticipar cómo se ve un cuerpo desde el frente, el lado y arriba, comprendiendo cada vista como proyección 2D del mismo cuerpo.",
@@ -3299,7 +4722,18 @@
     ],
     "bibliografia": [
       "bib_clements_sarama_2009"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_las_vistas_frente_la",
+        "descripcion": "Confundir las vistas (frente/lado/arriba)."
+      },
+      {
+        "id": "no_imaginar_el_cuerpo_desde_un",
+        "descripcion": "No imaginar el cuerpo desde una vista."
+      }
+    ],
+    "descripcion": "Vistas (frente, lado, arriba) de un cuerpo"
   },
   "volumen_paralelepipedo": {
     "definicion": "Estructurar el cuerpo en capas de cubos iguales, condensando el llenado en una multiplicación (largo × ancho × alto), en cm³, m³ y mm³.",
@@ -3310,7 +4744,18 @@
     ],
     "bibliografia": [
       "bib_battista_clements_1996"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "sumar_las_dimensiones_en_vez_d",
+        "descripcion": "Sumar las dimensiones en vez de multiplicarlas."
+      },
+      {
+        "id": "confundir_volumen_con_area",
+        "descripcion": "Confundir volumen con área."
+      }
+    ],
+    "descripcion": "Volumen = base × altura; capas de cubos"
   },
   "volumen_prisma_cilindro": {
     "definicion": "Determinar el volumen de un cuerpo recto como el producto del área de su base por su altura.",
@@ -3319,7 +4764,18 @@
         "codigo": "MA08 OA 11",
         "cobertura": "parcial"
       }
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "confundir_area_basal_con_volum",
+        "descripcion": "Confundir área basal con volumen."
+      },
+      {
+        "id": "olvidar_multiplicar_por_la_alt",
+        "descripcion": "Olvidar multiplicar por la altura."
+      }
+    ],
+    "descripcion": "Volumen de prismas rectos (base × altura)"
   },
   "volumen_unidades_cubicas": {
     "definicion": "Comprender el volumen como la cantidad de unidades cúbicas que llenan un cuerpo sin huecos.",
@@ -3330,6 +4786,17 @@
     ],
     "bibliografia": [
       "bib_battista_clements_1996"
-    ]
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "contar_caras_visibles_en_vez_d",
+        "descripcion": "Contar caras visibles en vez de cubos."
+      },
+      {
+        "id": "olvidar_los_cubos_ocultos",
+        "descripcion": "Olvidar los cubos ocultos."
+      }
+    ],
+    "descripcion": "Llenar un cuerpo con cubos unitarios"
   }
 }
