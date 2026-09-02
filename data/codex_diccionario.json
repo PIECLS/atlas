@@ -2,631 +2,733 @@
   "oa": {
     "MA01 OA 01": {
       "curso": "1B",
-      "eje": "Números y operaciones",
+      "eje": "Números y Operaciones",
       "texto": "Contar números del 0 al 100 de 1 en 1, de 2 en 2, de 5 en 5 y de 10 en 10, hacia adelante y hacia atrás, empezando por cualquier número menor que 100."
     },
     "MA01 OA 02": {
       "curso": "1B",
-      "eje": "Números y operaciones",
+      "eje": "Números y Operaciones",
       "texto": "Identificar el orden de los elementos de una serie, utilizando números ordinales del primero (1º) al décimo (10º)."
     },
     "MA01 OA 03": {
       "curso": "1B",
-      "eje": "Números y operaciones",
-      "texto": "Leer números del 0 al 20 y representarlos en forma concreta, pictórica y simbólica."
+      "eje": "Números y Operaciones",
+      "texto": "Leer números del 0 al 20 y representarlos en forma concreta, pictórica y simbólica"
     },
     "MA01 OA 04": {
       "curso": "1B",
-      "eje": "Números y operaciones",
-      "texto": "Comparar y ordenar números del 0 al 20 de menor a mayor y/o viceversa."
+      "eje": "Números y Operaciones",
+      "texto": "Comparar y ordenar números del 0 al 20 de menor a mayor y/o viceversa, utilizando material concreto y/o usando software educativo."
     },
     "MA01 OA 05": {
       "curso": "1B",
-      "eje": "Números y operaciones",
+      "eje": "Números y Operaciones",
       "texto": "Estimar cantidades hasta 20 en situaciones concretas, usando un referente."
     },
     "MA01 OA 06": {
       "curso": "1B",
-      "eje": "Números y operaciones",
+      "eje": "Números y Operaciones",
       "texto": "Componer y descomponer números del 0 a 20 de manera aditiva, en forma concreta, pictórica y simbólica."
     },
     "MA01 OA 07": {
       "curso": "1B",
-      "eje": "Números y operaciones",
-      "texto": "Describir y aplicar estrategias de cálculo mental para las adiciones y las sustracciones hasta 20: conteo hacia adelante y atrás, completar 10, dobles."
+      "eje": "Números y Operaciones",
+      "texto": "Describir y aplicar estrategias de cálculo mental para las adiciones y las sustracciones hasta 20: *conteo hacia adelante y atrás. * completar 10 *dobles"
     },
     "MA01 OA 08": {
       "curso": "1B",
-      "eje": "Números y operaciones",
+      "eje": "Números y Operaciones",
       "texto": "Determinar las unidades y decenas en números del 0 al 20, agrupando de a 10, de manera concreta, pictórica y simbólica."
     },
     "MA01 OA 09": {
       "curso": "1B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden la adición y la sustracción de números del 0 al 20."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden la adición y la sustracción de números del 0 al 20 progresivamente, de 0 a 5, de 6 a 10, de 11 a 20 con dos sumandos: * usando un lenguaje cotidiano para describir acciones desde su propia experencia * representando adiciones y sustracciones con material concreto y pictórico, de manera manual y/o usando software educativo * representando el proceso en forma simbólica * resolviendo problemas en contextos familiares * creando problemas matemáticos y resolviéndolos"
     },
     "MA01 OA 10": {
       "curso": "1B",
-      "eje": "Números y operaciones",
+      "eje": "Números y Operaciones",
       "texto": "Demostrar que la adición y la sustracción son operaciones inversas, de manera concreta, pictórica y simbólica."
     },
     "MA01 OA 11": {
       "curso": "1B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Reconocer, describir, crear y continuar patrones repetitivos (sonidos, figuras, ritmos...) y patrones numéricos hasta el 20, crecientes y decrecientes, usando material concreto, pictórico y simbólico, de manera manual y/o por medio de software educativo."
     },
     "MA01 OA 12": {
       "curso": "1B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Describir y registrar la igualdad y la desigualdad como equilibrio y desequilibrio, usando una balanza en forma concreta, pictórica y simbólica del 0 al 20, usando el símbolo igual (=)."
     },
     "MA01 OA 13": {
       "curso": "1B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Describir la posición de objetos y personas con relación a sí mismos y a otros objetos y personas, usando un lenguaje común (como derecha e izquierda)."
     },
     "MA01 OA 14": {
       "curso": "1B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Identificar en el entorno figuras 3D y figuras 2D y relacionarlas, usando material concreto."
     },
     "MA01 OA 15": {
       "curso": "1B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Identificar y dibujar líneas rectas y curvas."
     },
     "MA01 OA 16": {
       "curso": "1B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Usar unidades no estandarizadas de tiempo para comparar la duración de eventos cotidianos."
     },
     "MA01 OA 17": {
       "curso": "1B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Usar un lenguaje cotidiano para secuenciar eventos en el tiempo: días de la semana, meses del año y algunas fechas significativas."
     },
     "MA01 OA 18": {
       "curso": "1B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Identificar y comparar la longitud de objetos, usando palabras como largo y corto."
     },
     "MA01 OA 19": {
       "curso": "1B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Recolectar y registrar datos para responder preguntas estadísticas sobre sí mismo y el entorno, usando bloques, tablas de conteo y pictogramas."
     },
     "MA01 OA 20": {
       "curso": "1B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Construir, leer e interpretar pictogramas."
     },
     "MA02 OA 01": {
       "curso": "2B",
-      "eje": "Números y operaciones",
-      "texto": "Contar números del 0 al 1 000 de 2 en 2, de 5 en 5, de 10 en 10 y de 100 en 100, hacia adelante y hacia atrás, empezando por cualquier número menor que 1 000."
+      "eje": "Números y Operaciones",
+      "texto": "Contar números del 0 al 1 000 de 2 en 2, de 5 en 5, de 10 en 10 y de 100 en 100, hacia adelante y hacia atrás, empezando por cualquier número menor que 1 000"
     },
     "MA02 OA 02": {
       "curso": "2B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Leer números del 0 al 100 y representarlos en forma concreta, pictórica y simbólica."
     },
     "MA02 OA 03": {
       "curso": "2B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Comparar y ordenar números del 0 al 100 de menor a mayor y viceversa, usando material concreto y monedas nacionales de manera manual y/o por medio de software educativo"
     },
     "MA02 OA 04": {
       "curso": "2B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Estimar cantidades hasta 100 en situaciones concretas, usando un referente."
     },
     "MA02 OA 05": {
       "curso": "2B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Componer y descomponer números del 0 a 100 de manera aditiva, en forma concreta, pictórica y simbólica."
     },
     "MA02 OA 06": {
       "curso": "2B",
-      "eje": "Números y operaciones",
-      "texto": "Describir y aplicar estrategias de cálculo mental para adiciones y sustracciones hasta 20: completar 10, usar dobles y mitades, uno más uno menos, dos más dos menos, usar la reversibilidad de las operaciones."
+      "eje": "Números y Operaciones",
+      "texto": "Describir y aplicar estrategias de cálculo mental para adiciones y sustracciones hasta 20: * completar 10 * usar dobles y mitades * “uno más uno menos” * “dos más dos menos” * usar la reversibilidad de las operaciones"
     },
     "MA02 OA 07": {
       "curso": "2B",
-      "eje": "Números y operaciones",
+      "eje": "Números y Operaciones",
       "texto": "Identificar las unidades y decenas en números del 0 al 100, representando las cantidades de acuerdo a su valor posicional, con material concreto, pictórico y simbólico."
     },
     "MA02 OA 08": {
       "curso": "2B",
-      "eje": "Números y operaciones",
+      "eje": "Números y Operaciones",
       "texto": "Demostrar y explicar de manera concreta, pictórica y simbólica el efecto de sumar y restar 0 a un número."
     },
     "MA02 OA 09": {
       "curso": "2B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprende la adición y la sustracción en el ámbito del 0 al 100: * usando un lenguaje cotidiano y matemático para describir acciones desde su propia experiencia * resolviendo problemas con una variedad de representaciones concretas y pictóricas, de manera manual y/o usando software educativo * registrando el proceso en forma simbólica * aplicando los resultados de las adiciones y las sustracciones de los números del 0 a 20 sin realizar cálculos * aplicando el algoritmo de la adición y la sustracción sin considerar reserva * creando problemas matemáticos en contextos familiares y resolviéndolos"
     },
     "MA02 OA 10": {
       "curso": "2B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprende la relación entre la adición y la sustracción al usar la “familia de operaciones” en cálculos aritméticos y la resolución de problemas"
     },
     "MA02 OA 11": {
       "curso": "2B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprende la multiplicación: usando representaciones concretas y pictóricas, expresando una multiplicación como una adición de sumandos iguales."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprende la multiplicación: * usando representaciones concretas y pictóricas * expresando una multiplicación como una adición de sumandos iguales * usando la distributividad como estrategia para construir las tablas del 2, del 5 y del 10 * resolviendo problemas que involucren las tablas del 2, del 5 y del 10"
     },
     "MA02 OA 12": {
       "curso": "2B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Crear, representar y continuar una variedad de patrones numéricos y completar los elementos faltantes, de manera manual y/o usando software educativo."
     },
     "MA02 OA 13": {
       "curso": "2B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Demostrar, explicar y registrar la igualdad y la desigualdad en forma concreta y pictórica del 0 al 20, usando el símbolo igual (=) y los símbolos no igual (>, <)."
     },
     "MA02 OA 14": {
       "curso": "2B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Representar y describir la posición de objetos y personas con relación a sí mismos y a otros objetos y personas, incluyendo derecha e izquierda y usando material concreto y dibujos."
     },
     "MA02 OA 15": {
       "curso": "2B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Describir, comparar y construir figuras 2D (triángulos, cuadrados, rectángulos y círculos) con material concreto."
     },
     "MA02 OA 16": {
       "curso": "2B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Describir, comparar y construir figuras 3D (cubos, paralelepípedos, esferas y conos) con diversos materiales."
     },
     "MA02 OA 17": {
       "curso": "2B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Identificar días, semanas, meses y fechas en el calendario."
     },
     "MA02 OA 18": {
       "curso": "2B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Leer horas y medias horas en relojes digitales, en el contexto de la resolución de problemas."
     },
     "MA02 OA 19": {
       "curso": "2B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Determinar la longitud de objetos, usando unidades de medidas no estandarizadas y unidades estandarizadas (cm y m), en el contexto de la resolución de problemas."
     },
     "MA02 OA 20": {
       "curso": "2B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Recolectar y registrar datos para responder preguntas estadísticas sobre juegos con monedas y dados, usando bloques y tablas de conteo y pictogramas."
     },
     "MA02 OA 21": {
       "curso": "2B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Registrar en tablas y gráficos de barra simple, resultados de juegos aleatorios con dados y monedas."
     },
     "MA02 OA 22": {
       "curso": "2B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Construir, leer e interpretar pictogramas con escala y gráficos de barra simple."
     },
     "MA03 OA 01": {
       "curso": "3B",
-      "eje": "Números y operaciones",
-      "texto": "Contar números del 0 al 1 000 de 5 en 5, de 10 en 10, de 100 en 100, de 3 en 3, de 4 en 4, empezando por cualquier múltiplo del número correspondiente."
+      "eje": "Números y Operaciones",
+      "texto": "Contar números del 0 al 1 000 de 5 en 5, de 10 en 10, de 100 en 100: * empezando por cualquier número natural menor que 1.000 * de 3 en 3, de 4 en 4..., empezando por cualquier múltiplo del número correspondiente"
     },
     "MA03 OA 02": {
       "curso": "3B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Leer números hasta 1.000 y representarlos en forma concreta, pictórica y simbólica."
     },
     "MA03 OA 03": {
       "curso": "3B",
-      "eje": "Números y operaciones",
-      "texto": "Comparar y ordenar números naturales hasta 1.000, utilizando la recta numérica o la tabla posicional."
+      "eje": "Números y Operaciones",
+      "texto": "Comparar y ordenar números naturales hasta 1.000, utilizando la recta numérica o la tabla posicional de manera manual y/o por medio de software educativo."
     },
     "MA03 OA 04": {
       "curso": "3B",
-      "eje": "Números y operaciones",
-      "texto": "Describir y aplicar estrategias de cálculo mental para las adiciones y las sustracciones hasta 100: por descomposición, completar hasta la decena más cercana, usar dobles, sumar en vez de restar, aplicar la asociatividad."
+      "eje": "Números y Operaciones",
+      "texto": "Describir y aplicar estrategias de cálculo mental para las adiciones y las sustracciones hasta 100: * por descomposición * completar hasta la decena más cercana * usar dobles * sumar en vez de restar * aplicar la asociatividad"
     },
     "MA03 OA 05": {
       "curso": "3B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Identificar y describir las unidades, las decenas y las centenas en números del 0 al 1.000, representando las cantidades de acuerdo a su valor posicional, con material concreto, pictórico y simbólico."
     },
     "MA03 OA 06": {
       "curso": "3B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden la adición y la sustracción de números del 0 al 1.000, aplicando los algoritmos con y sin reserva."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden la adición y la sustracción de números del 0 al 1.000: * usando estrategias personales con y sin material concreto * creando y resolviendo problemas de adición y sustracción que involucren operaciones combinadas, en forma concreta, pictórica y simbólica, de manera manual y/o por medio de software educativo * aplicando los algoritmos con y sin reserva, progresivamente, en la adición de hasta cuatro sumandos y en la sustracción de hasta un sustraendo"
     },
     "MA03 OA 07": {
       "curso": "3B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden la relación entre la adición y la sustracción, usando la “familia de operaciones” en cálculos aritméticos y en la resolución de problemas."
     },
     "MA03 OA 08": {
       "curso": "3B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden las tablas de multiplicar hasta el 10 de manera progresiva."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden las tablas de multiplicar hasta el 10 de manera progresiva: * usando representaciones concretas y pictóricas * expresando una multiplicación como una adición de sumandos iguales * usando la distributividad como estrategia para construir las tablas hasta el 10 * aplicando los resultados de las tablas de multiplicación hasta 10 · 10, sin realizar cálculos * resolviendo problemas que involucren las tablas aprendidas hasta el 10"
     },
     "MA03 OA 09": {
       "curso": "3B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden la división en el contexto de las tablas de hasta 10x10: representando y explicando la división como repartición y agrupación en partes iguales, expresando la división como una sustracción repetida."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden la división en el contexto de las tablas7 de hasta 10 · 10: * representando y explicando la división como repartición y agrupación en partes iguales, con material concreto y pictórico * creando y resolviendo problemas en contextos que incluyan la repartición y la agrupación * expresando la división como una sustracción repetida * describiendo y aplicando la relación inversa entre la división y la multiplicación * aplicando los resultados de las tablas de multiplicación hasta 10 · 10, sin realizar cálculos"
     },
     "MA03 OA 10": {
       "curso": "3B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Resolver problemas rutinarios en contextos cotidianos, que incluyan dinero e involucren las cuatro operaciones (no combinadas)."
     },
     "MA03 OA 11": {
       "curso": "3B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden las fracciones de uso común: explicando que una fracción representa la parte de un todo."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden las fracciones de uso común: 1/4 , 1/3 , 1/2 , 2/3 , 3/4 : * explicando que una fracción representa la parte de un todo , de manera concreta, pictórica, simbólica, de forma manual y/o con software educativo * describiendo situaciones en las cuales se puede usar fracciones * comparando fracciones de un mismo todo, de igual denominador"
     },
     "MA03 OA 12": {
       "curso": "3B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Generar, describir y registrar patrones numéricos, usando una variedad de estrategias en tablas del 100, de manera manual y/o con software educativo."
     },
     "MA03 OA 13": {
       "curso": "3B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Resolver ecuaciones de un paso que involucren adiciones y sustracciones y un símbolo geométrico que represente un número desconocido, en forma pictórica y simbólica del 0 al 100."
     },
     "MA03 OA 14": {
       "curso": "3B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Describir la localización de un objeto en un mapa simple o en una cuadrícula."
     },
     "MA03 OA 15": {
       "curso": "3B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Demostrar que comprenden la relación que existe entre figuras 3D y figuras 2D: * construyendo una figura 3D a partir de una red (plantilla) * desplegando la figura 3D"
     },
     "MA03 OA 16": {
       "curso": "3B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Describir cubos, paralelepípedos, esferas, conos, cilindros y pirámides de acuerdo a la forma de sus caras y el número de aristas y vértices."
     },
     "MA03 OA 17": {
       "curso": "3B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Reconocer en el entorno figuras 2D que están trasladadas, reflejadas y rotadas."
     },
     "MA03 OA 18": {
       "curso": "3B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Demostrar que comprenden el concepto de ángulo: * identificando ejemplos de ángulos en el entorno * estimando la medida de ángulos, usando como referente ángulos de 45º y de 90"
     },
     "MA03 OA 19": {
       "curso": "3B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Leer e interpretar líneas de tiempo y calendarios."
     },
     "MA03 OA 20": {
       "curso": "3B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Leer y registrar el tiempo en horas, medias horas, cuartos de hora y minutos en relojes análogos y digitales."
     },
     "MA03 OA 21": {
       "curso": "3B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Demostrar que comprenden el perímetro de una figura regular e irregular:\n* midiendo y registrando el perímetro de figuras del entorno en el contexto de la\nresolución de problemas\n* determinando el perímetro de un cuadrado y de un rectángulo"
     },
     "MA03 OA 22": {
       "curso": "3B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Demostrar que comprende la medición del peso (g y kg):\n* comparando y ordenando dos o más objetos a partir de su peso de manera informal\n* usando modelos para explicar la relación que existe entre gramos y kilogramos\n* estimando el peso de objetos de uso cotidiano, usando referentes\n* midiendo y registrando el peso de objetos en números y en fracciones de uso\ncomún, en el contexto de la resolución de problemas"
     },
     "MA03 OA 23": {
       "curso": "3B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Realizar encuestas, clasificar y organizar los datos obtenidos en tablas y visualizarlos en gráficos de barra."
     },
     "MA03 OA 24": {
       "curso": "3B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Registrar y ordenar datos obtenidos de juegos aleatorios con dados y monedas, encontrando el menor, el mayor y estimando el punto medio entre ambos."
     },
     "MA03 OA 25": {
       "curso": "3B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Construir, leer e interpretar pictogramas y gráficos de barra simple con escala, de acuerdo a información recolectada o dada."
     },
     "MA03 OA 26": {
       "curso": "3B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Representar datos usando diagramas de puntos."
     },
     "MA04 OA 01": {
       "curso": "4B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Representar y describir números del 0 al 10 000:\n* contándolos de 10 en 10, de 100 en 100, de 1 000 en 1 000\n* leyéndolos y escribiéndolos\n* representándolos en forma concreta, pictórica y simbólica\n* comparándolos y ordenándolos en la recta numérica o la tabla posicional\n* identificando el valor posicional de los dígitos hasta la decena de mil\n* componiendo y descomponiendo números naturales hasta 10 000 en forma\naditiva, de acuerdo a su valor posicional"
     },
     "MA04 OA 02": {
       "curso": "4B",
-      "eje": "Números y operaciones",
-      "texto": "Describir y aplicar estrategias de cálculo mental para determinar las multiplicaciones hasta 10x10 y sus divisiones correspondientes: conteo hacia delante y atrás, doblar y dividir por 2, por descomposición, usar el doble del doble."
+      "eje": "Números y Operaciones",
+      "texto": "Describir y aplicar estrategias de cálculo mental para determinar las multiplicaciones hasta 10 · 10 y sus divisiones correspondientes:\n* conteo hacia delante y atrás\n* doblar y dividir por 2\n* por descomposición\n* usar el doble del doble"
     },
     "MA04 OA 03": {
       "curso": "4B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden la adición y la sustracción de números hasta\n1 000:\n* usando estrategias personales para realizar estas operaciones\n* descomponiendo los números involucrados\n* estimando sumas y diferencias\n* resolviendo problemas rutinarios y no rutinarios que incluyan adiciones y\nsustracciones\n* aplicando los algoritmos en la adición de hasta cuatro sumandos y en la\nsustracción de hasta un sustraendo"
     },
     "MA04 OA 04": {
       "curso": "4B",
-      "eje": "Números y operaciones",
+      "eje": "Números y Operaciones",
       "texto": "Fundamentar y aplicar las propiedades del 0 y del 1 para la multiplicación y la propiedad del 1 para la división."
     },
     "MA04 OA 05": {
       "curso": "4B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden la multiplicación de números de tres dígitos por números de un dígito."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden la multiplicación de números de tres dígitos por números de un dígito:\n* usando estrategias con o sin material concreto\n* utilizando las tablas de multiplicación\n* estimando productos\n* usando la propiedad distributiva de la multiplicación respecto de la suma\n* aplicando el algoritmo de la multiplicación\n* resolviendo problemas rutinarios"
     },
     "MA04 OA 06": {
       "curso": "4B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden la división con dividendos de dos dígitos y divisores de un dígito."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden la división con dividendos de dos dígitos y divisores\nde un dígito:\n* usando estrategias para dividir, con o sin material concreto\n* utilizando la relación que existe entre la división y la multiplicación\n* estimando el cociente\n* aplicando la estrategia por descomposición del dividendo\n* aplicando el algoritmo de la división"
     },
     "MA04 OA 07": {
       "curso": "4B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Resolver problemas rutinarios y no rutinarios en contextos cotidianos que incluyen\ndinero, seleccionando y utilizando la operación apropiada."
     },
     "MA04 OA 08": {
       "curso": "4B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprende las fracciones con denominadores 100, 12, 10, 8, 6, 5, 4, 3, 2: explicando que una fracción representa la parte de un todo o de un grupo de elementos y un lugar en la recta numérica."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprende las fracciones con denominadores 100, 12, 10, 8, 6, 5,\n4, 3, 2:\n* explicando que una fracción representa la parte de un todo o de un grupo de\nelementos y un lugar en la recta numérica\n* describiendo situaciones en las cuales se puede usar fracciones\n* mostrando que una fracción puede tener representaciones diferentes\n* comparando y ordenando fracciones (por ejemplo: 1/100 , 1/8 , 1/5 , 1/4 , 1/2) con\nmaterial concreto y pictórico"
     },
     "MA04 OA 09": {
       "curso": "4B",
-      "eje": "Números y operaciones",
-      "texto": "Resolver adiciones y sustracciones de fracciones con igual denominador."
+      "eje": "Números y Operaciones",
+      "texto": "Resolver adiciones y sustracciones de fracciones con igual denominador (denominadores 100, 12, 10, 8, 6, 5, 4, 3, 2) de manera concreta y pictórica en el contexto\nde la resolución de problemas."
     },
     "MA04 OA 10": {
       "curso": "4B",
-      "eje": "Números y operaciones",
-      "texto": "Identificar, escribir y representar fracciones propias y los números mixtos hasta el 5."
+      "eje": "Números y Operaciones",
+      "texto": "Identificar, escribir y representar fracciones propias y los números mixtos hasta\nel 5 de manera concreta, pictórica y simbólica, en el contexto de la resolución de\nproblemas."
     },
     "MA04 OA 11": {
       "curso": "4B",
-      "eje": "Números y operaciones",
-      "texto": "Describir y representar decimales (décimos y centésimos): representándolos en forma concreta, pictórica y simbólica."
+      "eje": "Números y Operaciones",
+      "texto": "Describir y representar decimales (décimos y centésimos):\n* representándolos en forma concreta, pictórica y simbólica, de manera manual\ny/o con software educativo\n* comparándolos y ordenándolos hasta la centésima"
     },
     "MA04 OA 12": {
       "curso": "4B",
-      "eje": "Números y operaciones",
-      "texto": "Resolver adiciones y sustracciones de decimales, empleando el valor posicional hasta la centésima."
+      "eje": "Números y Operaciones",
+      "texto": "Resolver adiciones y sustracciones de decimales, empleando el valor posicional\nhasta la centésima en el contexto de la resolución de problemas."
     },
     "MA04 OA 13": {
       "curso": "4B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Identificar y describir patrones numéricos en tablas que involucren una operación,\nde manera manual y/o usando software educativo."
     },
     "MA04 OA 14": {
       "curso": "4B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Resolver ecuaciones e inecuaciones de un paso que involucren adiciones y sustracciones, comprobando los resultados en forma pictórica y simbólica del 0 al 100 y\naplicando las relaciones inversas entre la adición y la sustracción."
     },
     "MA04 OA 15": {
       "curso": "4B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Describir la localización absoluta de un objeto en un mapa simple con coordenadas\ninformales (por ejemplo: con letras y números) y la localización relativa con relación\na otros objetos."
     },
     "MA04 OA 16": {
       "curso": "4B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Determinar las vistas de figuras 3D desde el frente, desde el lado y desde arriba."
     },
     "MA04 OA 17": {
       "curso": "4B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Demostrar que comprenden una línea de simetría:\n* identificando figuras simétricas 2D\n* creando figuras simétricas 2D\n* dibujando una o más líneas de simetría en figuras 2D\n* usando software geométrico"
     },
     "MA04 OA 18": {
       "curso": "4B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Trasladar, rotar y reflejar figuras 2D."
     },
     "MA04 OA 19": {
       "curso": "4B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Construir ángulos con el transportador y compararlos."
     },
     "MA04 OA 20": {
       "curso": "4B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Leer y registrar diversas mediciones del tiempo en relojes análogos y digitales,\nusando los conceptos A.M., P.M. y 24 horas."
     },
     "MA04 OA 21": {
       "curso": "4B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Realizar conversiones entre unidades de tiempo en el contexto de la resolución de\nproblemas: el número de segundos en un minuto, el número de minutos en una\nhora, el número de días en un mes y el número de meses en un año."
     },
     "MA04 OA 22": {
       "curso": "4B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Medir longitudes con unidades estandarizadas (m, cm) y realizar transformaciones\nentre estas unidades (m a cm y viceversa) en el contexto de la resolución de problemas"
     },
     "MA04 OA 23": {
       "curso": "4B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Demostrar que comprenden el concepto de área de un rectángulo y de un cuadrado:\n* reconociendo que el área de una superficie se mide en unidades cuadradas\n* seleccionando y justificando la elección de la unidad estandarizada (cm2 y m2)\n* determinando y registrando el área en cm2 y m2 en contextos cercanos\n* construyendo diferentes rectángulos para un área dada (cm2 y m2), para mostrar\nque distintos rectángulos pueden tener la misma área\n* usando software geométrico"
     },
     "MA04 OA 24": {
       "curso": "4B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Demostrar que comprenden el concepto de volumen de un cuerpo:\n* seleccionando una unidad no estandarizada para medir el volumen de un cuerpo\n* reconociendo que el volumen se mide en unidades de cubo\n* midiendo y registrando el volumen en unidades de cubo\n* usando software geométrico"
     },
     "MA04 OA 25": {
       "curso": "4B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Realizar encuestas, analizar los datos y comparar con los resultados de muestras\naleatorias, usando tablas y gráficos."
     },
     "MA04 OA 26": {
       "curso": "4B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Realizar experimentos aleatorios lúdicos y cotidianos, y tabular y representar mediante gráficos de manera manual y/o con software educativo."
     },
     "MA04 OA 27": {
       "curso": "4B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Leer e interpretar pictogramas y gráficos de barra simple con escala y comunicar\nsus conclusiones."
     },
     "MA05 OA 01": {
       "curso": "5B",
-      "eje": "Números y operaciones",
-      "texto": "Representar y describir números naturales, componiendo y descomponiendo en forma estándar y expandida, aproximando cantidades."
+      "eje": "Números y Operaciones",
+      "texto": "Representar y describir números naturales de hasta más de 6 dígitos y menores\nque 1.000 millones:\n* identificando el valor posicional de los dígitos\n* componiendo y descomponiendo números naturales en forma estándar y\nexpandida aproximando cantidades\n* comparando y ordenando números naturales en este ámbito numérico\n* dando ejemplos de estos números naturales en contextos reales"
     },
     "MA05 OA 02": {
       "curso": "5B",
-      "eje": "Números y operaciones",
-      "texto": "Aplicar estrategias de cálculo mental para la multiplicación: anexar ceros cuando se multiplica por un múltiplo de 10, doblar y dividir por 2 en forma repetida, usando las propiedades conmutativa, asociativa y distributiva."
+      "eje": "Números y Operaciones",
+      "texto": "Aplicar estrategias de cálculo mental para la multiplicación:\n* anexar ceros cuando se multiplica por un múltiplo de 10\n* doblar y dividir por 2 en forma repetida\n* usando las propiedades conmutativa, asociativa y distributiva"
     },
     "MA05 OA 03": {
       "curso": "5B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden la multiplicación de números naturales de dos\ndígitos por números naturales de dos dígitos:\n* estimando productos\n* aplicando estrategias de cálculo mental\n* resolviendo problemas rutinarios y no rutinarios, aplicando el algoritmo"
     },
     "MA05 OA 04": {
       "curso": "5B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden la división con dividendos de tres dígitos y divisores de un dígito: interpretando el resto."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden la división con dividendos de tres dígitos y divisores de un dígito:\n* interpretando el resto\n* resolviendo problemas rutinarios y no rutinarios que impliquen divisiones"
     },
     "MA05 OA 05": {
       "curso": "5B",
-      "eje": "Números y operaciones",
-      "texto": "Realizar cálculos que involucren las cuatro operaciones, aplicando las reglas relativas a paréntesis y la prevalencia de la multiplicación y la división por sobre la adición y la sustracción."
+      "eje": "Números y Operaciones",
+      "texto": "Realizar cálculos que involucren las cuatro operaciones, aplicando las reglas\nrelativas a paréntesis y la prevalencia de la multiplicación y la división por sobre\nla adición y la sustracción cuando corresponda.\n* usando la propiedad distributiva de la multiplicación respecto de la suma\n* aplicando el algoritmo de la multiplicación\n* resolviendo problemas rutinarios"
     },
     "MA05 OA 06": {
       "curso": "5B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Resolver problemas rutinarios y no rutinarios que involucren las cuatro operaciones y combinaciones de ellas:\n* que incluyan situaciones con dinero\n* usando la calculadora y el computador en ámbitos numéricos superiores al\n10.000"
     },
     "MA05 OA 07": {
       "curso": "5B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden las fracciones propias: creando grupos de fracciones equivalentes -simplificando y amplificando-."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden las fracciones propias:\n* representándolas de manera concreta, pictórica y simbólica\n* creando grupos de fracciones equivalentes –simplificando y amplificando– de\nmanera concreta, pictórica y simbólica, de forma manual y/o con software\neducativo\n* comparando fracciones propias con igual y distinto denominador de manera\nconcreta, pictórica y simbólica"
     },
     "MA05 OA 08": {
       "curso": "5B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden las fracciones impropias de uso común de denominadores 2, 3, 4, 5, 6, 8, 10, 12 y los números mixtos asociados."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden las fracciones impropias de uso común de denominadores 2, 3, 4, 5, 6, 8, 10, 12 y los números mixtos asociados:\n* usando material concreto y pictórico para representarlas, de manera manual y/o\ncon software educativo\n* identificando y determinando equivalencias entre fracciones impropias y\nnúmeros mixtos\n* representando estas fracciones y estos números mixtos en la recta numérico"
     },
     "MA05 OA 09": {
       "curso": "5B",
-      "eje": "Números y operaciones",
-      "texto": "Resolver adiciones y sustracciones con fracciones propias con denominadores menores o iguales a 12: amplificando o simplificando."
+      "eje": "Números y Operaciones",
+      "texto": "Resolver adiciones y sustracciones con fracciones propias con denominadores menores o iguales a 12:\n* de manera pictórica y simbólica\n* amplificando o simplificando"
     },
     "MA05 OA 10": {
       "curso": "5B",
-      "eje": "Números y operaciones",
-      "texto": "Determinar el decimal que corresponde a fracciones con denominador 2, 4, 5 y 10."
+      "eje": "Números y Operaciones",
+      "texto": "Determinar el decimal que corresponde a fracciones con denominador 2, 4, 5 y\n10."
     },
     "MA05 OA 11": {
       "curso": "5B",
-      "eje": "Números y operaciones",
-      "texto": "Comparar y ordenar decimales hasta la milésima."
+      "eje": "Números y Operaciones",
+      "texto": "Comparar y ordenar decimales hasta la milésima"
     },
     "MA05 OA 12": {
       "curso": "5B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Resolver adiciones y sustracciones de decimales, empleando el valor posicional\nhasta la milésima."
     },
     "MA05 OA 13": {
       "curso": "5B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Resolver problemas rutinarios y no rutinarios, aplicando adiciones y sustracciones\nde fracciones propias o decimales hasta la milésima."
     },
     "MA05 OA 14": {
       "curso": "5B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Descubrir alguna regla que explique una sucesión dada y que permita hacer predicciones."
     },
     "MA05 OA 15": {
       "curso": "5B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Resolver problemas, usando ecuaciones e inecuaciones de un paso, que involucren\nadiciones y sustracciones, en forma pictórica y simbólica."
     },
     "MA05 OA 16": {
       "curso": "5B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Identificar y dibujar puntos en el primer cuadrante del plano cartesiano, dadas sus\ncoordenadas en números naturales"
     },
     "MA05 OA 17": {
       "curso": "5B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Describir y dar ejemplos de aristas y caras de figuras 3D y lados de figuras 2D:\n* que son paralelos\n* que se intersectan\n* que son perpendiculares"
     },
     "MA05 OA 18": {
       "curso": "5B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Demostrar que comprenden el concepto de congruencia, usando la traslación, la\nreflexión y la rotación en cuadrículas y mediante software geométrico."
     },
     "MA05 OA 19": {
       "curso": "5B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Medir longitudes con unidades estandarizadas (m, cm, mm) en el contexto de la\nresolución de problemas."
     },
     "MA05 OA 20": {
       "curso": "5B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Realizar transformaciones entre unidades de medidas de longitud: km a m, m a cm,\ncm a mm y viceversa, de manera manual y/o usando software educativo."
     },
     "MA05 OA 21": {
       "curso": "5B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Diseñar y construir diferentes rectángulos, dados el perímetro, el área o ambos, y\nsacar conclusiones."
     },
     "MA05 OA 22": {
       "curso": "5B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Calcular áreas de triángulos, de paralelogramos y de trapecios, y estimar áreas de\nfiguras irregulares, aplicando las siguientes estrategias:\n* conteo de cuadrículas\n* comparación con el área de un rectángulo\n* completar figuras por traslación"
     },
     "MA05 OA 23": {
       "curso": "5B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Calcular el promedio de datos e interpretarlo en su contexto."
     },
     "MA05 OA 24": {
       "curso": "5B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Describir la posibilidad de ocurrencia de un evento por sobre la base de un experimento aleatorio, empleando los términos seguro – posible - poco posible - imposible."
     },
     "MA05 OA 25": {
       "curso": "5B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Comparar probabilidades de distintos eventos sin calcularlas."
     },
     "MA05 OA 26": {
       "curso": "5B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Leer, interpretar y completar tablas, gráficos de barra simple y gráficos de línea y\ncomunicar sus conclusiones."
     },
     "MA05 OA 27": {
       "curso": "5B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Utilizar diagramas de tallo y hojas para representar datos provenientes de muestras\naleatorias."
     },
     "MA06 OA 01": {
       "curso": "6B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden los factores y los múltiplos: determinando los múltiplos y los factores de números naturales menores de 100, identificando números primos y compuestos, resolviendo problemas que involucran múltiplos."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden los factores y los múltiplos:\n* determinando los múltiplos y los factores de números naturales menores de\n100\n* identificando números primos y compuestos\n* resolviendo problemas que involucran múltiplos"
     },
     "MA06 OA 02": {
       "curso": "6B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Realizar cálculos que involucren las cuatro operaciones en el contexto de la\nresolución de problemas, utilizando la calculadora en ámbitos superiores a\n10 000."
     },
     "MA06 OA 03": {
       "curso": "6B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden el concepto de razón de manera concreta, pictórica y simbólica."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden el concepto de razón de manera concreta, pictórica y simbólica, en forma manual y/o usando software educativo."
     },
     "MA06 OA 04": {
       "curso": "6B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden el concepto de porcentaje de manera concreta, pictórica y simbólica."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden el concepto de porcentaje de manera concreta,\npictórica y simbólica, de forma manual y/o usando software educativo."
     },
     "MA06 OA 05": {
       "curso": "6B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden las fracciones y los números mixtos:\n* identificando y determinando equivalencias entre fracciones impropias y\nnúmeros mixtos, usando material concreto y representaciones pictóricas de\nmanera manual y/o con software educativo\n* representando estos números en la recta numérica"
     },
     "MA06 OA 06": {
       "curso": "6B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Resolver adiciones y sustracciones de fracciones propias e impropias y números\nmixtos con numeradores y denominadores de hasta dos dígitos."
     },
     "MA06 OA 07": {
       "curso": "6B",
-      "eje": "Números y operaciones",
-      "texto": "Demostrar que comprenden la multiplicación y la división de decimales por números naturales de un dígito, múltiplos de 10 y decimales hasta la milésima."
+      "eje": "Números y Operaciones",
+      "texto": "Demostrar que comprenden la multiplicación y la división de decimales por\nnúmeros naturales de un dígito, múltiplos de 10 y decimales hasta la milésima\nde manera concreta, pictórica y simbólica."
     },
     "MA06 OA 08": {
       "curso": "6B",
-      "eje": "Números y operaciones"
+      "eje": "Números y Operaciones",
+      "texto": "Resolver problemas rutinarios y no rutinarios que involucren adiciones y sustracciones de fracciones propias, impropias, números mixtos o decimales hasta\nla milésima."
     },
     "MA06 OA 09": {
       "curso": "6B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Demostrar que comprenden la relación entre los valores de una tabla y aplicarla en la\nresolución de problemas sencillos:\n* identificando patrones entre los valores de la tabla\n* formulando una regla con lenguaje matemático"
     },
     "MA06 OA 10": {
       "curso": "6B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Representar generalizaciones de relaciones entre números naturales, usando expresiones con letras y ecuaciones."
     },
     "MA06 OA 11": {
       "curso": "6B",
-      "eje": "Patrones y Álgebra"
+      "eje": "Patrones y Álgebra",
+      "texto": "Resolver ecuaciones de primer grado con una incógnita, utilizando estrategias como:\n* usar una balanza\n* usar la descomposición y la correspondencia 1 a 1 entre los términos en cada lado\nde la ecuación\ny aplicando procedimientos formales de resolución."
     },
     "MA06 OA 12": {
       "curso": "6B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Construir y comparar triángulos de acuerdo a la medida de sus lados y/o sus ángulos\ncon instrumentos geométricos o software geométrico."
     },
     "MA06 OA 13": {
       "curso": "6B",
-      "eje": "Medición"
+      "eje": "Geometría",
+      "texto": "Demostrar que comprenden el concepto de área de una superficie en cubos y paralelepípedos, calculando el área de sus redes (plantillas) asociadas."
     },
     "MA06 OA 14": {
       "curso": "6B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Realizar teselados de figuras 2D, usando traslaciones, reflexiones y rotaciones."
     },
     "MA06 OA 15": {
       "curso": "6B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Construir ángulos agudos, obtusos, rectos, extendidos y completos con instrumentos\ngeométricos o software geométrico."
     },
     "MA06 OA 16": {
       "curso": "6B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Identificar los ángulos que se forman entre dos rectas que se cortan (pares de ángulos\nopuestos por el vértice y pares de ángulos complementarios)."
     },
     "MA06 OA 17": {
       "curso": "6B",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Demostrar de manera concreta, pictórica y simbólica que la suma de los ángulos interiores de un triángulo es 180º y de un cuadrilátero es 360o\n."
     },
     "MA06 OA 18": {
       "curso": "6B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Calcular la superficie de cubos y paralelepípedos, expresando el resultado en cm2\n y m2\n."
     },
     "MA06 OA 19": {
       "curso": "6B",
-      "eje": "Medición"
+      "eje": "Medición",
+      "texto": "Calcular el volumen de cubos y paralelepípedos, expresando el resultado en cm3, m3 y\nmm3"
     },
     "MA06 OA 20": {
       "curso": "6B",
-      "eje": "Geometría"
+      "eje": "Medición",
+      "texto": "Estimar y medir ángulos, usando el transportador y expresando las mediciones en\ngrados. "
     },
     "MA06 OA 21": {
       "curso": "6B",
-      "eje": "Geometría"
+      "eje": "Medición",
+      "texto": "Calcular ángulos en rectas paralelas cortadas por una transversal y en triángulos."
     },
     "MA06 OA 22": {
       "curso": "6B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Comparar distribuciones de dos grupos, provenientes de muestras aleatorias, usando\ndiagramas de puntos y de tallo y hojas."
     },
     "MA06 OA 23": {
       "curso": "6B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Conjeturar acerca de la tendencia de resultados obtenidos en repeticiones de un\nmismo experimento con dados, monedas u otros, de manera manual y/o usando\nsoftware educativo."
     },
     "MA06 OA 24": {
       "curso": "6B",
-      "eje": "Datos y Probabilidades"
+      "eje": "Datos y Probabilidades",
+      "texto": "Leer e interpretar gráficos de barra doble y circulares y comunicar sus conclusiones"
     },
     "MA07 OA 01": {
       "curso": "7B",
@@ -670,7 +772,8 @@
     },
     "MA07 OA 09": {
       "curso": "7B",
-      "eje": "Álgebra y funciones"
+      "eje": "Álgebra y funciones",
+      "texto": " Modelar y resolver problemas diversos de la vida diaria y de otras\nasignaturas, que involucran ecuaciones e inecuaciones lineales de la forma:\n> ax = b; x/a = b (a, b y c P N; a ≠ 0)\n> ax < b; ax > b x/a < b; x/a > b (a, b y c P N; a ≠ 0)"
     },
     "MA07 OA 10": {
       "curso": "7B",
@@ -859,7 +962,8 @@
     },
     "MA1M OA 11": {
       "curso": "1M",
-      "eje": "Geometría"
+      "eje": "Geometría",
+      "texto": "Representar el concepto de homotecia de forma vectorial, relacionándolo con el producto de un vector por un escalar, de manera manual y/o con software educativo."
     },
     "MA1M OA 12": {
       "curso": "1M",
