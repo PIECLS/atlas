@@ -1,0 +1,24 @@
+{
+  "generado": "2026-09-02",
+  "nota": "Aristas propuestas y rechazadas por juicio de dominio (A2), no por reducción transitiva (ver aristas_eliminadas_por_reduccion.json para esas). Quedan registradas como precedente para casos análogos.",
+  "rechazadas": [
+    {
+      "de": "teorema_pitagoras",
+      "a": "superficie_volumen_cono",
+      "de_nombre": "Teorema de Pitágoras",
+      "a_nombre": "Superficie y volumen del cono",
+      "justificacion_propuesta": "No es posible determinar la generatriz a partir del radio y la altura, ni la altura a partir del radio y la generatriz, sin la relación entre catetos e hipotenusa del triángulo rectángulo que esas tres medidas forman.",
+      "motivo": "El prerrequisito es del tipo de tarea (despejar una medida faltante), no del nodo: en las guías del colegio siempre se piden dos de las tres medidas, pero el nodo en sí no exige esa tarea específica.",
+      "fecha": "2026-09-02"
+    },
+    {
+      "de": "sector_circular",
+      "a": "superficie_volumen_cono",
+      "de_nombre": "Sector circular",
+      "a_nombre": "Superficie y volumen del cono",
+      "justificacion_propuesta": "No es posible desarrollar la fórmula del área de superficie del cono sin reconocer que su manto, al desplegarse, es un sector circular.",
+      "motivo": "Tres razones: (1) la justificación prueba el indicador 'desarrollar la fórmula', pero el nodo superficie_volumen_cono se define como 'determinar' (calcular), no como 'deducir' — prueba un subcaso y lo afirma para el nodo entero; (2) el sector del manto tiene ángulo arbitrario, mientras sector_circular está mapeado a MA1M OA 06, restringido a los ángulos especiales 60°/90°/120°/180° — dominar esos cuatro no habilita el manto; (3) A2 directo: los alumnos calculan el cono todos los años sin dominar el sector, porque se les entrega πrg y la red aparece como imagen ya desplegada. Si se quiere conservar para la ruta deductiva específica, la vía correcta es la columna `clausula` (reservada, v3), no una arista incondicional.",
+      "fecha": "2026-09-02"
+    }
+  ]
+}

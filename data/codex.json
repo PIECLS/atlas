@@ -4033,7 +4033,7 @@
     "oa_relacionados": [
       {
         "codigo": "MA1M OA 06",
-        "cobertura": "total"
+        "cobertura": "parcial"
       }
     ]
   },
@@ -4081,6 +4081,16 @@
       }
     ],
     "descripcion": "Secuencia numérica oral (0,1,2…); conteo hacia adelante y atrás; cuadro de números"
+  },
+  "segmento_circular": {
+    "definicion": "Determinar el área y el perímetro de la parte del círculo delimitada por una cuerda y el arco que esa cuerda subtiende; su área se obtiene restando al sector circular el triángulo formado por los dos radios y la cuerda.",
+    "descripcion": "Segmento circular = sector circular − triángulo",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 06",
+        "cobertura": "parcial"
+      }
+    ]
   },
   "semejanza": {
     "definicion": "Reconocer figuras de igual forma y distinto tamaño, cuyos lados guardan una razón constante.",
