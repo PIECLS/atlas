@@ -302,6 +302,24 @@ function construirPestanas(m: Metadatos, onIrANodo: (id: string) => void): Pesta
       ),
     },
     {
+      id: 'items',
+      nombre: 'Ítems',
+      cuenta: m.items?.length ?? 0,
+      render: () => (
+        <div className="bloque">
+          <p style={{ color: 'var(--texto-debil)', fontSize: 12, marginBottom: 10 }}>
+            Ítems observables (A4/CbKST). El mapeo a competencias se deriva aparte.
+          </p>
+          {m.items!.map((it) => (
+            <div className="tarjeta" key={it.id}>
+              {it.formato && <span className="etiqueta">{it.formato}</span>}
+              {it.enunciado && <p>{it.enunciado}</p>}
+            </div>
+          ))}
+        </div>
+      ),
+    },
+    {
       id: 'pie',
       nombre: 'PIE',
       cuenta: m.adaptaciones_pie?.length ?? 0,

@@ -73,7 +73,29 @@
         "descripcion": "Sumar numeradores y denominadores directo (1/2+1/3=2/5) sin igualar denominadores."
       }
     ],
-    "descripcion": "Amplificar a común denominador y operar"
+    "descripcion": "Amplificar a común denominador y operar",
+    "items": [
+      {
+        "id": "igualar_denominadores_amplific",
+        "enunciado": "igualar denominadores amplificando antes de operar (1/2 y 1/4 → 2/4 y 1/4)."
+      },
+      {
+        "id": "sumar_con_distinto_denominador",
+        "enunciado": "sumar con distinto denominador (1/2 + 1/4 = 3/4; 2/3 + 1/6)."
+      },
+      {
+        "id": "restar_con_distinto_denominado",
+        "enunciado": "restar con distinto denominador (2/3 − 1/6; 3/4 − 1/8)."
+      },
+      {
+        "id": "sumar_y_luego_simplificar_el_r",
+        "enunciado": "sumar y luego simplificar el resultado."
+      },
+      {
+        "id": "problemas_receta_1_2_taza_1_4",
+        "enunciado": "problemas (receta: 1/2 taza + 1/4 taza). Error a cazar: sumar arriba con arriba y abajo con abajo sin igualar primero los denominadores — saltarse el paso de amplificar."
+      }
+    ]
   },
   "adicion_fracciones_igual_denominador": {
     "definicion": "Sumar y restar fracciones que comparten denominador operando los numeradores, porque las partes son del mismo tamaño.",
@@ -95,7 +117,21 @@
         "retroalimentacion_sugerida": "Sombrear ambas partes sobre el mismo todo partido en cuartos: el tamaño de la parte no cambia al juntar."
       }
     ],
-    "descripcion": "Sumar/restar fracciones de igual denominador"
+    "descripcion": "Sumar/restar fracciones de igual denominador",
+    "items": [
+      {
+        "id": "sumar_dos_fracciones_de_igual",
+        "enunciado": "sumar dos fracciones de igual denominador (1/5 + 2/5 = 3/5; 3/8 + 2/8 = 5/8)."
+      },
+      {
+        "id": "restar_con_igual_denominador_5",
+        "enunciado": "restar con igual denominador (5/6 − 2/6)."
+      },
+      {
+        "id": "problemas_de_partes_de_una_mis",
+        "enunciado": "problemas de partes de una misma unidad. Error a cazar: sumar también los denominadores (1/4 + 2/4 = 3/8 en vez de 3/4) — al juntar pedazos del mismo tamaño el denominador no cambia, solo se cuentan los pedazos."
+      }
+    ]
   },
   "adicion_sustraccion_enteros": {
     "definicion": "Componer cantidades con sentido, donde un desplazamiento seguido de su opuesto no produce cambio alguno.",
@@ -113,7 +149,21 @@
         "retroalimentacion_sugerida": "Mostrar en la recta que quitar un desplazamiento hacia la izquierda deja más a la derecha que antes."
       }
     ],
-    "descripcion": "Sumar/restar enteros en la recta; valor absoluto"
+    "descripcion": "Sumar/restar enteros en la recta; valor absoluto",
+    "items": [
+      {
+        "id": "7_4_3_6",
+        "enunciado": "(−7)+4 ; (−3)+(−6)."
+      },
+      {
+        "id": "5_9_2_6",
+        "enunciado": "5−9 ; (−2)−6."
+      },
+      {
+        "id": "8_3_10_15_error_2_6_4",
+        "enunciado": "(−8)−(−3) ; 10+(−15). ⚠ Error: '(−2)−6 = 4'."
+      }
+    ]
   },
   "agrupacion_decenas": {
     "definicion": "Agrupar de a diez y tratar el grupo como una unidad nueva que se cuenta y opera como un objeto.",
@@ -131,7 +181,21 @@
         "retroalimentacion_sugerida": "Con material agrupable, preguntar el total tapando los grupos ya contados: si necesita destapar, la decena no es todavía una unidad."
       }
     ],
-    "descripcion": "Bloques base diez (barras=decenas, cubos=unidades); marco de diez; agrupar de a 10"
+    "descripcion": "Bloques base diez (barras=decenas, cubos=unidades); marco de diez; agrupar de a 10",
+    "items": [
+      {
+        "id": "que_numero_es_4_unidades_y_3_d",
+        "enunciado": "¿Qué número es? 4 unidades y 3 decenas -> 43/34/430"
+      },
+      {
+        "id": "10_unidades_1_decena_dictado_d",
+        "enunciado": "10 unidades = 1 decena | dictado de números"
+      },
+      {
+        "id": "cuantos_caracoles_1d_y_1u_3d_y",
+        "enunciado": "¿Cuántos caracoles? 1D y 1U / 3D y 2U"
+      }
+    ]
   },
   "algoritmo_adicion": {
     "definicion": "Sumar numerales de varias cifras operando columna a columna según el valor posicional, sin reagrupación.",
@@ -249,7 +313,21 @@
         "descripcion": "Sumar el mismo número a numerador y denominador en vez de multiplicar/dividir."
       }
     ],
-    "descripcion": "Multiplicar/dividir numerador y denominador por un mismo número"
+    "descripcion": "Multiplicar/dividir numerador y denominador por un mismo número",
+    "items": [
+      {
+        "id": "simplifica_18_24",
+        "enunciado": "Simplifica 18/24."
+      },
+      {
+        "id": "amplifica_2_3_a_denominador_12",
+        "enunciado": "Amplifica 2/3 a denominador 12."
+      },
+      {
+        "id": "dos_fracciones_equivalentes_a",
+        "enunciado": "Dos fracciones equivalentes a 5/10."
+      }
+    ]
   },
   "angulo_concepto": {
     "definicion": "Comprender el ángulo como abertura entre dos rayos o cantidad de giro, independiente del largo de sus lados, usando 90° y 45° como referentes.",
@@ -267,7 +345,17 @@
         "descripcion": "Creer que el ángulo depende del largo de los lados y no de la abertura."
       }
     ],
-    "descripcion": "Ángulos recto, agudo, obtuso, llano; el recto como referencia"
+    "descripcion": "Ángulos recto, agudo, obtuso, llano; el recto como referencia",
+    "items": [
+      {
+        "id": "el_angulo_es_agudo_recto_u_obt",
+        "enunciado": "¿El ángulo es agudo, recto u obtuso?"
+      },
+      {
+        "id": "cuantos_grados_mide_un_recto_y",
+        "enunciado": "¿Cuántos grados mide un recto? ¿Y una vuelta completa?"
+      }
+    ]
   },
   "angulos_entre_rectas": {
     "definicion": "Comprender las relaciones entre ángulos formados por rectas que se cortan (opuestos por el vértice, complementarios) y por paralelas cortadas por una transversal.",
@@ -329,7 +417,17 @@
         "descripcion": "Elevar mal el radio al cuadrado."
       }
     ],
-    "descripcion": "Área del círculo = π·r²"
+    "descripcion": "Área del círculo = π·r²",
+    "items": [
+      {
+        "id": "area_del_circulo_3_14",
+        "enunciado": "Área del círculo (π≈3,14)."
+      },
+      {
+        "id": "formula_del_area_de_un_circulo",
+        "enunciado": "Fórmula del área de un círculo de radio r. ⚠ Error: 'Área = 2·π·5 = 31,4' (usó el perímetro)."
+      }
+    ]
   },
   "area_recubrimiento": {
     "definicion": "Comprender el área como la cantidad de unidades cuadradas que cubren una superficie sin huecos ni superposiciones.",
@@ -354,7 +452,17 @@
         "descripcion": "Dejar la unidad de área sin nombrar."
       }
     ],
-    "descripcion": "Cubrir la superficie con cuadrados unitarios"
+    "descripcion": "Cubrir la superficie con cuadrados unitarios",
+    "items": [
+      {
+        "id": "area_de_la_figura_sombreada_so",
+        "enunciado": "Área de la figura sombreada sobre la cuadrícula (cm²)."
+      },
+      {
+        "id": "explica_como_la_contaste",
+        "enunciado": "Explica cómo la contaste."
+      }
+    ]
   },
   "areas_derivadas": {
     "definicion": "Obtener el área de triángulos, paralelogramos y trapecios transformándolos o comparándolos con rectángulos de igual área (cortar, trasladar, completar).",
@@ -369,7 +477,17 @@
         "descripcion": "Aplicar la fórmula del rectángulo a triángulo/trapecio sin dividir por 2 o sin promediar las bases."
       }
     ],
-    "descripcion": "Área de triángulo/paralelogramo/trapecio por composición con el rectángulo"
+    "descripcion": "Área de triángulo/paralelogramo/trapecio por composición con el rectángulo",
+    "items": [
+      {
+        "id": "area_de_paralelogramo_triangul",
+        "enunciado": "Área de paralelogramo, triángulo y trapecio."
+      },
+      {
+        "id": "area_de_figura_compuesta_separ",
+        "enunciado": "Área de figura compuesta separándola en rectángulo y triángulo."
+      }
+    ]
   },
   "asociatividad_adicion": {
     "definicion": "Comprender que la agrupación de los sumandos no altera la suma, y usarla para operar según conveniencia.",
@@ -405,7 +523,33 @@
         "descripcion": "Contar incluyendo el número de partida (5+3 empieza en 5 y cuenta 5,6,7 → da 7)."
       }
     ],
-    "descripcion": "Conteo hacia adelante/atrás desde un número; apoyo con dedos y recta numérica"
+    "descripcion": "Conteo hacia adelante/atrás desde un número; apoyo con dedos y recta numérica",
+    "items": [
+      {
+        "id": "5_3_estrategia_recta_numerica",
+        "enunciado": "5+3= estrategia recta numérica"
+      },
+      {
+        "id": "7_3_como_lo_resolverias",
+        "enunciado": "7-3= ¿cómo lo resolverías?"
+      },
+      {
+        "id": "10_9_19",
+        "enunciado": "10+9=19"
+      },
+      {
+        "id": "15_5_20_5_10",
+        "enunciado": "15-5= -> 20/5/10"
+      },
+      {
+        "id": "14_3_15_6_13_7",
+        "enunciado": "14+3=, 15-6=, 13+7="
+      },
+      {
+        "id": "desafio_detectives_de_sumas_y",
+        "enunciado": "Desafío: detectives de sumas y restas"
+      }
+    ]
   },
   "cambio_porcentual_constante": {
     "definicion": "Modelar situaciones en que una cantidad varía en un porcentaje fijo de sí misma en cada intervalo.",
@@ -489,7 +633,24 @@
         "retroalimentacion_sugerida": "Mover cada objeto contado a un lado. El error no está en la cardinalidad sino en el emparejamiento."
       }
     ],
-    "items": [],
+    "items": [
+      {
+        "id": "que_numero_va_en_0_10",
+        "enunciado": "¿Qué número va en ? (0-10)"
+      },
+      {
+        "id": "que_numero_va_en_0_10_2",
+        "enunciado": "¿Qué número va en ? (0-10)"
+      },
+      {
+        "id": "donde_hay_8_elementos",
+        "enunciado": "¿Dónde hay 8 elementos?"
+      },
+      {
+        "id": "que_numero_va_en_la_estrella_1",
+        "enunciado": "¿Qué número va en la estrella? (11-20)"
+      }
+    ],
     "evidencias": [
       "Ante la pregunta '¿cuántos hay?' tras contar, responde sin recontar.",
       "Cuenta la misma colección ordenada de distinta forma y afirma que el total no cambió.",
@@ -546,7 +707,21 @@
         "descripcion": "Mezclar perímetro (circunferencia) con área."
       }
     ],
-    "descripcion": "Elementos del círculo: radio, diámetro, perímetro"
+    "descripcion": "Elementos del círculo: radio, diámetro, perímetro",
+    "items": [
+      {
+        "id": "rotula_centro_radio_y_diametro",
+        "enunciado": "Rotula centro, radio y diámetro."
+      },
+      {
+        "id": "radio_4_diametro",
+        "enunciado": "Radio 4, ¿diámetro?"
+      },
+      {
+        "id": "diametro_10_radio",
+        "enunciado": "Diámetro 10, ¿radio?"
+      }
+    ]
   },
   "comparacion_colecciones": {
     "definicion": "Determinar cuál de dos colecciones tiene más, menos o igual cantidad de elementos, mediante emparejamiento o conteo.",
@@ -562,7 +737,21 @@
         "descripcion": "Decir que hay más donde los objetos son más grandes o están más dispersos, no donde hay más cantidad."
       }
     ],
-    "descripcion": "Dos colecciones enfrentadas; correspondencia uno a uno; '¿dónde hay más?'"
+    "descripcion": "Dos colecciones enfrentadas; correspondencia uno a uno; '¿dónde hay más?'",
+    "items": [
+      {
+        "id": "donde_hay_mayor_cantidad_de_el",
+        "enunciado": "¿Dónde hay mayor cantidad de elementos?"
+      },
+      {
+        "id": "cual_es_el_numero_menor_2_4",
+        "enunciado": "¿Cuál es el número MENOR? 2 4"
+      },
+      {
+        "id": "comparar_11_20_mayor_menor",
+        "enunciado": "Comparar 11-20 mayor/menor"
+      }
+    ]
   },
   "comparacion_directa_magnitudes": {
     "definicion": "Comparar dos objetos o eventos en una magnitud (largo, peso, duración) por percepción o superposición directa, sin unidades.",
@@ -636,7 +825,25 @@
         "descripcion": "Mirar solo los números sueltos."
       }
     ],
-    "descripcion": "Comparar fracciones del mismo entero; ordenar"
+    "descripcion": "Comparar fracciones del mismo entero; ordenar",
+    "items": [
+      {
+        "id": "comparar_dos_fracciones_de_igu",
+        "enunciado": "comparar dos fracciones de igual denominador con > o < (2/5 __ 4/5; 7/9 __ 3/9)."
+      },
+      {
+        "id": "elegir_la_mayor_de_un_par",
+        "enunciado": "elegir la mayor de un par."
+      },
+      {
+        "id": "ordenar_de_menor_a_mayor_tres",
+        "enunciado": "ordenar de menor a mayor tres fracciones con el mismo denominador (3/8, 1/8, 6/8)."
+      },
+      {
+        "id": "problemas_quien_comio_mas_que",
+        "enunciado": "problemas: quién comió más, qué frasco tiene más. Error a cazar: creer que con igual denominador \"menos partes = fracción mayor\" (3/8 > 6/8 \"porque las partes son más grandes\") — cuando el denominador es el mismo, decide el numerador."
+      }
+    ]
   },
   "comparacion_fracciones_igual_numerador": {
     "definicion": "Comparar fracciones unitarias y de igual numerador: a mayor denominador, partes más pequeñas.",
@@ -675,7 +882,21 @@
         "nodo_implicado": "decimal_notacion"
       }
     ],
-    "descripcion": "Comparar decimales por posición; recta numérica"
+    "descripcion": "Comparar decimales por posición; recta numérica",
+    "items": [
+      {
+        "id": "ordena_0_7_0_68_0_705_0_609",
+        "enunciado": "Ordena: 0,7; 0,68; 0,705; 0,609."
+      },
+      {
+        "id": "0_3_o_0_29_justifica",
+        "enunciado": "¿0,3 o 0,29? Justifica."
+      },
+      {
+        "id": "un_decimal_entre_0_4_y_0_5_err",
+        "enunciado": "Un decimal entre 0,4 y 0,5. ⚠ Error: '0,25 > 0,3 porque 25>3'."
+      }
+    ]
   },
   "comparacion_orden_numeros": {
     "definicion": "Determinar cuál de dos números representa mayor cantidad y ordenar conjuntos de números según su magnitud.",
@@ -709,7 +930,21 @@
         "nodo_implicado": "valor_posicional"
       }
     ],
-    "descripcion": "Recta numérica; signos <, >, =; ordenar tarjetas de menor a mayor"
+    "descripcion": "Recta numérica; signos <, >, =; ordenar tarjetas de menor a mayor",
+    "items": [
+      {
+        "id": "que_numero_esta_antes_del_10",
+        "enunciado": "¿Qué número está antes del 10?"
+      },
+      {
+        "id": "usar",
+        "enunciado": "Usar >, <, ="
+      },
+      {
+        "id": "usar_2",
+        "enunciado": "Usar >, <, ="
+      }
+    ]
   },
   "comparacion_probabilidades": {
     "definicion": "Ordenar eventos por su probabilidad sin calcularla, razonando sobre la proporción de casos favorables.",
@@ -720,6 +955,16 @@
     ],
     "bibliografia": [
       "bib_fischbein_1975"
+    ],
+    "items": [
+      {
+        "id": "ordena_de_menos_a_mas_probable",
+        "enunciado": "Ordena de menos a más probable (dado): sacar 7, par, número entre 1 y 6."
+      },
+      {
+        "id": "cara_en_moneda_o_6_en_dado",
+        "enunciado": "¿Cara en moneda o 6 en dado?"
+      }
     ]
   },
   "composicion_aditiva": {
@@ -744,7 +989,41 @@
         "descripcion": "Contar todo de nuevo en vez de componer."
       }
     ],
-    "descripcion": "Descomponer un total en partes; familias de números; cubos que se juntan y separan"
+    "descripcion": "Descomponer un total en partes; familias de números; cubos que se juntan y separan",
+    "items": [
+      {
+        "id": "si_tengo_2_manzanas_y_me_regal",
+        "enunciado": "Si tengo 2 manzanas y me regalan 3 ¿cuántas tengo?"
+      },
+      {
+        "id": "calculo_mental_1_1_4_1_3_1",
+        "enunciado": "Cálculo mental 1+1, 4+1, 3+1..."
+      },
+      {
+        "id": "con_que_adicion_representarias",
+        "enunciado": "¿Con qué adición representarías el conjunto? 3+3 4+2 6+2 | sumando+sumando=total"
+      },
+      {
+        "id": "5_3_estrategia_recta_numerica",
+        "enunciado": "5+3= estrategia recta numérica"
+      },
+      {
+        "id": "10_9_19",
+        "enunciado": "10+9=19"
+      },
+      {
+        "id": "cuantos_insectos_hay_en_total",
+        "enunciado": "¿Cuántos insectos hay en total? 9/17/15"
+      },
+      {
+        "id": "dibuja_un_conjunto_de_30_eleme",
+        "enunciado": "Dibuja un conjunto de 30 elementos y represéntalo con cubos (decenas y unidades)."
+      },
+      {
+        "id": "1_descompon_aditivamente_6_045",
+        "enunciado": "1) Descompón aditivamente 6.045. 2) Compón: 4.000+300+90+2 = ___"
+      }
+    ]
   },
   "composicion_transformaciones": {
     "definicion": "Aplicar sucesivamente traslaciones, rotaciones y reflexiones, y reconocer el movimiento resultante.",
@@ -760,6 +1039,16 @@
     "oa_relacionados": [
       {
         "codigo": "MA05 OA 18"
+      }
+    ],
+    "items": [
+      {
+        "id": "cual_figura_es_congruente_con",
+        "enunciado": "¿Cuál figura es congruente con A?"
+      },
+      {
+        "id": "por_que_c_no_es_congruente_con",
+        "enunciado": "¿Por qué C no es congruente con A si ambas son rectángulos?"
       }
     ]
   },
@@ -785,7 +1074,13 @@
         "descripcion": "Recontar en vez de reconocer la equivalencia."
       }
     ],
-    "descripcion": "Sumas gemelas: 2+3 y 3+2 dan lo mismo"
+    "descripcion": "Sumas gemelas: 2+3 y 3+2 dan lo mismo",
+    "items": [
+      {
+        "id": "sumas_gemelas_que_otra_suma_po",
+        "enunciado": "Sumas gemelas: ¿qué otra suma podemos formar? 1+2=3"
+      }
+    ]
   },
   "construccion_triangulos": {
     "definicion": "Construir triángulos a partir de medidas de lados y/o ángulos con instrumentos, y clasificarlos según esas medidas.",
@@ -804,7 +1099,17 @@
         "descripcion": "Intentar construir triángulos que no cumplen la desigualdad triangular."
       }
     ],
-    "descripcion": "Clasificar triángulos por lados/ángulos; construir con instrumentos"
+    "descripcion": "Clasificar triángulos por lados/ángulos; construir con instrumentos",
+    "items": [
+      {
+        "id": "clasifica_segun_lados_angulos",
+        "enunciado": "Clasifica según lados/ángulos (equilátero, isósceles, escaleno, rectángulo)."
+      },
+      {
+        "id": "cuanto_suman_los_angulos_inter",
+        "enunciado": "¿Cuánto suman los ángulos interiores de un triángulo?"
+      }
+    ]
   },
   "construcciones_geometricas": {
     "definicion": "Construir rectas y puntos determinados por condiciones geométricas: perpendiculares, paralelas, bisectrices y alturas.",
@@ -840,6 +1145,20 @@
       {
         "id": "perder_el_salto_constante_2_4",
         "descripcion": "Perder el salto constante (2,4,6,7,8) o no poder iniciar el conteo en un número cualquiera."
+      }
+    ],
+    "items": [
+      {
+        "id": "10_20_30_que_numero_va_en_la_e",
+        "enunciado": "10 20 30 ... ¿qué número va en la estrella?"
+      },
+      {
+        "id": "5_10_15_20_que_va_en_la_estrel",
+        "enunciado": "5 10 15 20 ... ¿qué va en la estrella?"
+      },
+      {
+        "id": "2_4_6_8_que_va_en_la_estrella",
+        "enunciado": "2 4 6 8 ... ¿qué va en la estrella?"
       }
     ]
   },
@@ -900,7 +1219,17 @@
         "descripcion": "Errar el factor (1 m=100 cm)."
       }
     ],
-    "descripcion": "Convertir h↔min↔s, kg↔g, m↔cm"
+    "descripcion": "Convertir h↔min↔s, kg↔g, m↔cm",
+    "items": [
+      {
+        "id": "3_km_m_250_cm_m_4_5_m_cm",
+        "enunciado": "3 km=__ m ; 250 cm=__ m ; 4,5 m=__ cm."
+      },
+      {
+        "id": "2_km_y_350_m_m_error_3_m_3_10",
+        "enunciado": "2 km y 350 m = __ m. ⚠ Error: '3 m = 3×10 = 30 cm'."
+      }
+    ]
   },
   "correspondencia_uno_a_uno": {
     "definicion": "Asignar exactamente una etiqueta numérica a cada objeto de una colección, sin omitir ni repetir.",
@@ -923,7 +1252,21 @@
         "descripcion": "Confundir semejanza con congruencia."
       }
     ],
-    "descripcion": "Criterios AA, LAL, LLL de semejanza de triángulos"
+    "descripcion": "Criterios AA, LAL, LLL de semejanza de triángulos",
+    "items": [
+      {
+        "id": "triangulos_3_4_5_y_9_12_15_sem",
+        "enunciado": "Triángulos 3,4,5 y 9,12,15: ¿semejantes? ¿por qué criterio?"
+      },
+      {
+        "id": "dos_angulos_iguales_basta_crit",
+        "enunciado": "Dos ángulos iguales, ¿basta? ¿criterio?"
+      },
+      {
+        "id": "nombra_los_criterios_de_semeja",
+        "enunciado": "Nombra los criterios de semejanza."
+      }
+    ]
   },
   "cuadricula_mapa": {
     "definicion": "Localizar objetos en mapas o cuadrículas mediante coordenadas informales (letra-número), coordinando dos referencias simultáneas.",
@@ -945,7 +1288,17 @@
         "descripcion": "Contar desde 1 en vez del origen."
       }
     ],
-    "descripcion": "Ubicar objetos y trayectorias en un plano/mapa (calles, cuadras)"
+    "descripcion": "Ubicar objetos y trayectorias en un plano/mapa (calles, cuadras)",
+    "items": [
+      {
+        "id": "escribe_la_casilla_letra_y_num",
+        "enunciado": "Escribe la casilla (letra y número) del círculo."
+      },
+      {
+        "id": "dibuja_una_x_en_la_casilla_e_1",
+        "enunciado": "Dibuja una X en la casilla (E,1)."
+      }
+    ]
   },
   "dato_atipico": {
     "definicion": "Reconocer el efecto que un valor muy distinto de los demás produce sobre las medidas del conjunto.",
@@ -973,7 +1326,21 @@
         "retroalimentacion_sugerida": "Alinear ambos en la tabla posicional: la comparación se decide en los décimos, no en la cantidad de dígitos."
       }
     ],
-    "descripcion": "Décimos y centésimos; grilla decimal; valor posicional decimal"
+    "descripcion": "Décimos y centésimos; grilla decimal; valor posicional decimal",
+    "items": [
+      {
+        "id": "escribe_con_cifras_tres_entero",
+        "enunciado": "Escribe con cifras 'tres enteros con cuarenta y cinco centésimos'."
+      },
+      {
+        "id": "valor_posicional_del_7_en_2_37",
+        "enunciado": "Valor posicional del 7 en 2,375."
+      },
+      {
+        "id": "ordena_0_4_0_25_0_409_0_5",
+        "enunciado": "Ordena: 0,4; 0,25; 0,409; 0,5."
+      }
+    ]
   },
   "descomposicion_posicional": {
     "definicion": "Descomponer un número según el valor de sus posiciones (4 325 = 4 000 + 300 + 20 + 5) y recomponerlo.",
@@ -1017,7 +1384,13 @@
         "descripcion": "Contar mal los resultados posibles del proceso."
       }
     ],
-    "descripcion": "Ramas que enumeran los resultados posibles"
+    "descripcion": "Ramas que enumeran los resultados posibles",
+    "items": [
+      {
+        "id": "1_moneda_dos_veces_cuantos_res",
+        "enunciado": "1) Moneda dos veces: ¿cuántos resultados posibles? Escríbelos (CC, CS…)."
+      }
+    ]
   },
   "diagrama_cajon": {
     "definicion": "Representar gráficamente la posición y la dispersión de un conjunto de datos mediante sus cuartiles.",
@@ -1025,6 +1398,12 @@
       {
         "codigo": "MA08 OA 15",
         "cobertura": "parcial"
+      }
+    ],
+    "items": [
+      {
+        "id": "1_del_diagrama_de_cajon_minimo",
+        "enunciado": "1) Del diagrama de cajón: mínimo, máximo, mediana, y entre qué valores está el 50% central (la caja)."
       }
     ]
   },
@@ -1160,7 +1539,17 @@
         "retroalimentacion_sugerida": "Preguntar cuántas mitades caben en un entero: repartir en partes menores que la unidad produce más partes."
       }
     ],
-    "descripcion": "Dividir fracciones multiplicando por el inverso"
+    "descripcion": "Dividir fracciones multiplicando por el inverso",
+    "items": [
+      {
+        "id": "3_4_2_5_simplifica",
+        "enunciado": "3/4 ÷ 2/5 = (simplifica)."
+      },
+      {
+        "id": "5_1_2_error_3_4_2_5_3_4_2_5_no",
+        "enunciado": "5 ÷ 1/2 = ⚠ Error: '3/4 ÷ 2/5 = 3/4 × 2/5' (no invirtió)."
+      }
+    ]
   },
   "division_interior_segmento": {
     "definicion": "Dividir un segmento en una razón dada",
@@ -1174,7 +1563,25 @@
         "descripcion": "Medir desde el extremo equivocado."
       }
     ],
-    "descripcion": "Dividir un segmento en una razón dada"
+    "descripcion": "Dividir un segmento en una razón dada",
+    "items": [
+      {
+        "id": "contar_el_total_de_partes_de_u",
+        "enunciado": "contar el total de partes de una razón m:n (2:3 → 5 partes)."
+      },
+      {
+        "id": "dado_el_primer_trozo_y_la_razo",
+        "enunciado": "dado el primer trozo y la razón, hallar el otro trozo y el total (razón 2:3, AZ=12 → una parte vale 6, ZC=18, AC=30)."
+      },
+      {
+        "id": "dado_el_segmento_completo_y_la",
+        "enunciado": "dado el segmento completo y la razón, repartirlo en los dos trozos (2:3 de 35 → 14 y 21)."
+      },
+      {
+        "id": "problemas_contextualizados_rep",
+        "enunciado": "problemas contextualizados: repartir un tablón/herencia/bolitas en la razón dada; ubicar el punto de corte sobre un segmento. Errores a cazar: (a) leer la razón 2:3 como \"2 cm y 3 cm\" en vez de como partes iguales; (b) dividir la medida conocida por el total de partes cuando solo corresponde a algunas (12÷5 en vez de 12÷2); (c) entregar uno de los trozos en vez del segmento completo (responder ZC cuando piden AC)."
+      }
+    ]
   },
   "ecuacion_cuadratica": {
     "definicion": "Determinar los valores que anulan una expresión de segundo grado, admitiendo más de una solución.",
@@ -1193,7 +1600,21 @@
         "retroalimentacion_sugerida": "Verificar ambos valores en la ecuación original: los dos la satisfacen."
       }
     ],
-    "descripcion": "ax²+bx+c=0; fórmula general y discriminante"
+    "descripcion": "ax²+bx+c=0; fórmula general y discriminante",
+    "items": [
+      {
+        "id": "x_5x_6_0_factorizacion",
+        "enunciado": "x²−5x+6=0 (factorización)."
+      },
+      {
+        "id": "x_9_0",
+        "enunciado": "x²−9=0."
+      },
+      {
+        "id": "x_49_error_x_49_x_7_falta_la_o",
+        "enunciado": "x²=49. ⚠ Error: 'x²=49 → x=7' (falta la otra solución)."
+      }
+    ]
   },
   "ecuacion_formal": {
     "definicion": "Resolver ecuaciones de primer grado operando sobre ambos lados de la igualdad para conservar el equilibrio (procedimientos formales, modelo de balanza).",
@@ -1216,7 +1637,17 @@
         "descripcion": "Despejar sin invertir la operación correcta."
       }
     ],
-    "descripcion": "Ecuación ax=b resuelta con transformaciones (balanza)"
+    "descripcion": "Ecuación ax=b resuelta con transformaciones (balanza)",
+    "items": [
+      {
+        "id": "3x_5_20_muestra_cada_paso",
+        "enunciado": "3x+5=20 (muestra cada paso)."
+      },
+      {
+        "id": "2x_7_11_error_3x_5_20_3x_20_5",
+        "enunciado": "2x−7=11. ⚠ Error: '3x+5=20 → 3x=20+5=25 → x=25/3'."
+      }
+    ]
   },
   "ecuacion_lineal": {
     "definicion": "Resolver igualdades con coeficientes racionales y la incógnita presente en ambos lados.",
@@ -1240,7 +1671,21 @@
         "descripcion": "Cambiar mal el signo al 'pasar' un término."
       }
     ],
-    "descripcion": "Ecuación de primer grado con incógnita en ambos lados"
+    "descripcion": "Ecuación de primer grado con incógnita en ambos lados",
+    "items": [
+      {
+        "id": "5x_3_2x_9",
+        "enunciado": "5x−3=2x+9."
+      },
+      {
+        "id": "4_x_1_2x_6",
+        "enunciado": "4(x−1)=2x+6."
+      },
+      {
+        "id": "x_2_3_7_error_5x_3_2x_9_5x_2x",
+        "enunciado": "(x/2)+3=7. ⚠ Error: '5x−3=2x+9 → 5x+2x=9+3' (mueve mal el término)."
+      }
+    ]
   },
   "ecuacion_un_paso": {
     "definicion": "Encontrar el valor desconocido de una igualdad aditiva (a + □ = b; □ − a = b), comprendiendo que la solución restaura el equilibrio.",
@@ -1265,7 +1710,17 @@
         "descripcion": "No aplicar la operación inversa para despejar."
       }
     ],
-    "descripcion": "Balanza en equilibrio; incógnita a despejar"
+    "descripcion": "Balanza en equilibrio; incógnita a despejar",
+    "items": [
+      {
+        "id": "x_14_32_y_9_25_muestra_el_paso",
+        "enunciado": "x+14=32 ; y−9=25 (muestra el paso)."
+      },
+      {
+        "id": "pedro_regalo_12_y_le_quedaron",
+        "enunciado": "Pedro regaló 12 y le quedaron 20: plantea y resuelve la ecuación. ⚠ Error: x+7=15 → x=15+7=22, ¿dónde está el error?"
+      }
+    ]
   },
   "equivalencia_fraccion_decimal": {
     "definicion": "Comprender que fracción y decimal son escrituras distintas de una misma cantidad, y convertir entre ellas.",
@@ -1285,7 +1740,21 @@
         "descripcion": "Convertir mal décimos y centésimos."
       }
     ],
-    "descripcion": "Mismo número como fracción y como decimal"
+    "descripcion": "Mismo número como fracción y como decimal",
+    "items": [
+      {
+        "id": "escribe_3_4_como_decimal",
+        "enunciado": "Escribe 3/4 como decimal."
+      },
+      {
+        "id": "escribe_0_6_como_fraccion_simp",
+        "enunciado": "Escribe 0,6 como fracción simple."
+      },
+      {
+        "id": "que_es_mayor_2_5_o_0_45_justif",
+        "enunciado": "¿Qué es mayor, 2/5 o 0,45? Justifica."
+      }
+    ]
   },
   "escala_grafica": {
     "definicion": "Comprender que un símbolo o una división del eje puede valer más de un caso, y que leer el gráfico exige contar a saltos o multiplicar según esa escala.",
@@ -1351,7 +1820,17 @@
         "descripcion": "No usar el referente dado para aproximar."
       }
     ],
-    "descripcion": "Referente visual (frasco modelo); '¿más o menos que…?'; aproximar sin contar"
+    "descripcion": "Referente visual (frasco modelo); '¿más o menos que…?'; aproximar sin contar",
+    "items": [
+      {
+        "id": "si_en_el_primer_frasco_hay_3_p",
+        "enunciado": "Si en el primer frasco hay 3 plumas ¿cuántas en el segundo?"
+      },
+      {
+        "id": "hay_mas_o_menos_que_50",
+        "enunciado": "¿Hay más o menos que 50?"
+      }
+    ]
   },
   "estimacion_medidas": {
     "definicion": "Anticipar la medida aproximada de una magnitud usando referentes internalizados (un metro, un kilo, 90°) antes o en lugar de medir.",
@@ -1410,7 +1889,13 @@
         "descripcion": "Completar mal el complemento (7 necesita 2)."
       }
     ],
-    "descripcion": "Marco de diez; completar hasta 10 y seguir contando"
+    "descripcion": "Marco de diez; completar hasta 10 y seguir contando",
+    "items": [
+      {
+        "id": "5_5_10_0",
+        "enunciado": "5+5=, 10+0="
+      }
+    ]
   },
   "estrategia_descomposicion_calculo": {
     "definicion": "Descomponer los términos según posiciones para operar por partes (48 - 27 como 48 - 20 - 7).",
@@ -1478,7 +1963,13 @@
         "descripcion": "Errar el doble base del que se deriva."
       }
     ],
-    "descripcion": "Dobles con fichas (4+4); dobles y mitades"
+    "descripcion": "Dobles con fichas (4+4); dobles y mitades",
+    "items": [
+      {
+        "id": "5_5_3_3",
+        "enunciado": "5+5=, 3+3="
+      }
+    ]
   },
   "estrategia_factorizar": {
     "definicion": "Reordenar un producto descomponiendo los factores (8 x 75 = 2 x 4 x 25 x 3 = 600).",
@@ -1538,7 +2029,17 @@
         "descripcion": "Contar cuadrados uno a uno con errores."
       }
     ],
-    "descripcion": "Área del rectángulo como filas × columnas de cuadrados"
+    "descripcion": "Área del rectángulo como filas × columnas de cuadrados",
+    "items": [
+      {
+        "id": "1_area_de_un_rectangulo_7_4_cm",
+        "enunciado": "1) Área de un rectángulo 7×4 cm. 2) Cuadrícula 6 filas × 9 columnas: ¿qué operación da el total sin contar uno a uno?"
+      },
+      {
+        "id": "1_rectangulo_6_4_cuantos_cuadr",
+        "enunciado": "1) Rectángulo 6×4, ¿cuántos cuadrados de 1 cm caben? 2) Área 36 cm² y un lado 9, ¿el otro? 3) ¿Por qué el área se calcula multiplicando los lados?"
+      }
+    ]
   },
   "evaluacion_representaciones": {
     "definicion": "Juzgar si una representación es adecuada para los datos que muestra, y detectar cuándo distorsiona su lectura.",
@@ -1577,6 +2078,16 @@
         "codigo": "MA07 OA 05",
         "cobertura": "parcial"
       }
+    ],
+    "items": [
+      {
+        "id": "7_4_100",
+        "enunciado": "7⁰ ; (−4)⁰ ; 100⁰."
+      },
+      {
+        "id": "explica_con_la_division_por_qu",
+        "enunciado": "Explica con la división por qué 5⁰=1 (5³÷5³)."
+      }
     ]
   },
   "exponente_racional": {
@@ -1585,6 +2096,20 @@
       {
         "codigo": "MA2M OA 02",
         "cobertura": "parcial"
+      }
+    ],
+    "items": [
+      {
+        "id": "escribe_como_raiz_9_1_2_8_1_3",
+        "enunciado": "Escribe como raíz: 9^(1/2) ; 8^(1/3)."
+      },
+      {
+        "id": "calcula_9_1_2_27_1_3",
+        "enunciado": "Calcula 9^(1/2) ; 27^(1/3)."
+      },
+      {
+        "id": "escribe_5_como_potencia_de_exp",
+        "enunciado": "Escribe √5 como potencia de exponente racional."
       }
     ]
   },
@@ -1609,13 +2134,37 @@
         "retroalimentacion_sugerida": "Sustituir la letra por varios valores distintos: la expresión sigue teniendo sentido en todos."
       }
     ],
-    "descripcion": "Términos con coeficiente y parte literal"
+    "descripcion": "Términos con coeficiente y parte literal",
+    "items": [
+      {
+        "id": "expresion_para_el_triple_de_un",
+        "enunciado": "Expresión para 'el triple de un número, menos 5'."
+      },
+      {
+        "id": "si_a_3_b_4_2a_3b",
+        "enunciado": "Si a=3, b=4, ¿2a+3b?"
+      },
+      {
+        "id": "traduce_a_palabras_5_x_2",
+        "enunciado": "Traduce a palabras 5(x+2)."
+      }
+    ]
   },
   "extremos_punto_medio": {
     "definicion": "Identificar el menor y el mayor valor de un conjunto de datos y estimar el punto medio entre ambos.",
     "oa_relacionados": [
       {
         "codigo": "MA03 OA 24"
+      }
+    ],
+    "items": [
+      {
+        "id": "en_12_5_8_20_3_15_minimo_y_max",
+        "enunciado": "En 12,5,8,20,3,15: mínimo y máximo."
+      },
+      {
+        "id": "rango_max_min",
+        "enunciado": "¿Rango (máx−mín)?"
       }
     ]
   },
@@ -1661,7 +2210,21 @@
         "descripcion": "Sacar factor común solo de un término."
       }
     ],
-    "descripcion": "Factor común; diferencia de cuadrados; productos notables"
+    "descripcion": "Factor común; diferencia de cuadrados; productos notables",
+    "items": [
+      {
+        "id": "6x_9_factor_comun",
+        "enunciado": "6x+9 (factor común)."
+      },
+      {
+        "id": "x_16",
+        "enunciado": "x²−16."
+      },
+      {
+        "id": "x_5x_6_error_x_16_x_4",
+        "enunciado": "x²+5x+6. ⚠ Error: 'x²−16 = (x−4)²'."
+      }
+    ]
   },
   "figuras_2d": {
     "definicion": "Reconocer y comparar figuras 2D por sus atributos definitorios (lados, vértices, curvatura) y no solo por su apariencia global u orientación.",
@@ -1686,7 +2249,21 @@
         "descripcion": "No reconocer una figura girada."
       }
     ],
-    "descripcion": "Figuras recortadas; atributos (lados, vértices); triángulo, cuadrado, círculo"
+    "descripcion": "Figuras recortadas; atributos (lados, vértices); triángulo, cuadrado, círculo",
+    "items": [
+      {
+        "id": "lados_y_vertices_de_un_pentago",
+        "enunciado": "Lados y vértices de un pentágono."
+      },
+      {
+        "id": "en_abc_lado_opuesto_al_vertice",
+        "enunciado": "En ABC, ¿lado opuesto al vértice B?"
+      },
+      {
+        "id": "cuadrilatero_con_4_lados_igual",
+        "enunciado": "Cuadrilátero con 4 lados iguales y 4 ángulos rectos."
+      }
+    ]
   },
   "figuras_3d": {
     "definicion": "Reconocer y describir cuerpos geométricos según la forma de sus caras y el número de caras, aristas y vértices.",
@@ -1714,7 +2291,17 @@
         "descripcion": "Contar mal las caras ocultas."
       }
     ],
-    "descripcion": "Cuerpos geométricos; caras y aristas; relación con sus caras 2D"
+    "descripcion": "Cuerpos geométricos; caras y aristas; relación con sus caras 2D",
+    "items": [
+      {
+        "id": "nombra_cada_cuerpo_geometrico",
+        "enunciado": "Nombra cada cuerpo geométrico."
+      },
+      {
+        "id": "caras_aristas_y_vertices_de_un",
+        "enunciado": "Caras, aristas y vértices de un cubo."
+      }
+    ]
   },
   "formula_area_figuras": {
     "definicion": "Deducir y aplicar las fórmulas del área del triángulo, del paralelogramo y del trapecio.",
@@ -1732,7 +2319,21 @@
         "retroalimentacion_sugerida": "Trazar la perpendicular desde el vértice: la altura no siempre coincide con un lado."
       }
     ],
-    "descripcion": "Fórmulas de área de polígonos"
+    "descripcion": "Fórmulas de área de polígonos",
+    "items": [
+      {
+        "id": "formula_de_area_de_rectangulo",
+        "enunciado": "Fórmula de área de rectángulo, triángulo y cuadrado."
+      },
+      {
+        "id": "triangulo_base_6_altura_4_area",
+        "enunciado": "Triángulo base 6, altura 4, ¿área?"
+      },
+      {
+        "id": "rectangulo_area_48_y_base_8_al",
+        "enunciado": "Rectángulo área 48 y base 8, ¿altura? ⚠ Error: 'área del triángulo = 6×4 = 24' (faltó ÷2)."
+      }
+    ]
   },
   "fraccion_en_recta": {
     "definicion": "Ubicar una fracción como un número con posición propia en la recta numérica, entre los enteros.",
@@ -1764,7 +2365,21 @@
         "descripcion": "Ubicar sin dividir el entero en partes iguales."
       }
     ],
-    "descripcion": "Fracción/número mixto como punto en la recta"
+    "descripcion": "Fracción/número mixto como punto en la recta",
+    "items": [
+      {
+        "id": "marcar_una_fraccion_en_una_rec",
+        "enunciado": "marcar una fracción en una recta 0–1 dividida en partes iguales (1/4, 3/4, 2/6, 5/6)."
+      },
+      {
+        "id": "decidir_si_una_fraccion_cae_ce",
+        "enunciado": "decidir si una fracción cae cerca del 0 o cerca del 1 (1/8 cerca del 0; 7/8 cerca del 1)."
+      },
+      {
+        "id": "comparar_posiciones_4_4_1_6_6",
+        "enunciado": "comparar posiciones (4/4=1; 6/6=1; 1/2 justo en la mitad; ¿cuál está más cerca del 1: 2/5 o 4/5?). Error a cazar: ubicar una fracción pequeña (1/4) cerca del 1 en vez de cerca del 0, sin pensar que es un solo paso de cuatro."
+      }
+    ]
   },
   "fraccion_equivalente": {
     "definicion": "Comprender que una misma cantidad admite infinitas escrituras fraccionarias distintas.",
@@ -1788,7 +2403,21 @@
         "descripcion": "No multiplicar ambos por lo mismo."
       }
     ],
-    "descripcion": "Fracciones equivalentes en la recta; amplificar/simplificar"
+    "descripcion": "Fracciones equivalentes en la recta; amplificar/simplificar",
+    "items": [
+      {
+        "id": "decidir_si_dos_fracciones_son",
+        "enunciado": "decidir si dos fracciones son equivalentes (1/2 y 2/4 → sí; 1/2 y 1/3 → no)."
+      },
+      {
+        "id": "completar_la_fraccion_equivale",
+        "enunciado": "completar la fracción equivalente que falta (1/2 = _/4; 2/3 = _/6)."
+      },
+      {
+        "id": "generar_dos_fracciones_equival",
+        "enunciado": "generar dos fracciones equivalentes a una dada. Apoyo en barras para ver que ocupan lo mismo. Error a cazar: llamar equivalentes a dos fracciones \"porque tienen el mismo 1 arriba\" (1/2 y 1/4) sin comparar el tamaño real que ocupan."
+      }
+    ]
   },
   "fraccion_parte_grupo": {
     "definicion": "Comprender que el todo puede ser una colección de elementos discretos y no solo un objeto continuo.",
@@ -1802,6 +2431,20 @@
       {
         "id": "usar_el_tamano_de_un_subgrupo",
         "descripcion": "Usar el tamaño de un subgrupo como denominador en vez del total del grupo."
+      }
+    ],
+    "items": [
+      {
+        "id": "fraccion_de_un_grupo_de_objeto",
+        "enunciado": "fracción de un grupo de objetos (de 10 bolitas, 3 rojas → 3/10; el denominador es el total del grupo, no lo que sobra)."
+      },
+      {
+        "id": "calcular_cuantos_objetos_son_u",
+        "enunciado": "calcular cuántos objetos son una fracción unitaria de un grupo (1/3 de 9 = 3; 1/4 de 12 = 3)."
+      },
+      {
+        "id": "problemas_con_colecciones_lapi",
+        "enunciado": "problemas con colecciones (lápices, galletas, flores). Errores a cazar: (a) poner abajo los objetos que sobran en vez del total del grupo (2 negras de 6 → escribir 2/4 porque quedan 4 blancas, en vez de 2/6); (b) confundir \"fracción del grupo\" con \"cuántos son\"."
       }
     ]
   },
@@ -1844,6 +2487,24 @@
         "descripcion": "Rectángulo segmentado en partes iguales con parte sombreada.",
         "ancla_visual": "barra_fraccionaria"
       }
+    ],
+    "items": [
+      {
+        "id": "escribir_la_fraccion_de_la_par",
+        "enunciado": "escribir la fracción de la parte pintada de una figura partida en partes iguales (3 de 5 → 3/5)."
+      },
+      {
+        "id": "leer_una_fraccion_identificar",
+        "enunciado": "leer una fracción: identificar numerador y denominador, decir en cuántas partes se partió el entero y cuántas se toman, leerla en voz alta (3/4 = \"tres cuartos\")."
+      },
+      {
+        "id": "pintar_una_fraccion_dada_sobre",
+        "enunciado": "pintar una fracción dada sobre una barra."
+      },
+      {
+        "id": "problemas_que_fraccion_de_una",
+        "enunciado": "problemas: qué fracción de una pizza/queque/chocolate se come o queda. Errores a cazar: (a) invertir numerador y denominador (6 partes, 2 pintadas → escribir 6/2 en vez de 2/6); (b) no exigir que las partes sean iguales para que la fracción tenga sentido."
+      }
     ]
   },
   "fraccion_propia_impropia": {
@@ -1868,7 +2529,21 @@
         "descripcion": "Confundir con número mixto."
       }
     ],
-    "descripcion": "Propia (<1) vs impropia (≥1); número mixto asociado"
+    "descripcion": "Propia (<1) vs impropia (≥1); número mixto asociado",
+    "items": [
+      {
+        "id": "clasificar_una_fraccion_como_p",
+        "enunciado": "clasificar una fracción como propia o impropia (2/5 propia; 7/3 impropia; 6/6 igual a 1)."
+      },
+      {
+        "id": "comparar_con_el_entero_menor_q",
+        "enunciado": "comparar con el entero: menor que 1, igual a 1 o mayor que 1 (3/4<1; 5/5=1; 9/4>1)."
+      },
+      {
+        "id": "escribir_fracciones_propias_im",
+        "enunciado": "escribir fracciones propias/impropias con un denominador dado, o una que valga exactamente 1. Error a cazar: clasificar por el tamaño de los números y no por cuál es mayor (decir que 8/3 es propia \"porque los números son chicos\")."
+      }
+    ]
   },
   "frecuencia_relativa": {
     "definicion": "Expresar cuántas veces ocurre un valor respecto del total de observaciones, y no en términos absolutos.",
@@ -1889,6 +2564,20 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Calcular la proporción en cada grupo: veinte de cien no es lo mismo que veinte de treinta."
       }
+    ],
+    "items": [
+      {
+        "id": "10_de_40_practican_futbol_frec",
+        "enunciado": "10 de 40 practican fútbol: frecuencia relativa (fracción y %)."
+      },
+      {
+        "id": "si_es_0_25_que",
+        "enunciado": "Si es 0,25, ¿qué %?"
+      },
+      {
+        "id": "cuanto_suman_todas_las_frecuen",
+        "enunciado": "¿Cuánto suman todas las frecuencias relativas?"
+      }
     ]
   },
   "funcion": {
@@ -1905,6 +2594,20 @@
         "nombre": "Máquina que transforma",
         "descripcion": "Entra un número, la máquina aplica su regla, sale otro número.",
         "ancla_visual": "maquina_funcion"
+      }
+    ],
+    "items": [
+      {
+        "id": "f_asigna_a_cada_numero_su_dobl",
+        "enunciado": "f asigna a cada número su doble más 1: ¿f(3)?"
+      },
+      {
+        "id": "f_0",
+        "enunciado": "¿f(0)?"
+      },
+      {
+        "id": "si_f_x_x_4_f_2_f_5",
+        "enunciado": "Si f(x)=x+4: f(2)=__, f(5)=__."
       }
     ]
   },
@@ -1925,7 +2628,21 @@
         "retroalimentacion_sugerida": "Variar un parámetro a la vez sobre el gráfico: uno gira la recta, el otro la sube o baja."
       }
     ],
-    "descripcion": "y = m·x + n; recta con coeficiente de posición"
+    "descripcion": "y = m·x + n; recta con coeficiente de posición",
+    "items": [
+      {
+        "id": "del_grafico_en_que_punto_corta",
+        "enunciado": "Del gráfico, ¿en qué punto corta al eje Y?"
+      },
+      {
+        "id": "para_y_2x_3_pendiente_corte_y",
+        "enunciado": "Para y=2x+3: pendiente=__, corte Y=__."
+      },
+      {
+        "id": "evalua_y_2x_3_en_x_5",
+        "enunciado": "Evalúa y=2x+3 en x=5."
+      }
+    ]
   },
   "funcion_cuadratica": {
     "definicion": "Representar una relación cuyo cambio no es constante sino que varía de manera regular, describiendo una parábola.",
@@ -1945,7 +2662,21 @@
         "descripcion": "Creer que la parábola siempre abre hacia arriba."
       }
     ],
-    "descripcion": "Parábola; vértice, eje de simetría, concavidad"
+    "descripcion": "Parábola; vértice, eje de simetría, concavidad",
+    "items": [
+      {
+        "id": "y_x_4_cortes_con_eje_x_y_verti",
+        "enunciado": "y=x²−4: cortes con eje X y vértice."
+      },
+      {
+        "id": "para_y_x_si_x_3_y_si_x_3_y",
+        "enunciado": "Para y=x²: si x=3, y=__; si x=−3, y=__."
+      },
+      {
+        "id": "y_x_abre_arriba_o_abajo_y_x_er",
+        "enunciado": "¿y=x² abre arriba o abajo? ¿y=−x²? ⚠ Error: 'y=(−5)²=−25'."
+      }
+    ]
   },
   "funcion_inversa": {
     "definicion": "Determinar la regla que deshace lo que hace una función, devolviendo cada salida a su entrada.",
@@ -1989,7 +2720,17 @@
         "descripcion": "Leer y=mx sin que pase por el origen."
       }
     ],
-    "descripcion": "y = m·x; gráfico que pasa por el origen"
+    "descripcion": "y = m·x; gráfico que pasa por el origen",
+    "items": [
+      {
+        "id": "recta_por_el_origen_cuanto_sub",
+        "enunciado": "Recta por el origen: ¿cuánto sube y por cada +1 en x? Escribe y=__."
+      },
+      {
+        "id": "para_y_3x_si_x_4_y",
+        "enunciado": "Para y=3x, si x=4, y=__."
+      }
+    ]
   },
   "grafico_barras": {
     "definicion": "Construir y leer gráficos de barra (simple y doble), donde la altura de cada barra representa la frecuencia de una categoría sobre un eje graduado.",
@@ -2029,13 +2770,29 @@
         "descripcion": "Comparar barras de distinto ancho."
       }
     ],
-    "descripcion": "Gráfico de barras; tabla de conteo; pictograma"
+    "descripcion": "Gráfico de barras; tabla de conteo; pictograma",
+    "items": [
+      {
+        "id": "si_5_estudiantes_prefieren_per",
+        "enunciado": "Si 5 estudiantes prefieren 'pera', ¿hasta qué altura llega la barra?"
+      },
+      {
+        "id": "ventaja_del_grafico_de_barras",
+        "enunciado": "Ventaja del gráfico de barras frente a una tabla."
+      }
+    ]
   },
   "grafico_circular": {
     "definicion": "Leer gráficos circulares comprendiendo que cada sector representa la parte del total que corresponde a una categoría.",
     "oa_relacionados": [
       {
         "codigo": "MA06 OA 24"
+      }
+    ],
+    "items": [
+      {
+        "id": "1_grafico_circular_de_transpor",
+        "enunciado": "1) Gráfico circular de transporte: medio más usado; si el curso tiene 40, ¿cuántos en bus (25%)? ⚠ Error: 'a pie es la mitad (50%) = 25 personas'."
       }
     ]
   },
@@ -2056,7 +2813,13 @@
         "descripcion": "Ejes sin escala uniforme."
       }
     ],
-    "descripcion": "Puntos unidos que muestran cambio en el tiempo"
+    "descripcion": "Puntos unidos que muestran cambio en el tiempo",
+    "items": [
+      {
+        "id": "1_grafico_de_temperatura_de_la",
+        "enunciado": "1) Gráfico de temperatura de la semana: ¿qué día hizo más calor? ¿entre qué días subió más?"
+      }
+    ]
   },
   "hechos_aditivos_basicos": {
     "definicion": "Disponer con fluidez de las sumas y restas elementales, recuperándolas sin calcular.",
@@ -2124,7 +2887,25 @@
         "descripcion": "Aplicar la razón solo a una dimensión."
       }
     ],
-    "descripcion": "Ampliar/reducir desde un centro con razón k"
+    "descripcion": "Ampliar/reducir desde un centro con razón k",
+    "items": [
+      {
+        "id": "ab_3_a_b_6_desde_o_razon_k_nue",
+        "enunciado": "AB=3, A'B'=6 desde O, ¿razón k (nueva÷original)?"
+      },
+      {
+        "id": "con_esa_k_si_bc_4_5_b_c",
+        "enunciado": "Con esa k, si BC=4,5, ¿B'C'?"
+      },
+      {
+        "id": "k_0_5_mas_grande_o_pequena",
+        "enunciado": "k=0,5, ¿más grande o pequeña?"
+      },
+      {
+        "id": "5_10_7_14_4_12_es_homotecia_er",
+        "enunciado": "5→10,7→14,4→12, ¿es homotecia? ⚠ Error: 'k=3÷6=0,5'."
+      }
+    ]
   },
   "igualdad_relacional": {
     "definicion": "Comprender el signo = como afirmación de que dos lados son la misma cantidad (equilibrio), y no como orden de calcular un resultado; su negación se registra con > y < como desequilibrio orientado.",
@@ -2145,7 +2926,17 @@
         "descripcion": "Leer el signo = como 'da como resultado' y no como equilibrio (4+3=□+2 → 7)."
       }
     ],
-    "descripcion": "Balanza en equilibrio; el signo = como equilibrio, no como 'resultado'"
+    "descripcion": "Balanza en equilibrio; el signo = como equilibrio, no como 'resultado'",
+    "items": [
+      {
+        "id": "completa_8_6_9",
+        "enunciado": "Completa: 8+6 = __ + 9."
+      },
+      {
+        "id": "v_o_f_15_6_4_5_12_4_4_5_20_5_3",
+        "enunciado": "V o F: 15−6=4+5; 12−4=4+5; 20+5=30−5."
+      }
+    ]
   },
   "inecuacion_lineal": {
     "definicion": "Determinar el conjunto de valores que satisfacen una desigualdad con coeficientes racionales.",
@@ -2168,7 +2959,21 @@
         "retroalimentacion_sugerida": "Verificar con un valor concreto antes y después: el orden se da vuelta al cambiar de sentido."
       }
     ],
-    "descripcion": "Desigualdad de primer grado; conjunto solución"
+    "descripcion": "Desigualdad de primer grado; conjunto solución",
+    "items": [
+      {
+        "id": "3x_2_14",
+        "enunciado": "3x+2<14."
+      },
+      {
+        "id": "2x_1_x_5",
+        "enunciado": "2x−1≥x+5."
+      },
+      {
+        "id": "2x_6_error_2x_6_x_3_no_invirti",
+        "enunciado": "−2x>6. ⚠ Error: '−2x>6 → x>−3' (no invirtió el signo al dividir por negativo)."
+      }
+    ]
   },
   "inecuacion_un_paso": {
     "definicion": "Determinar los valores que mantienen una desigualdad aditiva, comprendiendo que la solución no es única sino un conjunto.",
@@ -2190,7 +2995,21 @@
         "descripcion": "Olvidar que hay un conjunto de soluciones."
       }
     ],
-    "descripcion": "Desigualdad; valores que la cumplen"
+    "descripcion": "Desigualdad; valores que la cumplen",
+    "items": [
+      {
+        "id": "x_3_8",
+        "enunciado": "x+3>8."
+      },
+      {
+        "id": "x_5_2",
+        "enunciado": "x−5≤2."
+      },
+      {
+        "id": "marca_en_la_recta_la_solucion",
+        "enunciado": "Marca en la recta la solución de x>3."
+      }
+    ]
   },
   "irrelevancia_orden": {
     "definicion": "Comprender que el orden en que se cuentan los elementos de una colección no altera su cardinal.",
@@ -2297,7 +3116,13 @@
         "descripcion": "Sobreinterpretar el gráfico."
       }
     ],
-    "descripcion": "Leer barras y tablas; responder preguntas del gráfico"
+    "descripcion": "Leer barras y tablas; responder preguntas del gráfico",
+    "items": [
+      {
+        "id": "1_del_grafico_de_barras_fruta",
+        "enunciado": "1) Del gráfico de barras (fruta preferida): fruta más preferida, cuántos prefieren naranja, total de respuestas."
+      }
+    ]
   },
   "lectura_reloj": {
     "definicion": "Leer y registrar la hora en relojes análogos y digitales (horas, medias, cuartos, minutos; A.M./P.M. y formato 24 h), coordinando las dos escalas de la esfera.",
@@ -2348,7 +3173,21 @@
         "descripcion": "Confundir el orden de las operaciones al simbolizar."
       }
     ],
-    "descripcion": "Traducir 'doble', 'triple' a expresiones con letras"
+    "descripcion": "Traducir 'doble', 'triple' a expresiones con letras",
+    "items": [
+      {
+        "id": "expresion_para_el_doble_de_un",
+        "enunciado": "Expresión para 'el doble de un número más 3'."
+      },
+      {
+        "id": "si_n_5_4n_2",
+        "enunciado": "Si n=5, ¿4n−2?"
+      },
+      {
+        "id": "que_representa_x_7",
+        "enunciado": "¿Qué representa x+7?"
+      }
+    ]
   },
   "lenguaje_probabilistico": {
     "definicion": "Graduar la posibilidad de ocurrencia de un evento con los términos seguro, posible, poco posible e imposible.",
@@ -2424,6 +3263,20 @@
         "id": "no_alinear_el_vertice_y_el_lad",
         "descripcion": "No alinear el vértice y el lado con el 0."
       }
+    ],
+    "items": [
+      {
+        "id": "un_angulo_mide_35_cuanto_le_fa",
+        "enunciado": "Un ángulo mide 35°, ¿cuánto le falta para ser recto?"
+      },
+      {
+        "id": "suplementario_de_110",
+        "enunciado": "Suplementario de 110°."
+      },
+      {
+        "id": "como_se_llama_el_angulo_entre",
+        "enunciado": "¿Cómo se llama el ángulo entre 90° y 180°?"
+      }
     ]
   },
   "medicion_longitud": {
@@ -2449,7 +3302,17 @@
         "descripcion": "Confundir mm, cm y m."
       }
     ],
-    "descripcion": "Medir con regla/huincha en mm, cm y m"
+    "descripcion": "Medir con regla/huincha en mm, cm y m",
+    "items": [
+      {
+        "id": "cuanto_mide_el_segmento_con_la",
+        "enunciado": "¿Cuánto mide el segmento con la regla?"
+      },
+      {
+        "id": "entre_que_dos_enteros_de_la_re",
+        "enunciado": "¿Entre qué dos enteros de la regla queda?"
+      }
+    ]
   },
   "medicion_peso": {
     "definicion": "Comparar, estimar y medir el peso de objetos en gramos y kilogramos, comprendiendo la relación entre ambas unidades.",
@@ -2477,7 +3340,21 @@
         "descripcion": "Ubicar mal Q1/Q3 sin ordenar los datos."
       }
     ],
-    "descripcion": "Cuartiles Q1, Q2, Q3; posición de un dato"
+    "descripcion": "Cuartiles Q1, Q2, Q3; posición de un dato",
+    "items": [
+      {
+        "id": "que_representa_la_mediana",
+        "enunciado": "¿Qué representa la mediana?"
+      },
+      {
+        "id": "mediana_de_7_2_9_4_6",
+        "enunciado": "Mediana de 7,2,9,4,6."
+      },
+      {
+        "id": "si_un_dato_esta_en_el_cuartil",
+        "enunciado": "Si un dato está en el cuartil superior, ¿entre los más altos o bajos?"
+      }
+    ]
   },
   "medidas_tendencia_central": {
     "definicion": "Elegir entre media, mediana y moda el valor que mejor representa un conjunto de datos según la pregunta.",
@@ -2497,7 +3374,17 @@
         "descripcion": "Elegir la medida que no representa el conjunto."
       }
     ],
-    "descripcion": "Media, mediana, moda de un conjunto"
+    "descripcion": "Media, mediana, moda de un conjunto",
+    "items": [
+      {
+        "id": "para_3_5_5_7_10_media_mediana",
+        "enunciado": "Para 3,5,5,7,10: media, mediana y moda."
+      },
+      {
+        "id": "diferencia_entre_media_y_media",
+        "enunciado": "Diferencia entre media y mediana."
+      }
+    ]
   },
   "modelo_azar": {
     "definicion": "Concebir el comportamiento azaroso como algo que exhibe regularidad al acumular muchas repeticiones.",
@@ -2575,6 +3462,16 @@
         "id": "confundir_cantidad_de_grupos_c",
         "descripcion": "Confundir cantidad de grupos con tamaño del grupo."
       }
+    ],
+    "items": [
+      {
+        "id": "208_7",
+        "enunciado": "208 × 7 ="
+      },
+      {
+        "id": "45_12",
+        "enunciado": "45 × 12 ="
+      }
     ]
   },
   "multiplicacion_division_decimales": {
@@ -2599,7 +3496,17 @@
         "descripcion": "Contar mal los decimales del producto."
       }
     ],
-    "descripcion": "Multiplicar/dividir decimales; posición de la coma"
+    "descripcion": "Multiplicar/dividir decimales; posición de la coma",
+    "items": [
+      {
+        "id": "3_6_2_4",
+        "enunciado": "3,6 × 2,4 ="
+      },
+      {
+        "id": "8_4_0_7_error_0_3_0_2_0_6_porq",
+        "enunciado": "8,4 ÷ 0,7 = ⚠ Error: '0,3 × 0,2 = 0,6 porque 3×2=6'."
+      }
+    ]
   },
   "multiplicacion_division_enteros": {
     "definicion": "Repetir y repartir cantidades con sentido, conservando los procedimientos de los naturales.",
@@ -2619,7 +3526,21 @@
         "descripcion": "Tratar el signo como si fuera del resultado y no de cada factor."
       }
     ],
-    "descripcion": "Multiplicar/dividir enteros; regla de los signos"
+    "descripcion": "Multiplicar/dividir enteros; regla de los signos",
+    "items": [
+      {
+        "id": "4_7",
+        "enunciado": "(−4)×(−7) ="
+      },
+      {
+        "id": "36_9",
+        "enunciado": "(−36)÷9 ="
+      },
+      {
+        "id": "2_5_3",
+        "enunciado": "(−2)×5×(−3) ="
+      }
+    ]
   },
   "multiplicacion_fracciones": {
     "definicion": "Tomar una parte de una parte: el producto de dos fracciones expresa una fracción del todo original.",
@@ -2647,6 +3568,16 @@
         "descripcion": "Sostiene que el producto siempre es mayor que los factores, y rechaza que 1/2 x 1/2 sea menor que 1/2.",
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Sombrear la mitad de una mitad sobre el mismo todo: tomar parte de una parte deja menos, no más."
+      }
+    ],
+    "items": [
+      {
+        "id": "2_3_3_5_simplifica",
+        "enunciado": "2/3 × 3/5 = (simplifica)."
+      },
+      {
+        "id": "3_4_8",
+        "enunciado": "3/4 × 8 ="
       }
     ]
   },
@@ -2784,7 +3715,33 @@
         "descripcion": "Invertir cifras."
       }
     ],
-    "descripcion": "Tarjetas de números; el numeral escrito; palabra-número (p. ej. 'quince'→15)"
+    "descripcion": "Tarjetas de números; el numeral escrito; palabra-número (p. ej. 'quince'→15)",
+    "items": [
+      {
+        "id": "que_numero_va_en_0_10",
+        "enunciado": "¿Qué número va en ? (0-10)"
+      },
+      {
+        "id": "que_numero_va_en_0_10_2",
+        "enunciado": "¿Qué número va en ? (0-10)"
+      },
+      {
+        "id": "cuantos_patos_hay_incluye_0",
+        "enunciado": "¿Cuántos patos hay? (incluye 0)"
+      },
+      {
+        "id": "donde_hay_8_elementos",
+        "enunciado": "¿Dónde hay 8 elementos?"
+      },
+      {
+        "id": "que_numero_va_en_la_estrella_1",
+        "enunciado": "¿Qué número va en la estrella? (11-20)"
+      },
+      {
+        "id": "que_numero_es_quince_14_51_15",
+        "enunciado": "¿Qué número es? 'Quince' -> 14/51/15"
+      }
+    ]
   },
   "numero_irracional": {
     "definicion": "Reconocer cantidades que no admiten expresión como cociente de dos enteros y cuya escritura decimal no es periódica.",
@@ -2804,7 +3761,17 @@
         "descripcion": "Confundir irracional con 'decimal largo pero periódico'."
       }
     ],
-    "descripcion": "Decimal no periódico; √2 en la recta numérica"
+    "descripcion": "Decimal no periódico; √2 en la recta numérica",
+    "items": [
+      {
+        "id": "cuales_son_irracionales_2_3_4",
+        "enunciado": "¿Cuáles son irracionales? √2, 3/4, π, 0,5, √9."
+      },
+      {
+        "id": "que_distingue_a_un_irracional",
+        "enunciado": "¿Qué distingue a un irracional de un racional?"
+      }
+    ]
   },
   "numero_mixto": {
     "definicion": "Expresar una cantidad mayor que la unidad como enteros más una fracción, y convertir entre esa forma y la fracción impropia.",
@@ -2863,6 +3830,20 @@
         "descripcion": "Lee el signo menos siempre como orden de restar, y no como marca del sentido de la cantidad.",
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Contrastar 'la temperatura es -3' con '5 menos 3': el mismo símbolo hace dos trabajos distintos."
+      }
+    ],
+    "items": [
+      {
+        "id": "ordena_5_3_1_0_8",
+        "enunciado": "Ordena: −5, 3, −1, 0, −8."
+      },
+      {
+        "id": "estaba_a_3_c_y_bajo_4_c_ahora",
+        "enunciado": "Estaba a −3 °C y bajó 4 °C, ¿ahora?"
+      },
+      {
+        "id": "que_es_mayor_7_o_2",
+        "enunciado": "¿Qué es mayor, −7 o −2?"
       }
     ]
   },
@@ -2925,6 +3906,20 @@
         "id": "no_reconocer_un_decimal_period",
         "descripcion": "No reconocer un decimal periódico como fracción."
       }
+    ],
+    "items": [
+      {
+        "id": "como_fraccion_0_75_2_1_5",
+        "enunciado": "Como fracción: 0,75 ; −2 ; 1,5."
+      },
+      {
+        "id": "es_3_4_racional_por_que",
+        "enunciado": "¿Es −3/4 racional? ¿Por qué?"
+      },
+      {
+        "id": "ubica_1_2_0_25_1_5",
+        "enunciado": "Ubica: −1/2, 0,25, −1,5."
+      }
     ]
   },
   "numero_real": {
@@ -2945,7 +3940,21 @@
         "descripcion": "Creer que entre dos racionales no hay más números."
       }
     ],
-    "descripcion": "Racionales e irracionales completan la recta"
+    "descripcion": "Racionales e irracionales completan la recta",
+    "items": [
+      {
+        "id": "clasifica_5_2_3_7_0",
+        "enunciado": "Clasifica: −5, 2/3, √7, 0."
+      },
+      {
+        "id": "todo_entero_es_racional_justif",
+        "enunciado": "¿Todo entero es racional? Justifica."
+      },
+      {
+        "id": "ubica_2_en_la_recta_entre_que",
+        "enunciado": "Ubica √2 en la recta (entre qué enteros)."
+      }
+    ]
   },
   "operatoria_algebraica": {
     "definicion": "Multiplicar y dividir expresiones algebraicas aplicando las propiedades de las operaciones numéricas.",
@@ -2965,7 +3974,21 @@
         "descripcion": "Perder el signo al quitar paréntesis con un − delante."
       }
     ],
-    "descripcion": "Reducir y operar expresiones algebraicas"
+    "descripcion": "Reducir y operar expresiones algebraicas",
+    "items": [
+      {
+        "id": "2x_3_5x_1",
+        "enunciado": "(2x+3)+(5x−1)."
+      },
+      {
+        "id": "7a_4_2a_5",
+        "enunciado": "(7a−4)−(2a+5)."
+      },
+      {
+        "id": "3_2x_4_error_7a_4_2a_5_7a_4_2a",
+        "enunciado": "3(2x−4). ⚠ Error: '(7a−4)−(2a+5) = 7a−4−2a+5 = 5a+1'."
+      }
+    ]
   },
   "operatoria_racionales": {
     "definicion": "Operar con racionales en forma simbólica, transitando entre sus escrituras según convenga al cálculo.",
@@ -2989,7 +4012,21 @@
         "descripcion": "Perder el signo al operar."
       }
     ],
-    "descripcion": "Operar racionales en forma fraccionaria y decimal"
+    "descripcion": "Operar racionales en forma fraccionaria y decimal",
+    "items": [
+      {
+        "id": "2_3_1_6",
+        "enunciado": "2/3 + (−1/6)."
+      },
+      {
+        "id": "3_4_2_9",
+        "enunciado": "(−3/4) × 2/9."
+      },
+      {
+        "id": "1_2_3_4_error_1_2_1_3_2_5_sumo",
+        "enunciado": "(−1/2) − (−3/4). ⚠ Error: '1/2+1/3 = 2/5, sumo arriba y abajo'."
+      }
+    ]
   },
   "paralelas_perpendiculares": {
     "definicion": "Identificar pares de rectas, lados o caras que son paralelos, que se intersectan o que son perpendiculares.",
@@ -3008,7 +4045,17 @@
         "descripcion": "Juzgar por apariencia sin verificar."
       }
     ],
-    "descripcion": "Rectas paralelas y perpendiculares"
+    "descripcion": "Rectas paralelas y perpendiculares",
+    "items": [
+      {
+        "id": "1_que_par_de_lados_es_paralelo",
+        "enunciado": "1) ¿Qué par de lados es paralelo? 2) Nombra un par perpendicular. En cuerpos: ¿la cara Q es paralela o perpendicular a P? ⚠ Error: 'en un cubo todas las caras son paralelas porque son cuadrados iguales'."
+      },
+      {
+        "id": "1_que_rectas_son_paralelas_un",
+        "enunciado": "1) ¿Qué rectas son paralelas? ¿Un par perpendicular? 2) ¿Cuántos grados forman dos perpendiculares? 3) Dos paralelas prolongadas, ¿se cortan?"
+      }
+    ]
   },
   "particion_equitativa": {
     "definicion": "Dividir un todo en partes de igual tamaño, condición sin la cual las partes no son comparables entre sí.",
@@ -3057,7 +4104,25 @@
         "descripcion": "No detectar la regla real del patrón."
       }
     ],
-    "descripcion": "Secuencia numérica con regla (2,4,6…); patrón ascendente y descendente"
+    "descripcion": "Secuencia numérica con regla (2,4,6…); patrón ascendente y descendente",
+    "items": [
+      {
+        "id": "cual_es_el_patron",
+        "enunciado": "¿Cuál es el patrón?"
+      },
+      {
+        "id": "cual_es_el_patron_ascendente_d",
+        "enunciado": "¿Cuál es el patrón? ascendente/descendente"
+      },
+      {
+        "id": "2_4_6_8_2_3_6_9_12_3",
+        "enunciado": "2 4 6 8 (+2) ; 3 6 9 12 (+3)"
+      },
+      {
+        "id": "1_completa_3_7_11_15_2_complet",
+        "enunciado": "1) Completa: 3, 7, 11, 15, __, __. 2) Completa: 80, 72, 64, __, __."
+      }
+    ]
   },
   "patron_repeticion": {
     "definicion": "Identificar el núcleo que se repite en una secuencia (sonidos, figuras, ritmos) y usarlo para continuar, completar y crear la secuencia.",
@@ -3082,7 +4147,25 @@
         "descripcion": "Continuar el patrón por apariencia."
       }
     ],
-    "descripcion": "Secuencia de figuras o colores que se repite"
+    "descripcion": "Secuencia de figuras o colores que se repite",
+    "items": [
+      {
+        "id": "cual_es_el_patron",
+        "enunciado": "¿Cuál es el patrón?"
+      },
+      {
+        "id": "cual_es_el_patron_ascendente_d",
+        "enunciado": "¿Cuál es el patrón? ascendente/descendente"
+      },
+      {
+        "id": "2_4_6_8_2_3_6_9_12_3",
+        "enunciado": "2 4 6 8 (+2) ; 3 6 9 12 (+3)"
+      },
+      {
+        "id": "1_dibuja_las_dos_figuras_que_s",
+        "enunciado": "1) Dibuja las dos figuras que siguen en la secuencia. 2) Encierra el núcleo del patrón y di cuántas figuras lo forman."
+      }
+    ]
   },
   "pendiente": {
     "definicion": "Cuantificar el cambio constante de una relación como razón entre la variación vertical y la horizontal.",
@@ -3106,7 +4189,21 @@
         "descripcion": "Ignorar el signo de la inclinación."
       }
     ],
-    "descripcion": "Inclinación m de la recta (cambio y/cambio x)"
+    "descripcion": "Inclinación m de la recta (cambio y/cambio x)",
+    "items": [
+      {
+        "id": "recta_por_0_0_y_2_6_pendiente",
+        "enunciado": "Recta por (0,0) y (2,6), ¿pendiente?"
+      },
+      {
+        "id": "sube_2_por_cada_1_que_avanza_p",
+        "enunciado": "Sube 2 por cada 1 que avanza, ¿pendiente?"
+      },
+      {
+        "id": "la_pendiente_de_y_4x_es_o_erro",
+        "enunciado": "¿La pendiente de y=−4x es + o −? ⚠ Error: pendiente por (1,2),(4,8) = (4−1)/(8−2)=1/2."
+      }
+    ]
   },
   "perimetro": {
     "definicion": "Comprender el perímetro como la longitud total del contorno de una figura, obtenida al sumar las longitudes de sus lados.",
@@ -3128,7 +4225,17 @@
         "descripcion": "Olvidar sumar algún lado del contorno."
       }
     ],
-    "descripcion": "Suma de los lados del contorno"
+    "descripcion": "Suma de los lados del contorno",
+    "items": [
+      {
+        "id": "1_perimetro_de_un_rectangulo_8",
+        "enunciado": "1) Perímetro de un rectángulo 8×5 cm. 2) Cercar un patio cuadrado de 12 m por lado."
+      },
+      {
+        "id": "1_perimetro_de_rectangulo_7_3",
+        "enunciado": "1) Perímetro de rectángulo 7×3 cm. 2) Cuadrado de perímetro 24, ¿lado? 3) ¿Qué es el perímetro con tus palabras?"
+      }
+    ]
   },
   "permutacion_combinatoria": {
     "definicion": "Contar de cuántas maneras pueden ordenarse o elegirse elementos de un conjunto.",
@@ -3148,7 +4255,17 @@
         "descripcion": "Contar repeticiones no permitidas."
       }
     ],
-    "descripcion": "Permutaciones, variaciones y combinaciones"
+    "descripcion": "Permutaciones, variaciones y combinaciones",
+    "items": [
+      {
+        "id": "de_cuantas_formas_se_ordenan_e",
+        "enunciado": "¿De cuántas formas se ordenan en fila A, B, C? Escríbelas."
+      },
+      {
+        "id": "cuanto_es_4",
+        "enunciado": "¿Cuánto es 4!?"
+      }
+    ]
   },
   "pictograma": {
     "definicion": "Construir y leer pictogramas donde cada símbolo representa un caso.",
@@ -3178,7 +4295,21 @@
         "descripcion": "Contar líneas en vez de unidades."
       }
     ],
-    "descripcion": "Ejes X e Y; pares ordenados; puntos cardinales"
+    "descripcion": "Ejes X e Y; pares ordenados; puntos cardinales",
+    "items": [
+      {
+        "id": "coordenadas_de_a_b_c",
+        "enunciado": "Coordenadas de A, B, C."
+      },
+      {
+        "id": "ubica_p_3_5_q_6_1_r_1_2",
+        "enunciado": "Ubica P(3,5), Q(6,1), R(1,2)."
+      },
+      {
+        "id": "une_1_1_5_1_5_4_1_4_que_figura",
+        "enunciado": "Une (1,1),(5,1),(5,4),(1,4): ¿qué figura se forma?"
+      }
+    ]
   },
   "plano_cartesiano_completo": {
     "definicion": "Localizar puntos en los cuatro cuadrantes mediante pares ordenados con signo.",
@@ -3190,6 +4321,16 @@
       {
         "codigo": "MA08 OA 13",
         "cobertura": "parcial"
+      }
+    ],
+    "items": [
+      {
+        "id": "marca_3_2_e_indica_el_cuadrant",
+        "enunciado": "Marca (−3,−2) e indica el cuadrante."
+      },
+      {
+        "id": "coordenadas_de_un_punto_a_la_i",
+        "enunciado": "Coordenadas de un punto a la izquierda del eje Y y arriba del eje X. ⚠ Error: ubicar (−2,3) moviéndose '2 a la derecha y 3 arriba'."
       }
     ]
   },
@@ -3203,6 +4344,20 @@
       {
         "codigo": "MA07 OA 04",
         "cobertura": "total"
+      }
+    ],
+    "items": [
+      {
+        "id": "15_de_300",
+        "enunciado": "15% de 300."
+      },
+      {
+        "id": "8_000_con_25_de_descuento_prec",
+        "enunciado": "$8.000 con 25% de descuento, ¿precio final?"
+      },
+      {
+        "id": "que_es_18_de_60_error_20_de_15",
+        "enunciado": "¿Qué % es 18 de 60? ⚠ Error: '20% de 150 = 150÷20 = 7,5'."
       }
     ]
   },
@@ -3225,7 +4380,25 @@
         "descripcion": "Confundir izquierda/derecha respecto de sí mismo vs. del observador de enfrente."
       }
     ],
-    "descripcion": "Izquierda/derecha, adelante/atrás respecto de un referente"
+    "descripcion": "Izquierda/derecha, adelante/atrás respecto de un referente",
+    "items": [
+      {
+        "id": "ubicacion_espacial_izquierda_y",
+        "enunciado": "Ubicación espacial: izquierda y derecha"
+      },
+      {
+        "id": "ubicacion_espacial_izquierda_y_2",
+        "enunciado": "Ubicación espacial: izquierda y derecha nº2"
+      },
+      {
+        "id": "ubicacion_espacial_arriba_y_ab",
+        "enunciado": "Ubicación espacial: arriba y abajo"
+      },
+      {
+        "id": "1_que_figura_esta_en_la_column",
+        "enunciado": "1) ¿Qué figura está en la columna D? 2) Describe la posición de la estrella respecto del cuadrado (arriba/abajo/izq/der)."
+      }
+    ]
   },
   "potencia": {
     "definicion": "Expresar la multiplicación repetida de un mismo factor, distinguiendo base, exponente y valor.",
@@ -3247,7 +4420,17 @@
         "retroalimentacion_sugerida": "Desplegar la potencia como cadena de factores: 2·2·2, no 2·3."
       }
     ],
-    "descripcion": "Potencia como producto repetido; base y exponente"
+    "descripcion": "Potencia como producto repetido; base y exponente",
+    "items": [
+      {
+        "id": "2_5_10",
+        "enunciado": "2³ ; 5² ; 10⁴."
+      },
+      {
+        "id": "escribe_como_potencia_3_3_3_3",
+        "enunciado": "Escribe como potencia: 3×3×3×3."
+      }
+    ]
   },
   "potencia_base_10": {
     "definicion": "Comprender las potencias de diez como los órdenes del sistema posicional.",
@@ -3287,7 +4470,21 @@
         "descripcion": "Tratar a⁰ como 0."
       }
     ],
-    "descripcion": "Potencias de base racional y exponente entero (±, 0)"
+    "descripcion": "Potencias de base racional y exponente entero (±, 0)",
+    "items": [
+      {
+        "id": "2_5",
+        "enunciado": "2⁻³ ; 5⁻¹."
+      },
+      {
+        "id": "escribe_3_con_exponente_positi",
+        "enunciado": "Escribe 3⁻² con exponente positivo."
+      },
+      {
+        "id": "1_2_error_2_8",
+        "enunciado": "(1/2)⁻¹. ⚠ Error: '2⁻³ = −8'."
+      }
+    ]
   },
   "pregunta_estadistica": {
     "definicion": "Comprender que los datos se recolectan para responder una pregunta, y que la pregunta define qué registrar y a quién.",
@@ -3323,7 +4520,17 @@
         "descripcion": "Sumar las opciones de cada etapa en vez de multiplicarlas."
       }
     ],
-    "descripcion": "Multiplicar las opciones de cada etapa"
+    "descripcion": "Multiplicar las opciones de cada etapa",
+    "items": [
+      {
+        "id": "3_fondos_y_2_postres_cuantas_c",
+        "enunciado": "3 fondos y 2 postres, ¿cuántas combinaciones?"
+      },
+      {
+        "id": "4_poleras_y_3_pantalones_cuant",
+        "enunciado": "4 poleras y 3 pantalones, ¿cuántos conjuntos?"
+      }
+    ]
   },
   "probabilidad_evento_compuesto": {
     "definicion": "Determinar la probabilidad de un resultado que exige que ocurran varias cosas a la vez o en sucesión.",
@@ -3339,7 +4546,17 @@
         "descripcion": "Sumar cuando corresponde multiplicar (o al revés) las etapas del evento."
       }
     ],
-    "descripcion": "Evento de varias etapas; espacio muestral con diagramas"
+    "descripcion": "Evento de varias etapas; espacio muestral con diagramas",
+    "items": [
+      {
+        "id": "moneda_y_dado_p_cara_y_numero",
+        "enunciado": "Moneda y dado: P(cara y número mayor que 4)."
+      },
+      {
+        "id": "10_cartas_1_10_p_par_y_mayor_q",
+        "enunciado": "10 cartas 1–10: P(par y mayor que 5)."
+      }
+    ]
   },
   "probabilidad_experimental": {
     "definicion": "Estimar la probabilidad de un evento a partir de las frecuencias relativas observadas al repetir el experimento.",
@@ -3382,7 +4599,13 @@
         "retroalimentacion_sugerida": "Enumerar los casos posibles del experimento: no siempre son del mismo tipo ni del mismo número."
       }
     ],
-    "descripcion": "Casos favorables / casos posibles; espacio muestral"
+    "descripcion": "Casos favorables / casos posibles; espacio muestral",
+    "items": [
+      {
+        "id": "1_dado_y_moneda_p_3_p_cara_p_p",
+        "enunciado": "1) Dado y moneda: P(3), P(cara), P(par). ⚠ Error: 'P(mayor que 4) = 2' (falta dividir por casos posibles)."
+      }
+    ]
   },
   "producto_vector_escalar": {
     "definicion": "Multiplicación de un vector por un número real: el vector resultante conserva la dirección, multiplica su magnitud por el valor absoluto del escalar e invierte su sentido cuando el escalar es negativo.",
@@ -3410,7 +4633,21 @@
         "retroalimentacion_sugerida": "Construir el cuadrado de lado (a+b) con áreas: aparecen dos rectángulos que la respuesta olvida."
       }
     ],
-    "descripcion": "Cuadrado del binomio; suma por diferencia"
+    "descripcion": "Cuadrado del binomio; suma por diferencia",
+    "items": [
+      {
+        "id": "x_3",
+        "enunciado": "(x+3)²."
+      },
+      {
+        "id": "x_5_x_5",
+        "enunciado": "(x+5)(x−5)."
+      },
+      {
+        "id": "2x_1_error_x_3_x_9",
+        "enunciado": "(2x−1)². ⚠ Error: '(x+3)² = x²+9'."
+      }
+    ]
   },
   "promedio": {
     "definicion": "Comprender la media aritmética como el valor que igualaría todos los datos si el total se repartiera en partes iguales, e interpretarla en su contexto.",
@@ -3436,7 +4673,17 @@
         "descripcion": "Sumar mal antes de repartir."
       }
     ],
-    "descripcion": "Sumar los datos y repartir en partes iguales (media)"
+    "descripcion": "Sumar los datos y repartir en partes iguales (media)",
+    "items": [
+      {
+        "id": "promedio_de_4_6_5_7_3",
+        "enunciado": "Promedio de 4,6,5,7,3."
+      },
+      {
+        "id": "promedio_5_0_en_4_pruebas_cuan",
+        "enunciado": "Promedio 5,0 en 4 pruebas, ¿cuánto suman? ⚠ Error: 'promedio de 4,6,8 = 18' (no dividió)."
+      }
+    ]
   },
   "propiedad_distributiva": {
     "definicion": "Comprender que multiplicar una suma equivale a sumar los productos parciales: a(b+c) = ab + ac.",
@@ -3489,7 +4736,21 @@
         "retroalimentacion_sugerida": "Desplegar ambas como cadenas de factores y contar: la base no cambia, los factores se acumulan."
       }
     ],
-    "descripcion": "Producto/cociente de potencias de igual base"
+    "descripcion": "Producto/cociente de potencias de igual base",
+    "items": [
+      {
+        "id": "2_2_una_sola_potencia",
+        "enunciado": "2³·2⁴ (una sola potencia)."
+      },
+      {
+        "id": "5_5",
+        "enunciado": "5⁶÷5²."
+      },
+      {
+        "id": "3_error_2_2_2_porque_3_4_12",
+        "enunciado": "(3²)⁴. ⚠ Error: '2³·2⁴ = 2¹² porque 3×4=12'."
+      }
+    ]
   },
   "propiedades_raices": {
     "definicion": "Descomponer y combinar raíces mediante sus propiedades para simplificar cálculos.",
@@ -3509,7 +4770,21 @@
         "descripcion": "Multiplicar raíces de distinto índice sin igualar."
       }
     ],
-    "descripcion": "Descomponer y combinar raíces; multiplicar/dividir de igual índice"
+    "descripcion": "Descomponer y combinar raíces; multiplicar/dividir de igual índice",
+    "items": [
+      {
+        "id": "4_9_y_compara_con_4_9",
+        "enunciado": "√4·√9 y compara con √(4·9)."
+      },
+      {
+        "id": "simplifica_50_25_2",
+        "enunciado": "Simplifica √50 (=√(25·2))."
+      },
+      {
+        "id": "16_25_error_9_16_25_5",
+        "enunciado": "√(16/25). ⚠ Error: '√9+√16 = √25 = 5'."
+      }
+    ]
   },
   "proporcionalidad_directa": {
     "definicion": "Reconocer dos magnitudes cuyo cociente permanece constante al variar ambas.",
@@ -3529,7 +4804,21 @@
         "descripcion": "Buscar una diferencia constante en vez de un cociente constante."
       }
     ],
-    "descripcion": "Dos variables que cambian en la misma razón"
+    "descripcion": "Dos variables que cambian en la misma razón",
+    "items": [
+      {
+        "id": "4_lapices_cuestan_1_200_7_lapi",
+        "enunciado": "4 lápices cuestan $1.200, ¿7 lápices?"
+      },
+      {
+        "id": "15_km_en_3_h_en_8_h",
+        "enunciado": "15 km en 3 h, ¿en 8 h?"
+      },
+      {
+        "id": "si_una_cantidad_se_hace_el_tri",
+        "enunciado": "Si una cantidad se hace el triple, ¿qué pasa con la otra?"
+      }
+    ]
   },
   "proporcionalidad_inversa": {
     "definicion": "Reconocer dos magnitudes cuyo producto permanece constante, de modo que al crecer una decrece la otra.",
@@ -3547,7 +4836,17 @@
         "retroalimentacion_sugerida": "Construir la tabla y calcular el cociente en cada fila: si cambia, la relación no es directa."
       }
     ],
-    "descripcion": "Dos variables cuyo producto se conserva"
+    "descripcion": "Dos variables cuyo producto se conserva",
+    "items": [
+      {
+        "id": "4_obreros_tardan_6_dias_8_obre",
+        "enunciado": "4 obreros tardan 6 días, ¿8 obreros?"
+      },
+      {
+        "id": "completa_tabla_de_proporcion_i",
+        "enunciado": "Completa tabla de proporción inversa (x·y=cte): x:2,4,__,12 / y:12,__,4,__."
+      }
+    ]
   },
   "proyeccion_vectorial": {
     "definicion": "Descomponer un desplazamiento en componentes perpendiculares y determinar su proyección.",
@@ -3601,6 +4900,16 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Calcular ambos lados: la raíz de 25 es 5, no 7. La raíz no se reparte sobre la suma."
       }
+    ],
+    "items": [
+      {
+        "id": "49_81_144",
+        "enunciado": "√49 ; √81 ; √144."
+      },
+      {
+        "id": "entre_que_enteros_esta_20_erro",
+        "enunciado": "¿Entre qué enteros está √20? ⚠ Error: '√16 = 8 porque 16÷2=8'."
+      }
     ]
   },
   "raiz_enesima": {
@@ -3621,7 +4930,21 @@
         "descripcion": "Creer que ⁿ√ reparte sobre la suma."
       }
     ],
-    "descripcion": "Raíz de índice n; ⁿ√a; relación con potencias"
+    "descripcion": "Raíz de índice n; ⁿ√a; relación con potencias",
+    "items": [
+      {
+        "id": "27_8_16",
+        "enunciado": "∛27 ; ∛8 ; ⁴√16."
+      },
+      {
+        "id": "entre_que_enteros_esta_30",
+        "enunciado": "¿Entre qué enteros está ∛30?"
+      },
+      {
+        "id": "8",
+        "enunciado": "∛(−8)."
+      }
+    ]
   },
   "rango_variabilidad": {
     "definicion": "Cuantificar cuán dispersos están los datos, información que ninguna medida de tendencia central entrega.",
@@ -3641,7 +4964,21 @@
         "descripcion": "Restar valores no extremos."
       }
     ],
-    "descripcion": "Diferencia entre el mayor y el menor dato"
+    "descripcion": "Diferencia entre el mayor y el menor dato",
+    "items": [
+      {
+        "id": "mismo_promedio_5_0_curso_a_4_5",
+        "enunciado": "Mismo promedio 5,0: curso A (4,5–5,5) vs B (2,0–7,0), ¿cuál tiene más variabilidad?"
+      },
+      {
+        "id": "rango_del_curso_b",
+        "enunciado": "Rango del curso B."
+      },
+      {
+        "id": "que_mide_el_rango",
+        "enunciado": "¿Qué mide el rango?"
+      }
+    ]
   },
   "razon": {
     "definicion": "Comprender la razón como comparación multiplicativa entre dos cantidades.",
@@ -3659,7 +4996,25 @@
         "retroalimentacion_sugerida": "Escalar el grupo: al duplicar, la diferencia cambia pero la razón se conserva."
       }
     ],
-    "descripcion": "Comparación entre dos cantidades (a:b)"
+    "descripcion": "Comparación entre dos cantidades (a:b)",
+    "items": [
+      {
+        "id": "ab_4_cm_cd_12_cm_razon_cd_ab",
+        "enunciado": "AB=4 cm, CD=12 cm, ¿razón CD÷AB?"
+      },
+      {
+        "id": "simplifica_15_5",
+        "enunciado": "Simplifica 15:5."
+      },
+      {
+        "id": "si_segundo_primero_0_5_el_segu",
+        "enunciado": "Si segundo÷primero=0,5, ¿el segundo es más largo o más corto?"
+      },
+      {
+        "id": "3_4_x_20_5_x_2_6",
+        "enunciado": "3/4=x/20; 5/x=2/6."
+      }
+    ]
   },
   "razon_pi": {
     "definicion": "Reconocer que el cociente entre el perímetro y el diámetro es el mismo en todo círculo.",
@@ -3678,6 +5033,16 @@
       {
         "id": "confundir_la_formula_del_perim",
         "descripcion": "Confundir la fórmula del perímetro con la del área."
+      }
+    ],
+    "items": [
+      {
+        "id": "que_representa_razon_circunfer",
+        "enunciado": "¿Qué representa π? (razón circunferencia÷diámetro)."
+      },
+      {
+        "id": "valor_aproximado_de",
+        "enunciado": "Valor aproximado de π."
       }
     ]
   },
@@ -3723,6 +5088,16 @@
         "id": "graduar_la_recta_con_saltos_de",
         "descripcion": "Graduar la recta con saltos desiguales."
       }
+    ],
+    "items": [
+      {
+        "id": "ubica_en_la_recta_3_0_1_5_0_5",
+        "enunciado": "Ubica en la recta: −3, 0, 1,5, −0,5."
+      },
+      {
+        "id": "que_numero_esta_justo_entre_2",
+        "enunciado": "¿Qué número está justo entre −2 y 4?"
+      }
     ]
   },
   "recta_numerica_entera": {
@@ -3739,7 +5114,21 @@
         "descripcion": "Ordenar negativos como si fueran positivos (creer −8 > −3 porque 8>3)."
       }
     ],
-    "descripcion": "Recta que se extiende a ambos lados del cero"
+    "descripcion": "Recta que se extiende a ambos lados del cero",
+    "items": [
+      {
+        "id": "hacia_que_lado_estan_los_negat",
+        "enunciado": "¿Hacia qué lado están los negativos? ¿Y positivos?"
+      },
+      {
+        "id": "desde_0_avanzo_5_a_la_izquierd",
+        "enunciado": "Desde 0, avanzo 5 a la izquierda, ¿dónde quedo?"
+      },
+      {
+        "id": "que_numero_esta_3_a_la_derecha",
+        "enunciado": "¿Qué número está 3 a la derecha de −4?"
+      }
+    ]
   },
   "redondeo": {
     "definicion": "Sustituir un número por el múltiplo más cercano de una posición dada, conservando el orden de magnitud.",
@@ -3800,7 +5189,13 @@
         "retroalimentacion_sugerida": "Dibujar ambos conjuntos superpuestos: la zona común quedó contada dos veces."
       }
     ],
-    "descripcion": "P(A o B); diagramas de Venn"
+    "descripcion": "P(A o B); diagramas de Venn",
+    "items": [
+      {
+        "id": "1_p_2_o_5_al_lanzar_un_dado_2",
+        "enunciado": "1) P(2 o 5) al lanzar un dado. 2) Bolsa 3 rojas, 2 azules, 5 verdes: P(roja o azul)."
+      }
+    ]
   },
   "regla_formacion": {
     "definicion": "Explicitar la regla que genera una sucesión y usarla para predecir términos no visibles sin extender término a término.",
@@ -3825,7 +5220,21 @@
         "descripcion": "Dar solo el siguiente término sin la regla general según la posición."
       }
     ],
-    "descripcion": "Regla que genera una sucesión (según la posición)"
+    "descripcion": "Regla que genera una sucesión (según la posición)",
+    "items": [
+      {
+        "id": "regla_de_5_11_17_23_29",
+        "enunciado": "Regla de 5,11,17,23,29…"
+      },
+      {
+        "id": "falta_4_9_19_24",
+        "enunciado": "Falta: 4,9,__,19,24."
+      },
+      {
+        "id": "octavo_termino",
+        "enunciado": "¿Octavo término?"
+      }
+    ]
   },
   "regla_multiplicativa_probabilidad": {
     "definicion": "Determinar la probabilidad de que dos eventos ocurran ambos, atendiendo a si uno condiciona al otro.",
@@ -3845,7 +5254,17 @@
         "descripcion": "Confundir 'y' con 'o'."
       }
     ],
-    "descripcion": "P(A y B); diagrama de árbol"
+    "descripcion": "P(A y B); diagrama de árbol",
+    "items": [
+      {
+        "id": "moneda_dos_veces_p_cara_y_lueg",
+        "enunciado": "Moneda dos veces: P(cara y luego cara)."
+      },
+      {
+        "id": "p_6_en_dado_y_cara_en_moneda_e",
+        "enunciado": "P(6 en dado y cara en moneda). ⚠ Error: 'cara dos veces = 1/2+1/2 = 1' (debe multiplicarse)."
+      }
+    ]
   },
   "regla_signos": {
     "definicion": "Determinar el sentido del resultado de un producto o cociente a partir del sentido de sus términos.",
@@ -3864,7 +5283,17 @@
         "retroalimentacion_sugerida": "Separar los contextos: en la suma los sentidos se acumulan; en el producto se combinan."
       }
     ],
-    "descripcion": "Regla de los signos en enteros"
+    "descripcion": "Regla de los signos en enteros",
+    "items": [
+      {
+        "id": "6_4_6_4",
+        "enunciado": "(−6)+(−4) ; (−6)−(−4)."
+      },
+      {
+        "id": "3_5_8_2_error_5_3_8_menos_con",
+        "enunciado": "(−3)×(+5) ; (−8)÷(−2). ⚠ Error: '(−5)−(−3) = −8, menos con menos se suma'."
+      }
+    ]
   },
   "relacion_2d_3d": {
     "definicion": "Comprender que las superficies de un cuerpo son figuras 2D: anticipar la red que arma un cuerpo y el cuerpo que resulta de una red.",
@@ -3890,7 +5319,17 @@
         "descripcion": "No relacionar la cara con la figura 2D."
       }
     ],
-    "descripcion": "Red (plantilla) que se pliega en un cuerpo 3D"
+    "descripcion": "Red (plantilla) que se pliega en un cuerpo 3D",
+    "items": [
+      {
+        "id": "que_figura_2d_es_cada_cara_del",
+        "enunciado": "¿Qué figura 2D es cada cara del cubo?"
+      },
+      {
+        "id": "al_desplegar_una_caja_que_figu",
+        "enunciado": "Al desplegar una caja, ¿qué figuras planas obtengo?"
+      }
+    ]
   },
   "relacion_funcional": {
     "definicion": "Comprender una tabla de valores como correspondencia regular entrada→salida gobernada por una operación, aplicable a cualquier par de la tabla.",
@@ -3919,7 +5358,17 @@
         "descripcion": "Mirar filas aisladas."
       }
     ],
-    "descripcion": "Tabla de valores con una regla entrada→salida"
+    "descripcion": "Tabla de valores con una regla entrada→salida",
+    "items": [
+      {
+        "id": "completa_la_tabla_cada_y_sale",
+        "enunciado": "Completa la tabla (cada y sale de x igual): x:2,5,__,10 / y:6,__,24,__."
+      },
+      {
+        "id": "por_cuanto_multiplicar_x_para",
+        "enunciado": "¿Por cuánto multiplicar x para obtener y?"
+      }
+    ]
   },
   "relacion_perimetro_area": {
     "definicion": "Comprender que figuras con igual área pueden tener distinto perímetro y viceversa: las dos magnitudes no covarían.",
@@ -3941,7 +5390,17 @@
         "descripcion": "No distinguir ambas magnitudes."
       }
     ],
-    "descripcion": "Distintos rectángulos con igual perímetro o área"
+    "descripcion": "Distintos rectángulos con igual perímetro o área",
+    "items": [
+      {
+        "id": "compara_perimetro_y_area_de_fi",
+        "enunciado": "Compara perímetro y área de Figura 1 (5×3) y Figura 2 (7×1)."
+      },
+      {
+        "id": "mismo_perimetro_misma_area_v_f",
+        "enunciado": "¿'Mismo perímetro ⇒ misma área'? V/F, justifica."
+      }
+    ]
   },
   "resta": {
     "definicion": "Operación que determina la parte desconocida de un todo (quitar, comparar, completar) dadas la otra parte y el total.",
@@ -3978,6 +5437,40 @@
         "id": "restar_el_menor_del_mayor_en_c",
         "descripcion": "Restar el menor del mayor en cada columna sin pedir prestado (52−18 → unidades 8−2=6)."
       }
+    ],
+    "items": [
+      {
+        "id": "levanto_5_dedos_si_bajo_3_cuan",
+        "enunciado": "Levanto 5 dedos, si bajo 3 ¿cuántos quedan?"
+      },
+      {
+        "id": "tengo_7_manzanas_y_me_comi_5_c",
+        "enunciado": "Tengo 7 manzanas y me comí 5 ¿cuántas quedan?"
+      },
+      {
+        "id": "con_que_resta_representarias_e",
+        "enunciado": "¿Con qué resta representarías el conjunto? 5-1 4-1"
+      },
+      {
+        "id": "7_3_como_lo_resolverias",
+        "enunciado": "7-3= ¿cómo lo resolverías?"
+      },
+      {
+        "id": "15_5_20_5_10",
+        "enunciado": "15-5= -> 20/5/10"
+      },
+      {
+        "id": "6_aranas_aplasto_4_cuantas_que",
+        "enunciado": "6 arañas, aplasto 4 ¿cuántas quedan?"
+      },
+      {
+        "id": "habia_28_lapices_rojos_y_queda",
+        "enunciado": "Había 28 lápices rojos y quedan 18, ¿cuántos se usaron?"
+      },
+      {
+        "id": "1_5_003_1_847_2_biblioteca_1_2",
+        "enunciado": "1) 5.003 − 1.847 = 2) Biblioteca: 1.250 libros, llegan 380 y se prestan 175, ¿cuántos quedan?"
+      }
     ]
   },
   "reversibilidad_aditiva": {
@@ -4001,6 +5494,32 @@
       {
         "id": "al_buscar_el_digito_o_sumando",
         "descripcion": "Al buscar el dígito o sumando que falta, ignorar el canje/reserva de la columna anterior. || Al buscar el dígito o sumando que falta, ignorar el canje de la columna anterior."
+      }
+    ],
+    "items": [
+      {
+        "id": "restas_gemelas_4_3_1_que_otra",
+        "enunciado": "Restas gemelas: 4-3=1 ¿qué otra?"
+      },
+      {
+        "id": "operacion_gemela_1_2_3_3_1_2",
+        "enunciado": "Operación gemela: 1+2=3 / 3-1=2"
+      },
+      {
+        "id": "familia_de_operaciones_7_4_3",
+        "enunciado": "Familia de operaciones 7 4 3"
+      },
+      {
+        "id": "7_3_10_familia",
+        "enunciado": "7 3 10 familia"
+      },
+      {
+        "id": "operacion_inversa_de_4_5_9",
+        "enunciado": "¿Operación inversa de 4+5=9?"
+      },
+      {
+        "id": "1_si_35_17_52_completa_sin_cal",
+        "enunciado": "1) Si 35+17=52, completa sin calcular: 52−17=__ ; 52−35=__. 2) Familia de operaciones con 23, 41 y 64."
       }
     ]
   },
@@ -4034,6 +5553,24 @@
       {
         "codigo": "MA1M OA 06",
         "cobertura": "parcial"
+      }
+    ],
+    "items": [
+      {
+        "id": "area_y_perimetro_de_un_sector",
+        "enunciado": "área y perímetro de un sector dado el radio y el ángulo central (r, α°), usando π=3."
+      },
+      {
+        "id": "longitud_de_arco_dado_radio_y",
+        "enunciado": "longitud de arco dado radio y ángulo central (r=2,3 cm y 60°; r=4 cm y 120°)."
+      },
+      {
+        "id": "relacionar_el_sector_con_la_fr",
+        "enunciado": "relacionar el sector con la fracción α/360 del círculo y calcular el área de 1 de n sectores iguales (1 de 8 sectores con ángulo 45°)."
+      },
+      {
+        "id": "problemas_contextualizados_cua",
+        "enunciado": "problemas contextualizados (\"cuarto de queso\", porciones). Errores a cazar: (a) usar el ángulo sin dividir por 360 (olvidar la fracción α/360); (b) confundir longitud de arco con área del sector; (c) en el perímetro del sector, sumar el arco pero olvidar los dos radios."
       }
     ]
   },
@@ -4080,7 +5617,33 @@
         "descripcion": "Errores en los 'nudos' de la decena (28,29,20 en vez de 30)."
       }
     ],
-    "descripcion": "Secuencia numérica oral (0,1,2…); conteo hacia adelante y atrás; cuadro de números"
+    "descripcion": "Secuencia numérica oral (0,1,2…); conteo hacia adelante y atrás; cuadro de números",
+    "items": [
+      {
+        "id": "que_numero_va_en_0_10",
+        "enunciado": "¿Qué número va en ? (0-10)"
+      },
+      {
+        "id": "que_numero_va_en_0_10_2",
+        "enunciado": "¿Qué número va en ? (0-10)"
+      },
+      {
+        "id": "donde_hay_8_elementos",
+        "enunciado": "¿Dónde hay 8 elementos?"
+      },
+      {
+        "id": "que_numero_va_en_la_estrella_1",
+        "enunciado": "¿Qué número va en la estrella? (11-20)"
+      },
+      {
+        "id": "que_numero_es_quince_14_51_15",
+        "enunciado": "¿Qué número es? 'Quince' -> 14/51/15"
+      },
+      {
+        "id": "que_numero_esta_antes_del_10",
+        "enunciado": "¿Qué número está antes del 10?"
+      }
+    ]
   },
   "segmento_circular": {
     "definicion": "Determinar el área y el perímetro de la parte del círculo delimitada por una cuerda y el arco que esa cuerda subtiende; su área se obtiene restando al sector circular el triángulo formado por los dos radios y la cuerda.",
@@ -4110,7 +5673,21 @@
         "descripcion": "No mantener la razón constante entre lados."
       }
     ],
-    "descripcion": "Figuras de igual forma y distinto tamaño; razón constante"
+    "descripcion": "Figuras de igual forma y distinto tamaño; razón constante",
+    "items": [
+      {
+        "id": "abc_def_con_k_2_ab_2_de",
+        "enunciado": "ABC~DEF con k=2, AB=2, ¿DE?"
+      },
+      {
+        "id": "dos_semejantes_tienen_igual_y",
+        "enunciado": "Dos semejantes tienen igual ___ y distinto ___."
+      },
+      {
+        "id": "si_k_1_como_son_error_semejant",
+        "enunciado": "Si k=1, ¿cómo son? ⚠ Error: 'semejantes = mismo tamaño y forma' (confunde con congruentes)."
+      }
+    ]
   },
   "simbolo_incognita": {
     "definicion": "Comprender que un símbolo (figura o letra) puede representar un número desconocido pero determinado, que conserva su valor dentro de la igualdad.",
@@ -4124,6 +5701,16 @@
     ],
     "bibliografia": [
       "bib_kaput_2008"
+    ],
+    "items": [
+      {
+        "id": "8_15",
+        "enunciado": "▲+8=15, ▲=__."
+      },
+      {
+        "id": "20_4",
+        "enunciado": "20=■−4, ■=__."
+      }
     ]
   },
   "simetria_axial": {
@@ -4163,7 +5750,17 @@
         "descripcion": "Hallar solo una incógnita y no verificar en ambas ecuaciones."
       }
     ],
-    "descripcion": "Dos rectas en el plano; solución = intersección; reducción"
+    "descripcion": "Dos rectas en el plano; solución = intersección; reducción",
+    "items": [
+      {
+        "id": "x_y_10_x_y_4",
+        "enunciado": "x+y=10 ; x−y=4."
+      },
+      {
+        "id": "del_grafico_coordenadas_del_pu",
+        "enunciado": "Del gráfico, coordenadas del punto donde se cruzan las rectas."
+      }
+    ]
   },
   "subitizacion": {
     "definicion": "Reconocer de manera inmediata la cantidad de una colección pequeña, sin contar.",
@@ -4199,7 +5796,41 @@
         "retroalimentacion_sugerida": "Balanza: ambos lados existen simultáneamente, no hay un 'antes' y un 'después'."
       }
     ],
-    "descripcion": "Juntar dos colecciones; recta numérica avanzando; frase numérica a+b=c"
+    "descripcion": "Juntar dos colecciones; recta numérica avanzando; frase numérica a+b=c",
+    "items": [
+      {
+        "id": "si_tengo_2_manzanas_y_me_regal",
+        "enunciado": "Si tengo 2 manzanas y me regalan 3 ¿cuántas tengo?"
+      },
+      {
+        "id": "calculo_mental_1_1_4_1_3_1",
+        "enunciado": "Cálculo mental 1+1, 4+1, 3+1..."
+      },
+      {
+        "id": "con_que_adicion_representarias",
+        "enunciado": "¿Con qué adición representarías el conjunto? 3+3 4+2 6+2 | sumando+sumando=total"
+      },
+      {
+        "id": "5_3_estrategia_recta_numerica",
+        "enunciado": "5+3= estrategia recta numérica"
+      },
+      {
+        "id": "10_9_19",
+        "enunciado": "10+9=19"
+      },
+      {
+        "id": "cuantos_insectos_hay_en_total",
+        "enunciado": "¿Cuántos insectos hay en total? 9/17/15"
+      },
+      {
+        "id": "escribe_la_operacion_matematic",
+        "enunciado": "Escribe la operación matemática que corresponde a la situación."
+      },
+      {
+        "id": "1_4_587_2_836_2_biblioteca_1_2",
+        "enunciado": "1) 4.587 + 2.836 = 2) Biblioteca: 1.250 libros, llegan 380 y se prestan 175, ¿cuántos quedan?"
+      }
+    ]
   },
   "suma_angulos_interiores": {
     "definicion": "Comprender que los ángulos interiores de un triángulo suman 180° y los de un cuadrilátero 360°, y usarlo para calcular ángulos faltantes.",
@@ -4247,7 +5878,13 @@
         "descripcion": "Olvidar caras al sumar."
       }
     ],
-    "descripcion": "Área de superficie = suma de las áreas de las caras"
+    "descripcion": "Área de superficie = suma de las áreas de las caras",
+    "items": [
+      {
+        "id": "1_red_de_un_cubo_con_caras_de",
+        "enunciado": "1) Red de un cubo con caras de lado 3 cm, ¿área total de superficie?"
+      }
+    ]
   },
   "superficie_prisma_cilindro": {
     "definicion": "Determinar la superficie de un cuerpo recto desplegando su red en figuras planas.",
@@ -4267,7 +5904,17 @@
         "descripcion": "Olvidar alguna cara o la tapa/base."
       }
     ],
-    "descripcion": "Área de superficie desde la red del cuerpo"
+    "descripcion": "Área de superficie desde la red del cuerpo",
+    "items": [
+      {
+        "id": "prisma_4_3_2_suma_de_las_6_car",
+        "enunciado": "Prisma 4×3×2, suma de las 6 caras, ¿superficie total?"
+      },
+      {
+        "id": "diferencia_entre_volumen_y_are",
+        "enunciado": "Diferencia entre volumen y área de superficie."
+      }
+    ]
   },
   "superficie_volumen_cono": {
     "definicion": "Determinar la superficie y el volumen de un cuerpo que termina en punta, relacionándolo con el cilindro.",
@@ -4287,7 +5934,41 @@
         "descripcion": "Usar la fórmula del cilindro sin el factor 1/3."
       }
     ],
-    "descripcion": "Cono; relación de volumen con el cilindro"
+    "descripcion": "Cono; relación de volumen con el cilindro",
+    "items": [
+      {
+        "id": "area_total_dado_radio_y_genera",
+        "enunciado": "área total dado radio y generatriz (r=9, g=15 → π·r·(r+g))."
+      },
+      {
+        "id": "dado_radio_y_altura_hallar_pri",
+        "enunciado": "dado radio y altura, hallar primero la generatriz con Pitágoras (r=6, h=8 → g=10) y luego el área."
+      },
+      {
+        "id": "dado_el_diametro_pasar_a_radio",
+        "enunciado": "dado el diámetro, pasar a radio."
+      },
+      {
+        "id": "problemas_gorro_de_cumpleanos",
+        "enunciado": "problemas (gorro de cumpleaños = solo manto). VOLUMEN:"
+      },
+      {
+        "id": "volumen_dado_diametro_y_altura",
+        "enunciado": "volumen dado diámetro y altura (V=⅓·π·r²·h)."
+      },
+      {
+        "id": "cono_invertido_dada_altura_y_g",
+        "enunciado": "cono invertido: dada altura y generatriz, hallar el radio con Pitágoras y luego el volumen (macetero, embudo, volcán)."
+      },
+      {
+        "id": "comparar_con_el_cilindro_de_ig",
+        "enunciado": "comparar con el cilindro de igual base y altura (cono = ⅓ del cilindro)."
+      },
+      {
+        "id": "cuerpo_compuesto_cilindro_cono",
+        "enunciado": "cuerpo compuesto cilindro+cono (torre/castillo). Errores a cazar: (a) usar la altura como generatriz (o viceversa) en la fórmula del manto; (b) olvidar el ⅓ en el volumen (confundir con el cilindro); (c) no despejar con Pitágoras la generatriz o el radio faltante cuando dan 2 de 3 medidas; (d) usar el diámetro como radio."
+      }
+    ]
   },
   "superficie_volumen_esfera": {
     "definicion": "Determinar la superficie y el volumen de un cuerpo sin caras planas ni red desplegable.",
@@ -4370,7 +6051,17 @@
         "descripcion": "Que las frecuencias no sumen el total."
       }
     ],
-    "descripcion": "Tabla de frecuencias absolutas de cada valor"
+    "descripcion": "Tabla de frecuencias absolutas de cada valor",
+    "items": [
+      {
+        "id": "completa_la_frecuencia_de_n_de",
+        "enunciado": "Completa la frecuencia de nº de mascotas: 2,1,0,3,2,1,2,0,1,2."
+      },
+      {
+        "id": "cual_es_la_moda",
+        "enunciado": "¿Cuál es la moda?"
+      }
+    ]
   },
   "tallo_hojas": {
     "definicion": "Organizar datos numéricos separando cada valor en tallo (decenas) y hoja (unidades), de modo que la tabla misma muestre la distribución conservando cada dato.",
@@ -4484,6 +6175,20 @@
         "naturaleza": "procedimental",
         "retroalimentacion_sugerida": "Marcar primero el ángulo recto: la hipotenusa es siempre el lado que no lo toca."
       }
+    ],
+    "items": [
+      {
+        "id": "identifica_catetos_e_hipotenus",
+        "enunciado": "Identifica catetos e hipotenusa y escribe la fórmula."
+      },
+      {
+        "id": "catetos_3_y_4_hipotenusa",
+        "enunciado": "Catetos 3 y 4, ¿hipotenusa?"
+      },
+      {
+        "id": "hipotenusa_13_cateto_5_el_otro",
+        "enunciado": "Hipotenusa 13, cateto 5, ¿el otro cateto? ⚠ Error: 'hipotenusa = 6+8 = 14'."
+      }
     ]
   },
   "teorema_tales": {
@@ -4504,7 +6209,25 @@
         "descripcion": "Aplicarlo sin rectas paralelas."
       }
     ],
-    "descripcion": "Paralelas que cortan segmentos proporcionales"
+    "descripcion": "Paralelas que cortan segmentos proporcionales",
+    "items": [
+      {
+        "id": "de_bc_en_abc_ec",
+        "enunciado": "DE∥BC en ABC, ¿EC?"
+      },
+      {
+        "id": "l1_l2_l3_b_c",
+        "enunciado": "L1∥L2∥L3, ¿B'C'?"
+      },
+      {
+        "id": "proporcion_entre_ab_bc_a_b_b_c",
+        "enunciado": "Proporción entre AB,BC,A'B',B'C'."
+      },
+      {
+        "id": "pq_30_r_divide_pr_rq_2_3_parte",
+        "enunciado": "PQ=30, R divide PR:RQ=2:3, ¿partes y PR? ⚠ Error: aplicar Tales con la recta del medio inclinada (no paralela)."
+      }
+    ]
   },
   "termino_semejante": {
     "definicion": "Reconocer los términos que comparten parte literal y reunirlos en uno solo.",
@@ -4522,7 +6245,21 @@
         "retroalimentacion_sugerida": "Nombrar las partes literales como objetos distintos: tres de una cosa y dos de otra no son cinco de una tercera."
       }
     ],
-    "descripcion": "Términos con la misma parte literal se reducen"
+    "descripcion": "Términos con la misma parte literal se reducen",
+    "items": [
+      {
+        "id": "5x_3x_2x",
+        "enunciado": "5x+3x−2x."
+      },
+      {
+        "id": "4a_7_2a_3",
+        "enunciado": "4a+7+2a−3."
+      },
+      {
+        "id": "6y_2x_3y_5x_error_4a_3b_2a_9ab",
+        "enunciado": "6y−2x+3y+5x. ⚠ Error: '4a+3b+2a = 9ab'."
+      }
+    ]
   },
   "teselado": {
     "definicion": "Cubrir el plano con figuras mediante isometrías, sin huecos ni superposiciones.",
@@ -4570,7 +6307,17 @@
         "descripcion": "Cambiar el tamaño de la figura al transformarla."
       }
     ],
-    "descripcion": "Traslación, rotación y reflexión en la cuadrícula"
+    "descripcion": "Traslación, rotación y reflexión en la cuadrícula",
+    "items": [
+      {
+        "id": "di_que_transformacion_muestra",
+        "enunciado": "Di qué transformación muestra cada recuadro (traslación/reflexión/rotación)."
+      },
+      {
+        "id": "como_supiste_que_la_figura_2_n",
+        "enunciado": "¿Cómo supiste que la Figura 2 no era traslación?"
+      }
+    ]
   },
   "unidad_estandarizada": {
     "definicion": "Comprender la necesidad de unidades convencionales compartidas (cm, m, g, kg) para comunicar y comparar mediciones entre personas y contextos.",
@@ -4598,7 +6345,17 @@
         "descripcion": "Mezclar unidades."
       }
     ],
-    "descripcion": "Medir con unidades no estándar vs regla/huincha (cm, m)"
+    "descripcion": "Medir con unidades no estándar vs regla/huincha (cm, m)",
+    "items": [
+      {
+        "id": "unidad_adecuada_km_m_cm_mm_par",
+        "enunciado": "Unidad adecuada (km/m/cm/mm) para: hormiga, Santiago–Rancagua, altura de la sala, tu lápiz."
+      },
+      {
+        "id": "por_que_no_conviene_medir_ciud",
+        "enunciado": "¿Por qué no conviene medir ciudades en cm?"
+      }
+    ]
   },
   "valor_absoluto": {
     "definicion": "La distancia de un número al cero en la recta numérica; siempre positiva.",
@@ -4656,6 +6413,24 @@
         "descripcion": "Columnas U/D/C donde el mismo dígito cambia de valor al cambiar de columna.",
         "ancla_visual": "tabla_posicional"
       }
+    ],
+    "items": [
+      {
+        "id": "que_numero_es_4_unidades_y_3_d",
+        "enunciado": "¿Qué número es? 4 unidades y 3 decenas -> 43/34/430"
+      },
+      {
+        "id": "10_unidades_1_decena_dictado_d",
+        "enunciado": "10 unidades = 1 decena | dictado de números"
+      },
+      {
+        "id": "cuantos_caracoles_1d_y_1u_3d_y",
+        "enunciado": "¿Cuántos caracoles? 1D y 1U / 3D y 2U"
+      },
+      {
+        "id": "1_en_47_382_que_valor_tiene_el",
+        "enunciado": "1) En 47.382, ¿qué valor tiene el dígito 7? 2) Escribe el número: 3 decenas de mil + 5 unidades de mil + 2 decenas + 8 unidades."
+      }
     ]
   },
   "variable_aleatoria": {
@@ -4693,6 +6468,20 @@
         "naturaleza": "conceptual",
         "retroalimentacion_sugerida": "Calcular ambos pasos sobre una cantidad concreta: la base del segundo porcentaje ya no es la misma."
       }
+    ],
+    "items": [
+      {
+        "id": "2_000_sube_a_2_500_que_aumento",
+        "enunciado": "$2.000 sube a $2.500, ¿qué % aumentó?"
+      },
+      {
+        "id": "6_000_baja_20_nuevo_precio",
+        "enunciado": "$6.000 baja 20%, ¿nuevo precio?"
+      },
+      {
+        "id": "sube_10_y_luego_baja_10_queda",
+        "enunciado": "Sube 10% y luego baja 10%, ¿queda igual? ⚠ Error: calcular el % de aumento sobre el valor final."
+      }
     ]
   },
   "vector": {
@@ -4721,7 +6510,17 @@
         "descripcion": "Sumar vectores sumando solo sus longitudes."
       }
     ],
-    "descripcion": "Magnitud, dirección y sentido; componentes"
+    "descripcion": "Magnitud, dirección y sentido; componentes",
+    "items": [
+      {
+        "id": "vector_de_a_1_1_a_b_4_3_despla",
+        "enunciado": "Vector de A(1,1) a B(4,3): ¿desplazamiento horizontal y vertical?"
+      },
+      {
+        "id": "escribelo_como_par_ordenado",
+        "enunciado": "Escríbelo como par ordenado."
+      }
+    ]
   },
   "vistas_3d": {
     "definicion": "Anticipar cómo se ve un cuerpo desde el frente, el lado y arriba, comprendiendo cada vista como proyección 2D del mismo cuerpo.",
@@ -4765,7 +6564,17 @@
         "descripcion": "Confundir volumen con área."
       }
     ],
-    "descripcion": "Volumen = base × altura; capas de cubos"
+    "descripcion": "Volumen = base × altura; capas de cubos",
+    "items": [
+      {
+        "id": "volumen_del_paralelepipedo",
+        "enunciado": "Volumen del paralelepípedo."
+      },
+      {
+        "id": "formula_del_volumen_de_una_caj",
+        "enunciado": "Fórmula del volumen de una caja. ⚠ Error: 'Volumen de 5×3×2 = 5+3+2 = 10'."
+      }
+    ]
   },
   "volumen_prisma_cilindro": {
     "definicion": "Determinar el volumen de un cuerpo recto como el producto del área de su base por su altura.",
@@ -4785,7 +6594,17 @@
         "descripcion": "Olvidar multiplicar por la altura."
       }
     ],
-    "descripcion": "Volumen de prismas rectos (base × altura)"
+    "descripcion": "Volumen de prismas rectos (base × altura)",
+    "items": [
+      {
+        "id": "cilindro_r_2_h_5_3_14_volumen",
+        "enunciado": "Cilindro r=2, h=5 (π≈3,14), ¿volumen?"
+      },
+      {
+        "id": "prisma_con_base_12_cm_y_altura",
+        "enunciado": "Prisma con base 12 cm² y altura 6, ¿volumen?"
+      }
+    ]
   },
   "volumen_unidades_cubicas": {
     "definicion": "Comprender el volumen como la cantidad de unidades cúbicas que llenan un cuerpo sin huecos.",
@@ -4807,6 +6626,12 @@
         "descripcion": "Olvidar los cubos ocultos."
       }
     ],
-    "descripcion": "Llenar un cuerpo con cubos unitarios"
+    "descripcion": "Llenar un cuerpo con cubos unitarios",
+    "items": [
+      {
+        "id": "1_la_figura_esta_formada_por_c",
+        "enunciado": "1) La figura está formada por cubos de 1 cm³, ¿cuántos hay (volumen)?"
+      }
+    ]
   }
 }

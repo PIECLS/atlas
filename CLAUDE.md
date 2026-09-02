@@ -53,7 +53,7 @@ La unidad del sistema es el **conocimiento**, no el OA. Un OA es una agrupación
 
 ### A4 — Vocabulario CbKST
 El grafo del Atlas **es la estructura de competencias**. Los ítems observables (problemas) viven en `metadatos.items` como mapeo competencia→desempeño.
-En v1 **no se construyen ítems**: solo se reserva el campo y el lenguaje. No los inventes.
+Se importan ítems cuando reflejan evaluaciones que ya existen (de clases, guías, pruebas reales) — nunca se inventan de cero. `enunciado` se llena con el ítem tal como se usó. `competencias_requeridas` (el mapeo a nodos — esto ES el skill map de CbKST) y `formato` quedan sin llenar hasta que ese mapeo se derive aparte, con criterio propio: importar el enunciado no es lo mismo que decidir qué competencias exige.
 Referencia: Heller & Stefanutti (2024); paquetes R `CbKST` y `kst`.
 
 ### A5 — Geografía estable
