@@ -3228,6 +3228,15 @@
       }
     ]
   },
+  "longitud_arco": {
+    "definicion": "Determinar la longitud del arco delimitado por un ángulo central, como la fracción del perímetro del círculo correspondiente a ese ángulo.",
+    "oa_relacionados": [
+      {
+        "codigo": "MA1M OA 06",
+        "cobertura": "parcial"
+      }
+    ]
+  },
   "lugar_geometrico": {
     "definicion": "Concebir una figura como el conjunto de todos los puntos que cumplen una condición dada.",
     "oa_relacionados": [
@@ -4234,6 +4243,15 @@
       {
         "id": "1_perimetro_de_rectangulo_7_3",
         "enunciado": "1) Perímetro de rectángulo 7×3 cm. 2) Cuadrado de perímetro 24, ¿lado? 3) ¿Qué es el perímetro con tus palabras?"
+      }
+    ]
+  },
+  "perimetro_circulo": {
+    "definicion": "Determinar la longitud del contorno del círculo a partir de su radio (o diámetro).",
+    "oa_relacionados": [
+      {
+        "codigo": "MA07 OA 11",
+        "cobertura": "parcial"
       }
     ]
   },
