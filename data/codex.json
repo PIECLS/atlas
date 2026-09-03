@@ -6651,5 +6651,61 @@
         "enunciado": "1) La figura está formada por cubos de 1 cm³, ¿cuántos hay (volumen)?"
       }
     ]
+  },
+  "perimetro_area_semejanza": {
+    "items": [
+      {
+        "id": "semejantes_k_2_perimetro_original_10_nue",
+        "enunciado": "Semejantes k=2, perímetro original 10, ¿nuevo?"
+      },
+      {
+        "id": "area_original_6_cm2_nueva",
+        "enunciado": "Área original 6 cm², ¿nueva?"
+      },
+      {
+        "id": "si_k_3_por_cuanto_se_multiplica_el_area",
+        "enunciado": "Si k=3, ¿por cuánto se multiplica el área?"
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "multiplica_area_igual_que_lados",
+        "descripcion": "Cree que si los lados se multiplican por 2, el área también se multiplica por 2 (en vez de por 4): 'los lados ×2, entonces el área ×2 (6→12)'."
+      }
+    ]
+  },
+  "proporcion_c": {
+    "items": [
+      {
+        "id": "decidir_si_dos_razones_forman_proporcion",
+        "enunciado": "Decidir si dos razones forman proporción (2/4 y 3/6 → sí; 1/3 y 2/5 → no)."
+      },
+      {
+        "id": "despejar_la_incognita_por_producto_cruza",
+        "enunciado": "Despejar la incógnita por producto cruzado con x en cualquier casilla (2/3=8/x; x/6=4/3)."
+      },
+      {
+        "id": "escribir_la_proporcion_cuidando_el_orden",
+        "enunciado": "Escribir la proporción cuidando el orden antes de resolver (misma magnitud arriba en las dos razones) y luego resolver problemas de escala, receta, mapa."
+      },
+      {
+        "id": "anticipar_si_x_debe_ser_mayor_o_menor_an",
+        "enunciado": "Anticipar si x debe ser mayor o menor antes de calcular, como control."
+      }
+    ],
+    "errores_frecuentes": [
+      {
+        "id": "comparar_restando_en_vez_de_multiplicand",
+        "descripcion": "Comparar restando en vez de multiplicando (\"tiene 80 más, así que mide 80 más\")."
+      },
+      {
+        "id": "invertir_el_orden_de_las_magnitudes_en_u",
+        "descripcion": "Invertir el orden de las magnitudes en una de las razones."
+      },
+      {
+        "id": "confundir_razon_un_numero_con_proporcion",
+        "descripcion": "Confundir razón (un número) con proporción (igualdad de dos razones)."
+      }
+    ]
   }
 }
